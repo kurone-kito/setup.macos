@@ -11,7 +11,7 @@ fi
 
 # Install Python and Ansible
 brew update
-brew install python ansible
-brew upgrade python ansible
+brew list | grep ansible > /dev/null || brew install ansible
+brew outdated ansible || brew upgrade ansible
 
-ansible-playbook -K -i localhost, -c local -v playbook.yml
+ansible-playbook --inventory localhost, --connection local -v playbook.yml
