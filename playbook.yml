@@ -3,4 +3,4 @@
   hosts: all
   connection: local
   roles:
-    - pre-setup
+    - brew

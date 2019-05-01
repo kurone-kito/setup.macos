@@ -1,0 +1,34 @@
+- name: Unlock sudo
+  lineinfile:
+    dest: /etc/sudoers
+    regexp: '{{ ansible_env.USER }} ALL=\(ALL\) NOPASSWD: ALL'
+    line: "{{ ansible_env.USER }} ALL=(ALL) NOPASSWD: ALL"
+    validate: visudo -cf %s
+  become: yes
+
+- name: Disable the Gatekeeper
+  shell: spctl --master-disable
+  become: true
+  changed_when: false
+
+# TODO: Add packages here.
+
+- name: Upgrade brew.
+  homebrew:
+    update_homebrew: yes
+    upgrade_all: yes
+
+- name: Restore the Gatekeeper
+  shell: spctl --master-enable
+  become: true
+  changed_when: false
+
+- name: Lock sudo
+  lineinfile:
+    dest: /etc/sudoers
+    regexp: '{{ ansible_env.USER }} ALL=\(ALL\) NOPASSWD: ALL'
+    line: ""
+    validate: visudo -cf %s
+  become: yes
+
+- meta: flush_handlers
