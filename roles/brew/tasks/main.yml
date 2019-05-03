@@ -11,7 +11,7 @@
   become: true
   changed_when: false
 
-# TODO: Add packages here.
+- import_tasks: __shell.yml
 
 - name: Upgrade brew.
   homebrew:
