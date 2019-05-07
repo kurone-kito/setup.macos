@@ -12,6 +12,7 @@
   changed_when: false
 
 - import_tasks: __shell.yml
+- import_tasks: _anyenv.yml
 
 - name: Upgrade brew.
   homebrew:
