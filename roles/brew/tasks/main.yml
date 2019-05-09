@@ -13,6 +13,7 @@
 
 - import_tasks: __shell.yml
 - import_tasks: _anyenv.yml
+- import_tasks: _auth.yml
 
 - name: Upgrade brew.
   homebrew:

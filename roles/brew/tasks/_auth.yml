@@ -1,0 +1,9 @@
+- name: Install the GnuPG
+  homebrew:
+    name: gnupg
+    state: present
+
+- name: Install the Pinentry
+  homebrew:
+    name: pinentry-mac
+    state: present
