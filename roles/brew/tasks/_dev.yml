@@ -1,0 +1,24 @@
+- name: Install the Android Studio
+  homebrew_cask:
+    name: android-studio
+    state: present
+
+- name: Install the CLI for AWS
+  homebrew:
+    name: awscli
+    state: present
+
+- name: Install the .NET Core
+  homebrew_cask:
+    name: dotnet-sdk
+    state: present
+
+- name: Install the PowerShell Core
+  homebrew_cask:
+    name: powershell
+    state: present
+
+- name: Install the Visual Studio
+  homebrew_cask:
+    name: visual-studio
+    state: present
