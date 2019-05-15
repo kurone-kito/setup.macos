@@ -17,6 +17,7 @@
 - import_tasks: _browsers.yml
 - import_tasks: _clouds.yml
 - import_tasks: _dev.yml
+- import_tasks: _editors.yml
 
 - name: Upgrade brew.
   homebrew:
