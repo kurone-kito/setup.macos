@@ -18,6 +18,7 @@
 - import_tasks: _clouds.yml
 - import_tasks: _dev.yml
 - import_tasks: _editors.yml
+- import_tasks: _games.yml
 
 - name: Upgrade brew.
   homebrew:
