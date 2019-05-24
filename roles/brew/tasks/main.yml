@@ -20,6 +20,7 @@
 - import_tasks: _editors.yml
 - import_tasks: _games.yml
 - import_tasks: _messages.yml
+- import_tasks: _remote.yml
 
 - name: Upgrade brew.
   homebrew:
