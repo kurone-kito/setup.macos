@@ -5,11 +5,6 @@
     name: adobe-creative-cloud
     state: present
 
-- name: Install the Drobo dashboard
-  homebrew_cask:
-    name: homebrew/cask-drivers/drobo-dashboard
-    state: present
-
 - name: Install the Dropbox
   homebrew_cask:
     name: dropbox
