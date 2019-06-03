@@ -1,0 +1,24 @@
+- name: Install the Docker
+  homebrew_cask:
+    name: docker
+    state: present
+
+- name: Install the Vagrant
+  homebrew_cask:
+    name: vagrant
+    state: present
+
+- name: Install the Virtualbox
+  homebrew_cask:
+    name: virtualbox
+    state: present
+
+- name: Install the Extension pack for Virtualbox
+  homebrew_cask:
+    name: virtualbox-extension-pack
+    state: present
+
+- name: Install the CLI for Wercker
+  homebrew_cask:
+    name: wercker-cli
+    state: present
