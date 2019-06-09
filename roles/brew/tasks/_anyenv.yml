@@ -1,0 +1,34 @@
+- name: Install the anyenv
+  homebrew:
+    name: anyenv
+    state: present
+
+- name: Create a folder for anyenv
+  file:
+    path: "{{ ansible_env.HOME }}/{{ item }}"
+    state: directory
+  with_items:
+    - .config
+    - .config/anyenv
+
+- name: Initialize the anyenv
+  git:
+    repo: "https://github.com/anyenv/anyenv-install.git"
+    dest: "{{ ansible_env.HOME }}/.config/anyenv/anyenv-install"
+    force: true
+
+- name: Touch a anyenv setting file
+  file:
+    path: ~/.zsh.d/anyenv
+    state: touch
+
+- name: Update the anyenv settings
+  lineinfile:
+    dest: ~/.zsh.d/anyenv
+    regexp: eval "\$\(anyenv init - zsh\)"
+    line: eval "$(anyenv init - zsh)"
+
+- name: Initialize the nodenv
+  command: anyenv install nodenv -s
+  register: nodenv
+  changed_when: "nodenv.stdout != ''"

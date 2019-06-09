@@ -1,0 +1,39 @@
+- name: Install the Git
+  homebrew:
+    name: git
+    state: present
+
+- name: Install the Gist
+  homebrew:
+    name: gist
+    state: present
+
+- name: Install the Subversion
+  homebrew:
+    name: subversion
+    state: present
+
+- name: Install the telnet
+  homebrew:
+    name: telnet
+    state: present
+
+- name: Install the wget
+  homebrew:
+    name: wget
+    state: present
+
+- name: Install the Cocoa REST Client
+  homebrew_cask:
+    name: cocoarestclient
+    state: present
+
+- name: Install the duet
+  homebrew_cask:
+    name: duet
+    state: present
+
+- name: Install the Vysor
+  homebrew_cask:
+    name: vysor
+    state: present

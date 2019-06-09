@@ -1,0 +1,24 @@
+- name: Install the JQ
+  homebrew:
+    name: jq
+    state: present
+
+- name: Install the Mackup
+  homebrew:
+    name: mackup
+    state: present
+
+- name: Install the p7zip
+  homebrew:
+    name: p7zip
+    state: present
+
+- name: Install the rsync
+  homebrew:
+    name: rsync
+    state: present
+
+- name: Install the UnRAR
+  homebrew:
+    name: unrar
+    state: present

@@ -1,0 +1,19 @@
+- name: Install the Amorphous DiskMark
+  homebrew_cask:
+    name: amorphousdiskmark
+    state: present
+
+- name: Install the Drobo dashboard
+  homebrew_cask:
+    name: homebrew/cask-drivers/drobo-dashboard
+    state: present
+
+- name: Install the NoSleep
+  homebrew_cask:
+    name: nosleep
+    state: present
+
+- name: Install the SoundFlower
+  homebrew_cask:
+    name: soundflower
+    state: present

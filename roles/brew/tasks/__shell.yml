@@ -1,0 +1,53 @@
+- name: Install the zsh
+  homebrew:
+    name: zsh
+    state: present
+
+- name: Install the zsh-completion
+  homebrew:
+    name: zsh-completion
+    state: present
+
+- name: Accept zsh as a login shell
+  lineinfile:
+    dest: /etc/shells
+    regexp: \/usr\/local\/bin\/zsh
+    line: /usr/local/bin/zsh
+  become: yes
+
+- name: Change the default shell to zsh
+  command: chsh -s /usr/local/bin/zsh
+  when: '"bash" in ansible_env.SHELL'
+
+- name: Clone the Prezto
+  git:
+    repo: "https://github.com/sorin-ionescu/prezto.git"
+    dest: "{{ ansible_env.HOME }}/.zprezto"
+    force: true
+
+- name: Add symbolic link dotfiles
+  file:
+    src: "{{ ansible_env.HOME }}/.zprezto/runcoms/{{ item }}"
+    dest: "{{ ansible_env.HOME }}/.{{ item }}"
+    state: link
+  with_items:
+    - zlogin
+    - zlogout
+    - zpreztorc
+    - zprofile
+    - zshenv
+
+- name: Deploy .zshrc
+  template:
+    src: .zshrc
+    dest: "{{ ansible_env.HOME }}/.zshrc"
+
+- name: Create a folder for zsh
+  file:
+    path: "{{ ansible_env.HOME }}/.zsh.d"
+    state: directory
+
+- name: Touch a dummy settings
+  file:
+    path: ~/.zsh.d/keep
+    state: touch
