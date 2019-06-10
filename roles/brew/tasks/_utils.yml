@@ -22,3 +22,8 @@
   homebrew:
     name: unrar
     state: present
+
+- name: Install the watch
+  homebrew:
+    name: watch
+    state: present
