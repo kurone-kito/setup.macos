@@ -14,4 +14,4 @@ brew update
 brew list | grep ansible > /dev/null || brew install ansible
 brew outdated ansible || brew upgrade ansible
 
-ansible-playbook --inventory localhost, --connection local -v playbook.yml
+ansible-playbook --inventory localhost, --connection local playbook.yml
