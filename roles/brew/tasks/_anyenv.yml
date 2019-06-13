@@ -17,10 +17,16 @@
     dest: "{{ ansible_env.HOME }}/.config/anyenv/anyenv-install"
     force: true
 
+- name: Detect a anyenv setting file
+  stat:
+    path: ~/.zsh.d/anyenv
+  register: anyenv
+
 - name: Touch a anyenv setting file
   file:
     path: ~/.zsh.d/anyenv
     state: touch
+  when: anyenv.stat.exists
 
 - name: Update the anyenv settings
   lineinfile:
