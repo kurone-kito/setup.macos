@@ -1,0 +1,5 @@
+- name: Set a restart flag and schedule a restart
+  file:
+    path: "{{ lookup('env', 'REBOOT_FILE') }}"
+    state: touch
+    mode: 0666
