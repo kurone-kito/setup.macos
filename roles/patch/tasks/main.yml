@@ -1,0 +1,14 @@
+- name: Toggle the scheduling system updates regularly
+  shell: softwareupdate --schedule on
+  become: true
+  changed_when: false
+
+- name: Start system updates
+  shell: softwareupdate --install --all
+  become: true
+  register: softwareupdate
+  changed_when: '"No updates are available." not in softwareupdate.stderr'
+  notify: Reboot
+
+- name: Flush
+  meta: flush_handlers
