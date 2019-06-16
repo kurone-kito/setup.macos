@@ -1,0 +1,11 @@
+- name: Remove a restart flag
+  file:
+    path: "{{ lookup('env', 'REBOOT_FILE') }}"
+    state: absent
+
+- name: Reboot
+  shell: sleep 2 && shutdown -r now 'Ansible updates triggered'
+  async: 1
+  poll: 0
+  become: true
+  ignore_errors: true

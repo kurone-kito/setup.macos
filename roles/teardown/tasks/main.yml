@@ -1,0 +1,11 @@
+- name: Whether that exists a restart flag..
+  stat:
+    path: "{{ lookup('env', 'REBOOT_FILE') }}"
+  register: reboot
+
+- import_tasks: _reboot.yml
+  when: reboot.stat.exists
+
+- name: Remove the setup script from startup list.
+  shell: osascript -e 'tell application "System Events" to delete login item "setup"'
+  ignore_errors: true
