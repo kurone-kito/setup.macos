@@ -113,6 +113,11 @@
   register: code
   changed_when: '"already installed" not in code.stdout'
 
+- name: Install the Nasc VSCode Touchbar for VS Code
+  command: code --install-extension felipe.nasc-touchbar
+  register: code
+  changed_when: '"already installed" not in code.stdout'
+
 - name: Install the Jest Runner for VS Code
   command: code --install-extension orta.vscode-jest
   register: code
