@@ -13,6 +13,17 @@
 
 - import_tasks: __shell.yml
 - import_tasks: _anyenv.yml
+
+- import_tasks: _node.yml
+  vars:
+    node_ver: 8
+- import_tasks: _node.yml
+  vars:
+    node_ver: 10
+- import_tasks: _node.yml
+  vars:
+    node_ver: 12
+
 - import_tasks: _auth.yml
 - import_tasks: _browsers.yml
 - import_tasks: _clouds.yml
