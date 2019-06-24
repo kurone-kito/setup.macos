@@ -1,19 +1,19 @@
 - name: "Search the latest node v{{ node_ver }}"
-  shell: "nodenv install -l | grep -e '^\\s\\+\\({{ node_ver }}\\.\\d\\+\\.\\d\\+\\)' | tail -n 1 | xargs"
+  command: "$SHELL -lc \". ~/.zshrc; nodenv install -l | grep -e '^\\s\\+\\({{ node_ver }}\\.\\d\\+\\.\\d\\+\\)' | tail -n 1 | xargs\""
   register: node_latest
   changed_when: false
 
 - name: "Install the latest node v{{ node_latest.stdout }}"
-  command: "nodenv install -s {{ node_latest.stdout }}"
+  command: '$SHELL -lc ". ~/.zshrc; nodenv install -s {{ node_latest.stdout }}"'
   register: node_install
   changed_when: "node_install.stdout != ''"
 
 - name: Detect the current global node version
-  command: nodenv global
+  command: $SHELL -lc ". ~/.zshrc; nodenv global"
   register: node_global
   changed_when: false
 
 - name: "Set the redirect global node to v{{ node_latest.stdout }}"
-  command: "nodenv global {{ node_latest.stdout }}"
+  command: '$SHELL -lc ". ~/.zshrc; nodenv global {{ node_latest.stdout }}"'
   when: "node_ver == 12 and node_global.stdout != node_latest.stdout"
   changed_when: false
