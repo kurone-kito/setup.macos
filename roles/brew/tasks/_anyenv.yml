@@ -26,7 +26,7 @@
   file:
     path: ~/.zsh.d/anyenv
     state: touch
-  when: anyenv.stat.exists
+  when: not anyenv.stat.exists
 
 - name: Update the anyenv settings
   lineinfile:
