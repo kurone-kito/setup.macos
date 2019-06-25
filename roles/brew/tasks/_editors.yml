@@ -129,7 +129,7 @@
   changed_when: '"already installed" not in code.stdout'
 
 - name: Install the Docker for VS Code
-  command: code --install-extension peterjausovec.vscode-docker
+  command: code --install-extension ms-azuretools.vscode-docker
   register: code
   changed_when: '"already installed" not in code.stdout'
 
