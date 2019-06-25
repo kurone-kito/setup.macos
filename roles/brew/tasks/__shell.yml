@@ -47,13 +47,7 @@
     path: "{{ ansible_env.HOME }}/.zsh.d"
     state: directory
 
-- name: Detect a dummy setting file
-  stat:
-    path: ~/.zsh.d/keep
-  register: keep
-
-- name: Touch a dummy settings file
-  file:
-    path: ~/.zsh.d/keep
-    state: touch
-  when: keep.stat.exists
+- name: Deploy a dummy setting
+  template:
+    src: zsh.d-keep
+    dest: "{{ ansible_env.HOME }}/.zsh.d/keep"

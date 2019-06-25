@@ -1,0 +1,4 @@
+# -*- mode: sh -*-
+# vim: set ft=sh :
+
+eval "$(anyenv init - zsh)"

@@ -22,17 +22,10 @@
     path: ~/.zsh.d/anyenv
   register: anyenv
 
-- name: Touch a anyenv setting file
-  file:
-    path: ~/.zsh.d/anyenv
-    state: touch
-  when: not anyenv.stat.exists
-
-- name: Update the anyenv settings
-  lineinfile:
-    dest: ~/.zsh.d/anyenv
-    regexp: eval "\$\(anyenv init - zsh\)"
-    line: eval "$(anyenv init - zsh)"
+- name: Deploy a anyenv setting
+  template:
+    src: anyenv
+    dest: "{{ ansible_env.HOME }}/.zsh.d/anyenv"
 
 - name: Initialize the nodenv
   command: anyenv install nodenv -s
