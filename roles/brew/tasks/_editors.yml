@@ -23,6 +23,11 @@
   register: code
   changed_when: '"already installed" not in code.stdout'
 
+- name: Install the Modelines for VS Code
+  command: code --install-extension chrislajoie.vscode-modelines
+  register: code
+  changed_when: '"already installed" not in code.stdout'
+
 - name: Install the Markdownlint for VS Code
   command: code --install-extension davidanson.vscode-markdownlint
   register: code
