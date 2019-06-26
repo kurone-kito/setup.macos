@@ -35,7 +35,14 @@
 - import_tasks: _remote.yml
 - import_tasks: _unity.yml
 - import_tasks: _utils.yml
+
+- name: Whether the environment on VM
+  stat:
+    path: /vagrant
+  register: vagrant
+
 - import_tasks: _virts.yml
+  when: not vagrant.stat.exists
 
 - name: Upgrade brew.
   homebrew:
