@@ -1,0 +1,19 @@
+- name: Deploy the npm settings
+  template:
+    src: npm
+    dest: "{{ ansible_env.HOME }}/.zsh.d/npm"
+
+- name: Install "exp" node.js package globally.
+  npm:
+    name: exp
+    global: yes
+
+- name: Install "serverless" node.js package globally.
+  npm:
+    name: serverless
+    global: yes
+
+- name: Install "yarn" node.js package globally.
+  npm:
+    name: yarn
+    global: yes

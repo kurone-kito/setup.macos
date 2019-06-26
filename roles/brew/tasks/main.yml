@@ -13,17 +13,16 @@
 
 - import_tasks: __shell.yml
 - import_tasks: _anyenv.yml
-
-- import_tasks: _node.yml
+- import_tasks: _anyenv_node.yml
   vars:
     node_ver: 8
-- import_tasks: _node.yml
+- import_tasks: _anyenv_node.yml
   vars:
     node_ver: 10
-- import_tasks: _node.yml
+- import_tasks: _anyenv_node.yml
   vars:
     node_ver: 12
-
+- import_tasks: _anyenv_npm.yml
 - import_tasks: _auth.yml
 - import_tasks: _browsers.yml
 - import_tasks: _clouds.yml
@@ -36,7 +35,14 @@
 - import_tasks: _remote.yml
 - import_tasks: _unity.yml
 - import_tasks: _utils.yml
+
+- name: Whether the environment on VM
+  stat:
+    path: /vagrant
+  register: vagrant
+
 - import_tasks: _virts.yml
+  when: not vagrant.stat.exists
 
 - name: Upgrade brew.
   homebrew:

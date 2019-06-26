@@ -8,6 +8,28 @@
     name: vagrant
     state: present
 
+- name: Collect the plugins of Vagrant
+  shell: "vagrant plugin list | awk '{ print $1 }'"
+  register: vagrant_plugins
+  changed_when: false
+
+- name: Install the plugins of Vagrant
+  shell: "vagrant plugin install {{ item }}"
+  with_items:
+    - vagrant-reload
+    - vagrant-parallels
+  when: item not in vagrant_plugins.stdout_lines
+
+- name: Install the Parallels Desktop
+  homebrew_cask:
+    name: parallels
+    state: present
+
+- name: Install the Parallels Access
+  homebrew_cask:
+    name: parallels-access
+    state: present
+
 - name: Install the Virtualbox
   homebrew_cask:
     name: virtualbox
