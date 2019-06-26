@@ -1,3 +1,8 @@
+- name: Deploy the npm settings
+  template:
+    src: npm
+    dest: "{{ ansible_env.HOME }}/.zsh.d/npm"
+
 - name: Install "exp" node.js package globally.
   npm:
     name: exp
