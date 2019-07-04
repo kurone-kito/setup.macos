@@ -1,0 +1,13 @@
+- name: "Keyboard: Set the keyboard input repeat speed"
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: KeyRepeat
+    type: int
+    value: 2
+
+- name: "Keyboard: Set the delay for start keyboard input repeat"
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: InitialKeyRepeat
+    type: int
+    value: 25

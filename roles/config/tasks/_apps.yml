@@ -1,0 +1,38 @@
+- name: "Activity Monitor: Visualize CPU usage in the Dock icon"
+  osx_defaults:
+    domain: com.apple.ActivityMonitor
+    key: IconType
+    type: int
+    value: 6
+
+- name: "Finder: Show icons for external hard drives"
+  osx_defaults:
+    domain: com.apple.finder
+    key: ShowExternalHardDrivesOnDesktop
+    type: bool
+    value: true
+  notify: Reload Finder
+
+- name: "Finder: Show the path bar"
+  osx_defaults:
+    domain: com.apple.finder
+    key: ShowPathbar
+    type: bool
+    value: true
+  notify: Reload Finder
+
+- name: "Finder: Avoid creating the “.DS_Store” files on network volumes"
+  osx_defaults:
+    domain: com.apple.desktopservices
+    key: DSDontWriteNetworkStores
+    type: bool
+    value: true
+  notify: Reload Finder
+
+- name: "Finder: Avoid creating the “.DS_Store” on USB volumes"
+  osx_defaults:
+    domain: com.apple.desktopservices
+    key: DSDontWriteUSBStores
+    type: bool
+    value: true
+  notify: Reload Finder

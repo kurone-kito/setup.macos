@@ -1,0 +1,31 @@
+- name: "Appearance: Switch to Dark mode"
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: AppleInterfaceStyle
+    value: Dark
+  notify: Reload Dock
+
+- name: "Appearance: Set sidebar icon size to large"
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSTableViewDefaultSizeMode
+    type: int
+    value: 3
+  notify: Reload Finder
+
+- name: "Appearance: Expand the save panel in default"
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: "{{ item }}"
+    type: bool
+    value: true
+  with_items:
+    - NSNavPanelExpandedStateForSaveMode
+    - NSNavPanelExpandedStateForSaveMode2
+
+- name: "Appearance: Enable subpixel font rendering on non-Apple LCDs"
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: AppleFontSmoothing
+    type: int
+    value: 2

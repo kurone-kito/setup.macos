@@ -1,0 +1,11 @@
+- name: "Locale: Collect current timezone"
+  shell: systemsetup -gettimezone
+  become: true
+  changed_when: false
+  register: gettimezone
+
+- name: "Locale: Change current timezone to Asia/Tokyo"
+  shell: systemsetup -settimezone 'Asia/Tokyo'
+  become: true
+  when: '"Asia/Tokyo" not in gettimezone.stdout'
+  notify: Reboot OS

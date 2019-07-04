@@ -1,0 +1,7 @@
+- name: Shutdown SSH daemon
+  shell: launchctl unload /System/Library/LaunchDaemons/ssh.plist
+  become: true
+
+- name: Startup SSH daemon
+  shell: launchctl load /System/Library/LaunchDaemons/ssh.plist
+  become: true
