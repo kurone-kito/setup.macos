@@ -1,4 +1,3 @@
----
 - name: Setup macOS for development environment.
   hosts: all
   connection: local
