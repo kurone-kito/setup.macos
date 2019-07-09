@@ -1,5 +1,5 @@
 # -*- mode: ruby -*-
-# vi: set ft=ruby :
+# vim: set ft=ruby :
 
 unless Vagrant.has_plugin?('vagrant-reload')
   raise 'vagrant-reload is not installed!'
