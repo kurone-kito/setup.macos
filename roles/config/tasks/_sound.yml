@@ -1,0 +1,19 @@
+- name: "Sound: Set notify sound"
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.sound.beep.sound
+    value: /System/Library/Sounds/Pop.aif
+
+- name: "Sound: Enable the feedback at sound volume has changed"
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.sound.beep.feedback
+    type: int
+    value: 1
+
+- name: "Sound: Set notify sound volume"
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.sound.beep.volume
+    type: float
+    value: 1

@@ -1,0 +1,12 @@
+- name: Update the permission to sudo setting
+  file:
+    path: /etc/pam.d/sudo
+    mode: "644"
+  become: yes
+# - name: Update sudo setting for using TouchBar
+#   lineinfile:
+#     dest: /etc/pam.d/sudo
+#     insertbefore: BOF
+#     regexp: "^auth +sufficient +pam_tid.so$"
+#     line: auth sufficient pam_tid.so
+#   become: yes

@@ -1,0 +1,26 @@
+- name: Create a .ssh folder
+  file:
+    path: "{{ ansible_env.HOME }}/.ssh"
+    state: directory
+    mode: 0700
+
+- name: Allow remote login via SSH
+  shell: systemsetup -setremotelogin On
+  become: true
+  register: setremotelogin
+  changed_when: '"already" not in setremotelogin.stdout'
+
+- name: Additional settings for SSH daemon
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: "{{ item.regexp }}"
+    line: "{{ item.line }}"
+  become: true
+  with_items:
+    - regexp: '^#?PermitRootLogin\s'
+      line: PermitRootLogin no
+    - regexp: '^#?PubkeyAuthentication\s'
+      line: PubkeyAuthentication yes
+    - regexp: '^#?UseDNS\s'
+      line: UseDNS no
+  notify: Reload sshd

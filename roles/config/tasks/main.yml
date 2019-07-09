@@ -1,0 +1,7 @@
+- import_tasks: _appearance.yml
+- import_tasks: _apps.yml
+- import_tasks: _auth.yml
+- import_tasks: _device.yml
+- import_tasks: _locale.yml
+- import_tasks: _sound.yml
+- import_tasks: _ssh.yml
