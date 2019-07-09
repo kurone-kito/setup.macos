@@ -108,6 +108,11 @@
   register: code
   changed_when: '"already installed" not in code.stdout'
 
+- name: Install the JavaScript and TypeScript Nightly for VS Code
+  command: code --install-extension ms-vscode.vscode-typescript-next
+  register: code
+  changed_when: '"already installed" not in code.stdout'
+
 - name: Install the Remote Development for VS Code
   command: code --install-extension ms-vscode-remote.vscode-remote-extensionpack
   register: code
