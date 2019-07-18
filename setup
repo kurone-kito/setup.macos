@@ -1,6 +1,8 @@
 #!/bin/sh
+# vim: set ft=sh :
 
 set -eu
+cd $(dirname $0)
 
 echo 'Add this script to the start-up macOS.'
 export REBOOT_FILE=/tmp/.setup.macos.reboot
