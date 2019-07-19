@@ -18,6 +18,11 @@
     name: powershell
     state: present
 
+- name: Install the Unity Hub
+  homebrew_cask:
+    name: unity-hub
+    state: present
+
 - name: Install the Visual Studio
   homebrew_cask:
     name: visual-studio
