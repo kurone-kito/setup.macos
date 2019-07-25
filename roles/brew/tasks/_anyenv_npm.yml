@@ -3,17 +3,11 @@
     src: npm
     dest: "{{ ansible_env.HOME }}/.zsh.d/npm"
 
-- name: Install "exp" node.js package globally.
+- name: Install the node.js package globally
   npm:
-    name: exp
+    name: "{{ item }}"
     global: yes
-
-- name: Install "serverless" node.js package globally.
-  npm:
-    name: serverless
-    global: yes
-
-- name: Install "yarn" node.js package globally.
-  npm:
-    name: yarn
-    global: yes
+  with_items:
+    - exp
+    - serverless
+    - yarn

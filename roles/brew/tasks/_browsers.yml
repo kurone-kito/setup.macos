@@ -3,12 +3,12 @@
     name: links
     state: present
 
-- name: Install the Firefox
+- name: Install the Desktop browsers
   homebrew_cask:
-    name: firefox
+    accept_external_apps: true
+    name: "{{ item }}"
     state: present
-
-- name: Install the Chrome
-  homebrew_cask:
-    name: google-chrome
-    state: present
+  with_items:
+    - cocoarestclient
+    - firefox
+    - google-chrome

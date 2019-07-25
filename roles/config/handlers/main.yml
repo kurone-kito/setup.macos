@@ -10,4 +10,4 @@
   ignore_errors: true
 
 - name: Reload sshd
-  import_tasks: ./handlers/_sshd.yml
+  import_tasks: _sshd.yml

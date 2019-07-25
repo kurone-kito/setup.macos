@@ -1,9 +1,8 @@
-- name: Install the Metasequoia
+- name: Install the Creative apps
   homebrew_cask:
-    name: metasequoia
+    accept_external_apps: true
+    name: "{{ item }}"
     state: present
-
-- name: Install the OBS
-  homebrew_cask:
-    name: obs
-    state: present
+  with_items:
+    - metasequoia
+    - obs

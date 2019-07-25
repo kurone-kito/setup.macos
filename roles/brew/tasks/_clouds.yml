@@ -1,11 +1,10 @@
 # App Store: OneDrive
 
-- name: Install the Adobe Creative Cloud
+- name: Install the Cloud storage tools
   homebrew_cask:
-    name: adobe-creative-cloud
+    accept_external_apps: true
+    name: "{{ item }}"
     state: present
-
-- name: Install the Dropbox
-  homebrew_cask:
-    name: dropbox
-    state: present
+  with_items:
+    - adobe-creative-cloud
+    - dropbox

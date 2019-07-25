@@ -1,29 +1,12 @@
-- name: Install the Drobo dashboard
+- name: Install the utils for devices
   homebrew_cask:
-    name: homebrew/cask-drivers/drobo-dashboard
+    accept_external_apps: true
+    name: "{{ item }}"
     state: present
-
-- name: Install the Amorphous DiskMark
-  homebrew_cask:
-    name: amorphousdiskmark
-    state: present
-
-- name: Install the HapticKey
-  homebrew_cask:
-    name: haptickey
-    state: present
-
-- name: Install the NoSleep
-  homebrew_cask:
-    name: nosleep
-    state: present
-
-- name: Install the SideQuest
-  homebrew_cask:
-    name: sidequest
-    state: present
-
-- name: Install the SoundFlower
-  homebrew_cask:
-    name: soundflower
-    state: present
+  with_items:
+    - homebrew/cask-drivers/drobo-dashboard
+    - amorphousdiskmark
+    - haptickey
+    - nosleep
+    - sidequest
+    - soundflower
