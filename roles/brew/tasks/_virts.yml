@@ -1,12 +1,13 @@
-- name: Install the Docker
+- name: Install the Virtualization tools
   homebrew_cask:
-    name: docker
+    accept_external_apps: true
+    name: "{{ item }}"
     state: present
-
-- name: Install the Vagrant
-  homebrew_cask:
-    name: vagrant
-    state: present
+  with_items:
+    - parallels
+    - virtualbox
+    - virtualbox-extension-pack
+    - vagrant
 
 - name: Collect the plugins of Vagrant
   shell: "vagrant plugin list | awk '{ print $1 }'"
@@ -20,27 +21,11 @@
     - vagrant-parallels
   when: item not in vagrant_plugins.stdout_lines
 
-- name: Install the Parallels Desktop
+- name: Install the Docker
   homebrew_cask:
-    name: parallels
+    accept_external_apps: true
+    name: "{{ item }}"
     state: present
-
-- name: Install the Parallels Access
-  homebrew_cask:
-    name: parallels-access
-    state: present
-
-- name: Install the Virtualbox
-  homebrew_cask:
-    name: virtualbox
-    state: present
-
-- name: Install the Extension pack for Virtualbox
-  homebrew_cask:
-    name: virtualbox-extension-pack
-    state: present
-
-- name: Install the CLI for Wercker
-  homebrew_cask:
-    name: wercker-cli
-    state: present
+  with_items:
+    - docker
+    - wercker-cli

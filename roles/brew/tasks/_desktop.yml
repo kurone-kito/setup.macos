@@ -1,0 +1,50 @@
+# App Store: LINE, OneDrive, Slack
+
+- name: Install the Links
+  homebrew:
+    name: links
+    state: present
+
+- name: Install the Web browsers
+  homebrew_cask:
+    accept_external_apps: true
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - cocoarestclient
+    - firefox
+    - google-chrome
+
+- name: Install the Creative apps
+  homebrew_cask:
+    accept_external_apps: true
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - metasequoia
+    - obs
+
+- name: Install the messaging apps
+  homebrew_cask:
+    accept_external_apps: true
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - discord
+    - messenger
+    - keybase
+    - skype
+
+- name: Install the Nyancat
+  homebrew:
+    name: nyancat
+    state: present
+
+- name: Install the games
+  homebrew_cask:
+    accept_external_apps: true
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - minecraft
+    - steam

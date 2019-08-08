@@ -3,157 +3,46 @@
     name: vim
     state: present
 
-- name: Install the Grammarly
+- name: Install the editors
   homebrew_cask:
-    name: grammarly
+    accept_external_apps: true
+    name: "{{ item }}"
     state: present
+  with_items:
+    - grammarly
+    - notion
+    - visual-studio-code
 
-- name: Install the Notion
-  homebrew_cask:
-    name: notion
-    state: present
-
-- name: Install the Visual Studio Code
-  homebrew_cask:
-    name: visual-studio-code
-    state: present
-
-- name: Install the snapshot-tools for VS Code
-  command: code --install-extension asvetliakov.snapshot-tools
+- name: Install the plugins for Visual Studio Code
+  command: "code --install-extension {{ item }}"
   register: code
   changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Modelines for VS Code
-  command: code --install-extension chrislajoie.vscode-modelines
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Markdownlint for VS Code
-  command: code --install-extension davidanson.vscode-markdownlint
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the ESLint for VS Code
-  command: code --install-extension dbaeumer.vscode-eslint
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Confluence markup for VS Code
-  command: code --install-extension denco.confluence-markup
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Git History for VS Code
-  command: code --install-extension donjayamanne.githistory
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the GitLens for VS Code
-  command: code --install-extension eamodio.gitlens
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the EditorConfig for VS Code
-  command: code --install-extension editorconfig.editorconfig
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the npm for VS Code
-  command: code --install-extension eg2.vscode-npm-script
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Prettier for VS Code
-  command: code --install-extension esbenp.prettier-vscode
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the VimL for VS Code
-  command: code --install-extension fallenwood.viml
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the PlantUML for VS Code
-  command: code --install-extension jebbs.plantuml
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the SSH FS for VS Code
-  command: code --install-extension kelvin.vscode-sshfs
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Vagrantfile Support for VS Code
-  command: code --install-extension marcostazi.vs-code-vagrantfile
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the DotENV for VS Code
-  command: code --install-extension mikestead.dotenv
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Japanese Language Pack for VS Code
-  command: code --install-extension ms-ceintl.vscode-language-pack-ja
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the C# Pack for VS Code
-  command: code --install-extension ms-vscode.csharp
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Powershell for VS Code
-  command: code --install-extension ms-vscode.powershell
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the JavaScript and TypeScript Nightly for VS Code
-  command: code --install-extension ms-vscode.vscode-typescript-next
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Remote Development for VS Code
-  command: code --install-extension ms-vscode-remote.vscode-remote-extensionpack
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Debugger for Chrome for VS Code
-  command: code --install-extension msjsdiag.debugger-for-chrome
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Nasc VSCode Touchbar for VS Code
-  command: code --install-extension felipe.nasc-touchbar
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Jest Runner for VS Code
-  command: code --install-extension orta.vscode-jest
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Docker for VS Code
-  command: code --install-extension ms-azuretools.vscode-docker
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Remove backspace control character for VS Code
-  command: code --install-extension satokaz.vscode-bs-ctrlchar-remover
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Gitconfig Syntax for VS Code
-  command: code --install-extension sidneys1.gitconfig
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Visual Studio Intellisense for VS Code
-  command: code --install-extension visualstudioexptteam.vscodeintellicode
-  register: code
-  changed_when: '"already installed" not in code.stdout'
-
-- name: Install the Ansible for VS Code
-  command: code --install-extension vscoss.vscode-ansible
-  register: code
-  changed_when: '"already installed" not in code.stdout'
+  with_items:
+    - asvetliakov.snapshot-tools
+    - chrislajoie.vscode-modelines
+    - davidanson.vscode-markdownlint
+    - dbaeumer.vscode-eslint
+    - denco.confluence-markup
+    - donjayamanne.githistory
+    - eamodio.gitlens
+    - editorconfig.editorconfig
+    - eg2.vscode-npm-script
+    - esbenp.prettier-vscode
+    - fallenwood.viml
+    - jebbs.plantuml
+    - kelvin.vscode-sshfs
+    - marcostazi.vs-code-vagrantfile
+    - mikestead.dotenv
+    - ms-ceintl.vscode-language-pack-ja
+    - ms-vscode.csharp
+    - ms-vscode.powershell
+    - ms-vscode.vscode-typescript-next
+    - ms-vscode-remote.vscode-remote-extensionpack
+    - msjsdiag.debugger-for-chrome
+    - felipe.nasc-touchbar
+    - orta.vscode-jest
+    - ms-azuretools.vscode-docker
+    - satokaz.vscode-bs-ctrlchar-remover
+    - sidneys1.gitconfig
+    - visualstudioexptteam.vscodeintellicode
+    - vscoss.vscode-ansible

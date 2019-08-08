@@ -23,15 +23,9 @@
   vars:
     node_ver: 12
 - import_tasks: _anyenv_npm.yml
-- import_tasks: _auth.yml
-- import_tasks: _browsers.yml
-- import_tasks: _clouds.yml
-- import_tasks: _creative.yml
+- import_tasks: _desktop.yml
 - import_tasks: _dev.yml
-- import_tasks: _devices.yml
 - import_tasks: _editors.yml
-- import_tasks: _games.yml
-- import_tasks: _messages.yml
 - import_tasks: _remote.yml
 - import_tasks: _utils.yml
 

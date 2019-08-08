@@ -1,39 +1,29 @@
-- name: Install the Git
+- name: Install the remote tools
   homebrew:
-    name: git
+    name:
+      - git
+      - gist
+      - subversion
+      - telnet
+      - wget
     state: present
 
-- name: Install the Gist
-  homebrew:
-    name: gist
-    state: present
-
-- name: Install the Subversion
-  homebrew:
-    name: subversion
-    state: present
-
-- name: Install the telnet
-  homebrew:
-    name: telnet
-    state: present
-
-- name: Install the wget
-  homebrew:
-    name: wget
-    state: present
-
-- name: Install the Cocoa REST Client
+- name: Install the remote apps
   homebrew_cask:
-    name: cocoarestclient
+    accept_external_apps: true
+    name: "{{ item }}"
     state: present
+  with_items:
+    - duet
+    - parallels-access
+    - vysor
 
-- name: Install the duet
+- name: Install the Cloud storage tools
   homebrew_cask:
-    name: duet
+    accept_external_apps: true
+    name: "{{ item }}"
     state: present
-
-- name: Install the Vysor
-  homebrew_cask:
-    name: vysor
-    state: present
+  with_items:
+    - adobe-creative-cloud
+    - dropbox
+    - omnipresence

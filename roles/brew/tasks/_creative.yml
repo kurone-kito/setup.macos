@@ -1,9 +1,0 @@
-- name: Install the Metasequoia
-  homebrew_cask:
-    name: metasequoia
-    state: present
-
-- name: Install the OBS
-  homebrew_cask:
-    name: obs
-    state: present

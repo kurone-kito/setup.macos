@@ -1,11 +1,8 @@
 - name: Install the zsh
   homebrew:
-    name: zsh
-    state: present
-
-- name: Install the zsh-completion
-  homebrew:
-    name: zsh-completion
+    name:
+      - zsh
+      - zsh-completion
     state: present
 
 - name: Accept zsh as a login shell
