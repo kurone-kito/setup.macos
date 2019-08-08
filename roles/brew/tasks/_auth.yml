@@ -1,6 +1,0 @@
-- name: Install the auth utils
-  homebrew:
-    name:
-      - gnupg
-      - pinentry-mac
-    state: present

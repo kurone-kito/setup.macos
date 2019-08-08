@@ -1,26 +1,11 @@
-- name: Install the Git
+- name: Install the remote tools
   homebrew:
-    name: git
-    state: present
-
-- name: Install the Gist
-  homebrew:
-    name: gist
-    state: present
-
-- name: Install the Subversion
-  homebrew:
-    name: subversion
-    state: present
-
-- name: Install the telnet
-  homebrew:
-    name: telnet
-    state: present
-
-- name: Install the wget
-  homebrew:
-    name: wget
+    name:
+      - git
+      - gist
+      - subversion
+      - telnet
+      - wget
     state: present
 
 - name: Install the remote apps
@@ -32,3 +17,13 @@
     - duet
     - parallels-access
     - vysor
+
+- name: Install the Cloud storage tools
+  homebrew_cask:
+    accept_external_apps: true
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - adobe-creative-cloud
+    - dropbox
+    - omnipresence

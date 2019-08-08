@@ -1,29 +1,30 @@
-- name: Install the JQ
+- name: Install the auth utils
   homebrew:
-    name: jq
+    name:
+      - gnupg
+      - pinentry-mac
     state: present
 
-- name: Install the Mackup
-  homebrew:
-    name: mackup
+- name: Install the utils for devices
+  homebrew_cask:
+    accept_external_apps: true
+    name: "{{ item }}"
     state: present
+  with_items:
+    - homebrew/cask-drivers/drobo-dashboard
+    - amorphousdiskmark
+    - haptickey
+    - nosleep
+    - sidequest
+    - soundflower
 
-- name: Install the p7zip
+- name: Install the miscs utils
   homebrew:
-    name: p7zip
-    state: present
-
-- name: Install the rsync
-  homebrew:
-    name: rsync
-    state: present
-
-- name: Install the UnRAR
-  homebrew:
-    name: unrar
-    state: present
-
-- name: Install the watch
-  homebrew:
-    name: watch
+    name:
+      - jq
+      - mackup
+      - p7zip
+      - rsync
+      - unrar
+      - watch
     state: present
