@@ -8,6 +8,7 @@
     name: "{{ item }}"
     global: yes
   with_items:
+    - "@aws-amplify/cli"
     - exp
     - serverless
     - yarn
