@@ -18,8 +18,11 @@
   register: code
   changed_when: '"already installed" not in code.stdout'
   with_items:
+    - aaron-bond.better-comments
     - asvetliakov.snapshot-tools
+    - britesnow.vscode-toggle-quotes
     - chrislajoie.vscode-modelines
+    - coenraads.bracket-pair-colorizer-2
     - davidanson.vscode-markdownlint
     - dbaeumer.vscode-eslint
     - denco.confluence-markup
@@ -31,6 +34,7 @@
     - fallenwood.viml
     - jebbs.plantuml
     - kelvin.vscode-sshfs
+    - kumar-harsh.graphql-for-vscode
     - marcostazi.vs-code-vagrantfile
     - mikestead.dotenv
     - ms-ceintl.vscode-language-pack-ja
