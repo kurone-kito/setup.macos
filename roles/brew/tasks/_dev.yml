@@ -1,6 +1,10 @@
 - name: Install the CLI for AWS
   homebrew:
-    name: awscli
+    name:
+      - awscli
+      - czmq
+      - pkg-config
+      - zmqpp
     state: present
 
 - name: Install the Powershell Core
