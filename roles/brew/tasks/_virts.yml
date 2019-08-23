@@ -29,3 +29,8 @@
   with_items:
     - docker
     - wercker-cli
+
+- name: Install the CLI for CircleCI
+  homebrew:
+    name: circleci
+    state: present
