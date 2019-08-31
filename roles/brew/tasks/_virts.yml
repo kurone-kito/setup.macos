@@ -24,13 +24,18 @@
 - name: Install the Docker
   homebrew_cask:
     accept_external_apps: true
-    name: "{{ item }}"
+    name: docker
     state: present
-  with_items:
-    - docker
-    - wercker-cli
 
-- name: Install the CLI for CircleCI
+- name: Install the CLI for CI
   homebrew:
-    name: circleci
+    name:
+      - circleci
+      - nektos/tap/act
+    state: present
+
+- name: Install the Wercker
+  homebrew_cask:
+    accept_external_apps: true
+    name: wercker-cli
     state: present

@@ -1,6 +1,7 @@
 - name: Install the zsh
   homebrew:
     name:
+      - gcc # using for zsh-completion
       - zsh
       - zsh-completion
     state: present

@@ -19,7 +19,6 @@
     name: "{{ item }}"
     state: present
   with_items:
-    - duet
     - parallels-access
     - vysor
 
