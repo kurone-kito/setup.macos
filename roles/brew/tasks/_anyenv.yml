@@ -27,6 +27,24 @@
     src: anyenv
     dest: "{{ ansible_env.HOME }}/.zsh.d/anyenv"
 
+- name: Create a folder for anyenv plugins
+  file:
+    path: $(anyenv root)/plugins
+    state: directory
+    mode: 0755
+
+- name: set anyenv_root_path
+  shell: echo $(anyenv root)/plugins/anyenv-update
+  register: anyenv_root_path
+
+- name: Initialize the anyenv-update
+  git:
+    repo: git@github.com:znz/anyenv-update.git
+    dest: "{{ item }}"
+    force: true
+  with_items:
+    - "{{ anyenv_root_path.stdout_lines }}"
+
 - name: Initialize the nodenv
   command: anyenv install nodenv -s
   register: nodenv
