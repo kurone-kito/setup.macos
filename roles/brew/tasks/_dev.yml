@@ -1,3 +1,10 @@
+- name: Install the CLI for Web develop
+  homebrew:
+    name:
+      - mkcert
+      - nss
+    state: present
+
 - name: Install the CLI for AWS
   homebrew:
     name:
