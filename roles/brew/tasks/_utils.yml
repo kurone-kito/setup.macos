@@ -13,10 +13,11 @@
   with_items:
     - homebrew/cask-drivers/drobo-dashboard
     - amorphousdiskmark
+    - audio-hijack
     - haptickey
+    - loopback
     - nosleep
     - sidequest
-    - soundflower
 
 - name: Install the miscs utils
   homebrew:
