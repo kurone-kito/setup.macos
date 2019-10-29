@@ -17,8 +17,9 @@
 - name: Install the plugins of Vagrant
   shell: "vagrant plugin install {{ item }}"
   with_items:
-    - vagrant-reload
     - vagrant-parallels
+    - vagrant-reload
+    - vagrant-vbguest
   when: item not in vagrant_plugins.stdout_lines
 
 - name: Install the Docker
