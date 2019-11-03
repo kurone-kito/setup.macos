@@ -11,11 +11,12 @@ path=$(cd $(dirname $0); pwd)/${0##*/}
 osa_args="{path:\"${path}\", hidden:false, name:\"${0##*/}\"}"
 osascript -e "tell application \"System Events\" to make login item at end with properties ${osa_args}"
 
+xcode-select --install || true
+sudo xcodebuild -runFirstLaunch
 if [ $(which brew | wc -l) -eq 0 ]
 then
   echo 'Install the Homebrew.'
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  xcode-select --install
 fi
 
 echo 'Install the Ansible.'
