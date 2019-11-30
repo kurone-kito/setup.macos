@@ -29,6 +29,7 @@
     name: "{{ item }}"
     state: present
   with_items:
+    - adoptopenjdk
     - android-studio
     - unity-hub
     - visual-studio
