@@ -25,6 +25,8 @@
       - jq
       - mackup
       - p7zip
+      - pandoc
+      - rename
       - rsync
       - unrar
       - watch
