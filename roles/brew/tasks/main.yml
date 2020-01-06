@@ -15,9 +15,6 @@
 - import_tasks: _anyenv.yml
 - import_tasks: _anyenv_node.yml
   vars:
-    node_ver: 8
-- import_tasks: _anyenv_node.yml
-  vars:
     node_ver: 10
 - import_tasks: _anyenv_node.yml
   vars:
