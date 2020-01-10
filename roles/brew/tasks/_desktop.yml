@@ -46,5 +46,6 @@
     name: "{{ item }}"
     state: present
   with_items:
+    - epic-games
     - minecraft
     - steam
