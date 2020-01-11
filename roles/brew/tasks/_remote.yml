@@ -5,6 +5,7 @@
       - git-lfs
       - gist
       - subversion
+      - sshfs
       - telnet
       - wget
     state: present
