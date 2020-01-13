@@ -16,7 +16,9 @@
     - audio-hijack
     - haptickey
     - loopback
+    - magicprefs
     - nosleep
+    - osxfuse
     - sidequest
 
 - name: Install the miscs utils
