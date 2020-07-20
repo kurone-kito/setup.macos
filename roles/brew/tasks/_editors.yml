@@ -19,6 +19,7 @@
   changed_when: '"already installed" not in code.stdout'
   with_items:
     - aaron-bond.better-comments
+    - alefragnani.Bookmarks
     - asvetliakov.snapshot-tools
     - britesnow.vscode-toggle-quotes
     - chrislajoie.vscode-modelines
@@ -28,24 +29,26 @@
     - denco.confluence-markup
     - donjayamanne.githistory
     - eamodio.gitlens
-    - editorconfig.editorconfig
+    - EditorConfig.EditorConfig
     - eg2.vscode-npm-script
     - esbenp.prettier-vscode
-    - fallenwood.viml
+    - felipe.nasc-touchbar
+    - fallenwood.vimL
     - jebbs.plantuml
     - kelvin.vscode-sshfs
     - kumar-harsh.graphql-for-vscode
     - marcostazi.vs-code-vagrantfile
     - mikestead.dotenv
-    - ms-ceintl.vscode-language-pack-ja
+    - ms-azuretools.vscode-docker
+    - MS-CEINTL.vscode-language-pack-ja
     - ms-vscode.csharp
+    - ms-vscode.js-debug-nightly
     - ms-vscode.powershell
+    - ms-vscode.vscode-github-issue-notebook
     - ms-vscode.vscode-typescript-next
     - ms-vscode-remote.vscode-remote-extensionpack
     - msjsdiag.debugger-for-chrome
-    - felipe.nasc-touchbar
     - orta.vscode-jest
-    - ms-azuretools.vscode-docker
     - satokaz.vscode-bs-ctrlchar-remover
     - sidneys1.gitconfig
     - visualstudioexptteam.vscodeintellicode

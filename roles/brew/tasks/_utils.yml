@@ -16,18 +16,22 @@
     - audio-hijack
     - haptickey
     - loopback
+    - magicprefs
     - nosleep
+    - osxfuse
     - sidequest
 
 - name: Install the miscs utils
   homebrew:
     name:
+      - broot
       - jq
       - mackup
       - p7zip
       - pandoc
       - rename
       - rsync
+      - terminal-notifier
       - unrar
       - watch
     state: present

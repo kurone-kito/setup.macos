@@ -23,6 +23,7 @@ echo 'Install the Ansible.'
 brew update
 brew list | grep ansible > /dev/null || brew install ansible
 brew outdated ansible || brew upgrade ansible
+brew cleanup
 
 echo 'Start the Ansible.'
 ansible-playbook --inventory localhost, --connection local playbook.yml
