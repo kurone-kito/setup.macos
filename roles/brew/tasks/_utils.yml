@@ -11,15 +11,15 @@
     name: "{{ item }}"
     state: present
   with_items:
-    - homebrew/cask-drivers/drobo-dashboard
+    # - homebrew/cask-drivers/drobo-dashboard
     - amorphousdiskmark
-    - audio-hijack
+    # - audio-hijack
     - haptickey
-    - loopback
-    - magicprefs
+    # - loopback
+    # - magicprefs
     - nosleep
     - osxfuse
-    - sidequest
+    # - sidequest
 
 - name: Install the miscs utils
   homebrew:

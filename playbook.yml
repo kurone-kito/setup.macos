@@ -3,6 +3,6 @@
   connection: local
   roles:
     - brew
-    - config
+    # - config
     - patch
     - teardown
