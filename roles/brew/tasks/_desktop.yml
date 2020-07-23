@@ -21,7 +21,6 @@
     name: "{{ item }}"
     state: present
   with_items:
-    - metasequoia
     - obs
 
 - name: Install the messaging apps
