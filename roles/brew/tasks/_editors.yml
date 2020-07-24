@@ -9,8 +9,11 @@
     name: "{{ item }}"
     state: present
   with_items:
+    - atom
+    - boost-note
     - grammarly
     - notion
+    - sublime-text
     - visual-studio-code
 
 - name: Install the plugins for Visual Studio Code

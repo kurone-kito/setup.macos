@@ -32,7 +32,9 @@
     - discord
     - messenger
     - keybase
+    - mattermost
     - skype
+    - zoomus
 
 - name: Install the Nyancat
   homebrew:
