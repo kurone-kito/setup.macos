@@ -4,7 +4,6 @@
     name: "{{ item }}"
     state: present
   with_items:
-    - parallels
     - virtualbox
     - virtualbox-extension-pack
     - vagrant
@@ -17,7 +16,6 @@
 - name: Install the plugins of Vagrant
   shell: "vagrant plugin install {{ item }}"
   with_items:
-    - vagrant-parallels
     - vagrant-reload
     - vagrant-vbguest
   when: item not in vagrant_plugins.stdout_lines
@@ -33,10 +31,4 @@
     name:
       - circleci
       - nektos/tap/act
-    state: present
-
-- name: Install the Wercker
-  homebrew_cask:
-    accept_external_apps: true
-    name: wercker-cli
     state: present

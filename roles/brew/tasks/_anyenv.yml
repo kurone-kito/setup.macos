@@ -39,11 +39,9 @@
 
 - name: Initialize the anyenv-update
   git:
-    repo: git@github.com:znz/anyenv-update.git
-    dest: "{{ item }}"
+    repo: https://github.com/znz/anyenv-update.git
+    dest: "{{ anyenv_root_path.stdout_lines }}"
     force: true
-  with_items:
-    - "{{ anyenv_root_path.stdout_lines }}"
 
 - name: Initialize the nodenv
   command: anyenv install nodenv -s
