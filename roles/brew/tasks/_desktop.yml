@@ -21,19 +21,20 @@
     name: "{{ item }}"
     state: present
   with_items:
-    # - metasequoia
     - obs
 
-# - name: Install the messaging apps
-#   homebrew_cask:
-#     accept_external_apps: true
-#     name: "{{ item }}"
-#     state: present
-#   with_items:
-#     - discord
-#     - messenger
-#     - keybase
-#     - skype
+- name: Install the messaging apps
+  homebrew_cask:
+    accept_external_apps: true
+    name: "{{ item }}"
+    state: present
+  with_items:
+    # - discord
+    # - messenger
+    - keybase
+    - mattermost
+    # - skype
+    # - zoomus
 
 - name: Install the Nyancat
   homebrew:

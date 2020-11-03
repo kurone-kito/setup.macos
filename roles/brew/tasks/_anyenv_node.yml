@@ -1,5 +1,5 @@
 - name: "Search the latest node v{{ node_ver }}"
-  command: "$SHELL -lc \". ~/.zshrc; nodenv install -l | grep -e '^\\s\\+\\({{ node_ver }}\\.\\d\\+\\.\\d\\+\\)' | tail -n 1 | xargs\""
+  command: "$SHELL -lc \". ~/.zshrc; nodenv install -l | grep -e '^\\({{ node_ver }}\\.\\d\\+\\.\\d\\+\\)' | tail -n 1 | xargs\""
   register: node_latest
   changed_when: false
 
