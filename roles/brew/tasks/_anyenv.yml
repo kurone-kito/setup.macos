@@ -35,6 +35,7 @@
 
 - name: set anyenv_root_path
   shell: echo $(anyenv root)/plugins/anyenv-update
+  changed_when: false
   register: anyenv_root_path
 
 - name: Initialize the anyenv-update
