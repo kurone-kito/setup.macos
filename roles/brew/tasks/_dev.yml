@@ -2,7 +2,6 @@
   homebrew:
     name:
       - mkcert
-      - nektos/tap/act
       - nss
     state: present
 
