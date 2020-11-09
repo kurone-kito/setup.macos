@@ -31,5 +31,6 @@
   with_items:
     - adoptopenjdk
     - android-studio
+    - ngrok
     - unity-hub
     - visual-studio

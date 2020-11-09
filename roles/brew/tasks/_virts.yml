@@ -29,6 +29,5 @@
 - name: Install the CLI for CI
   homebrew:
     name:
-      - circleci
-      - nektos/tap/act
+      - act
     state: present
