@@ -29,5 +29,5 @@
 - name: Install the CLI for CI
   homebrew:
     name:
-      - nektos/tap/act
+      - act
     state: present

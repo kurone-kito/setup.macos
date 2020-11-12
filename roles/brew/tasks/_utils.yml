@@ -24,6 +24,8 @@
   homebrew:
     name:
       - broot
+      - ffmpeg
+      - graphviz # Graphviz uses from PlantUML
       - jq
       - mackup
       - p7zip
