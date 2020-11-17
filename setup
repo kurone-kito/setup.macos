@@ -21,7 +21,7 @@ fi
 
 echo 'Install the Ansible.'
 brew update
-brew list | grep ansible > /dev/null || brew install ansible
+brew list --formula | grep ansible > /dev/null || brew install ansible
 brew outdated ansible || brew upgrade ansible
 brew cleanup
 
