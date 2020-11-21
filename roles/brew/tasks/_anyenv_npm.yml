@@ -2,10 +2,3 @@
   template:
     src: npm
     dest: "{{ ansible_env.HOME }}/.zsh.d/npm"
-
-- name: Install the node.js package globally
-  npm:
-    name: "{{ item }}"
-    global: yes
-  with_items:
-    - yarn
