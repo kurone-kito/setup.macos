@@ -33,6 +33,12 @@
       - rename
       - rsync
       - terminal-notifier
+      - thefuck
       - unrar
       - watch
     state: present
+
+- name: Deploy The Fuck settings
+  template:
+    src: thefuck
+    dest: "{{ ansible_env.HOME }}/.zsh.d/thefuck"
