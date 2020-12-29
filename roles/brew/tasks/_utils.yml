@@ -1,42 +1,6 @@
-- name: Install the auth utils
-  homebrew:
-    name:
-      - gnupg
-      - pinentry-mac
-    state: present
-
-- name: Install the utils for devices
-  homebrew_cask:
-    accept_external_apps: true
-    name: "{{ item }}"
-    state: present
-  with_items:
-    - homebrew/cask-drivers/drobo-dashboard
-    - amorphousdiskmark
-    - audio-hijack
-    - haptickey
-    - loopback
-    - nosleep
-    - osxfuse
-    - sidequest
-
-- name: Install the miscs utils
-  homebrew:
-    name:
-      - broot
-      - ffmpeg
-      - graphviz # Graphviz uses from PlantUML
-      - jq
-      - mackup
-      - p7zip
-      - pandoc
-      - rename
-      - rsync
-      - terminal-notifier
-      - thefuck
-      - unrar
-      - watch
-    state: present
+- name: Initialize the Git LFS
+  shell: git lfs install
+  changed_when: false
 
 - name: Deploy The Fuck settings
   template:

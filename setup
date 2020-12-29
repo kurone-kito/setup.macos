@@ -19,10 +19,10 @@ if [ $(which brew | wc -l) -eq 0 ]; then
   source .zsh.d/homebrew
 fi
 
-echo 'Install the Ansible.'
+echo 'Install the Bundle.'
 brew update
-brew list --formula | grep ansible > /dev/null || brew install ansible
-brew outdated ansible || brew upgrade ansible
+brew bundle --file './Brewfile/Brewfile'
+brew upgrade
 brew cleanup
 
 echo 'Start the Ansible.'

@@ -1,13 +1,3 @@
-- name: Install the Virtualization tools
-  homebrew_cask:
-    accept_external_apps: true
-    name: "{{ item }}"
-    state: present
-  with_items:
-    - virtualbox
-    - virtualbox-extension-pack
-    - vagrant
-
 - name: Collect the plugins of Vagrant
   shell: "vagrant plugin list | awk '{ print $1 }'"
   register: vagrant_plugins
@@ -19,15 +9,3 @@
     - vagrant-reload
     - vagrant-vbguest
   when: item not in vagrant_plugins.stdout_lines
-
-- name: Install the Docker
-  homebrew_cask:
-    accept_external_apps: true
-    name: docker
-    state: present
-
-- name: Install the CLI for CI
-  homebrew:
-    name:
-      - act
-    state: present
