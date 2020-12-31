@@ -2,7 +2,7 @@
   hosts: all
   connection: local
   roles:
-    - brew
+    - install
     - config
     - patch
     - teardown
