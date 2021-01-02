@@ -24,6 +24,3 @@ brew update
 brew bundle --file './Brewfile/Brewfile'
 brew upgrade
 brew cleanup
-
-echo 'Start the Ansible.'
-ansible-playbook --inventory localhost, --connection local playbook.yml

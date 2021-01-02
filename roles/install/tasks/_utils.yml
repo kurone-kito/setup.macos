@@ -1,8 +1,0 @@
-- name: Initialize the Git LFS
-  shell: git lfs install
-  changed_when: false
-
-- name: Deploy The Fuck settings
-  template:
-    src: thefuck
-    dest: "{{ ansible_env.HOME }}/.zsh.d/thefuck"

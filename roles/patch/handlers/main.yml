@@ -1,2 +1,0 @@
-- name: Reboot
-  import_tasks: ../_common/handlers/reboot.yml
