@@ -19,8 +19,8 @@ if [ $(which brew | wc -l) -eq 0 ]; then
   source .zsh.d/homebrew
 fi
 
-echo 'Install the Bundle.'
+echo 'Install from Homebrew Bundle.'
 brew update
-brew bundle --file './Brewfile/Brewfile'
+brew bundle --file 'Brewfile'
 brew upgrade
 brew cleanup

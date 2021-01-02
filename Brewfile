@@ -10,6 +10,7 @@ brew 'ffmpeg'
 cask 'audio-hijack'
 cask 'loopback'
 cask 'obs'
+cask 'vlc'
 
 # Cloud storages
 cask 'adobe-creative-cloud'
@@ -17,7 +18,6 @@ cask 'dropbox'
 cask 'omnipresence'
 
 # Development
-brew 'ansible'
 brew 'gcc'
 brew 'jq'
 brew 'pict'
@@ -44,8 +44,12 @@ brew 'mdp'
 # brew 'pandoc' # ! x86_64?
 
 # Devices
+cask 'canon-mf-printer'
 cask 'drobo-dashboard'
-cask 'haptickey' # ! Problem on M1 environment
+cask 'logitech-firmwareupdatetool'
+cask 'logitech-g-hub'
+cask 'logitech-gaming-software'
+# cask 'haptickey' # ! Problem on M1 environment
 
 # Files
 brew 'broot'
@@ -68,7 +72,7 @@ brew 'git'
 brew 'gist'
 brew 'git-lfs'
 brew 'hub'
-# brew 'nektos/tap/act' # ! x86_64?
+# cask 'act' # ! x86_64?
 
 # Messaging
 brew 'mmctl'
@@ -89,16 +93,14 @@ brew 'curl'
 brew 'inetutils' # includes the telnet
 brew 'wget'
 # cask 'osxfuse'
-cask 'vlc'
+cask 'vnc-viewer'
 
 # Shell
-brew 'bash'
+cask 'dotnet'
+cask 'powershell'
 brew 'terminal-notifier'
 brew 'thefuck'
-brew 'zsh'
 brew 'zsh-completions'
-cask 'dotnet-sdk'
-cask 'powershell'
 
 # Signature
 brew 'gnupg'

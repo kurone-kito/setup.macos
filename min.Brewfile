@@ -6,10 +6,11 @@ tap 'homebrew/core'
 # tap 'nektos/tap' # ! x86_64?
 
 # Audio & Broadcasting
-# brew 'ffmpeg'
-# cask 'audio-hijack'
+brew 'ffmpeg'
+cask 'audio-hijack'
 cask 'loopback'
 cask 'obs'
+# cask 'vlc'
 
 # Cloud storages
 # cask 'adobe-creative-cloud'
@@ -45,7 +46,7 @@ brew 'mdp'
 
 # Devices
 # cask 'drobo-dashboard'
-cask 'haptickey' # ! Problem on M1 environment
+# cask 'haptickey' # ! Problem on M1 environment
 
 # Files
 brew 'broot'
@@ -89,16 +90,14 @@ brew 'curl'
 brew 'inetutils' # includes the telnet
 brew 'wget'
 # cask 'osxfuse'
-cask 'vlc'
+cask 'vnc-viewer'
 
 # Shell
-brew 'bash'
+cask 'dotnet'
+cask 'powershell'
 brew 'terminal-notifier'
 brew 'thefuck'
-brew 'zsh'
 brew 'zsh-completions'
-cask 'dotnet-sdk'
-cask 'powershell'
 
 # Signature
 brew 'gnupg'
