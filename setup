@@ -30,3 +30,10 @@ mkdir -p "${ZDOTDIR:-$HOME}/.anyenv/plugins"
 mkdir -p "${ZDOTDIR:-$HOME}/.config/anyenv"
 git_clone_if_not_exists znz/anyenv-update .anyenv/plugins/anyenv-update
 git_clone_if_not_exists anyenv/anyenv-install .config/anyenv/anyenv-install
+
+echo 'Install the Prezto.'
+for rcfile in $(find "${ZDOTDIR:-$HOME}"/.zprezto/runcoms -type f -name 'z*'); do
+  DST="${ZDOTDIR:-$HOME}/.${rcfile##*/}"
+  rm -f "${DST}"
+  ln -s "${rcfile}" "${DST}"
+done
