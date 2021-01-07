@@ -31,9 +31,14 @@ mkdir -p "${ZDOTDIR:-$HOME}/.config/anyenv"
 git_clone_if_not_exists znz/anyenv-update .anyenv/plugins/anyenv-update
 git_clone_if_not_exists anyenv/anyenv-install .config/anyenv/anyenv-install
 
-echo 'Install the Prezto.'
+echo 'Install the Prezto / zsh.d.'
+function force_link() {
+  rm -rf "${2}"
+  ln -s "${1}" "${2}"
+}
 for rcfile in $(find "${ZDOTDIR:-$HOME}"/.zprezto/runcoms -type f -name 'z*'); do
-  DST="${ZDOTDIR:-$HOME}/.${rcfile##*/}"
-  rm -f "${DST}"
-  ln -s "${rcfile}" "${DST}"
+  force_link "${rcfile}" "${ZDOTDIR:-$HOME}/.${rcfile##*/}"
+done
+for rcfile in $(find "$(pwd)" -name '.z*'); do
+  force_link "${rcfile}" "${ZDOTDIR:-$HOME}/${rcfile##*/}"
 done
