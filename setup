@@ -42,3 +42,8 @@ done
 for rcfile in $(find "$(pwd)" -name '.z*'); do
   force_link "${rcfile}" "${ZDOTDIR:-$HOME}/${rcfile##*/}"
 done
+
+echo 'Install the Anyenv & Nodenv.'
+source .zsh.d/anyenv
+anyenv install nodenv -s
+source .zsh.d/anyenv
