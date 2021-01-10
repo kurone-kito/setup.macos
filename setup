@@ -4,9 +4,8 @@
 set -eu
 cd $(dirname $0)
 
-echo "NOTE: If the GUI installer launches, do not proceed until it is complete."
-xcode-select --install 2> /dev/null || true
-sudo xcodebuild -runFirstLaunch
+./.setup.xcode.sh
+
 if [ $(which brew | wc -l) -eq 0 ]; then
   echo 'Install the Homebrew.'
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
