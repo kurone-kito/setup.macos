@@ -47,3 +47,7 @@ echo 'Install the Anyenv & Nodenv.'
 source .zsh.d/anyenv
 anyenv install nodenv -s
 source .zsh.d/anyenv
+
+mkdir -p "${ZDOTDIR:-$HOME}/bin"
+force_link "$(pwd)/bin/update" "${ZDOTDIR:-$HOME}/bin/update"
+"${ZDOTDIR:-$HOME}/bin/update"

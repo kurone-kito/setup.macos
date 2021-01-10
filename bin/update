@@ -1,0 +1,26 @@
+#!/bin/sh
+# vim: set ft=sh :
+
+set -eu
+
+brew update
+brew upgrade
+brew cleanup
+
+vagrant plugin update
+anyenv update
+
+git -C "${ZDOTDIR:-$HOME}/.config/anyenv/anyenv-install" pull
+git -C "${ZDOTDIR:-$HOME}/.zprezto" pull
+
+function install_nodejs() {
+  LATEST=$(nodenv install -l | grep -e "^${1}\." | tail -n 1 | xargs)
+  nodenv install -s "${LATEST}"
+  nodenv global "${LATEST}"
+  npm install -g npm@latest
+  npm upgrade -g
+  npm install -g yarn@latest
+}
+install_nodejs 12
+install_nodejs 14
+install_nodejs 15
