@@ -8,6 +8,8 @@ cd $(dirname $0)
 ./.setup.brew.sh
 ./.setup.git.sh
 
+source .setup.lib.sh
+
 echo 'Install the Prezto / zsh.d.'
 function force_link() {
   rm -rf "${2}"
