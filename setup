@@ -7,20 +7,9 @@ cd $(dirname $0)
 ./.setup.xcode.sh
 ./.setup.brew.sh
 ./.setup.git.sh
+./.setup.prezto.sh
 
 source .setup.lib.sh
-
-echo 'Install the Prezto / zsh.d.'
-function force_link() {
-  rm -rf "${2}"
-  ln -s "${1}" "${2}"
-}
-for rcfile in $(find "${ZDOTDIR:-$HOME}"/.zprezto/runcoms -type f -name 'z*'); do
-  force_link "${rcfile}" "${ZDOTDIR:-$HOME}/.${rcfile##*/}"
-done
-for rcfile in $(find "$(pwd)" -name '.z*'); do
-  force_link "${rcfile}" "${ZDOTDIR:-$HOME}/${rcfile##*/}"
-done
 
 echo 'Install the Anyenv & Nodenv.'
 source .zsh.d/anyenv
