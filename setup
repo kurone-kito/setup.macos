@@ -8,14 +8,4 @@ cd $(dirname $0)
 ./.setup.brew.sh
 ./.setup.git.sh
 ./.setup.prezto.sh
-
-source .setup.lib.sh
-
-echo 'Install the Anyenv & Nodenv.'
-source .zsh.d/anyenv
-anyenv install nodenv -s
-source .zsh.d/anyenv
-
-mkdir -p "${ZDOTDIR:-$HOME}/bin"
-force_link "$(pwd)/bin/update" "${ZDOTDIR:-$HOME}/bin/update"
-"${ZDOTDIR:-$HOME}/bin/update"
+./.setup.anyenv.sh
