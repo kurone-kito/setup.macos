@@ -9,3 +9,4 @@ cd $(dirname $0)
 ./.setup.git.sh
 ./.setup.prezto.sh
 ./.setup.anyenv.sh
+./.setup.defaults.sh
