@@ -10,3 +10,4 @@ cd $(dirname $0)
 ./.setup.prezto.sh
 ./.setup.anyenv.sh
 ./.setup.defaults.sh
+./.setup.network.sh
