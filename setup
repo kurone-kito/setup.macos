@@ -7,6 +7,7 @@ cd $(dirname $0)
 ./.setup.xcode.sh
 ./.setup.brew.sh
 ./.setup.git.sh
+./.setup.virtualization.sh
 ./.setup.prezto.sh
 ./.setup.anyenv.sh
 ./.setup.defaults.sh
