@@ -81,6 +81,4 @@ preinstall
 app_install virtualbox virtualbox-extension-pack
 app_install vagrant
 
-plugin_install vagrant-reload
-
 vagrant up --provision

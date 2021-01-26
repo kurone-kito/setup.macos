@@ -1,10 +1,6 @@
 # -*- mode: ruby -*-
 # vim: set ft=ruby :
 
-unless Vagrant.has_plugin?('vagrant-reload')
-  raise 'vagrant-reload is not installed!'
-end
-
 audio_driver = case RUBY_PLATFORM
   when /linux/
     'alsa'
