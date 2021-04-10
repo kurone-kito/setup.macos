@@ -1,4 +1,0 @@
-- name: Deploy the npm settings
-  template:
-    src: npm
-    dest: "{{ ansible_env.HOME }}/.zsh.d/npm"

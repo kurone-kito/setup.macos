@@ -1,10 +1,6 @@
 # -*- mode: ruby -*-
 # vim: set ft=ruby :
 
-unless Vagrant.has_plugin?('vagrant-reload')
-  raise 'vagrant-reload is not installed!'
-end
-
 audio_driver = case RUBY_PLATFORM
   when /linux/
     'alsa'
@@ -28,14 +24,14 @@ guest_iso = case RUBY_PLATFORM
 
 
 Vagrant.configure('2') do |config|
-  config.vm.box = 'yzgyyang/macOS-10.14'
+  config.vm.box = 'ramsey/macos-catalina'
   config.vm.box_check_update = true
   config.vm.provider 'virtualbox' do |vb|
     vb.gui = true
-    vb.cpus = 2
+    vb.cpus = 4
     vb.linked_clone = true
-    vb.name = 'macOS'
-    vb.memory = '6144'
+    vb.name = 'setup.macos'
+    vb.memory = '8192'
     vb.customize [
       'modifyvm', :id,
       '--accelerate3d', 'on', # default: off
@@ -61,7 +57,7 @@ Vagrant.configure('2') do |config|
       '--paravirtprovider', 'minimal', # default: default
       '--rtcuseutc', 'off', # default: on
       '--usbxhci', 'on', # default: on
-      '--vram', '128', # default: 128
+      '--vram', '256', # default: 128
       '--vtxvpid', 'on', # default: on
       '--vtxux', 'on', # default: on
       '--x2apic', 'on', # default: off

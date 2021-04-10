@@ -4,26 +4,11 @@
 set -eu
 cd $(dirname $0)
 
-echo 'Add this script to the start-up macOS.'
-export REBOOT_FILE=/tmp/.setup.macos.reboot
-rm -rf ${REBOOT_FILE}
-path=$(cd $(dirname $0); pwd)/${0##*/}
-osa_args="{path:\"${path}\", hidden:false, name:\"${0##*/}\"}"
-osascript -e "tell application \"System Events\" to make login item at end with properties ${osa_args}"
-
-xcode-select --install || true
-sudo xcodebuild -runFirstLaunch
-if [ $(which brew | wc -l) -eq 0 ]
-then
-  echo 'Install the Homebrew.'
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
-
-echo 'Install the Ansible.'
-brew update
-brew list --formula | grep ansible > /dev/null || brew install ansible
-brew outdated ansible || brew upgrade ansible
-brew cleanup
-
-echo 'Start the Ansible.'
-ansible-playbook --inventory localhost, --connection local playbook.yml
+./.setup.xcode.sh
+./.setup.brew.sh
+./.setup.git.sh
+./.setup.virtualization.sh
+./.setup.prezto.sh
+./.setup.anyenv.sh
+./.setup.defaults.sh
+./.setup.network.sh

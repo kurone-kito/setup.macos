@@ -3,12 +3,6 @@
 set -eu
 cd $(dirname $0)
 
-# Validation
-if [ $# -eq 0 ]; then
-    echo "Usage: ./test win{7|8.1|10}"
-    exit 255
-fi
-
 # Install some dependencies
 preinstall() {
     case "$(uname -s)" in
@@ -19,8 +13,8 @@ preinstall() {
                 xcode-select --install
             fi
             brew update
-            installer="brew cask install"
-            installed_list="brew cask list"
+            installer="brew install"
+            installed_list="brew list --cask"
             ;;
         'Linux')
             echo "switch by distributions"
@@ -87,6 +81,4 @@ preinstall
 app_install virtualbox virtualbox-extension-pack
 app_install vagrant
 
-plugin_install vagrant-reload
-
-vagrant up --provision $1
+vagrant up --provision
