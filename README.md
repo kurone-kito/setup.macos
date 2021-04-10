@@ -250,33 +250,3 @@ vagrant up
 ## License
 
 MIT
-
----
-
-# Migrated to the Brewfile, available M1 and Big Sur
-
-- Migrated from the Ansible.
-  - Migrated to the Brewfile. (c734456, aba4c6d, aaf670f, 5c22232, 64d1373, 2eff43f)
-- suppressed the error on installation CLT for Xcode. (b99bc9c, ee6ab19)
-- Removed the startup registration. (b440303)
-
-## Others updates
-
-- Improved the documents (2268c8b)
-- Improved the .gitignore (2fa1853)
-
----
-
-0fd5108 feat: added the Vagrant plugins installation
-d3ce601 feat: added the network initialization
-bfafef8 feat: added the macOS defaults settings
-47ee807 refactor: split that the installation scripts of the
-4a410f5 refactor: split that the installation scripts of the
-0a0ad29 refactor: split the common functions of installation
-0f9c63a refactor: split that the installation scripts from Gi
-5ca74a6 feat: added the updater
-6defa9c feat: added the anyenv & nodenv installation
-bd96839 feat: added the .zsh.d
-2209e18 feat: added the prezto installation
-909dbb2 feat: added the installation from GitHub
-e34eea0 refactor: renamed the role name
