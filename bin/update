@@ -16,10 +16,10 @@ function install_nodejs() {
   LATEST=$(nodenv install -l | grep -e "^${1}\." | tail -n 1 | xargs)
   nodenv install -s "${LATEST}"
   nodenv global "${LATEST}"
-  npm install -g npm@latest
+  npm install -g npm@${2}
   npm upgrade -g
   npm install -g yarn@latest
 }
-install_nodejs 12
-install_nodejs 14
-install_nodejs 15
+install_nodejs 12 6
+install_nodejs 14 6
+install_nodejs 15 7
