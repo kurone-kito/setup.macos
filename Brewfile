@@ -135,12 +135,12 @@ cask 'google-chrome'
 # mas 'Kindle', id: 405399194
 # mas 'LINE', id: 539883307
 # mas 'Messenger', id: 1480068668
-# mas 'Numbers', id: 409203825
 # mas 'Microsoft Excel', id: 462058435
 # mas 'Microsoft OneNote', id: 784801555
 # mas 'Microsoft PowerPoint', id: 462062816
 # mas 'Microsoft Remote Desktop', id: 1295203466
 # mas 'Microsoft Word', id: 462054704
+# mas 'Numbers', id: 409203825
 # mas 'OmniFocus', id: 1474135619
 # mas 'OneDrive', id: 823766827
 # mas 'Pages', id: 409201541

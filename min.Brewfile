@@ -18,7 +18,6 @@ cask 'obs'
 cask 'omnipresence'
 
 # Development
-brew 'ansible'
 brew 'gcc'
 brew 'jq'
 brew 'pict'
@@ -26,8 +25,8 @@ cask 'adoptopenjdk'
 
 # Development: IDE
 brew 'vim'
-# cask 'atom'
-# cask 'sublime-text'
+cask 'atom'
+cask 'sublime-text'
 cask 'visual-studio-code'
 
 # Development: for Mobile apps
@@ -45,7 +44,11 @@ brew 'mdp'
 # brew 'pandoc' # ! x86_64?
 
 # Devices
+# cask 'canon-mf-printer'
 # cask 'drobo-dashboard'
+# cask 'logitech-firmwareupdatetool'
+# cask 'logitech-g-hub'
+# cask 'logitech-gaming-software'
 # cask 'haptickey' # ! Problem on M1 environment
 
 # Files
@@ -69,7 +72,7 @@ brew 'git'
 brew 'gist'
 brew 'git-lfs'
 brew 'hub'
-# brew 'nektos/tap/act' # ! x86_64?
+# cask 'act' # ! x86_64?
 
 # Messaging
 brew 'mmctl'
@@ -132,12 +135,12 @@ cask 'google-chrome'
 # # mas 'Kindle', id: 405399194
 # # mas 'LINE', id: 539883307
 # # mas 'Messenger', id: 1480068668
-# mas 'Numbers', id: 409203825
 # # mas 'Microsoft Excel', id: 462058435
 # # mas 'Microsoft OneNote', id: 784801555
 # # mas 'Microsoft PowerPoint', id: 462062816
 # # mas 'Microsoft Remote Desktop', id: 1295203466
 # # mas 'Microsoft Word', id: 462054704
+# mas 'Numbers', id: 409203825
 # mas 'OmniFocus', id: 1474135619
 # mas 'OneDrive', id: 823766827
 # mas 'Pages', id: 409201541
