@@ -106,6 +106,7 @@ brew 'thefuck'
 brew 'zsh-completions'
 
 # Signature
+brew 'unbound', restart_service: true
 brew 'gnupg'
 brew 'pinentry-mac'
 

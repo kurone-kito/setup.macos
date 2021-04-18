@@ -90,6 +90,7 @@ Unless otherwise specified, as a general rule, install via Homebrew.
 
 - [GnuPG: The GNU Privacy Guard](https://gnupg.org)
 - [PINEntry for Mac](https://github.com/GPGTools/pinentry)
+- [Unbound](https://www.nlnetlabs.nl/projects/unbound/)
 
 #### Virtualizations
 
