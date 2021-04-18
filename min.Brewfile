@@ -30,7 +30,7 @@ cask 'adoptopenjdk'
 brew 'vim'
 cask 'atom'
 cask 'sublime-text'
-cask 'visual-studio-code'
+cask 'visual-studio-code', greedy: true
 
 # Development: for Mobile apps
 # cask 'android-studio'
@@ -123,8 +123,8 @@ cask 'vagrant'
 
 # Web browsers
 brew 'links'
-cask 'firefox'
-cask 'google-chrome'
+cask 'firefox', greedy: true
+cask 'google-chrome', greedy: true
 
 # mas
 # mas 'Cinebench', id: 1438772273
