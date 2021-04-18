@@ -10,14 +10,14 @@ tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/core'
-# tap 'nektos/tap' # ! x86_64?
+tap 'nektos/tap' unless is_m1?
 
 # Audio & Broadcasting
 brew 'ffmpeg'
 cask 'audio-hijack'
 cask 'loopback'
-cask 'obs'
-# cask 'vlc'
+cask 'obs' unless is_m1? # ! The stable version can't capture the screen correctly with Apple M1.
+cask 'vlc'
 
 # Cloud storages
 # cask 'adobe-creative-cloud'
@@ -48,7 +48,7 @@ cask 'ngrok'
 # Documentations
 brew 'graphviz'
 brew 'mdp'
-# brew 'pandoc' # ! x86_64?
+brew 'pandoc' unless is_m1? # ! x86_64?
 
 # Devices
 # cask 'canon-mf-printer'
@@ -56,7 +56,7 @@ brew 'mdp'
 # cask 'logitech-firmwareupdatetool'
 # cask 'logitech-g-hub'
 # cask 'logitech-gaming-software'
-# cask 'haptickey' # ! Problem on M1 environment
+# cask 'haptickey' unless is_m1? # ! Problem on M1 environment
 
 # Files
 brew 'broot'
@@ -79,7 +79,7 @@ brew 'git'
 brew 'gist'
 brew 'git-lfs'
 brew 'hub'
-# cask 'act' # ! x86_64?
+cask 'act' unless is_m1? # ! x86_64?
 
 # Messaging
 brew 'mmctl'
@@ -120,11 +120,11 @@ cask 'grammarly'
 cask 'notion'
 
 # Virtualizations
-# cask 'docker' # ! Use the technical preview
-# cask 'parallels' # ! Use the technical preview
+cask 'docker' unless is_m1? # ! Use the technical preview
+cask 'parallels' unless is_m1? # ! Use the technical preview
 cask 'vagrant'
-# cask 'virtualbox' # ! x86_64?
-# cask 'virtualbox-extension-pack' # ! x86_64?
+cask 'virtualbox' unless is_m1? # ! x86_64?
+cask 'virtualbox-extension-pack' unless is_m1? # ! x86_64?
 
 # Web browsers
 brew 'links'
