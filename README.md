@@ -157,7 +157,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 #### Messaging
 
-- [Discord](https://discord.com)
+- [Discord Public Test Build](https://discord.com)
 - [Mattermost / with CLI tools](https://mattermost.com)
 - [Keybase](https://keybase.io)
 - [Microsoft Skype](https://www.skype.com/)

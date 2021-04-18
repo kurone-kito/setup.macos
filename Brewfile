@@ -2,6 +2,7 @@ tap 'homebrew/bundle'
 tap 'homebrew/cask'
 tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
+tap 'homebrew/cask-versions'
 tap 'homebrew/core'
 # tap 'nektos/tap' # ! x86_64?
 
@@ -76,7 +77,7 @@ brew 'hub'
 
 # Messaging
 brew 'mmctl'
-cask 'discord'
+cask 'discord-ptb'
 cask 'mattermost'
 cask 'keybase'
 cask 'skype'
