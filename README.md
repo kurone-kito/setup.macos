@@ -28,6 +28,10 @@ Unless otherwise specified, as a general rule, install via Homebrew.
 <!-- markdownlint-disable MD033 -->
 <details><summary>CLI Apps</summary>
 
+| note | description          |
+| :--: | :------------------- |
+| `-M` | without M1 Processor |
+
 #### Audio
 
 - [FFmpeg](https://www.ffmpeg.org)
@@ -68,6 +72,7 @@ Unless otherwise specified, as a general rule, install via Homebrew.
 
 #### Version control system
 
+- `(-M)` [act](https://github.com/nektos/act)
 - [Git](https://git-scm.com)
 - [Gist](http://defunkt.io/gist/)
 - [Git Large File Storage](https://git-lfs.github.com)
@@ -90,6 +95,7 @@ Unless otherwise specified, as a general rule, install via Homebrew.
 
 - [GnuPG: The GNU Privacy Guard](https://gnupg.org)
 - [PINEntry for Mac](https://github.com/GPGTools/pinentry)
+- [Unbound](https://www.nlnetlabs.nl/projects/unbound/)
 
 #### Virtualizations
 
@@ -118,11 +124,16 @@ Unless otherwise specified, as a general rule, install via Homebrew.
 Apps that exist in the Mac App Store are temporarily not installed by this script. It's because the installation is unstable and very slow.  
 Mac App Store からインストール可能なアプリは、このスクリプトでは暫定的にインストールしないようにしています。インストールが不安定かつ非常に低速となるためです。
 
+| note | description          |
+| :--: | :------------------- |
+| `-M` | without M1 Processor |
+
 #### Audio & Broadcasting
 
 - [Rogue Amoeba Audio Hijack](https://rogueamoeba.com/audiohijack/)
 - [Rogue Amoeba Loopback](https://rogueamoeba.com/loopback/)
-- [OBS Studio](https://obsproject.com/)
+- `(-M)` [OBS Studio](https://obsproject.com/)
+  - The stable version can't capture the screen correctly with Apple M1.
 - [VLC Player](https://obsproject.com/)
 
 #### Cloud storages
@@ -141,7 +152,10 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 #### Devices
 
+- [Canon Satera MF Printer driver](https://cweb.canon.jp/satera/mfp/)
 - [Drobo Dashboard](https://www.drobo.com/)
+- `(-M)` [HapticKey](https://github.com/niw/HapticKey)
+- [logicool G Hub](https://gaming.logicool.co.jp/ja-jp/innovation/g-hub.html)
 
 #### Games
 
@@ -157,7 +171,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 #### Messaging
 
-- [Discord](https://discord.com)
+- [Discord Public Test Build](https://discord.com)
 - [Mattermost / with CLI tools](https://mattermost.com)
 - [Keybase](https://keybase.io)
 - [Microsoft Skype](https://www.skype.com/)
@@ -170,6 +184,12 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 #### Terminal
 
 - [terminal-notifier](https://github.com/julienXX/terminal-notifier)
+
+#### Virtualizations
+
+- `(-M)` [Docker Desktop](https://www.docker.com/products/docker-desktop)
+- `(-M)` [Parallels Desktop](https://www.parallels.com/)
+- `(-M)` [Oracle VM Virtualbox + Extension Pack](https://www.virtualbox.org)
 
 #### Web browsers
 
@@ -191,7 +211,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 ### Install the upgrade script
 
-一つのコマンドだけで、インストールしたアプリをアップグレードするスクリプトをインストールします。
+ひとつのコマンドだけで、インストールしたアプリをアップグレードするスクリプトをインストールします。
 
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD033 -->
@@ -215,7 +235,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 The script creates a symbolic link to the Prezto default profile.
 Also, add a definition so that you can scan under the `~/.zsh.d` folder when starting the interactive shell.  
 セットアップ スクリプトは Prezto 既定のプロファイルへシンボリックリンクを作成します。
-同時に対話シェル開始時に `~/.zsh.d` フォルダ配下をスキャンできるように定義を追加しています。
+同時に、対話シェル開始時に `~/.zsh.d` フォルダ配下をスキャンできるよう定義を追加しています。
 
 ### Initialize for web-frontend development environment
 

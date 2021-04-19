@@ -1,16 +1,23 @@
+# vim: set ft=ruby :
+
+def is_m1?
+  !RUBY_PLATFORM.index("arm64e").nil?
+end
+
 tap 'homebrew/bundle'
 tap 'homebrew/cask'
 tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
+tap 'homebrew/cask-versions'
 tap 'homebrew/core'
-# tap 'nektos/tap' # ! x86_64?
+tap 'nektos/tap' unless is_m1?
 
 # Audio & Broadcasting
 brew 'ffmpeg'
 cask 'audio-hijack'
 cask 'loopback'
-cask 'obs'
-# cask 'vlc'
+cask 'obs' unless is_m1? # ! The stable version can't capture the screen correctly with Apple M1.
+cask 'vlc'
 
 # Cloud storages
 # cask 'adobe-creative-cloud'
@@ -18,7 +25,6 @@ cask 'obs'
 cask 'omnipresence'
 
 # Development
-brew 'ansible'
 brew 'gcc'
 brew 'jq'
 brew 'pict'
@@ -26,9 +32,9 @@ cask 'adoptopenjdk'
 
 # Development: IDE
 brew 'vim'
-# cask 'atom'
-# cask 'sublime-text'
-cask 'visual-studio-code'
+cask 'atom'
+cask 'sublime-text'
+cask 'visual-studio-code', greedy: true
 
 # Development: for Mobile apps
 # cask 'android-studio'
@@ -42,11 +48,15 @@ cask 'ngrok'
 # Documentations
 brew 'graphviz'
 brew 'mdp'
-# brew 'pandoc' # ! x86_64?
+brew 'pandoc' unless is_m1? # ! x86_64?
 
 # Devices
+# cask 'canon-mf-printer'
 # cask 'drobo-dashboard'
-# cask 'haptickey' # ! Problem on M1 environment
+# cask 'logitech-firmwareupdatetool'
+# cask 'logitech-g-hub'
+# cask 'logitech-gaming-software'
+# cask 'haptickey' unless is_m1? # ! Problem on M1 environment
 
 # Files
 brew 'broot'
@@ -69,11 +79,11 @@ brew 'git'
 brew 'gist'
 brew 'git-lfs'
 brew 'hub'
-# brew 'nektos/tap/act' # ! x86_64?
+cask 'act' unless is_m1? # ! x86_64?
 
 # Messaging
 brew 'mmctl'
-# cask 'discord'
+# cask 'discord-ptb'
 cask 'mattermost'
 cask 'keybase'
 # cask 'skype'
@@ -100,6 +110,7 @@ brew 'thefuck'
 brew 'zsh-completions'
 
 # Signature
+brew 'unbound', restart_service: true
 brew 'gnupg'
 brew 'pinentry-mac'
 
@@ -109,22 +120,23 @@ cask 'grammarly'
 cask 'notion'
 
 # Virtualizations
-# cask 'docker' # ! Use the technical preview
-# cask 'parallels' # ! Use the technical preview
+cask 'docker' unless is_m1? # ! Use the technical preview
+cask 'parallels' unless is_m1? # ! Use the technical preview
 cask 'vagrant'
-# cask 'virtualbox' # ! x86_64?
-# cask 'virtualbox-extension-pack' # ! x86_64?
+cask 'virtualbox' unless is_m1? # ! x86_64?
+cask 'virtualbox-extension-pack' unless is_m1? # ! x86_64?
 
 # Web browsers
 brew 'links'
-cask 'firefox'
-cask 'google-chrome'
+cask 'firefox', greedy: true
+cask 'google-chrome', greedy: true
 
 # mas
 # mas 'Cinebench', id: 1438772273
 # mas 'Developer', id: 640199958
 # mas 'Disk Speed Test', id: 1480068668
 # # mas 'GarageBand', id: 682658836
+# mas "GFXBench Metal", id: 1044629456
 # mas 'Grammarly for Safari', id: 1462114288
 # # mas 'Human Resource Machine', id: 1005728312
 # # mas 'iMovie', id: 408981434
@@ -132,15 +144,17 @@ cask 'google-chrome'
 # # mas 'Kindle', id: 405399194
 # # mas 'LINE', id: 539883307
 # # mas 'Messenger', id: 1480068668
-# mas 'Numbers', id: 409203825
 # # mas 'Microsoft Excel', id: 462058435
 # # mas 'Microsoft OneNote', id: 784801555
 # # mas 'Microsoft PowerPoint', id: 462062816
 # # mas 'Microsoft Remote Desktop', id: 1295203466
+# # mas "Microsoft To Do", id: 1274495053
 # # mas 'Microsoft Word', id: 462054704
+# mas 'Numbers', id: 409203825
 # mas 'OmniFocus', id: 1474135619
 # mas 'OneDrive', id: 823766827
 # mas 'Pages', id: 409201541
 # # mas 'Remote Desktop', id: 409907375
 # mas 'Slack', id: 803453959
+# # mas "Twitter", id: 1482454543
 # mas 'Xcode', id: 497799835
