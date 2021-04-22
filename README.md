@@ -44,7 +44,7 @@ Unless otherwise specified, as a general rule, install via Homebrew.
     - [Node.js](https://nodejs.org/) (via Nodenv)
       - v12 LTS Erbium
       - v14 LTS Fermium
-      - v15 LTS
+      - v16
   - plugin: [anyenv-update](https://github.com/znz/anyenv-update) (via GitHub)
 - [GCC: the GNU Compiler Collection](https://gcc.gnu.org)
 - [jq](https://stedolan.github.io/jq/)
