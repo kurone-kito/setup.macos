@@ -15,3 +15,5 @@ brew update
 brew bundle --file 'Brewfile'
 brew upgrade
 brew cleanup
+brew autoupdate delete
+brew autoupdate start

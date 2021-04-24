@@ -4,6 +4,7 @@ def is_m1?
   !RUBY_PLATFORM.index("arm64e").nil?
 end
 
+tap 'homebrew/autoupdate'
 tap 'homebrew/bundle'
 tap 'homebrew/cask'
 tap 'homebrew/cask-drivers'
