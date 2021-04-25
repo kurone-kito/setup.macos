@@ -11,7 +11,6 @@ if [ $(which brew | wc -l) -eq 0 ]; then
 fi
 
 printf '\033[2;36m%s\033[m\n' 'Installing the Homebrew bundles.'
-brew update
 brew bundle --file 'Brewfile'
 brew upgrade
 brew cleanup
