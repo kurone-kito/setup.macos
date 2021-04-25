@@ -4,11 +4,13 @@ def is_m1?
   !RUBY_PLATFORM.index("arm64e").nil?
 end
 
+tap 'homebrew/autoupdate'
 tap 'homebrew/bundle'
 tap 'homebrew/cask'
 tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
+tap 'homebrew/command-not-found'
 tap 'homebrew/core'
 tap 'nektos/tap' unless is_m1?
 
@@ -79,7 +81,7 @@ brew 'git'
 brew 'gist'
 brew 'git-lfs'
 brew 'hub'
-cask 'act' unless is_m1? # ! x86_64?
+brew 'act' unless is_m1? # ! x86_64?
 
 # Messaging
 brew 'mmctl'
