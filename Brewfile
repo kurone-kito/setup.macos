@@ -81,7 +81,7 @@ brew 'git'
 brew 'gist'
 brew 'git-lfs'
 brew 'hub'
-cask 'act' unless is_m1? # ! x86_64?
+brew 'act' unless is_m1? # ! x86_64?
 
 # Messaging
 brew 'mmctl'
