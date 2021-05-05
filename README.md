@@ -6,7 +6,7 @@ macOS Big Sur (intel / M1 両対応) 向けの作業環境セットアップス�
 ## Overview
 
 Fully automate the installation and settings of the app to make it easier to create an environment when you buy a new Mac.  
-新しい Mac を購入した際に、より手軽に環境構築るために、アプリのインストールや設定を全自動化します。
+新しい Mac を購入した際に、より手軽に環境構築するために、アプリのインストールや設定を全自動化します。
 
 ## Usage
 
