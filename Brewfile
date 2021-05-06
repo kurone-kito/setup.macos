@@ -122,7 +122,7 @@ cask 'grammarly'
 cask 'notion'
 
 # Virtualizations
-cask 'docker' unless is_m1? # ! Use the technical preview
+cask 'docker'
 cask 'parallels' unless is_m1? # ! Use the technical preview
 cask 'vagrant'
 cask 'virtualbox' unless is_m1? # ! x86_64?
