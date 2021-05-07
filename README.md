@@ -190,7 +190,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 #### Virtualizations
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
-- `(-M)` [Parallels Desktop](https://www.parallels.com/)
+- [Parallels Desktop](https://www.parallels.com/)
 - `(-M)` [Oracle VM Virtualbox + Extension Pack](https://www.virtualbox.org)
 
 #### Web browsers

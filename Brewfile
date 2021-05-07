@@ -123,7 +123,7 @@ cask 'notion'
 
 # Virtualizations
 cask 'docker'
-cask 'parallels' unless is_m1? # ! Use the technical preview
+cask 'parallels', greedy: true
 cask 'vagrant'
 cask 'virtualbox' unless is_m1? # ! x86_64?
 cask 'virtualbox-extension-pack' unless is_m1? # ! x86_64?
