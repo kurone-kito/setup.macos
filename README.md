@@ -6,7 +6,7 @@ macOS Big Sur (intel / M1 両対応) 向けの作業環境セットアップス�
 ## Overview
 
 Fully automate the installation and settings of the app to make it easier to create an environment when you buy a new Mac.  
-新しい Mac を購入した際に、より手軽に環境構築るために、アプリのインストールや設定を全自動化します。
+新しい Mac を購入した際に、より手軽に環境構築するために、アプリのインストールや設定を全自動化します。
 
 ## Usage
 
@@ -44,6 +44,7 @@ Unless otherwise specified, as a general rule, install via Homebrew.
     - [Node.js](https://nodejs.org/) (via Nodenv)
       - v12 LTS Erbium
       - v14 LTS Fermium
+      - v15 (Will remove soon)
       - v16
   - plugin: [anyenv-update](https://github.com/znz/anyenv-update) (via GitHub)
 - [GCC: the GNU Compiler Collection](https://gcc.gnu.org)
@@ -55,6 +56,7 @@ Unless otherwise specified, as a general rule, install via Homebrew.
 
 - [Graphviz](https://graphviz.org)
 - [mdp](https://github.com/visit1985/mdp)
+- `(-M)` [pandoc](https://pandoc.org)
 
 #### Files management
 
@@ -187,8 +189,8 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 #### Virtualizations
 
-- `(-M)` [Docker Desktop](https://www.docker.com/products/docker-desktop)
-- `(-M)` [Parallels Desktop](https://www.parallels.com/)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop)
+- [Parallels Desktop](https://www.parallels.com/)
 - `(-M)` [Oracle VM Virtualbox + Extension Pack](https://www.virtualbox.org)
 
 #### Web browsers
