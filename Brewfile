@@ -96,6 +96,8 @@ brew 'proctools'
 brew 'mackup'
 brew 'mas'
 brew 'nyancat'
+brew 'sl'
+brew 'tldr'
 
 # Remote tools
 brew 'curl'
