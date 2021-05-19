@@ -7,7 +7,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" ]]; then
 fi
 
 # load zsh flagments
-if [ -d "${HOME}/.zsh.d" ]; then
+if [[ -d "${HOME}/.zsh.d" ]]; then
   for f in "${HOME}"/.zsh.d/* ; do
     source $f
   done
