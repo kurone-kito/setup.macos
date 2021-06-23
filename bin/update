@@ -24,5 +24,4 @@ function install_nodejs() {
 }
 install_nodejs 12 6
 install_nodejs 14 6
-install_nodejs 15 7
 install_nodejs 16 7
