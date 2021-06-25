@@ -2,4 +2,7 @@
 # -*- mode: sh -*-
 # vim: set ft=sh :
 
-eval $(thefuck --alias)
+if type -a thefuck > /dev/null 2>&1
+then
+  eval "$(thefuck --alias)"
+fi

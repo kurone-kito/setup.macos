@@ -1,4 +1,4 @@
 # -*- mode: sh -*-
 # vim: set ft=sh :
 
-export PATH=$PATH:$(npm bin -g)
+type -a npm > /dev/null && export PATH=$PATH:$(npm bin -g)
