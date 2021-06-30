@@ -4,6 +4,9 @@
 set -eu
 cd $(dirname $0)
 
+sudo -v
+while true; do sleep 50; sudo -n true; kill -0 "$$" || exit; done 2>/dev/null &
+
 ./.setup.xcode.sh
 ./.setup.brew.sh
 ./.setup.git.sh
