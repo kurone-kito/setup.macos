@@ -2,6 +2,11 @@
 # vim: set ft=sh :
 
 set -eu
+cd $(dirname $0)
+
+. .setup.lib.sh
+
+log_info 'Installing some plugins for Vagrant.'
 
 function install_plugin() {
   if [ $(vagrant plugin list | grep "${1}" | wc -l) -eq 0 ]; then
@@ -9,6 +14,5 @@ function install_plugin() {
   fi
 }
 
-printf '\033[2;36m%s\033[m\n' 'Installing some plugins for Vagrant.'
 install_plugin vagrant-parallels
 install_plugin vagrant-vbguest

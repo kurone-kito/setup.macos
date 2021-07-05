@@ -4,8 +4,11 @@
 set -eu
 cd $(dirname $0)
 
+. .setup.lib.sh
+
+log_info 'Setup the macOS defaults.'
+
 # See: https://macos-defaults.com/
-printf '\033[2;36m%s\033[m\n' 'Setup the macOS defaults.'
 # Apps ====================================================================
 # TextEdit
 defaults write com.apple.TextEdit RichText -bool false

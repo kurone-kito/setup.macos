@@ -3,7 +3,28 @@
 
 set -eu
 
-function force_link() {
+force_link() {
   rm -rf "${2}"
   ln -s "${1}" "${2}"
+}
+
+log_info() {
+  printf '\033[2;36m%s\033[m\n' "$@"
+}
+
+log_notice() {
+  printf '\033[1;36m%s\033[m\n' "$@"
+}
+
+log_warn() {
+  printf '\033[1;33m%s\033[m\n' "$@"
+}
+
+say_warn() {
+  printf '\033[1;33m%s\033[m\n' "$@"
+  if type -a say > /dev/null 2>&1
+  then
+    ACTOR="$(say -v \? | grep 'en_US' | tail -n 1 | awk '{print $1}')"
+    say -r 150 -v "${ACTOR}" "$@" &
+  fi
 }
