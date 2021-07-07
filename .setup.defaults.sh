@@ -8,6 +8,8 @@ cd $(dirname $0)
 
 log_info 'Setup the macOS defaults.'
 
+osascript -e 'tell application "System Preferences" to quit'
+
 # See: https://macos-defaults.com/
 # Apps ====================================================================
 # TextEdit
@@ -46,3 +48,6 @@ killall Finder 2> /dev/null || true
 defaults write com.apple.menuextra.clock FlashDateSeparators -bool true
 
 killall SystemUIServer 2> /dev/null || true
+
+# System =================================================================
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
