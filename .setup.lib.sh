@@ -3,11 +3,6 @@
 
 set -eu
 
-force_link() {
-  rm -rf "${2}"
-  ln -s "${1}" "${2}"
-}
-
 log_info() {
   printf '\033[2;36m%s\033[m\n' "$@"
 }
