@@ -7,8 +7,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" ]]; then
 fi
 
 # load zsh flagments
-if [[ -d "${HOME}/.zsh.d" ]]; then
-  for f in "${HOME}"/.zsh.d/* ; do
+if [[ -d "${ZDOTDIR:-$HOME}/.zsh.d" ]]; then
+  for f in "${ZDOTDIR:-$HOME}"/.zsh.d/* ; do
     source $f
   done
 fi

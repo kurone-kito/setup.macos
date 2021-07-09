@@ -12,6 +12,6 @@ anyenv install nodenv -s
 source .zsh.d/anyenv
 
 log_info 'Installing the NodeJS via updater script.'
-mkdir -p "${ZDOTDIR:-$HOME}/bin"
-ln -snf "$(pwd)/bin/update" "${ZDOTDIR:-$HOME}/bin/update"
-"${ZDOTDIR:-$HOME}/bin/update"
+mkdir -p "${HOME}/bin"
+ln -snf "$(pwd)/bin/update" "${HOME}/bin/update"
+"${HOME}/bin/update"

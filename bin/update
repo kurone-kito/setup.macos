@@ -9,7 +9,7 @@ brew cleanup
 vagrant plugin update
 anyenv update
 
-git -C "${ZDOTDIR:-$HOME}/.config/anyenv/anyenv-install" pull
+git -C "${HOME}/.config/anyenv/anyenv-install" pull
 git -C "${ZDOTDIR:-$HOME}/.zprezto" pull
 
 function install_nodejs() {
