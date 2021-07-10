@@ -102,7 +102,9 @@ Unless otherwise specified, as a general rule, install via Homebrew.
 
 - [Vagrant](https://www.vagrantup.com)
   - plugins (via Vagrant)
+    - [Vagrant AWS Provider](https://github.com/mitchellh/vagrant-aws)
     - [Vagrant Parallels Provider](https://parallels.github.io/vagrant-parallels/)
+    - [Vagrant Reload Provisioner](https://github.com/aidanns/vagrant-reload)
     - [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest)
 
 #### Web browsers

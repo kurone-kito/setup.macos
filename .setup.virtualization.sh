@@ -6,7 +6,20 @@ cd $(dirname $0)
 
 . .setup.lib.sh
 
-log_info 'Installing some plugins for Vagrant.'
+if ! type -a vagrant >& /dev/null
+then
+  log_notice 'Skip the Vagrant setup because not found the Vagrant command.'
+  exit
+fi
+
+log_info 'Installing some plugins and boxes for Vagrant.'
+
+install_box() {
+  if [ $(vagrant box list | grep "${1}" | wc -l) -eq 0 ]
+  then
+    vagrant box add "$@"
+  fi
+}
 
 function install_plugin() {
   if [ $(vagrant plugin list | grep "${1}" | wc -l) -eq 0 ]; then
@@ -14,5 +27,10 @@ function install_plugin() {
   fi
 }
 
+install_plugin vagrant-aws
 install_plugin vagrant-parallels
+install_plugin vagrant-reload
 install_plugin vagrant-vbguest
+vagrant plugin update
+
+install_box dummy https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box
