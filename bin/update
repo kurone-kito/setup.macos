@@ -7,10 +7,12 @@ brew upgrade
 brew cleanup
 
 vagrant plugin update
-anyenv update
+
+./update_docker
 
 git -C "${HOME}/.config/anyenv/anyenv-install" pull
 git -C "${ZDOTDIR:-$HOME}/.zprezto" pull
+anyenv update
 
 function install_nodejs() {
   LATEST=$(nodenv install -l | grep -e "^${1}\." | tail -n 1 | xargs)

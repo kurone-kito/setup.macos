@@ -214,6 +214,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 ### Install the upgrade script
 
+Install a script to upgrade the installed app with just one command.  
 ひとつのコマンドだけで、インストールしたアプリをアップグレードするスクリプトをインストールします。
 
 <!-- markdownlint-disable MD024 -->
@@ -224,10 +225,11 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 ~/bin/update
 ```
 
-- Upgrade the apps installed via the Homebrew.
-- Upgrade the plugins of Vagrant.
-- Upgrade the Prezto.
-- Upgrade the Anyenv / Nodenv / Node.js.
+- Upgrade the apps installed via the Homebrew
+- Upgrade the plugins of Vagrant
+- Upgrade the Docker images
+- Upgrade the Prezto
+- Upgrade the Anyenv / Nodenv / Node.js
 
 </details>
 <!-- markdownlint-enable MD033 -->

@@ -1,0 +1,32 @@
+#!/bin/sh
+# vim: set ft=sh :
+
+set -eu
+cd "$(dirname "$0")"
+
+if [ ! -e /Applications/Docker.app ]
+then
+  exit
+fi
+
+if ! pgrep docker > /dev/null
+then
+  open '/Applications/Docker.app'
+  until type -a docker > /dev/null 2>&1
+  do
+      sleep 3
+  done
+  until docker system info > /dev/null 2>&1
+  do
+      sleep 3
+  done
+fi
+
+docker images | grep -v REPOSITORY | awk '{print $1":"$2}' \
+  | xargs -I{} docker pull {} || true
+TRUNC="$(docker images --filter 'dangling=true' -q --no-trunc)"
+if [ -n "${TRUNC}" ]
+then
+  docker rmi "${TRUNC}" || true
+fi
+docker builder prune -f
