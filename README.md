@@ -46,6 +46,7 @@ Unless otherwise specified, as a general rule, install via Homebrew.
       - v14 LTS Fermium
       - v16
   - plugin: [anyenv-update](https://github.com/znz/anyenv-update) (via GitHub)
+- Command Line Tools for Xcode (via xcode-select CLI)
 - [GCC: the GNU Compiler Collection](https://gcc.gnu.org)
 - [jq](https://stedolan.github.io/jq/)
 - [Microsoft .NET Core Runtime](https://dotnet.microsoft.com/download#macos)
