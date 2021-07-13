@@ -7,6 +7,8 @@ cd $(dirname $0)
 sudo -v
 while true; do sleep 50; sudo -n true; kill -0 "$$" || exit; done 2>/dev/null &
 
+bin/update_system
+
 ./.setup.xcode-select.sh
 ./.setup.brew.sh
 ./.setup.xcode-build.sh
