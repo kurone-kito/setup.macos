@@ -8,9 +8,12 @@ source .setup.lib.sh
 
 log_info 'Setup the Prezto / zsh.d.'
 
-for rcfile in $(find "${ZDOTDIR:-$HOME}"/.zprezto/runcoms -type f -name 'z*'); do
+for rcfile in $(find "${ZDOTDIR:-$HOME}"/.zprezto/runcoms -type f -name 'z*')
+do
   ln -snf "${rcfile}" "${ZDOTDIR:-$HOME}/.${rcfile##*/}"
 done
-for rcfile in $(find "$(pwd)" -name '.z*'); do
+
+for rcfile in $(find "$(pwd)" -name '.z*')
+do
   ln -snf "${rcfile}" "${ZDOTDIR:-$HOME}/${rcfile##*/}"
 done

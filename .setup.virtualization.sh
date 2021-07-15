@@ -2,11 +2,11 @@
 # vim: set ft=sh :
 
 set -eu
-cd $(dirname $0)
+cd "$(dirname "$0")"
 
 . .setup.lib.sh
 
-if ! type -a vagrant >& /dev/null
+if ! type -a vagrant > /dev/null 2>&1
 then
   log_notice 'Skip the Vagrant setup because not found the Vagrant command.'
   exit
@@ -15,14 +15,15 @@ fi
 log_info 'Installing some plugins and boxes for Vagrant.'
 
 install_box() {
-  if [ $(vagrant box list | grep "${1}" | wc -l) -eq 0 ]
+  if [ "$(vagrant box list | grep -c "${1}")" -eq 0 ]
   then
     vagrant box add "$@"
   fi
 }
 
-function install_plugin() {
-  if [ $(vagrant plugin list | grep "${1}" | wc -l) -eq 0 ]; then
+install_plugin() {
+  if [ "$(vagrant plugin list | grep -c "${1}")" -eq 0 ]
+  then
     vagrant plugin install "${1}"
   fi
 }

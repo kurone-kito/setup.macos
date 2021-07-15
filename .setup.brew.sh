@@ -2,11 +2,11 @@
 # vim: set ft=sh :
 
 set -eu
-cd $(dirname $0)
+cd "$(dirname "$0")"
 
 . .setup.lib.sh
 
-if type -a brew >& /dev/null
+if type -a brew > /dev/null 2>&1
 then
   log_info 'Updating the Homebrew CLI.'
 
@@ -15,10 +15,10 @@ else
   log_info 'Installing the Homebrew CLI.'
 
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-  source .zsh.d/homebrew
+  . .zsh.d/homebrew
 fi
 
-if ! type -a mas >& /dev/null
+if ! type -a mas > /dev/null 2>&1
 then
   log_info 'Installing the minimum apps required to install bundles'
 

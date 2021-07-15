@@ -2,7 +2,7 @@
 # vim: set ft=sh :
 
 set -eu
-cd $(dirname $0)
+cd "$(dirname "$0")"
 
 . .setup.lib.sh
 
@@ -17,7 +17,7 @@ defaults write com.apple.TextEdit RichText -bool false
 killall TextEdit 2> /dev/null || true
 # Visualize CPU usage in the Activity Monitor Dock icon
 defaults write com.apple.ActivityMonitor IconType -int 6
-killall "Activity Monitor" 2> /dev/null || true
+killall 'Activity Monitor' 2> /dev/null || true
 
 # Dock ====================================================================
 defaults write com.apple.dock mineffect -string suck

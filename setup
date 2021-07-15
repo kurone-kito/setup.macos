@@ -2,7 +2,7 @@
 # vim: set ft=sh :
 
 set -eu
-cd $(dirname $0)
+cd "$(dirname "$0")"
 
 sudo -v
 while true; do sleep 50; sudo -n true; kill -0 "$$" || exit; done 2>/dev/null &
