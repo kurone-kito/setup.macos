@@ -1,3 +1,4 @@
+# -*- mode: ruby -*-
 # vim: set ft=ruby :
 
 def is_m1?
@@ -12,14 +13,19 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/command-not-found'
 tap 'homebrew/core'
-tap 'nektos/tap' unless is_m1?
+tap 'nektos/tap'
 
 # Audio & Broadcasting
-brew 'ffmpeg'
 cask 'audio-hijack'
 cask 'loopback'
-cask 'obs' unless is_m1? # ! The stable version can't capture the screen correctly with Apple M1.
-cask 'vlc'
+brew 'lv2'
+cask 'obs'
+
+# Binaries
+brew 'ffmpeg'
+brew 'imagemagick'
+cask 'raspberry-pi-imager'
+brew 'vips'
 
 # Cloud storages
 cask 'adobe-creative-cloud'
@@ -27,12 +33,16 @@ cask 'dropbox'
 cask 'omnipresence'
 
 # Development
+brew 'asdf'
+brew 'gawk'
 brew 'gcc'
 brew 'jq'
 brew 'pict'
-cask 'adoptopenjdk'
+brew 'shellcheck'
+brew 'textql'
 
 # Development: IDE
+brew 'nano'
 brew 'vim'
 cask 'atom'
 cask 'sublime-text'
@@ -40,9 +50,12 @@ cask 'visual-studio-code', greedy: true
 
 # Development: for Mobile apps
 cask 'android-studio'
+cask 'blender'
+cask 'react-native-debugger'
 cask 'unity-hub'
 
 # Development: for Web apps
+brew 'awscli'
 brew 'mkcert'
 brew 'nss'
 cask 'ngrok'
@@ -50,66 +63,79 @@ cask 'ngrok'
 # Documentations
 brew 'graphviz'
 brew 'mdp'
-brew 'pandoc' unless is_m1? # ! x86_64?
+brew 'pandoc'
+brew 'plantuml'
+cask 'manta'
+cask 'wkhtmltopdf'
 
 # Devices
+brew 'scrcpy'
 cask 'canon-mf-printer'
 cask 'drobo-dashboard'
 cask 'logitech-firmwareupdatetool'
 cask 'logitech-g-hub'
 cask 'logitech-gaming-software'
-cask 'haptickey' unless is_m1? # ! Problem on M1 environment
+cask 'haptic-touch-bar'
 
 # Files
+brew 'bat'
 brew 'broot'
+brew 'fzf'
 brew 'p7zip'
 brew 'rename'
 brew 'rsync'
 brew 'subversion'
 
 # Fonts
+cask 'font-hackgen'
 cask 'font-hackgen-nerd'
+cask 'font-ibm-plex'
 cask 'font-lato'
+cask 'font-meslo-for-powerline'
+cask 'font-meslo-lg-nerd-font'
 
 # Games
 cask 'minecraft'
 cask 'steam'
+cask 'steamcmd'
 cask 'stepmania'
 
 # GitHub
 brew 'git'
 brew 'gist'
+brew 'git-delta'
 brew 'git-lfs'
 brew 'hub'
-brew 'act' unless is_m1? # ! x86_64?
+brew 'act'
 
 # Messaging
 brew 'mmctl'
-cask 'discord-ptb'
+cask 'discord'
+cask 'gitter'
 cask 'mattermost'
-cask 'keybase'
+cask 'keybase' unless is_m1? # Install from Mac App Store
 cask 'skype'
 cask 'zoom'
 
 # Miscs
-brew 'proctools'
-brew 'mackup'
 brew 'mas'
 brew 'nyancat'
 brew 'sl'
-brew 'tldr'
 
 # Remote tools
 brew 'curl'
 brew 'inetutils' # includes the telnet
 brew 'wget'
-# cask 'osxfuse'
 cask 'vnc-viewer'
 
-# Shell
+# Runtime
+cask 'adoptopenjdk'
 cask 'dotnet'
+
+# Shell
 cask 'powershell'
 brew 'terminal-notifier'
+brew 'term'
 brew 'thefuck'
 brew 'zsh-completions'
 
@@ -118,21 +144,32 @@ brew 'unbound', restart_service: true
 brew 'gnupg'
 brew 'pinentry-mac'
 
+# System
+brew 'gotop'
+brew 'mackup'
+brew 'proctools'
+
 # Tasks & Memos
 cask 'boost-note'
 cask 'grammarly'
 cask 'notion'
 
+# Text Browsing
+brew 'links'
+brew 'cheat'
+brew 'tldr'
+
 # Virtualizations
-cask 'docker'
+cask 'docker', greedy: true
 cask 'parallels', greedy: true
+cask 'parallels-virtualization-sdk'
 cask 'vagrant'
 cask 'virtualbox' unless is_m1? # ! x86_64?
 cask 'virtualbox-extension-pack' unless is_m1? # ! x86_64?
 
 # Web browsers
-brew 'links'
-cask 'firefox'
+cask 'chromium'
+cask 'firefox-esr'
 cask 'google-chrome', greedy: true
 
 # mas

@@ -21,70 +21,87 @@ The script used to use the Ansible, but now it didn't because it's a bit too len
 
 ### Apps install
 
-Unless otherwise specified, as a general rule, install via Homebrew.  
-特筆なき場合、原則として Homebrew 経由でインストールします。
+Unless otherwise specified, as a general rule, install via Homebrew or Cask.  
+特筆なき場合、原則として Homebrew または Cask 経由でインストールします。
 
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD033 -->
 <details><summary>CLI Apps</summary>
 
-| note | description          |
-| :--: | :------------------- |
-| `-M` | without M1 Processor |
+#### Audio &amp; Images
 
-#### Audio
-
-- [FFmpeg](https://www.ffmpeg.org)
+- [FFmpeg](https://www.ffmpeg.org/)
+- [ImageMagick](https://imagemagick.org/index.php)
+- [libvips](https://libvips.github.io/libvips/)
+- [lv2: LADSPA v2](https://lv2plug.in/)
 
 #### Development
 
-- [AdoptOpenJDK](https://adoptopenjdk.net)
-- [AnyEnv](https://anyenv.github.io) (via GitHub)
+- [AnyEnv](https://anyenv.github.io/) (via GitHub)
   - [nodenv](https://github.com/nodenv/nodenv) (via AnyEnv)
     - [Node.js](https://nodejs.org/) (via Nodenv)
       - v12 LTS Erbium
       - v14 LTS Fermium
       - v16
   - plugin: [anyenv-update](https://github.com/znz/anyenv-update) (via GitHub)
+- [asdf](http://asdf-vm.com/)
 - Command Line Tools for Xcode (via xcode-select CLI)
+- [gawk: GNU awk utility](https://www.gnu.org/software/gawk/)
 - [GCC: the GNU Compiler Collection](https://gcc.gnu.org)
 - [jq](https://stedolan.github.io/jq/)
-- [Microsoft .NET Core Runtime](https://dotnet.microsoft.com/download#macos)
-- [Vim](https://www.vim.org)
+- [shellcheck](https://www.shellcheck.net)
+- [TextQL](https://github.com/dinedal/textql)
 
 #### Documentation
 
-- [Graphviz](https://graphviz.org)
+- [Graphviz](https://graphviz.org/)
 - [mdp](https://github.com/visit1985/mdp)
-- `(-M)` [pandoc](https://pandoc.org)
+- [pandoc](https://pandoc.org/)
+- [PlantUML](https://plantuml.com/)
+- [wkhtmltopdf](https://wkhtmltopdf.org/)
+
+#### Games
+
+- [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD)
 
 #### Files management
 
+- [bat](https://github.com/sharkdp/bat)
 - [broot](https://dystroy.org/broot/)
+- [exa](https://the.exa.websitef)
+- [fzf](https://github.com/junegunn/fzf)
 - [p7zip](https://sourceforge.net/projects/p7zip/)
 - [rename](http://plasmasturm.org/code/rename/)
-- [rsync](https://rsync.samba.org)
+- [rsync](https://rsync.samba.org/)
+
+#### Runtime
+
+- [AdoptOpenJDK](https://adoptopenjdk.net/)
+- [Microsoft .NET Core Runtime](https://dotnet.microsoft.com/download#macos)
 
 #### Testing
 
-- [mkcert](https://mkcert.dev/)
-- [Mozilla Network Security Services](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS)
-- [ngrok](https://ngrok.com)
 - [Microsoft PICT](https://jaccz.github.io/pairwise/)
+- [mkcert](https://mkcert.dev/)
+- [Mozilla Network Security Services](https://developer.mozilla.org/en/docs/Mozilla/Projects/NSS)
+- [ngrok](https://ngrok.com/)
 
 #### Version control system
 
-- `(-M)` [act](https://github.com/nektos/act)
-- [Git](https://git-scm.com)
+- [Apache Subversion](https://subversion.apache.org/)
 - [Gist](http://defunkt.io/gist/)
-- [Git Large File Storage](https://git-lfs.github.com)
-- [GitHub Hub](https://hub.github.com)
-- [Apache Subversion](https://subversion.apache.org)
+- [Git](https://git-scm.com/)
+  - [Git Large File Storage](https://git-lfs.github.com/)
+  - [git-delta: A viewer for git and diff output](https://github.com/dandavison/delta)
+- [GitHub Hub](https://hub.github.com/)
 
 #### Remote
 
-- [inetutils: GNU network utilities](https://www.gnu.org/software/inetutils/)
+- [awscli](https://aws.amazon.com/cli/)
+- [curl](https://curl.se)
 - [GNU wget](https://www.gnu.org/software/wget/)
+- [Mosh](https://mosh.org)
+- [inetutils: GNU network utilities](https://www.gnu.org/software/inetutils/)
 
 #### Shell
 
@@ -95,29 +112,44 @@ Unless otherwise specified, as a general rule, install via Homebrew.
 
 #### Signature
 
-- [GnuPG: The GNU Privacy Guard](https://gnupg.org)
+- [GnuPG: The GNU Privacy Guard](https://gnupg.org/)
 - [PINEntry for Mac](https://github.com/GPGTools/pinentry)
 - [Unbound](https://www.nlnetlabs.nl/projects/unbound/)
 
+#### System
+
+- [Coreutils: GNU Core Utilities](https://www.gnu.org/software/coreutils/coreutils.html)
+- [gotop](https://github.com/xxxserxxx/gotop)
+- [htop](https://htop.dev)
+- [Mackup](https://github.com/lra/mackup)
+- [Proctools: pgrep, pkill and pfind for Darwin](http://proctools.sourceforge.net/)
+
+#### Text Browsing
+
+- [cheat](https://github.com/cheat/cheat)
+- [links](http://links.twibright.com/)
+- [tldr pages](https://tldr.sh)
+
+#### Text editors
+
+- [GNU Nano](https://www.nano-editor.org)
+- [Vim](https://www.vim.org/)
+
 #### Virtualizations
 
-- [Vagrant](https://www.vagrantup.com)
+- [act](https://github.com/nektos/act)
+- [Parallels Virtualization SDK](https://www.parallels.com/products/desktop/download/)
+- [Vagrant](https://www.vagrantup.com/)
   - plugins (via Vagrant)
     - [Vagrant AWS Provider](https://github.com/mitchellh/vagrant-aws)
     - [Vagrant Parallels Provider](https://parallels.github.io/vagrant-parallels/)
     - [Vagrant Reload Provisioner](https://github.com/aidanns/vagrant-reload)
     - [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest)
 
-#### Web browsers
-
-- [links](http://links.twibright.com)
-
 #### Others
 
-- [Proctools: pgrep, pkill and pfind for Darwin](http://proctools.sourceforge.net)
-- [Mackup](https://github.com/lra/mackup)
 - [mas-cli](https://github.com/mas-cli/mas)
-- [Nyancat CLI](http://nyancat.dakko.us)
+- [Nyancat CLI](http://nyancat.dakko.us/)
 
 </details>
 <!-- markdownlint-enable MD033 -->
@@ -132,13 +164,11 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 | :--: | :------------------- |
 | `-M` | without M1 Processor |
 
-#### Audio & Broadcasting
+#### Audios, Videos, and Broadcasting
 
+- [OBS Studio](https://obsproject.com/)
 - [Rogue Amoeba Audio Hijack](https://rogueamoeba.com/audiohijack/)
 - [Rogue Amoeba Loopback](https://rogueamoeba.com/loopback/)
-- `(-M)` [OBS Studio](https://obsproject.com/)
-  - The stable version can't capture the screen correctly with Apple M1.
-- [VLC Player](https://obsproject.com/)
 
 #### Cloud storages
 
@@ -149,56 +179,72 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 #### Development
 
 - [Android Studio](https://developer.android.com/studio)
-- [GitHub Atom Editor](https://atom.io)
-- [Sublime Text](https://www.sublimetext.com)
+- [Blender](https://www.blender.org/)
+- [React Native Debugger](https://github.com/jhen0409/react-native-debugger)
 - [Unity Hub](https://unity3d.com/)
-- [Visual Studio Code](https://code.visualstudio.com)
 
 #### Devices
 
+- [scrcpy](https://github.com/Genymobile/scrcpy)
 - [Canon Satera MF Printer driver](https://cweb.canon.jp/satera/mfp/)
 - [Drobo Dashboard](https://www.drobo.com/)
-- `(-M)` [HapticKey](https://github.com/niw/HapticKey)
-- [logicool G Hub](https://gaming.logicool.co.jp/ja-jp/innovation/g-hub.html)
+- [Haptic Touch Bar](https://www.haptictouchbar.com/)
+- [logicool G Hub](https://gaming.logicool.co.jp/innovation/g-hub.html)
+- [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
+
+#### Documents and Office apps
+
+- [Manta](https://getmanta.app)
 
 #### Games
 
 - [Minecraft Java Edition](https://www.minecraft.net/)
 - [Steam](https://store.steampowered.com/)
-- [Stepmania](https://www.stepmania.com)
+- [Stepmania](https://www.stepmania.com/)
 
-#### Memos
+#### Memos and Tasks
 
-- [Boost Note](https://boostnote.io)
-- [Grammarly](https://www.grammarly.com)
+- [Boost Note](https://boostnote.io/)
+- [Grammarly](https://www.grammarly.com/)
 - [Notion](https://www.notion.so/)
 
-#### Messaging
+#### Messaging and Socials
 
-- [Discord Public Test Build](https://discord.com)
-- [Mattermost / with CLI tools](https://mattermost.com)
-- [Keybase](https://keybase.io)
+- [Discord](https://discord.com/)
+- [Gitter](https://gitter.im/)
+- `(-M)` [Keybase](https://keybase.io/)
+  - Keybase app is distributed only M1 Mac in the Mac App Store.
+- [Mattermost / with CLI tools](https://mattermost.com/)
 - [Microsoft Skype](https://www.skype.com/)
-- [Zoom](https://zoom.us)
+- [Zoom](https://zoom.us/)
 
 #### Remote
 
-- [Real VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/)
+- [Real VNC Viewer](https://www.realvnc.com/connect/download/viewer/)
+- [TeamViewer](https://www.teamviewer.com/)
 
 #### Terminal
 
+- [term](https://github.com/liyanage/macosx-shell-scripts/blob/master/term)
 - [terminal-notifier](https://github.com/julienXX/terminal-notifier)
+
+#### Text editors
+
+- [GitHub Atom Editor](https://atom.io/)
+- [Sublime Text](https://www.sublimetext.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 #### Virtualizations
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 - [Parallels Desktop](https://www.parallels.com/)
-- `(-M)` [Oracle VM Virtualbox + Extension Pack](https://www.virtualbox.org)
+- `(-M)` [Oracle VM Virtualbox + Extension Pack](https://www.virtualbox.org/)
 
 #### Web browsers
 
-- [Google Chrome](https://www.google.com/intl/ja_jp/chrome/)
-- [Mozilla Firefox](https://www.mozilla.org/ja/firefox/new/)
+- [Google Chrome](https://www.google.com/chrome/)
+- [Chromium](https://www.chromium.org/Home)
+- [Mozilla Firefox ESR](https://www.mozilla.org/firefox/)
 
 </details>
 <!-- markdownlint-enable MD033 -->
@@ -207,7 +253,9 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 <details><summary>Fonts</summary>
 
 - [白源: HackGen Nerd](https://github.com/yuru7/HackGen)
+- [IBM Plex](https://www.ibm.com/plex/)
 - [Lato](https://fonts.google.com/specimen/Lato)
+- [Meslo LG](https://github.com/andreberg/Meslo-Font)
 
 </details>
 <!-- markdownlint-enable MD033 -->
