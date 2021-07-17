@@ -166,19 +166,30 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 #### Audios, Videos, and Broadcasting
 
+- [Apple GarageBand](https://www.apple.com/mac/garageband/) (via Mac App Store)
+- [Apple iMovie](https://www.apple.com/imovie/) (via Mac App Store)
 - [OBS Studio](https://obsproject.com/)
 - [Rogue Amoeba Audio Hijack](https://rogueamoeba.com/audiohijack/)
 - [Rogue Amoeba Loopback](https://rogueamoeba.com/loopback/)
+
+#### Benchmark
+
+- [Blackmagic Disk Speed Test](https://apps.apple.com/app/blackmagic-disk-speed-test/id425264550) (via Mac App Store)
+- [GFXBench Metal](https://gfxbench.com/) (via Mac App Store)
+- [MAXON Cinebench](https://www.maxon.net/ja/cinebench) (via Mac App Store)
 
 #### Cloud storages
 
 - [Adobe Creative Cloud](https://www.adobe.com/creativecloud.html)
 - [Dropbox](https://www.dropbox.com/)
+- [Microsoft OneDrive](https://www.microsoft.com/microsoft-365/onedrive)
 - [OmniPresence](https://www.omnigroup.com/more)
 
 #### Development
 
 - [Android Studio](https://developer.android.com/studio)
+- [Apple Developer](https://apps.apple.com/us/app/apple-developer/id640199958) (via Mac App Store)
+- [Apple Xcode](https://developer.apple.com/xcode/) (via Mac App Store)
 - [Blender](https://www.blender.org/)
 - [React Native Debugger](https://github.com/jhen0409/react-native-debugger)
 - [Unity Hub](https://unity3d.com/)
@@ -194,10 +205,19 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 #### Documents and Office apps
 
-- [Manta](https://getmanta.app)
+- [Amazon Kindle](https://www.amazon.com/kindle) (via Mac App Store)
+- [Manta](https://getmanta.app/) (via Mac App Store)
+- [Apple Keynote](https://www.apple.com/keynote/) (via Mac App Store)
+- [Apple Numbers](https://www.apple.com/numbers/) (via Mac App Store)
+- [Apple Pages](https://www.apple.com/pages/) (via Mac App Store)
+- [Microsoft Excel](https://www.microsoft.com/microsoft-365/excel) (via Mac App Store)
+- [Microsoft OneNote](https://www.microsoft.com/microsoft-365/onenote) (via Mac App Store)
+- [Microsoft PowerPoint](https://www.microsoft.com/microsoft-365/powerpoint) (via Mac App Store)
+- [Microsoft Word](https://www.microsoft.com/microsoft-365/word) (via Mac App Store)
 
 #### Games
 
+- [Human Resource Machine](http://tomorrowcorporation.com/humanresourcemachine) (via Mac App Store)
 - [Minecraft Java Edition](https://www.minecraft.net/)
 - [Steam](https://store.steampowered.com/)
 - [Stepmania](https://www.stepmania.com/)
@@ -206,20 +226,28 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 - [Boost Note](https://boostnote.io/)
 - [Grammarly](https://www.grammarly.com/)
+- [Microsoft To Do](https://todo.microsoft.com/) (via Mac App Store)
 - [Notion](https://www.notion.so/)
+- [OmniFocus](https://www.omnigroup.com/omnifocus/) (via Mac App Store)
 
 #### Messaging and Socials
 
 - [Discord](https://discord.com/)
+- [Facebook Messenger](https://www.messenger.com/) (via Mac App Store)
 - [Gitter](https://gitter.im/)
 - `(-M)` [Keybase](https://keybase.io/)
   - Keybase app is distributed only M1 Mac in the Mac App Store.
+- [LINE](https://line.me/) (via Mac App Store)
 - [Mattermost / with CLI tools](https://mattermost.com/)
 - [Microsoft Skype](https://www.skype.com/)
+- [Slack](https://slack.com/) (via Mac App Store)
+- [Twitter](https://twitter.com/) (via Mac App Store)
 - [Zoom](https://zoom.us/)
 
 #### Remote
 
+- [Apple Remote Desktop](http://www.apple.com/remotedesktop/) (via Mac App Store)
+- [Microsoft Remote Desktop](https://apps.apple.com/app/microsoft-remote-desktop/id1295203466) (via Mac App Store)
 - [Real VNC Viewer](https://www.realvnc.com/connect/download/viewer/)
 - [TeamViewer](https://www.teamviewer.com/)
 
@@ -245,6 +273,8 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Google Chrome](https://www.google.com/chrome/)
 - [Chromium](https://www.chromium.org/Home)
 - [Mozilla Firefox ESR](https://www.mozilla.org/firefox/)
+- Some extensions for Apple Safari (via Mac App Store)
+  - [Grammarly for Safari](https://apps.apple.com/app/grammarly-for-safari/id1462114288)
 
 </details>
 <!-- markdownlint-enable MD033 -->

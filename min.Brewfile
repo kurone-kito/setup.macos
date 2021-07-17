@@ -171,29 +171,29 @@ cask 'firefox-esr'
 cask 'google-chrome', greedy: true
 
 # mas
-# mas 'Cinebench', id: 1438772273
-# mas 'Developer', id: 640199958
-# mas 'Disk Speed Test', id: 1480068668
-# # mas 'GarageBand', id: 682658836
-# mas "GFXBench Metal", id: 1044629456
-# mas 'Grammarly for Safari', id: 1462114288
-# # mas 'Human Resource Machine', id: 1005728312
-# # mas 'iMovie', id: 408981434
-# mas 'Keynote', id: 409183694
-# # mas 'Kindle', id: 405399194
-# # mas 'LINE', id: 539883307
-# # mas 'Messenger', id: 1480068668
-# # mas 'Microsoft Excel', id: 462058435
-# # mas 'Microsoft OneNote', id: 784801555
-# # mas 'Microsoft PowerPoint', id: 462062816
-# # mas 'Microsoft Remote Desktop', id: 1295203466
-# # mas "Microsoft To Do", id: 1274495053
-# # mas 'Microsoft Word', id: 462054704
-# mas 'Numbers', id: 409203825
-# mas 'OmniFocus', id: 1474135619
+mas 'Cinebench', id: 1438772273
+mas 'Developer', id: 640199958
+mas 'Disk Speed Test', id: 1480068668
+# mas 'GarageBand', id: 682658836
+mas "GFXBench Metal", id: 1044629456
+mas 'Grammarly for Safari', id: 1462114288
+# mas 'Human Resource Machine', id: 1005728312
+# mas 'iMovie', id: 408981434
+mas 'Keynote', id: 409183694
+# mas 'Kindle', id: 405399194
+# mas 'LINE', id: 539883307
+# mas 'Messenger', id: 1480068668
+# mas 'Microsoft Excel', id: 462058435
+# mas 'Microsoft OneNote', id: 784801555
+# mas 'Microsoft PowerPoint', id: 462062816
+# mas 'Microsoft Remote Desktop', id: 1295203466
+# mas "Microsoft To Do", id: 1274495053
+# mas 'Microsoft Word', id: 462054704
+mas 'Numbers', id: 409203825
+mas 'OmniFocus', id: 1474135619
 # mas 'OneDrive', id: 823766827
-# mas 'Pages', id: 409201541
-# # mas 'Remote Desktop', id: 409907375
-# mas 'Slack', id: 803453959
-# # mas "Twitter", id: 1482454543
-# mas 'Xcode', id: 497799835
+mas 'Pages', id: 409201541
+# mas 'Remote Desktop', id: 409907375
+mas 'Slack', id: 803453959
+# mas "Twitter", id: 1482454543
+mas 'Xcode', id: 497799835
