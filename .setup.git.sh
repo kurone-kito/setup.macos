@@ -19,3 +19,9 @@ mkdir -p "${HOME}/.anyenv/plugins"
 mkdir -p "${HOME}/.config/anyenv"
 git_clone_if_not_exists znz/anyenv-update .anyenv/plugins/anyenv-update
 git_clone_if_not_exists anyenv/anyenv-install .config/anyenv/anyenv-install
+
+MY_REPOS="${HOME}/src/my"
+DOTFILES="${MY_REPOS}/dotfiles"
+mkdir -p "${MY_REPOS}"
+git_clone_if_not_exists kurone-kito/dotfiles "${DOTFILES}"
+"${DOTFILES}/setup"
