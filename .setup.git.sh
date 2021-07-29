@@ -14,11 +14,6 @@ git_clone_if_not_exists() {
 log_info 'Installing some utilities from GitHub.'
 
 git_clone_if_not_exists sorin-ionescu/prezto "${ZDOTDIR:-$HOME}/.zprezto"
-git_clone_if_not_exists anyenv/anyenv "${$HOME}/.anyenv"
-mkdir -p "${HOME}/.anyenv/plugins"
-mkdir -p "${HOME}/.config/anyenv"
-git_clone_if_not_exists znz/anyenv-update .anyenv/plugins/anyenv-update
-git_clone_if_not_exists anyenv/anyenv-install .config/anyenv/anyenv-install
 
 MY_REPOS="${HOME}/src/my"
 DOTFILES="${MY_REPOS}/dotfiles"

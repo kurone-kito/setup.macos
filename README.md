@@ -37,13 +37,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 #### Development
 
-- [AnyEnv](https://anyenv.github.io/) (via GitHub)
-  - [nodenv](https://github.com/nodenv/nodenv) (via AnyEnv)
-    - [Node.js](https://nodejs.org/) (via Nodenv)
-      - v12 LTS Erbium
-      - v14 LTS Fermium
-      - v16
-  - plugin: [anyenv-update](https://github.com/znz/anyenv-update) (via GitHub)
 - [asdf](http://asdf-vm.com/)
 - Command Line Tools for Xcode (via xcode-select CLI)
 - [gawk: GNU awk utility](https://www.gnu.org/software/gawk/)
