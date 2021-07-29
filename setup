@@ -14,7 +14,6 @@ bin/update_system
 ./.setup.xcode-build.sh
 ./.setup.git.sh
 ./.setup.virtualization.sh
-./.setup.prezto.sh
 ./.setup.anyenv.sh
 ./.setup.defaults.sh
 ./.setup.network.sh
