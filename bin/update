@@ -11,5 +11,6 @@ vagrant plugin update
 ./update_docker
 
 git -C "${ZDOTDIR:-$HOME}/.zprezto" pull
+asdf plugin update --all
 mas upgrade
 ./update_system
