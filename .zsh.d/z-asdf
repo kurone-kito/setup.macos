@@ -9,4 +9,9 @@
 # the script has to run it after Homebrew's path resolution.
 
 ASDF="$(brew --prefix asdf)/asdf.sh"
-[[ -f "${ASDF}" ]] && source "${ASDF}"
+[ -f "${ASDF}" ] && . "${ASDF}"
+
+if type -a npm > /dev/null
+then
+  export PATH=$PATH:$(npm bin -g)
+fi

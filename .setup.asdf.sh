@@ -23,3 +23,12 @@ install_plugin() {
 }
 
 install_plugin nodejs
+
+log_info 'Installing the NodeJS via updater script.'
+mkdir -p "${HOME}/bin"
+for f in "$(pwd)/bin/"*
+do
+  ln -snf "${f}" "${HOME}/bin/$(basename "${f}")"
+done
+
+"${HOME}/bin/update_asdf"

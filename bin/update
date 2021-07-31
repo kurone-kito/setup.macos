@@ -2,6 +2,7 @@
 # vim: set ft=sh :
 
 set -eu
+cd "$(dirname "$0")"
 
 brew upgrade
 brew cleanup
@@ -11,6 +12,6 @@ vagrant plugin update
 ./update_docker
 
 git -C "${ZDOTDIR:-$HOME}/.zprezto" pull
-asdf plugin update --all
+./update_asdf
 mas upgrade
 ./update_system

@@ -38,6 +38,11 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Development
 
 - [asdf](http://asdf-vm.com/)
+  - plugin: [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs) (via asdf)
+    - [Node.js](https://nodejs.org/) (via asdf-nodejs)
+      - v12 LTS Erbium
+      - v14 LTS Fermium
+      - v16
 - Command Line Tools for Xcode (via xcode-select CLI)
 - [gawk: GNU awk utility](https://www.gnu.org/software/gawk/)
 - [GCC: the GNU Compiler Collection](https://gcc.gnu.org)
