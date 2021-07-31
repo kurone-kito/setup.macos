@@ -3,6 +3,11 @@
 
 set -eu
 
+github_clone_if_not_exists() {
+  git -C "${2}" pull \
+    || git clone --recursive "https://github.com/${1}.git" "${2}"
+}
+
 log_info() {
   printf '\033[2;36m%s\033[m\n' "$@"
 }
