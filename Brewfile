@@ -2,7 +2,7 @@
 # vim: set ft=ruby :
 
 def is_m1?
-  !RUBY_PLATFORM.index("arm64e").nil?
+ !RUBY_PLATFORM.index("arm64e").nil?
 end
 
 tap 'homebrew/autoupdate'
@@ -33,9 +33,9 @@ cask 'dropbox'
 cask 'omnipresence'
 
 # Development
-brew 'asdf'
-brew 'gawk'
-brew 'gcc'
+brew 'asdf' # !! DEPENDENCIES
+brew 'gawk' # !! DEPENDENCIES
+brew 'gcc' # !! DEPENDENCIES
 brew 'jq'
 brew 'pict'
 brew 'shellcheck'
@@ -56,8 +56,8 @@ cask 'unity-hub'
 
 # Development: for Web apps
 brew 'awscli'
-brew 'mkcert'
-brew 'nss'
+brew 'mkcert' # !! DEPENDENCIES
+brew 'nss' # !! DEPENDENCIES
 cask 'ngrok'
 
 # Documentations
@@ -101,7 +101,7 @@ cask 'steamcmd'
 cask 'stepmania'
 
 # GitHub
-brew 'git'
+brew 'git' # !! DEPENDENCIES
 brew 'gist'
 brew 'git-delta'
 brew 'git-lfs'
@@ -118,12 +118,12 @@ cask 'skype'
 cask 'zoom'
 
 # Miscs
-brew 'mas'
+brew 'mas' # !! DEPENDENCIES
 brew 'nyancat'
 brew 'sl'
 
 # Remote tools
-brew 'curl'
+brew 'curl' # !! DEPENDENCIES
 brew 'inetutils' # includes the telnet
 brew 'wget'
 cask 'vnc-viewer'
@@ -137,17 +137,17 @@ cask 'powershell'
 brew 'terminal-notifier'
 brew 'term'
 brew 'thefuck'
-brew 'zsh-completions'
+brew 'zsh-completions' # !! DEPENDENCIES
 
 # Signature
 brew 'unbound', restart_service: true
-brew 'gnupg'
-brew 'pinentry-mac'
+brew 'gnupg' # !! DEPENDENCIES
+brew 'pinentry-mac' # !! DEPENDENCIES
 
 # System
 brew 'gotop'
 brew 'mackup'
-brew 'proctools'
+brew 'proctools' # !! DEPENDENCIES
 
 # Tasks & Memos
 cask 'boost-note'
@@ -160,7 +160,7 @@ brew 'cheat'
 brew 'tldr'
 
 # Virtualizations
-cask 'docker', greedy: true
+cask 'docker', greedy: true # !! DEPENDENCIES
 cask 'parallels', greedy: true
 cask 'parallels-virtualization-sdk'
 cask 'vagrant'
@@ -169,7 +169,7 @@ cask 'virtualbox-extension-pack' unless is_m1? # ! x86_64?
 
 # Web browsers
 cask 'chromium'
-cask 'firefox-esr'
+cask 'firefox-esr' # !! DEPENDENCIES
 cask 'google-chrome', greedy: true
 
 # mas

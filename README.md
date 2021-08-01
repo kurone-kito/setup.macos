@@ -28,6 +28,10 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 <!-- markdownlint-disable MD033 -->
 <details><summary>CLI Apps</summary>
 
+|  note   | description                                                                         |
+| :-----: | :---------------------------------------------------------------------------------- |
+| **`!`** | **DEPENDENCIES**: Removing this app may cause this setup to stop working correctly. |
+
 #### Audio &amp; Images
 
 - [FFmpeg](https://www.ffmpeg.org/)
@@ -43,9 +47,9 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
       - v12 LTS Erbium
       - v14 LTS Fermium
       - v16
-- Command Line Tools for Xcode (via xcode-select CLI)
-- [gawk: GNU awk utility](https://www.gnu.org/software/gawk/)
-- [GCC: the GNU Compiler Collection](https://gcc.gnu.org)
+- **`!`** Command Line Tools for Xcode (via xcode-select CLI)
+- **`!`** [gawk: GNU awk utility](https://www.gnu.org/software/gawk/)
+- **`!`** [GCC: the GNU Compiler Collection](https://gcc.gnu.org)
 - [jq](https://stedolan.github.io/jq/)
 - [shellcheck](https://www.shellcheck.net)
 - [TextQL](https://github.com/dinedal/textql)
@@ -88,16 +92,16 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 - [Apache Subversion](https://subversion.apache.org/)
 - [Gist](http://defunkt.io/gist/)
-- [Git](https://git-scm.com/)
-  - [Git Large File Storage](https://git-lfs.github.com/)
+- **`!`** [Git](https://git-scm.com/)
+  - **`!`** [Git Large File Storage](https://git-lfs.github.com/)
   - [git-delta: A viewer for git and diff output](https://github.com/dandavison/delta)
 - [GitHub Hub](https://hub.github.com/)
 
 #### Remote
 
 - [awscli](https://aws.amazon.com/cli/)
-- [curl](https://curl.se)
-- [GNU wget](https://www.gnu.org/software/wget/)
+- **`!`** [curl](https://curl.se)
+- **`!`** [GNU wget](https://www.gnu.org/software/wget/)
 - [Mosh](https://mosh.org)
 - [inetutils: GNU network utilities](https://www.gnu.org/software/inetutils/)
 
@@ -106,21 +110,21 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [Microsoft PowerShell](https://microsoft.com/PowerShell)
 - [Prezto](https://github.com/sorin-ionescu/prezto) (via GitHub)
 - [The Fuck](https://github.com/nvbn/thefuck)
-- [zsh-completions](https://github.com/zsh-users/zsh-completions)
+- **`!`** [zsh-completions](https://github.com/zsh-users/zsh-completions)
 
 #### Signature
 
-- [GnuPG: The GNU Privacy Guard](https://gnupg.org/)
-- [PINEntry for Mac](https://github.com/GPGTools/pinentry)
-- [Unbound](https://www.nlnetlabs.nl/projects/unbound/)
+- **`!`** [GnuPG: The GNU Privacy Guard](https://gnupg.org/)
+- **`!`** [PINEntry for Mac](https://github.com/GPGTools/pinentry)
+- **`!`** [Unbound](https://www.nlnetlabs.nl/projects/unbound/)
 
 #### System
 
-- [Coreutils: GNU Core Utilities](https://www.gnu.org/software/coreutils/coreutils.html)
+- **`!`** [Coreutils: GNU Core Utilities](https://www.gnu.org/software/coreutils/coreutils.html)
 - [gotop](https://github.com/xxxserxxx/gotop)
 - [htop](https://htop.dev)
 - [Mackup](https://github.com/lra/mackup)
-- [Proctools: pgrep, pkill and pfind for Darwin](http://proctools.sourceforge.net/)
+- **`!`** [Proctools: pgrep, pkill and pfind for Darwin](http://proctools.sourceforge.net/)
 
 #### Text Browsing
 
@@ -146,7 +150,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 #### Others
 
-- [mas-cli](https://github.com/mas-cli/mas)
+- **`!`** [mas-cli](https://github.com/mas-cli/mas)
 - [Nyancat CLI](http://nyancat.dakko.us/)
 
 </details>
@@ -158,9 +162,10 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 Apps that exist in the Mac App Store are temporarily not installed by this script. It's because the installation is unstable and very slow.  
 Mac App Store からインストール可能なアプリは、このスクリプトでは暫定的にインストールしないようにしています。インストールが不安定かつ非常に低速となるためです。
 
-| note | description          |
-| :--: | :------------------- |
-| `-M` | without M1 Processor |
+|  note   | description                                                                         |
+| :-----: | :---------------------------------------------------------------------------------- |
+| **`!`** | **DEPENDENCIES**: Removing this app may cause this setup to stop working correctly. |
+|  `-M`   | without M1 Processor                                                                |
 
 #### Audios, Videos, and Broadcasting
 
@@ -187,7 +192,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 - [Android Studio](https://developer.android.com/studio)
 - [Apple Developer](https://apps.apple.com/us/app/apple-developer/id640199958) (via Mac App Store)
-- [Apple Xcode](https://developer.apple.com/xcode/) (via Mac App Store)
+- **`!`** [Apple Xcode](https://developer.apple.com/xcode/) (via Mac App Store)
 - [Blender](https://www.blender.org/)
 - [React Native Debugger](https://github.com/jhen0409/react-native-debugger)
 - [Unity Hub](https://unity3d.com/)
@@ -280,10 +285,14 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 <!-- markdownlint-disable MD033 -->
 <details><summary>Fonts</summary>
 
-- [白源: HackGen Nerd](https://github.com/yuru7/HackGen)
+|  note   | description                                                                         |
+| :-----: | :---------------------------------------------------------------------------------- |
+| **`!`** | **DEPENDENCIES**: Removing this app may cause this setup to stop working correctly. |
+
+- **`!`** [白源: HackGen Nerd](https://github.com/yuru7/HackGen)
 - [IBM Plex](https://www.ibm.com/plex/)
 - [Lato](https://fonts.google.com/specimen/Lato)
-- [Meslo LG](https://github.com/andreberg/Meslo-Font)
+- **`!`** [Meslo LG](https://github.com/andreberg/Meslo-Font)
 
 </details>
 <!-- markdownlint-enable MD033 -->
