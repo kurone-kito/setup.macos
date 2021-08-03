@@ -10,6 +10,14 @@ Fully automate the installation and settings of the app to make it easier to cre
 
 ## Usage
 
+First, **give the terminal "full disk access" privileges** by seeing to the following URL.  
+最初に、以下の URL を参考にして、**ターミナルにフルディスクアクセス権限を与えてください。**
+
+<https://discussions.apple.com/thread/251260652>
+
+Then just run the following command! You can also start it by double-clicking from the Finder app.  
+次に以下のコマンドを実行するだけです！ファインダーからダブルクリックで起動しても構いません。
+
 ```sh
 ./setup
 ```
@@ -339,6 +347,10 @@ Also, by starting Firefox in this process, if the root store does not exist, it 
 ### Customization of macOS desktop
 
 See: [https://macos-defaults.com/](https://macos-defaults.com/)
+
+## See also
+
+- Depended repository: [kurone-kito/dotfiles](https://github.com/kurone-kito/dotfiles)
 
 ## Playground
 
