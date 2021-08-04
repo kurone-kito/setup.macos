@@ -116,7 +116,8 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Shell
 
 - [Microsoft PowerShell](https://microsoft.com/PowerShell)
-- [Prezto](https://github.com/sorin-ionescu/prezto) (via GitHub)
+- [Prezto](https://github.com/sorin-ionescu/prezto) (via Git)
+  - [Powerlevel10k](https://github.com/romkatv/powerlevel10k) (via Prezto)
 - [The Fuck](https://github.com/nvbn/thefuck)
 - **`!`** [zsh-completions](https://github.com/zsh-users/zsh-completions)
 
