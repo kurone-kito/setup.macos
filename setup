@@ -12,7 +12,7 @@ bin/update_system
 ./.setup.xcode-select.sh
 ./.setup.brew.sh
 ./.setup.xcode-build.sh
-./.setup.git.sh
+./.setup.dotfiles.sh
 ./.setup.virtualization.sh
 ./.setup.asdf.sh
 ./.setup.defaults.sh
