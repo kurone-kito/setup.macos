@@ -19,6 +19,13 @@ done
 # zsh.d
 ln -snf .zsh.d "${ZDOTDIR:-$HOME}/.zsh.d"
 
+# Update scripts
+mkdir -p "${HOME}/bin"
+for f in "$(pwd)/bin/"*
+do
+  ln -snf "${f}" "${HOME}/bin/$(basename "${f}")"
+done
+
 # My dotfiles
 MY_REPOS="${HOME}/src/my"
 DOTFILES="${MY_REPOS}/dotfiles"
