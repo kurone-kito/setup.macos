@@ -26,6 +26,9 @@ do
   ln -snf "${f}" "${HOME}/bin/$(basename "${f}")"
 done
 
+# NanoRC dotfiles
+curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
+
 # My dotfiles
 MY_REPOS="${HOME}/src/my"
 DOTFILES="${MY_REPOS}/dotfiles"
