@@ -13,6 +13,7 @@ bin/update_system
 ./.setup.brew.sh
 ./.setup.xcode-build.sh
 ./.setup.dotfiles.sh
+./.setup.docker.sh
 ./.setup.virtualization.sh
 ./.setup.asdf.sh
 ./.setup.defaults.sh
