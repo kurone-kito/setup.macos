@@ -4,15 +4,17 @@
 set -eu
 cd "$(dirname "$0")"
 
-. .setup.lib.sh
+. .lib.sh
+. ../.zsh.d/homebrew
 
-if ! type -a vagrant > /dev/null 2>&1
+if grep "cask 'vagrant'" ../Brewfile | grep '^#' > /dev/null
 then
   log_notice 'Skip the Vagrant setup because not found the Vagrant command.'
   exit
 fi
 
 log_info 'Installing some plugins and boxes for Vagrant.'
+wait_dependencies vagrant
 
 install_box() {
   if [ "$(vagrant box list | grep -c "${1}")" -eq 0 ]

@@ -4,7 +4,7 @@
 set -eu
 cd "$(dirname "$0")"
 
-. .setup.lib.sh
+. .lib.sh
 
 if [ ! -e /Applications/Xcode.app ]
 then
@@ -14,8 +14,8 @@ fi
 
 log_info 'Initialize the XCode'
 
-sh .setup.xcode-select.sh
+./xcode-select.sh
 
-sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
 sudo xcodebuild -license accept
 sudo xcodebuild -runFirstLaunch
+sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer

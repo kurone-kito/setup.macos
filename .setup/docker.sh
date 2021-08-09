@@ -4,22 +4,26 @@
 set -eu
 cd "$(dirname "$0")"
 
-. .setup.lib.sh
+. .lib.sh
+. ../.zsh.d/homebrew
 
-if [ ! -e '/Applications/Docker.app' ]
+if grep "cask 'docker'" ../Brewfile | grep '^#' > /dev/null
 then
   log_notice 'Skip the Docker setup because that not found the Docker command.'
   exit
 fi
+wait_dependencies docker
 
 if ! pgrep docker > /dev/null
 then
   open '/Applications/Docker.app'
+  log_notice "waiting for launch docker"
+  say_warn 'If this is your first setup, Docker may need to be interacted with to continue it; follow the instructions in the GUI to continue the process.'
   until type -a docker > /dev/null 2>&1
   do
       sleep 3
   done
-  until docker system info > /dev/null
+  until docker system info > /dev/null 2>&1
   do
       sleep 3
   done
@@ -44,4 +48,4 @@ docker pull node:16
 docker pull catthehacker/ubuntu:act-latest
 # docker pull catthehacker/ubuntu:full-20.04 # ! Commented out because the container is too lerge!
 
-"${HOME}/bin/update_docker"
+../bin/update_docker || true

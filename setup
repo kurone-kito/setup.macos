@@ -3,18 +3,30 @@
 
 set -eu
 cd "$(dirname "$0")"
+. .setup/.lib.sh
 
 sudo -v
 while true; do sleep 50; sudo -n true; kill -0 "$$" || exit; done 2>/dev/null &
 
 bin/update_system
 
-./.setup.xcode-select.sh
-./.setup.brew.sh
-./.setup.xcode-build.sh
-./.setup.dotfiles.sh
-./.setup.docker.sh
-./.setup.virtualization.sh
-./.setup.asdf.sh
-./.setup.defaults.sh
-./.setup.network.sh
+.setup/xcode-select.sh
+.setup/brew-install.sh
+.setup/brew-pre-bundle.sh
+.setup/xcode-build.sh
+
+BREW="$(pwd)/.setup/brew-bundle.sh"
+osascript -e 'tell app "Terminal"' -e "do script \"${BREW} && exit\"" -e 'end tell'
+
+.setup/defaults.sh
+.setup/updators.sh
+.setup/nanorc.sh
+.setup/prezto.sh
+.setup/zsh.d.sh
+.setup/dotfiles.sh
+.setup/asdf.sh
+.setup/mkcert.sh
+.setup/vagrant.sh
+.setup/docker.sh
+
+log_complete

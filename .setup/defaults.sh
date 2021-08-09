@@ -4,7 +4,7 @@
 set -eu
 cd "$(dirname "$0")"
 
-. .setup.lib.sh
+. .lib.sh
 
 log_info 'Setup the macOS defaults.'
 
