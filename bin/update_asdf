@@ -20,6 +20,7 @@ install_nodejs() {
     ln -snf "ref-v${1}" "${1}"
   fi
   asdf global nodejs "${1}"
+  . "${HOME}/.zsh.d/z-asdf"
   # https://qiita.com/Qoo_Rus/items/afb52517e0e17b720990
   npm install -g --silent agentkeepalive@latest
   npm install -g --silent npm@"${2}"
