@@ -29,6 +29,9 @@ The script used to use the Ansible, but now it didn't because it's a bit too len
 
 ### Apps install
 
+When the interactive operation is required, implemented voice notifications as much as possible.  
+対話的な操作が必要になる場合、できる限り音声での通知をするように実装しています。
+
 Unless otherwise specified, as a general rule, install via Homebrew or Cask.  
 特筆なき場合、原則として Homebrew または Cask 経由でインストールします。
 
@@ -355,7 +358,7 @@ Install a script to upgrade the installed app with just one command.
 </details>
 <!-- markdownlint-enable MD033 -->
 
-### Initialize for Zsh / Prezto
+### Initialize for Zsh / Prezto / Powerlevel10k
 
 The script creates a symbolic link to the Prezto default profile.
 Also, add a definition so that you can scan under the `~/.zsh.d` folder when starting the interactive shell.  
