@@ -4,7 +4,7 @@
 set -eu
 cd "$(dirname "$0")"
 
-if ! type -a asdf > /dev/null 2>&1
+if ! which asdf > /dev/null 2>&1
 then
   echo 'Warn: skipped the ASDF updating because it is not found on this system.'
   exit

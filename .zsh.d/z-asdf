@@ -11,7 +11,7 @@
 ASDF="$(brew --prefix asdf)/asdf.sh"
 [ -f "${ASDF}" ] && . "${ASDF}"
 
-if type -a npm > /dev/null
+if which npm > /dev/null
 then
   export PATH=$PATH:$(npm bin -g)
 fi

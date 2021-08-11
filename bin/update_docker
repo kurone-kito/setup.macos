@@ -12,7 +12,7 @@ fi
 if ! pgrep docker > /dev/null
 then
   open '/Applications/Docker.app'
-  until type -a docker > /dev/null 2>&1
+  until which docker > /dev/null 2>&1
   do
       sleep 3
   done

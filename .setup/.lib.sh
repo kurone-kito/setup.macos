@@ -27,7 +27,7 @@ log_warn() {
 
 say_warn() {
   log_warn "$@"
-  if type -a say > /dev/null 2>&1
+  if which say > /dev/null 2>&1
   then
     ACTOR="$(say -v \? | grep 'en_US' | tail -n 1 | awk '{print $1}')"
     say -r 150 -v "${ACTOR}" "Attention: $*" &
