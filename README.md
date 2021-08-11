@@ -334,6 +334,27 @@ Install a script to upgrade the installed app with just one command.
 <!-- markdownlint-enable MD033 -->
 <!-- markdownlint-enable MD024 -->
 
+### Pulls some docker images
+
+<!-- markdownlint-disable MD033 -->
+<details><summary>list</summary>
+
+| Image                 | Tag                                                     |
+| :-------------------- | :------------------------------------------------------ |
+| `hello-world`         | _`latest`_                                              |
+| `alpine`              | _`latest`_                                              |
+| `almalinux`           | _`latest`_                                              |
+| `debian`              | _`latest`_                                              |
+| `ubuntu`              | _`latest`_                                              |
+| `docker`              | `dind`, `git`, _`latest`_                               |
+| `node`                | `12`, `12-alpine`, `14`, `14-alpine`, `16`, `16-alpine` |
+| `cypress/base`        | `14.17.0`                                               |
+| `catthehacker/ubuntu` | `act-latest`                                            |
+| `php`                 | `8-cli`                                                 |
+
+</details>
+<!-- markdownlint-enable MD033 -->
+
 ### Initialize for Zsh / Prezto
 
 The script creates a symbolic link to the Prezto default profile.

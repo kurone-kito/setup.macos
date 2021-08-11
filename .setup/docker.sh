@@ -45,7 +45,9 @@ docker pull node:14-alpine
 docker pull node:14
 docker pull node:16-alpine
 docker pull node:16
+docker pull cypress/base:14.17.0
 docker pull catthehacker/ubuntu:act-latest
+docker pull php:8-cli
 # docker pull catthehacker/ubuntu:full-20.04 # ! Commented out because the container is too lerge!
 
 ../bin/update_docker || true
