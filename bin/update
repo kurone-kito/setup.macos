@@ -2,27 +2,17 @@
 # vim: set ft=sh :
 
 set -eu
+cd "$(dirname "$0")"
 
 brew upgrade
 brew cleanup
 
 vagrant plugin update
-anyenv update
 
-git -C "${ZDOTDIR:-$HOME}/.config/anyenv/anyenv-install" pull
-git -C "${ZDOTDIR:-$HOME}/.zprezto" pull
+./update_docker
 
-function install_nodejs() {
-  LATEST=$(nodenv install -l | grep -e "^${1}\." | tail -n 1 | xargs)
-  nodenv install -s "${LATEST}"
-  nodenv global "${LATEST}"
-  # https://qiita.com/Qoo_Rus/items/afb52517e0e17b720990
-  npm install -g agentkeepalive@latest
-  npm install -g npm@${2}
-  npm install -g yarn@latest
-  npm upgrade -g
-}
-install_nodejs 12 6
-install_nodejs 14 6
-install_nodejs 15 7
-install_nodejs 16 7
+git -C "${ZDOTDIR:-$HOME}/.zprezto" pull --recurse-submodules
+
+./update_asdf
+mas upgrade
+./update_system

@@ -1,10 +1,23 @@
+#!/bin/sh
 # -*- mode: sh -*-
 # vim: set ft=sh :
 
-[[ -f /usr/local/bin/brew ]] && eval "$(/usr/local/bin/brew shellenv)" # x86_64
-[[ -f /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)" # arm64
+BREWPATH=''
+if [ -f /usr/local/bin/brew ]
+then
+  BREWPATH='/usr/local/bin/brew' # x86_64
+fi
+if [ -f /opt/homebrew/bin/brew ]
+then
+  BREWPATH='/opt/homebrew/bin/brew' # arm64
+fi
 
-HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
-if [[ -f "$HB_CNF_HANDLER" ]]; then
-  source "$HB_CNF_HANDLER";
+if [ -n "${BREWPATH}" ]
+then
+  eval "$("${BREWPATH}" shellenv)"
+  REPO="$(brew --repository)"
+  HB_CNF_HANDLER="${REPO}/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
+  if [ -f "${HB_CNF_HANDLER}" ]; then
+    . "${HB_CNF_HANDLER}";
+  fi
 fi

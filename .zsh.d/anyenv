@@ -1,5 +1,0 @@
-# -*- mode: sh -*-
-# vim: set ft=sh :
-
-export PATH="${ZDOTDIR:-$HOME}/.anyenv/bin${PATH+:$PATH}"
-eval "$(anyenv init - zsh)"

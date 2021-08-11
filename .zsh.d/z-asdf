@@ -1,0 +1,17 @@
+#!/bin/sh
+# -*- mode: sh -*-
+# vim: set ft=sh :
+
+# =========================================================
+# ! WARN: DO NOT REMOVE THE “z” PREFIX!
+#
+# Added the “z” prefix to the filename because
+# the script has to run it after Homebrew's path resolution.
+
+ASDF="$(brew --prefix asdf)/asdf.sh"
+[ -f "${ASDF}" ] && . "${ASDF}"
+
+if type -a npm > /dev/null
+then
+  export PATH=$PATH:$(npm bin -g)
+fi

@@ -2,17 +2,22 @@
 # vim: set ft=sh :
 
 set -eu
-cd $(dirname $0)
+cd "$(dirname "$0")"
+
+. .lib.sh
+
+log_info 'Setup the macOS defaults.'
+
+osascript -e 'tell application "System Preferences" to quit'
 
 # See: https://macos-defaults.com/
-printf '\033[2;36m%s\033[m\n' 'Setup the macOS defaults.'
 # Apps ====================================================================
 # TextEdit
 defaults write com.apple.TextEdit RichText -bool false
 killall TextEdit 2> /dev/null || true
 # Visualize CPU usage in the Activity Monitor Dock icon
 defaults write com.apple.ActivityMonitor IconType -int 6
-killall "Activity Monitor" 2> /dev/null || true
+killall 'Activity Monitor' 2> /dev/null || true
 
 # Dock ====================================================================
 defaults write com.apple.dock mineffect -string suck
@@ -43,3 +48,6 @@ killall Finder 2> /dev/null || true
 defaults write com.apple.menuextra.clock FlashDateSeparators -bool true
 
 killall SystemUIServer 2> /dev/null || true
+
+# System =================================================================
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1

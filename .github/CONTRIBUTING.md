@@ -2,10 +2,10 @@ Language: [🇬🇧](./CONTRIBUTING.md) | [🇯🇵](./CONTRIBUTING.ja.md) | [�
 
 # Contributing for project
 
-When contributing to this repository, please first discuss the change you wish to make via issue or any other method with the owners of this repository before making a change.
+When contributing to this repository, please first discuss the change you wish to make via [Issues](https://github.com/kurone-kito/setup.macos/issues) or any other method with the owners of this repository before making a change.
 
 Please note we have a [code of conduct](./CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
 
-If your idea can be shown with a minor fix, please use directly the pull request.
+If your idea can be shown with a minor fix, please use directly the [pull request](https://github.com/kurone-kito/setup.macos/pulls).
 
 In this repository, discussion [in English or Japanese](https://translate.google.com/) is recommended.

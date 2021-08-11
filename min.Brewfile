@@ -1,54 +1,162 @@
+# -*- mode: ruby -*-
 # vim: set ft=ruby :
 
+###########################################################################
+### Collect information on the current environment.
 def is_m1?
-  !RUBY_PLATFORM.index("arm64e").nil?
+ !RUBY_PLATFORM.index("arm64e").nil?
 end
 
+###########################################################################
+### Tap
+tap 'homebrew/autoupdate'
 tap 'homebrew/bundle'
 tap 'homebrew/cask'
 tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
+tap 'homebrew/command-not-found'
 tap 'homebrew/core'
-tap 'nektos/tap' unless is_m1?
+tap 'nektos/tap'
 
-# Audio & Broadcasting
-brew 'ffmpeg'
-cask 'audio-hijack'
-cask 'loopback'
-cask 'obs' unless is_m1? # ! The stable version can't capture the screen correctly with Apple M1.
-cask 'vlc'
+###########################################################################
+### Dependencies
 
-# Cloud storages
-# cask 'adobe-creative-cloud'
-# cask 'dropbox'
-cask 'omnipresence'
+# Packages management
+brew 'mas'
+mas 'Xcode', id: 497799835
 
-# Development
+# Downloads
+brew 'curl'
+brew 'git'
+brew 'git-lfs'
+brew 'wget'
+
+# Fonts
+cask 'font-hackgen-nerd'
+cask 'font-meslo-for-powerline'
+
+# Shells
+brew 'zsh'
+brew 'zsh-completions'
+
+# Programming
+brew 'gawk'
 brew 'gcc'
-brew 'jq'
-brew 'pict'
-cask 'adoptopenjdk'
 
-# Development: IDE
-brew 'vim'
-cask 'atom'
-cask 'sublime-text'
-cask 'visual-studio-code', greedy: true
+# Signature
+brew 'unbound', restart_service: true
+brew 'gnupg'
+brew 'pinentry-mac'
 
-# Development: for Mobile apps
-# cask 'android-studio'
-# cask 'unity-hub'
+# System
+brew 'coreutils'
+brew 'proctools'
 
-# Development: for Web apps
+###########################################################################
+### No depended but high priorities
+
+# Programming
+brew 'asdf'
+
+# Developments for Web
 brew 'mkcert'
 brew 'nss'
-cask 'ngrok'
+cask 'firefox-esr'
+
+# Virtualizations
+cask 'vagrant'
+cask 'docker', greedy: true
+
+mas 'OmniFocus', id: 1474135619
+mas 'OneDrive', id: 823766827
+
+###########################################################################
+### Brew
+
+# Conversion for binaries
+brew 'ffmpeg'
+brew 'imagemagick'
+brew 'p7zip'
+brew 'vips'
+
+# Conversion for texts
+brew 'jq'
+brew 'textql'
+
+# Development
+brew 'lv2'
+brew 'pict'
+brew 'shellcheck'
 
 # Documentations
 brew 'graphviz'
 brew 'mdp'
-brew 'pandoc' unless is_m1? # ! x86_64?
+brew 'pandoc'
+brew 'plantuml'
+
+# Files
+brew 'bat'
+brew 'broot'
+brew 'exa'
+brew 'fzf'
+brew 'rename'
+brew 'rsync'
+brew 'subversion'
+
+# Games & Jokes
+brew 'nyancat'
+brew 'sl'
+
+# GitHub
+brew 'gist'
+brew 'git-delta'
+brew 'hub'
+brew 'act'
+
+# Remote tools
+brew 'awscli'
+brew 'inetutils' # includes the telnet
+brew 'mmctl'
+brew 'mosh'
+brew 'scrcpy'
+
+# Shell
+brew 'terminal-notifier'
+brew 'term'
+brew 'thefuck'
+
+# System
+brew 'gotop'
+brew 'htop'
+brew 'mackup'
+
+# Text Browsing
+brew 'links'
+brew 'cheat'
+brew 'tldr'
+
+# Text editors
+brew 'nano'
+brew 'vim'
+
+###########################################################################
+### Cask
+
+# Audio & Broadcasting
+cask 'audio-hijack'
+cask 'loopback'
+# cask 'obs'
+
+# Development: for Mobile apps
+# cask 'android-studio'
+# cask 'blender'
+cask 'react-native-debugger'
+# cask 'unity-hub'
+
+# Documentations
+cask 'manta'
+cask 'wkhtmltopdf'
 
 # Devices
 # cask 'canon-mf-printer'
@@ -56,105 +164,89 @@ brew 'pandoc' unless is_m1? # ! x86_64?
 # cask 'logitech-firmwareupdatetool'
 # cask 'logitech-g-hub'
 # cask 'logitech-gaming-software'
-# cask 'haptickey' unless is_m1? # ! Problem on M1 environment
-
-# Files
-brew 'broot'
-brew 'p7zip'
-brew 'rename'
-brew 'rsync'
-brew 'subversion'
+cask 'haptic-touch-bar'
 
 # Fonts
-cask 'font-hackgen-nerd'
+cask 'font-hackgen'
+cask 'font-ibm-plex'
 cask 'font-lato'
+cask 'font-meslo-lg-nerd-font'
 
 # Games
 # cask 'minecraft'
 # cask 'steam'
+cask 'steamcmd'
 # cask 'stepmania'
 
-# GitHub
-brew 'git'
-brew 'gist'
-brew 'git-lfs'
-brew 'hub'
-cask 'act' unless is_m1? # ! x86_64?
+# Imager & Storages management
+# cask 'adobe-creative-cloud'
+# cask 'dropbox'
+cask 'omnipresence'
+# cask 'raspberry-pi-imager'
 
 # Messaging
-brew 'mmctl'
-# cask 'discord-ptb'
+# cask 'discord'
+cask 'gitter'
 cask 'mattermost'
 cask 'keybase'
 # cask 'skype'
 cask 'zoom'
 
-# Miscs
-brew 'proctools'
-brew 'mackup'
-brew 'mas'
-brew 'nyancat'
-
 # Remote tools
-brew 'curl'
-brew 'inetutils' # includes the telnet
-brew 'wget'
-# cask 'osxfuse'
+cask 'ngrok'
+# cask 'teamviewer'
 cask 'vnc-viewer'
 
-# Shell
+# Runtime
+cask 'adoptopenjdk'
 cask 'dotnet'
-cask 'powershell'
-brew 'terminal-notifier'
-brew 'thefuck'
-brew 'zsh-completions'
 
-# Signature
-brew 'unbound', restart_service: true
-brew 'gnupg'
-brew 'pinentry-mac'
+# Shell
+cask 'powershell'
 
 # Tasks & Memos
 cask 'boost-note'
 cask 'grammarly'
 cask 'notion'
 
+# Text editors
+cask 'atom'
+cask 'sublime-text'
+cask 'visual-studio-code', greedy: true
+
 # Virtualizations
-cask 'docker' unless is_m1? # ! Use the technical preview
-cask 'parallels' unless is_m1? # ! Use the technical preview
-cask 'vagrant'
+# cask 'parallels', greedy: true
+# cask 'parallels-virtualization-sdk'
 cask 'virtualbox' unless is_m1? # ! x86_64?
 cask 'virtualbox-extension-pack' unless is_m1? # ! x86_64?
 
 # Web browsers
-brew 'links'
-cask 'firefox', greedy: true
+cask 'chromium'
 cask 'google-chrome', greedy: true
 
-# mas
-# mas 'Cinebench', id: 1438772273
-# mas 'Developer', id: 640199958
-# mas 'Disk Speed Test', id: 1480068668
-# # mas 'GarageBand', id: 682658836
-# mas "GFXBench Metal", id: 1044629456
-# mas 'Grammarly for Safari', id: 1462114288
-# # mas 'Human Resource Machine', id: 1005728312
-# # mas 'iMovie', id: 408981434
-# mas 'Keynote', id: 409183694
-# # mas 'Kindle', id: 405399194
-# # mas 'LINE', id: 539883307
-# # mas 'Messenger', id: 1480068668
-# # mas 'Microsoft Excel', id: 462058435
-# # mas 'Microsoft OneNote', id: 784801555
-# # mas 'Microsoft PowerPoint', id: 462062816
-# # mas 'Microsoft Remote Desktop', id: 1295203466
-# # mas "Microsoft To Do", id: 1274495053
-# # mas 'Microsoft Word', id: 462054704
-# mas 'Numbers', id: 409203825
-# mas 'OmniFocus', id: 1474135619
-# mas 'OneDrive', id: 823766827
-# mas 'Pages', id: 409201541
-# # mas 'Remote Desktop', id: 409907375
-# mas 'Slack', id: 803453959
-# # mas "Twitter", id: 1482454543
-# mas 'Xcode', id: 497799835
+###########################################################################
+### Mas
+
+mas 'Cinebench', id: 1438772273
+mas 'Developer', id: 640199958
+mas 'Disk Speed Test', id: 1480068668
+# mas 'GarageBand', id: 682658836
+mas "GFXBench Metal", id: 1044629456
+mas 'Grammarly for Safari', id: 1462114288
+# mas 'Human Resource Machine', id: 1005728312
+# mas 'iMovie', id: 408981434
+mas 'Keynote', id: 409183694
+# mas 'Kindle', id: 405399194
+# mas 'LINE', id: 539883307
+# mas 'Messenger', id: 1480068668
+# mas 'Microsoft Excel', id: 462058435
+# mas 'Microsoft OneNote', id: 784801555
+# mas 'Microsoft PowerPoint', id: 462062816
+# mas 'Microsoft Remote Desktop', id: 1295203466
+# mas "Microsoft To Do", id: 1274495053
+# mas 'Microsoft Word', id: 462054704
+mas 'Numbers', id: 409203825
+mas 'Pages', id: 409201541
+# mas 'Remote Desktop', id: 409907375
+mas 'Slack', id: 803453959
+# mas "Twitter", id: 1482454543
