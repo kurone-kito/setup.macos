@@ -82,6 +82,7 @@ brew 'vips'
 
 # Conversion for texts
 brew 'jq'
+brew 'nkf'
 brew 'textql'
 
 # Development

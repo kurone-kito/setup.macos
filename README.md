@@ -49,6 +49,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Convert tools for Texts
 
 - [jq](https://stedolan.github.io/jq/)
+- [nkf](https://osdn.net/projects/nkf/)
 - [TextQL](https://github.com/dinedal/textql)
 
 #### Development
