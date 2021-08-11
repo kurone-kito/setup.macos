@@ -40,12 +40,16 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 | :-----: | :---------------------------------------------------------------------------------- |
 | **`!`** | **DEPENDENCIES**: Removing this app may cause this setup to stop working correctly. |
 
-#### Audio &amp; Images
+#### Convert tools for Media binary
 
 - [FFmpeg](https://www.ffmpeg.org/)
 - [ImageMagick](https://imagemagick.org/index.php)
 - [libvips](https://libvips.github.io/libvips/)
-- [lv2: LADSPA v2](https://lv2plug.in/)
+
+#### Convert tools for Texts
+
+- [jq](https://stedolan.github.io/jq/)
+- [TextQL](https://github.com/dinedal/textql)
 
 #### Development
 
@@ -58,9 +62,8 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - **`!`** Command Line Tools for Xcode (via xcode-select CLI)
 - **`!`** [gawk: GNU awk utility](https://www.gnu.org/software/gawk/)
 - **`!`** [GCC: the GNU Compiler Collection](https://gcc.gnu.org)
-- [jq](https://stedolan.github.io/jq/)
+- [lv2: LADSPA v2](https://lv2plug.in/)
 - [shellcheck](https://www.shellcheck.net)
-- [TextQL](https://github.com/dinedal/textql)
 
 #### Documentation
 
