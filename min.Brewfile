@@ -72,76 +72,6 @@ mas 'OmniFocus', id: 1474135619
 mas 'OneDrive', id: 823766827
 
 ###########################################################################
-### Brew
-
-# Conversion for binaries
-brew 'ffmpeg'
-brew 'imagemagick'
-brew 'p7zip'
-brew 'vips'
-
-# Conversion for texts
-brew 'jq'
-brew 'nkf'
-brew 'textql'
-
-# Development
-brew 'lv2'
-brew 'pict'
-brew 'shellcheck'
-
-# Documentations
-brew 'graphviz'
-brew 'mdp'
-brew 'pandoc'
-brew 'plantuml'
-
-# Files
-brew 'bat'
-brew 'broot'
-brew 'exa'
-brew 'fzf'
-brew 'rename'
-brew 'rsync'
-brew 'subversion'
-
-# Games & Jokes
-brew 'nyancat'
-brew 'sl'
-
-# GitHub
-brew 'gist'
-brew 'git-delta'
-brew 'hub'
-brew 'act'
-
-# Remote tools
-brew 'awscli'
-brew 'inetutils' # includes the telnet
-brew 'mmctl'
-brew 'mosh'
-brew 'scrcpy'
-
-# Shell
-brew 'terminal-notifier'
-brew 'term'
-brew 'thefuck'
-
-# System
-brew 'gotop'
-brew 'htop'
-brew 'mackup'
-
-# Text Browsing
-brew 'links'
-brew 'cheat'
-brew 'tldr'
-
-# Text editors
-brew 'nano'
-brew 'vim'
-
-###########################################################################
 ### Cask
 
 # Audio & Broadcasting
@@ -224,6 +154,76 @@ cask 'virtualbox-extension-pack' unless is_m1? # ! x86_64?
 # Web browsers
 cask 'chromium'
 cask 'google-chrome', greedy: true
+
+###########################################################################
+### Brew
+
+# Conversion for binaries
+brew 'ffmpeg'
+brew 'imagemagick'
+brew 'p7zip'
+brew 'vips'
+
+# Conversion for texts
+brew 'jq'
+brew 'nkf'
+brew 'textql'
+
+# Development
+brew 'lv2'
+brew 'pict'
+brew 'shellcheck'
+
+# Documentations
+brew 'graphviz'
+brew 'mdp'
+brew 'pandoc'
+brew 'plantuml'
+
+# Files
+brew 'bat'
+brew 'broot'
+brew 'exa'
+brew 'fzf'
+brew 'rename'
+brew 'rsync'
+brew 'subversion'
+
+# Games & Jokes
+brew 'nyancat'
+brew 'sl'
+
+# GitHub
+brew 'gist'
+brew 'git-delta'
+brew 'hub'
+brew 'act'
+
+# Remote tools
+brew 'awscli'
+brew 'inetutils' # includes the telnet
+brew 'mmctl'
+brew 'mosh'
+brew 'scrcpy'
+
+# Shell
+brew 'terminal-notifier'
+brew 'term'
+brew 'thefuck'
+
+# System
+brew 'gotop'
+brew 'htop'
+brew 'mackup'
+
+# Text Browsing
+brew 'links'
+brew 'cheat'
+brew 'tldr'
+
+# Text editors
+brew 'nano'
+brew 'vim'
 
 ###########################################################################
 ### Mas
