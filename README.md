@@ -29,6 +29,9 @@ The script used to use the Ansible, but now it didn't because it's a bit too len
 
 ### Apps install
 
+When the interactive operation is required, implemented voice notifications as much as possible.  
+対話的な操作が必要になる場合、できる限り音声での通知をするように実装しています。
+
 Unless otherwise specified, as a general rule, install via Homebrew or Cask.  
 特筆なき場合、原則として Homebrew または Cask 経由でインストールします。
 
@@ -40,12 +43,17 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 | :-----: | :---------------------------------------------------------------------------------- |
 | **`!`** | **DEPENDENCIES**: Removing this app may cause this setup to stop working correctly. |
 
-#### Audio &amp; Images
+#### Convert tools for Media binary
 
 - [FFmpeg](https://www.ffmpeg.org/)
 - [ImageMagick](https://imagemagick.org/index.php)
 - [libvips](https://libvips.github.io/libvips/)
-- [lv2: LADSPA v2](https://lv2plug.in/)
+
+#### Convert tools for Texts
+
+- [jq](https://stedolan.github.io/jq/)
+- [nkf](https://osdn.net/projects/nkf/)
+- [TextQL](https://github.com/dinedal/textql)
 
 #### Development
 
@@ -58,9 +66,8 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - **`!`** Command Line Tools for Xcode (via xcode-select CLI)
 - **`!`** [gawk: GNU awk utility](https://www.gnu.org/software/gawk/)
 - **`!`** [GCC: the GNU Compiler Collection](https://gcc.gnu.org)
-- [jq](https://stedolan.github.io/jq/)
+- [lv2: LADSPA v2](https://lv2plug.in/)
 - [shellcheck](https://www.shellcheck.net)
-- [TextQL](https://github.com/dinedal/textql)
 
 #### Documentation
 
@@ -330,7 +337,28 @@ Install a script to upgrade the installed app with just one command.
 <!-- markdownlint-enable MD033 -->
 <!-- markdownlint-enable MD024 -->
 
-### Initialize for Zsh / Prezto
+### Pulls some docker images
+
+<!-- markdownlint-disable MD033 -->
+<details><summary>list</summary>
+
+| Image                 | Tag                                                     |
+| :-------------------- | :------------------------------------------------------ |
+| `hello-world`         | _`latest`_                                              |
+| `alpine`              | _`latest`_                                              |
+| `almalinux`           | _`latest`_                                              |
+| `debian`              | _`latest`_                                              |
+| `ubuntu`              | _`latest`_                                              |
+| `docker`              | `dind`, `git`, _`latest`_                               |
+| `node`                | `12`, `12-alpine`, `14`, `14-alpine`, `16`, `16-alpine` |
+| `cypress/base`        | `14.17.0`                                               |
+| `catthehacker/ubuntu` | `act-latest`                                            |
+| `php`                 | `8-cli`                                                 |
+
+</details>
+<!-- markdownlint-enable MD033 -->
+
+### Initialize for Zsh / Prezto / Powerlevel10k
 
 The script creates a symbolic link to the Prezto default profile.
 Also, add a definition so that you can scan under the `~/.zsh.d` folder when starting the interactive shell.  

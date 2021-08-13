@@ -7,7 +7,7 @@ cd "$(dirname "$0")"
 . .lib.sh
 . ../.zsh.d/homebrew
 
-if type -a brew > /dev/null 2>&1
+if which brew > /dev/null 2>&1
 then
   log_info 'Updating the Homebrew CLI.'
 
