@@ -19,7 +19,7 @@ then
   exit
 fi
 
-if cask "cask 'firefox-esr'" ../Brewfile | grep '^#' > /dev/null
+if grep "cask 'firefox-esr'" ../Brewfile | grep '^#' > /dev/null
 then
   log_warn 'skipped the mkcert initialization because Firefox is not found on this system.'
   exit
