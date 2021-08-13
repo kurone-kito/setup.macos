@@ -10,6 +10,7 @@ log_info 'Installing the updators.'
 
 # Update scripts
 mkdir -p "${HOME}/bin"
+cd ..
 for f in "$(pwd)/bin/"*
 do
   ln -snf "${f}" "${HOME}/bin/$(basename "${f}")"
