@@ -19,7 +19,7 @@ BREW="$(pwd)/.setup/brew-bundle.sh"
 osascript -e 'tell app "Terminal"' -e "do script \"${BREW} && exit\"" -e 'end tell'
 
 .setup/defaults.sh
-.setup/updators.sh
+.setup/updaters.sh
 .setup/nanorc.sh
 .setup/prezto.sh
 .setup/zsh.d.sh
