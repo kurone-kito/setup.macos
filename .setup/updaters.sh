@@ -11,7 +11,8 @@ log_info 'Installing the updators.'
 # Update scripts
 mkdir -p "${HOME}/bin"
 cd ..
-for f in "$(pwd)/bin/"*
-do
-  ln -snf "${f}" "${HOME}/bin/$(basename "${f}")"
-done
+
+BINDIR="$(pwd)/bin"
+find "${BINDIR}" -type f -print0 \
+  | xargs -0 -I{} basename {} \
+  | xargs -I{} ln -snf "${BINDIR}/{}" "${HOME}/bin/{}"
