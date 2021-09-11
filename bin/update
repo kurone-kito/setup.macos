@@ -13,6 +13,7 @@ vagrant plugin update
 ./update_docker
 
 git -C "${ZDOTDIR:-$HOME}/.zprezto" pull --recurse-submodules
+git -C "${ZDOTDIR:-$HOME}/.zprezto" gc --aggressive
 
 ./update_asdf
 mas upgrade
