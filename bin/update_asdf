@@ -14,13 +14,16 @@ fi
 asdf plugin update --all
 
 install_nodejs() {
-  if ! asdf install nodejs "${1}"
+  set +e
+  if asdf install nodejs "${1}"
   then
+    asdf global nodejs "${1}"
+  else
+    echo "Fallback: Build the Node.js v${1} from source..."
     NODEJS_CONFIGURE_OPTIONS='--with-intl=full-icu --download=all' NODEJS_CHECK_SIGNATURES="no" asdf install nodejs "ref:v${1}"
-    cd "${HOME}/.asdf/installs/nodejs"
-    ln -snf "ref-v${1}" "${1}"
+    asdf global nodejs "ref:v${1}"
   fi
-  asdf global nodejs "${1}"
+  set -e
   . "${HOME}/.zsh.d/z-asdf"
   # https://qiita.com/Qoo_Rus/items/afb52517e0e17b720990
   npm install -g --silent agentkeepalive@latest
