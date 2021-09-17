@@ -39,6 +39,7 @@ docker pull docker
 docker pull docker:dind
 docker pull docker:git
 docker pull node:12-alpine
+docker pull node:12-buster-slim
 docker pull node:12
 docker pull node:14-alpine
 docker pull node:14
