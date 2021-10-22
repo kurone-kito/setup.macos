@@ -34,4 +34,4 @@ install_nodejs() {
 
 install_nodejs "$(asdf list all nodejs 12 | tail -n 1)" 6
 install_nodejs "$(asdf list all nodejs 14 | tail -n 1)" 6
-install_nodejs latest 7
+install_nodejs latest 8
