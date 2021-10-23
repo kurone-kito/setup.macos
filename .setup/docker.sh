@@ -45,6 +45,8 @@ docker pull node:14-alpine
 docker pull node:14
 docker pull node:16-alpine
 docker pull node:16
+docker pull node:17
+docker pull node:17-alpine
 docker pull cypress/base:14.17.0
 docker pull catthehacker/ubuntu:act-latest
 docker pull php:8-cli
