@@ -1,8 +1,12 @@
 #!/bin/sh
+# -*- mode: sh -*-
 # vim: set ft=sh :
 
 set -eu
 cd "$(dirname "$0")"
+
+sudo -v
+while true; do sleep 50; sudo -n true; kill -0 "$$" || exit; done 2>/dev/null &
 
 brew upgrade
 brew cleanup
@@ -12,6 +16,7 @@ vagrant plugin update
 ./update_docker
 
 git -C "${ZDOTDIR:-$HOME}/.zprezto" pull --recurse-submodules
+git -C "${ZDOTDIR:-$HOME}/.zprezto" gc --aggressive
 
 ./update_asdf
 mas upgrade

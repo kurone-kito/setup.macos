@@ -1,5 +1,4 @@
 #!/bin/sh
-# vim: set ft=sh :
 
 set -eu
 cd "$(dirname "$0")"

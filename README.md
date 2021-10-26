@@ -63,6 +63,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
       - v12 LTS Erbium
       - v14 LTS Fermium
       - v16
+- [CMake](https://cmake.org)
 - **`!`** Command Line Tools for Xcode (via xcode-select CLI)
 - **`!`** [gawk: GNU awk utility](https://www.gnu.org/software/gawk/)
 - **`!`** [GCC: the GNU Compiler Collection](https://gcc.gnu.org)
@@ -126,6 +127,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [Prezto](https://github.com/sorin-ionescu/prezto) (via Git)
   - [Powerlevel10k](https://github.com/romkatv/powerlevel10k) (via Prezto)
 - [The Fuck](https://github.com/nvbn/thefuck)
+- [tmux](https://github.com/tmux/tmux)
 - **`!`** [zsh-completions](https://github.com/zsh-users/zsh-completions)
 
 #### Signature
@@ -195,6 +197,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 - [Blackmagic Disk Speed Test](https://apps.apple.com/app/blackmagic-disk-speed-test/id425264550) (via Mac App Store)
 - [GFXBench Metal](https://gfxbench.com/) (via Mac App Store)
+- [Macs Fan Control](https://crystalidea.com/macs-fan-control)
 - [MAXON Cinebench](https://www.maxon.net/ja/cinebench) (via Mac App Store)
 
 #### Cloud storages
@@ -283,6 +286,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 #### Virtualizations
 
+- [DOSBox-X](https://dosbox-x.com)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 - [Parallels Desktop](https://www.parallels.com/)
 - `(-M)` [Oracle VM Virtualbox + Extension Pack](https://www.virtualbox.org/)

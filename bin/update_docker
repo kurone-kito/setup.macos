@@ -1,4 +1,5 @@
 #!/bin/sh
+# -*- mode: sh -*-
 # vim: set ft=sh :
 
 set -eu
@@ -9,7 +10,7 @@ then
   exit
 fi
 
-if ! pgrep docker > /dev/null
+if ! (pgrep docker > /dev/null && docker system info > /dev/null 2>&1)
 then
   open '/Applications/Docker.app'
   until which docker > /dev/null 2>&1

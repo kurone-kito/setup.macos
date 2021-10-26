@@ -79,6 +79,9 @@ cask 'audio-hijack'
 cask 'loopback'
 cask 'obs'
 
+# Benchmark
+cask 'macs-fan-control'
+
 # Development: for Mobile apps
 cask 'android-studio'
 cask 'blender'
@@ -146,6 +149,7 @@ cask 'sublime-text'
 cask 'visual-studio-code', greedy: true
 
 # Virtualizations
+cask 'dosbox-x'
 cask 'parallels', greedy: true
 cask 'parallels-virtualization-sdk'
 cask 'virtualbox' unless is_m1? # ! x86_64?
@@ -170,6 +174,7 @@ brew 'nkf'
 brew 'textql'
 
 # Development
+brew 'cmake'
 brew 'lv2'
 brew 'pict'
 brew 'shellcheck'
@@ -210,6 +215,7 @@ brew 'scrcpy'
 brew 'terminal-notifier'
 brew 'term'
 brew 'thefuck'
+brew 'tmux'
 
 # System
 brew 'gotop'
