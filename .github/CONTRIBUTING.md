@@ -1,6 +1,8 @@
+# Contributing for project
+
 Language: [🇬🇧](./CONTRIBUTING.md) | [🇯🇵](./CONTRIBUTING.ja.md) | [🇨🇳](./CONTRIBUTING.zh.md)
 
-# Contributing for project
+---
 
 When contributing to this repository, please first discuss the change you wish to make via [Issues](https://github.com/kurone-kito/setup.macos/issues) or any other method with the owners of this repository before making a change.
 
