@@ -162,6 +162,9 @@ cask 'google-chrome', greedy: true
 ###########################################################################
 ### Brew
 
+# Benchmark
+brew 'cloc'
+
 # Conversion for binaries
 brew 'ffmpeg'
 brew 'imagemagick'

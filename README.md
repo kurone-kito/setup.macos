@@ -43,6 +43,10 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 | :-----: | :---------------------------------------------------------------------------------- |
 | **`!`** | **DEPENDENCIES**: Removing this app may cause this setup to stop working correctly. |
 
+#### Benchmark
+
+- [cloc](https://github.com/AlDanial/cloc)
+
 #### Convert tools for Media binary
 
 - [FFmpeg](https://www.ffmpeg.org/)
