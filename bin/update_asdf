@@ -28,8 +28,8 @@ install_nodejs() {
   # https://qiita.com/Qoo_Rus/items/afb52517e0e17b720990
   npm install -g --silent agentkeepalive@latest
   npm install -g --silent npm@"${2}"
-  npm install -g --silent yarn@berry
   npm upgrade -g --silent
+  npm install -g --silent yarn@berry
 }
 
 install_nodejs "$(asdf list all nodejs 12 | tail -n 1)" 6
