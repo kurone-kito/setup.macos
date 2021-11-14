@@ -123,6 +123,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - **`!`** [curl](https://curl.se)
 - **`!`** [GNU wget](https://www.gnu.org/software/wget/)
 - [Mosh](https://mosh.org)
+- [OpenVPN](https://openvpn.net/)
 - [inetutils: GNU network utilities](https://www.gnu.org/software/inetutils/)
 
 #### Shell
@@ -225,7 +226,6 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [scrcpy](https://github.com/Genymobile/scrcpy)
 - [Canon Satera MF Printer driver](https://cweb.canon.jp/satera/mfp/)
 - [Drobo Dashboard](https://www.drobo.com/)
-- [Haptic Touch Bar](https://www.haptictouchbar.com/)
 - [logicool G Hub](https://gaming.logicool.co.jp/innovation/g-hub.html)
 - [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
 
@@ -263,6 +263,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Gitter](https://gitter.im/)
 - `(-M)` [Keybase](https://keybase.io/)
   - Keybase app is distributed only M1 Mac in the Mac App Store.
+- [Google Chat](https://workspace.google.co.jp/products/chat/)
 - [LINE](https://line.me/) (via Mac App Store)
 - [Mattermost / with CLI tools](https://mattermost.com/)
 - [Microsoft Skype](https://www.skype.com/)
