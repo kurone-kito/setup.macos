@@ -98,7 +98,6 @@ cask 'drobo-dashboard'
 cask 'logitech-firmwareupdatetool'
 cask 'logitech-g-hub'
 cask 'logitech-gaming-software'
-cask 'haptic-touch-bar'
 
 # Fonts
 cask 'font-hackgen'
@@ -121,6 +120,7 @@ cask 'raspberry-pi-imager'
 # Messaging
 cask 'discord'
 cask 'gitter'
+cask 'google-chat'
 cask 'mattermost'
 cask 'keybase' unless is_m1? # Install from Mac App Store
 cask 'skype'
@@ -212,6 +212,7 @@ brew 'awscli'
 brew 'inetutils' # includes the telnet
 brew 'mmctl'
 brew 'mosh'
+brew 'openvpn'
 brew 'scrcpy'
 
 # Shell

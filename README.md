@@ -3,11 +3,6 @@
 Desktop environment preference for macOS Big Sur (intel and M1)  
 macOS Big Sur (intel / M1 両対応) 向けの作業環境セットアップスクリプト
 
-mas-cli が正しく動作しないため、macOS Monteley では正しく動作しません。
-
-**⚠️ Notice ⚠️**: **The script fails on macOS Monterey v12.x yet** because
-[_mas-cli_ cannot detect logined to Mac App Store](https://github.com/mas-cli/mas/issues/417).
-
 ## Overview
 
 Fully automate the installation and settings of the app to make it easier to create an environment when you buy a new Mac.  
@@ -128,6 +123,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - **`!`** [curl](https://curl.se)
 - **`!`** [GNU wget](https://www.gnu.org/software/wget/)
 - [Mosh](https://mosh.org)
+- [OpenVPN](https://openvpn.net/)
 - [inetutils: GNU network utilities](https://www.gnu.org/software/inetutils/)
 
 #### Shell
@@ -230,7 +226,6 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [scrcpy](https://github.com/Genymobile/scrcpy)
 - [Canon Satera MF Printer driver](https://cweb.canon.jp/satera/mfp/)
 - [Drobo Dashboard](https://www.drobo.com/)
-- [Haptic Touch Bar](https://www.haptictouchbar.com/)
 - [logicool G Hub](https://gaming.logicool.co.jp/innovation/g-hub.html)
 - [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
 
@@ -268,6 +263,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Gitter](https://gitter.im/)
 - `(-M)` [Keybase](https://keybase.io/)
   - Keybase app is distributed only M1 Mac in the Mac App Store.
+- [Google Chat](https://workspace.google.co.jp/products/chat/)
 - [LINE](https://line.me/) (via Mac App Store)
 - [Mattermost / with CLI tools](https://mattermost.com/)
 - [Microsoft Skype](https://www.skype.com/)

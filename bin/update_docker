@@ -25,9 +25,6 @@ fi
 
 docker images | grep -v REPOSITORY | awk '{print $1":"$2}' \
   | xargs -I{} docker pull {} || true
-TRUNC="$(docker images --filter 'dangling=true' -q --no-trunc)"
-if [ -n "${TRUNC}" ]
-then
-  docker rmi "${TRUNC}" || true
-fi
+docker images --filter 'dangling=true' -q --no-trunc \
+  | xargs -I{} docker rmi {} || true
 docker builder prune -f
