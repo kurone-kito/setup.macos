@@ -75,9 +75,10 @@ mas 'OneDrive', id: 823766827
 ### Cask
 
 # Audio & Broadcasting
-cask 'audio-hijack'
-cask 'loopback'
+# cask 'audio-hijack'
+# cask 'loopback'
 # cask 'obs'
+# cask 'sonic-visualiser'
 
 # Benchmark
 cask 'macs-fan-control'
@@ -204,6 +205,7 @@ brew 'sl'
 # GitHub
 brew 'gist'
 brew 'git-delta'
+brew 'gitlab-runner'
 brew 'hub'
 brew 'act'
 

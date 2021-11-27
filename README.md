@@ -163,6 +163,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Virtualizations
 
 - [act](https://github.com/nektos/act)
+- [GitLab Runner](https://gitlab.com/gitlab-org/gitlab-runner)
 - [Parallels Virtualization SDK](https://www.parallels.com/products/desktop/download/)
 - [Vagrant](https://www.vagrantup.com/)
   - plugins (via Vagrant)
@@ -197,6 +198,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [OBS Studio](https://obsproject.com/)
 - [Rogue Amoeba Audio Hijack](https://rogueamoeba.com/audiohijack/)
 - [Rogue Amoeba Loopback](https://rogueamoeba.com/loopback/)
+- [Sonic Visualiser](https://sonicvisualiser.org/)
 
 #### Benchmark
 
