@@ -38,6 +38,7 @@ docker pull ubuntu
 docker pull docker
 docker pull docker:dind
 docker pull docker:git
+docker pull node
 docker pull node:12-alpine
 docker pull node:12-buster-slim
 docker pull node:12
