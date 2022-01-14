@@ -4,4 +4,4 @@
 
 set -eu
 
-sudo softwareupdate --install --all
+sudo softwareupdate --all --force --install
