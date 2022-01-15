@@ -99,6 +99,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Runtime
 
 - [AdoptOpenJDK](https://adoptopenjdk.net/)
+- [Apple Rosetta 2](https://support.apple.com/HT211861) via Apple Software Update
 - [Microsoft .NET Core Runtime](https://dotnet.microsoft.com/download#macos)
 
 #### Testing
