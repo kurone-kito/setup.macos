@@ -17,6 +17,7 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/command-not-found'
 tap 'homebrew/core'
+tap 'blacktop/tap'
 tap 'nektos/tap'
 
 ###########################################################################
@@ -74,6 +75,10 @@ mas 'OneDrive', id: 823766827
 ###########################################################################
 ### Cask
 
+# 3D
+# cask 'blender'
+# cask 'freecad'
+
 # Audio & Broadcasting
 # cask 'audio-hijack'
 # cask 'loopback'
@@ -85,7 +90,6 @@ cask 'macs-fan-control'
 
 # Development: for Mobile apps
 # cask 'android-studio'
-# cask 'blender'
 cask 'react-native-debugger'
 # cask 'unity-hub'
 
@@ -177,9 +181,13 @@ brew 'jq'
 brew 'nkf'
 brew 'textql'
 
+# Database
+brew 'sqlite'
+
 # Development
 brew 'cmake'
 brew 'lv2'
+cask 'mono' unless is_m1? # ! x86_64?
 brew 'pict'
 brew 'shellcheck'
 
@@ -207,7 +215,7 @@ brew 'gist'
 brew 'git-delta'
 brew 'gitlab-runner'
 brew 'hub'
-brew 'act'
+brew 'nektos/tap/act'
 
 # Remote tools
 brew 'awscli'
@@ -218,6 +226,7 @@ brew 'openvpn'
 brew 'scrcpy'
 
 # Shell
+brew 'blacktop/tap/lporg'
 brew 'terminal-notifier'
 brew 'term'
 brew 'thefuck'

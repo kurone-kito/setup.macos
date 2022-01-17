@@ -42,6 +42,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 |  note   | description                                                                         |
 | :-----: | :---------------------------------------------------------------------------------- |
 | **`!`** | **DEPENDENCIES**: Removing this app may cause this setup to stop working correctly. |
+|  `-M`   | without M1 Processor                                                                |
 
 #### Benchmark
 
@@ -59,6 +60,10 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [nkf](https://osdn.net/projects/nkf/)
 - [TextQL](https://github.com/dinedal/textql)
 
+#### Database
+
+- [SQLite](https://www.sqlite.org/)
+
 #### Development
 
 - [asdf](http://asdf-vm.com/)
@@ -72,6 +77,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - **`!`** [gawk: GNU awk utility](https://www.gnu.org/software/gawk/)
 - **`!`** [GCC: the GNU Compiler Collection](https://gcc.gnu.org)
 - [lv2: LADSPA v2](https://lv2plug.in/)
+- `(-M)` [Mono](https://www.mono-project.com/)
 - [shellcheck](https://www.shellcheck.net)
 
 #### Documentation
@@ -82,10 +88,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [PlantUML](https://plantuml.com/)
 - [wkhtmltopdf](https://wkhtmltopdf.org/)
 
-#### Games
-
-- [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD)
-
 #### Files management
 
 - [bat](https://github.com/sharkdp/bat)
@@ -95,6 +97,11 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [p7zip](https://sourceforge.net/projects/p7zip/)
 - [rename](http://plasmasturm.org/code/rename/)
 - [rsync](https://rsync.samba.org/)
+
+#### Packages manager
+
+- [Homebrew](https://brew.sh/) (directly install)
+- [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD)
 
 #### Runtime
 
@@ -129,6 +136,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 #### Shell
 
+- [lporg](https://github.com/blacktop/lporg)
 - [Microsoft PowerShell](https://microsoft.com/PowerShell)
 - [Prezto](https://github.com/sorin-ionescu/prezto) (via Git)
   - [Powerlevel10k](https://github.com/romkatv/powerlevel10k) (via Prezto)
@@ -192,6 +200,11 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 | **`!`** | **DEPENDENCIES**: Removing this app may cause this setup to stop working correctly. |
 |  `-M`   | without M1 Processor                                                                |
 
+#### 3D Modeling
+
+- [Blender](https://www.blender.org/)
+- [FreeCAD](https://www.freecadweb.org/)
+
 #### Audios, Videos, and Broadcasting
 
 - [Apple GarageBand](https://www.apple.com/mac/garageband/) (via Mac App Store)
@@ -220,7 +233,6 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Android Studio](https://developer.android.com/studio)
 - [Apple Developer](https://apps.apple.com/us/app/apple-developer/id640199958) (via Mac App Store)
 - **`!`** [Apple Xcode](https://developer.apple.com/xcode/) (via Mac App Store)
-- [Blender](https://www.blender.org/)
 - [React Native Debugger](https://github.com/jhen0409/react-native-debugger)
 - [Unity Hub](https://unity3d.com/)
 
