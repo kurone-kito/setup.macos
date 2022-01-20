@@ -13,8 +13,6 @@ fi
 
 log_info 'Initialize the XCode'
 
-./xcode-select.sh
-
 sudo xcodebuild -license accept
 sudo xcodebuild -runFirstLaunch
 sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer

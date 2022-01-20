@@ -7,15 +7,16 @@ cd "$(dirname "$0")"
 
 log_info 'Installing the Command Line Tools for Xcode'
 
-if ! xcode-select --print-path > /dev/null 2>&1
-then
-  xcode-select --install
-  say_warn 'The setup script is waiting for Command Line Tools for Xcode to complete its setup.'
-  until xcode-select --print-path > /dev/null 2>&1
-  do
-      sleep 3
-  done
-fi
+sudo rm -rf /Library/Developer/CommandLineTools
+sudo xcode-select --install
+say_warn 'The setup script is waiting for Command Line Tools for Xcode to complete its setup.'
+until [ -e /Library/Developer/CommandLineTools ]
+do
+  sleep 3
+done
+
+log_info 'Detected the Command Line Tools for Xcode'
+sleep 30 # ! TODO: Consider the appropriate way to wait for the `xcode-select --install` installation to complete.
 
 if [ -e /Applications/Xcode.app ]
 then
