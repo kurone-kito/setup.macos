@@ -57,13 +57,17 @@ brew 'proctools'
 ###########################################################################
 ### No depended but high priorities
 
-# Programming
-brew 'asdf'
+# Conversion for texts
+brew 'jq'
 
 # Developments for Web
+brew 'asdf'
 brew 'mkcert'
 brew 'nss'
 cask 'firefox-esr'
+
+# Shell
+brew 'blacktop/tap/lporg'
 
 # Virtualizations
 cask 'vagrant'
@@ -177,7 +181,6 @@ brew 'p7zip'
 brew 'vips'
 
 # Conversion for texts
-brew 'jq'
 brew 'nkf'
 brew 'textql'
 
@@ -226,7 +229,6 @@ brew 'openvpn'
 brew 'scrcpy'
 
 # Shell
-brew 'blacktop/tap/lporg'
 brew 'terminal-notifier'
 brew 'term'
 brew 'thefuck'
