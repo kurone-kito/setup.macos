@@ -33,3 +33,4 @@ pgrep firefox > /dev/null \
 say_warn 'If this is your first setup, mkcert may need to be interacted with to continue it; follow the instructions in the GUI to continue the process.'
 log_info 'The setup script has started Firefox because it is needed to initialize the certificate store. You can already close the browser.'
 mkcert --install
+killall firefox 1> /dev/null 2>&1 || true
