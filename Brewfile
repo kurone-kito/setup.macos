@@ -92,14 +92,13 @@ cask 'sonic-visualiser'
 # Benchmark
 cask 'macs-fan-control'
 
+# Desktop
+cask 'avibrazil-rdm'
+
 # Development: for Mobile apps
 cask 'android-studio'
 cask 'react-native-debugger'
 cask 'unity-hub'
-
-# Documentations
-cask 'manta'
-cask 'wkhtmltopdf'
 
 # Devices
 cask 'canon-mf-printer'
@@ -107,6 +106,10 @@ cask 'drobo-dashboard'
 cask 'logitech-firmwareupdatetool'
 cask 'logitech-g-hub'
 cask 'logitech-gaming-software'
+
+# Documentations
+cask 'manta'
+cask 'wkhtmltopdf'
 
 # Fonts
 cask 'font-hackgen'
@@ -187,10 +190,13 @@ brew 'textql'
 # Database
 brew 'sqlite'
 
+# Desktop
+brew 'terminal-notifier'
+
 # Development
 brew 'cmake'
 brew 'lv2'
-cask 'mono' unless is_m1? # ! x86_64?
+brew 'mono' unless is_m1? # ! x86_64?
 brew 'pict'
 brew 'shellcheck'
 
@@ -229,7 +235,6 @@ brew 'openvpn'
 brew 'scrcpy'
 
 # Shell
-brew 'terminal-notifier'
 brew 'term'
 brew 'thefuck'
 brew 'tmux'

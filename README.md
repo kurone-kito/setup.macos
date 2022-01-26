@@ -228,6 +228,10 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Microsoft OneDrive](https://www.microsoft.com/microsoft-365/onedrive)
 - [OmniPresence](https://www.omnigroup.com/more)
 
+#### Desktop
+
+- [RDM](https://github.com/avibrazil/RDM)
+
 #### Development
 
 - [Android Studio](https://developer.android.com/studio)
