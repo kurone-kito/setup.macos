@@ -9,6 +9,8 @@ cd "$(dirname "$0")"
 sudo -v
 while true; do sleep 50; sudo -n true; kill -0 "$$" || exit; done 2>/dev/null &
 
+.setup/defaults.sh
+
 .setup/update.sh
 
 .setup/xcode-select.sh
@@ -19,7 +21,6 @@ while true; do sleep 50; sudo -n true; kill -0 "$$" || exit; done 2>/dev/null &
 BREW="$(pwd)/.setup/brew-bundle.sh"
 osascript -e 'tell app "Terminal"' -e "do script \"${BREW} && exit\"" -e 'end tell'
 
-.setup/defaults.sh
 .setup/updaters.sh
 .setup/nanorc.sh
 .setup/prezto.sh
