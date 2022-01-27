@@ -29,6 +29,7 @@ then
 fi
 
 log_info 'Installing some containers for Docker.'
+log_warn 'DO NOT CHANGE the settings of Docker Desktop on this setup running.'
 
 docker pull hello-world
 docker pull alpine
@@ -38,19 +39,19 @@ docker pull ubuntu
 docker pull docker
 docker pull docker:dind
 docker pull docker:git
-docker pull node
 docker pull node:12-alpine
 docker pull node:12-buster-slim
 docker pull node:12
 docker pull node:14-alpine
+docker pull node:14-buster-slim
 docker pull node:14
 docker pull node:16-alpine
+docker pull node:16-buster-slim
 docker pull node:16
-docker pull node:17
 docker pull node:17-alpine
-docker pull cypress/base:14.17.0
+docker pull node:17-buster-slim
+docker pull node:17
 docker pull catthehacker/ubuntu:act-latest
-docker pull php:8-cli
 # docker pull catthehacker/ubuntu:full-20.04 # ! Commented out because the container is too lerge!
 
 ../bin/update_docker || true
