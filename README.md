@@ -359,7 +359,7 @@ Install a script to upgrade the installed app with just one command.
 - Upgrade the plugins of Vagrant
 - Upgrade the Docker images
 - Upgrade the Prezto
-- Upgrade the Anyenv / Nodenv / Node.js
+- Upgrade the asdf (Node.js and Python)
 
 </details>
 <!-- markdownlint-enable MD033 -->
