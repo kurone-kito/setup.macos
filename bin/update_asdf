@@ -15,13 +15,16 @@ asdf plugin update --all
 
 install_nodejs() {
   set +e
-  if asdf install nodejs "${1}"
+  TARGET_VER="$(asdf list all nodejs "${1}" | tail -n 1)"
+  if asdf install nodejs "${TARGET_VER}"
   then
-    asdf global nodejs "${1}"
+    asdf global nodejs "${TARGET_VER}"
   else
-    echo "Fallback: Build the Node.js v${1} from source..."
-    NODEJS_CONFIGURE_OPTIONS='--with-intl=full-icu --download=all' NODEJS_CHECK_SIGNATURES="no" asdf install nodejs "ref:v${1}"
-    asdf global nodejs "ref:v${1}"
+    echo "Fallback: Build the Node.js v${TARGET_VER} from source..."
+    NODEJS_CONFIGURE_OPTIONS='--with-intl=full-icu --download=all' \
+      NODEJS_CHECK_SIGNATURES='no' \
+      asdf install nodejs "ref:v${TARGET_VER}"
+    asdf global nodejs "ref:v${TARGET_VER}"
   fi
   set -e
   . "${HOME}/.zsh.d/z-asdf"
@@ -32,7 +35,7 @@ install_nodejs() {
   npm install -g --silent yarn@berry
 }
 
-install_nodejs "$(asdf list all nodejs 12 | tail -n 1)" 6
-install_nodejs "$(asdf list all nodejs 14 | tail -n 1)" 6
-install_nodejs "$(asdf list all nodejs 16 | tail -n 1)" 8
+install_nodejs 12 6
+install_nodejs 14 6
+install_nodejs 16 8
 install_nodejs latest 8
