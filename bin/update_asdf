@@ -13,6 +13,17 @@ fi
 
 asdf plugin update --all
 
+install_nodejs_deps() {
+  . "${HOME}/.zsh.d/z-asdf"
+
+  # https://qiita.com/Qoo_Rus/items/afb52517e0e17b720990
+  npm install -g --silent agentkeepalive@latest
+
+  npm install -g --silent npm@"${1}"
+  npm upgrade -g --silent
+  npm install -g --silent yarn@berry
+}
+
 install_nodejs() {
   set +e
   TARGET_VER="$(asdf list all nodejs "${1}" | tail -n 1)"
@@ -27,12 +38,7 @@ install_nodejs() {
     asdf global nodejs "ref:v${TARGET_VER}"
   fi
   set -e
-  . "${HOME}/.zsh.d/z-asdf"
-  # https://qiita.com/Qoo_Rus/items/afb52517e0e17b720990
-  npm install -g --silent agentkeepalive@latest
-  npm install -g --silent npm@"${2}"
-  npm upgrade -g --silent
-  npm install -g --silent yarn@berry
+  install_nodejs_deps "${2}"
 }
 
 install_nodejs 12 6
