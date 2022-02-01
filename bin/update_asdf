@@ -13,6 +13,21 @@ fi
 
 asdf plugin update --all
 
+resolve_nodejs_version() {
+  case "${1}" in
+    *lts*)
+      asdf uninstall nodejs "${1}"
+      echo "${1}"
+      ;;
+    *latest*)
+      echo "${1}"
+      ;;
+    *)
+      asdf latest nodejs "${1}"
+      ;;
+  esac
+}
+
 install_nodejs_deps() {
   . "${HOME}/.zsh.d/z-asdf"
 
@@ -26,7 +41,7 @@ install_nodejs_deps() {
 
 install_nodejs() {
   set +e
-  TARGET_VER="$(asdf list all nodejs "${1}" | tail -n 1)"
+  TARGET_VER=$(resolve_nodejs_version "${1}")
   if asdf install nodejs "${TARGET_VER}"
   then
     asdf global nodejs "${TARGET_VER}"
@@ -42,6 +57,10 @@ install_nodejs() {
 }
 
 install_nodejs 12 6
+install_nodejs lts-erbium 6
 install_nodejs 14 6
+install_nodejs lts-fermium 6
 install_nodejs 16 8
+install_nodejs lts-gallium 8
+install_nodejs lts 8
 install_nodejs latest 8
