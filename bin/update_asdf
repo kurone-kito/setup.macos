@@ -39,6 +39,21 @@ install_nodejs_deps() {
   npm install -g --silent yarn@berry
 }
 
+remove_obsolete_nodejs_versions() {
+  case "${1}" in
+    *lts*)
+      ;;
+    *latest*)
+      ;;
+    *)
+      for v in $(asdf list nodejs "${1}" | sort -V | sed -e '$d')
+      do
+        asdf uninstall nodejs "${v}"
+      done
+      ;;
+  esac
+}
+
 install_nodejs() {
   set +e
   TARGET_VER=$(resolve_nodejs_version "${1}")
@@ -53,6 +68,7 @@ install_nodejs() {
     asdf global nodejs "ref:v${TARGET_VER}"
   fi
   set -e
+  remove_obsolete_nodejs_versions "${1}"
   install_nodejs_deps "${2}"
 }
 
@@ -63,4 +79,5 @@ install_nodejs lts-fermium 6
 install_nodejs 16 8
 install_nodejs lts-gallium 8
 install_nodejs lts 8
+install_nodejs 17 8
 install_nodejs latest 8
