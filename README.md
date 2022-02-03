@@ -72,6 +72,10 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
       - v12 LTS Erbium
       - v14 LTS Fermium
       - v16
+  - plugin: [asdf-python](https://github.com/danhper/asdf-python) (via asdf)
+    - [Python](https://www.python.org) (via asdf-python)
+      - v2
+      - v3 (via deep dependencies of the Homebrew packages: e.g., awscli, graphviz, and others)
 - [CMake](https://cmake.org)
 - **`!`** Command Line Tools for Xcode (via xcode-select CLI)
 - **`!`** [gawk: GNU awk utility](https://www.gnu.org/software/gawk/)
