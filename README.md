@@ -137,6 +137,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [Mosh](https://mosh.org)
 - [OpenVPN](https://openvpn.net/)
 - [inetutils: GNU network utilities](https://www.gnu.org/software/inetutils/)
+- [Tor](https://www.torproject.org/)
 
 #### Shell
 
@@ -214,6 +215,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Apple GarageBand](https://www.apple.com/mac/garageband/) (via Mac App Store)
 - [Apple iMovie](https://www.apple.com/imovie/) (via Mac App Store)
 - [OBS Studio](https://obsproject.com/)
+- [Restream Chat](https://restream.io/chat/)
 - [Rogue Amoeba Audio Hijack](https://rogueamoeba.com/audiohijack/)
 - [Rogue Amoeba Loopback](https://rogueamoeba.com/loopback/)
 - [Sonic Visualiser](https://sonicvisualiser.org/)
@@ -249,6 +251,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [scrcpy](https://github.com/Genymobile/scrcpy)
 - [Canon Satera MF Printer driver](https://cweb.canon.jp/satera/mfp/)
 - [Drobo Dashboard](https://www.drobo.com/)
+<!-- - [Haptic Touch Bar](https://www.haptictouchbar.com) -->
 - [logicool G Hub](https://gaming.logicool.co.jp/innovation/g-hub.html)
 - [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
 
@@ -324,6 +327,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Google Chrome](https://www.google.com/chrome/)
 - [Chromium](https://www.chromium.org/Home)
 - [Mozilla Firefox ESR](https://www.mozilla.org/firefox/)
+- [Tor Browser](https://www.torproject.org/projects/torbrowser.html)
 - Some extensions for Apple Safari (via Mac App Store)
   - [Grammarly for Safari](https://apps.apple.com/app/grammarly-for-safari/id1462114288)
 
