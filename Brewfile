@@ -87,6 +87,7 @@ cask 'freecad'
 cask 'audio-hijack'
 cask 'loopback'
 cask 'obs'
+cask 'restream-chat'
 cask 'sonic-visualiser'
 
 # Benchmark
@@ -103,6 +104,7 @@ cask 'unity-hub'
 # Devices
 cask 'canon-mf-printer'
 cask 'drobo-dashboard'
+# cask 'haptic-touch-bar'
 cask 'logitech-firmwareupdatetool'
 cask 'logitech-g-hub'
 cask 'logitech-gaming-software'
@@ -170,6 +172,7 @@ cask 'virtualbox-extension-pack' unless is_m1? # ! x86_64?
 # Web browsers
 cask 'chromium'
 cask 'google-chrome', greedy: true
+cask 'tor-browser'
 
 ###########################################################################
 ### Brew
@@ -233,6 +236,7 @@ brew 'mmctl'
 brew 'mosh'
 brew 'openvpn'
 brew 'scrcpy'
+brew 'tor'
 
 # Shell
 brew 'term'

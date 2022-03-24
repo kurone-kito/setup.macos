@@ -25,6 +25,7 @@ install_plugin() {
 }
 
 install_plugin nodejs
+install_plugin python
 
 log_info 'Installing the NodeJS via updater script.'
 wait_dependencies gcc

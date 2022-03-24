@@ -13,26 +13,77 @@ fi
 
 asdf plugin update --all
 
-install_nodejs() {
-  set +e
-  if asdf install nodejs "${1}"
-  then
-    asdf global nodejs "${1}"
-  else
-    echo "Fallback: Build the Node.js v${1} from source..."
-    NODEJS_CONFIGURE_OPTIONS='--with-intl=full-icu --download=all' NODEJS_CHECK_SIGNATURES="no" asdf install nodejs "ref:v${1}"
-    asdf global nodejs "ref:v${1}"
-  fi
-  set -e
+PY_VER="$(asdf latest python 2 | sort -V | tail -n 1)"
+set +e
+asdf install python "${PY_VER}"
+asdf global python "${PY_VER}"
+set -e
+
+resolve_nodejs_version() {
+  case "${1}" in
+    *lts*)
+      asdf uninstall nodejs "${1}"
+      echo "${1}"
+      ;;
+    *latest*)
+      echo "${1}"
+      ;;
+    *)
+      asdf latest nodejs "${1}"
+      ;;
+  esac
+}
+
+install_nodejs_deps() {
   . "${HOME}/.zsh.d/z-asdf"
+
   # https://qiita.com/Qoo_Rus/items/afb52517e0e17b720990
   npm install -g --silent agentkeepalive@latest
-  npm install -g --silent npm@"${2}"
+
+  npm install -g --silent npm@"${1}"
   npm upgrade -g --silent
   npm install -g --silent yarn@berry
 }
 
-install_nodejs "$(asdf list all nodejs 12 | tail -n 1)" 6
-install_nodejs "$(asdf list all nodejs 14 | tail -n 1)" 6
-install_nodejs "$(asdf list all nodejs 16 | tail -n 1)" 8
+remove_obsolete_nodejs_versions() {
+  case "${1}" in
+    *lts*)
+      ;;
+    *latest*)
+      ;;
+    *)
+      for v in $(asdf list nodejs "${1}" | sort -V | sed -e '$d')
+      do
+        asdf uninstall nodejs "${v}"
+      done
+      ;;
+  esac
+}
+
+install_nodejs() {
+  set +e
+  TARGET_VER=$(resolve_nodejs_version "${1}")
+  if asdf install nodejs "${TARGET_VER}"
+  then
+    asdf global nodejs "${TARGET_VER}"
+  else
+    echo "Fallback: Build the Node.js v${TARGET_VER} from source..."
+    NODEJS_CONFIGURE_OPTIONS='--with-intl=full-icu --download=all' \
+      NODEJS_CHECK_SIGNATURES='no' \
+      asdf install nodejs "ref:v${TARGET_VER}"
+    asdf global nodejs "ref:v${TARGET_VER}"
+  fi
+  set -e
+  remove_obsolete_nodejs_versions "${1}"
+  install_nodejs_deps "${2}"
+}
+
+install_nodejs 12 6
+install_nodejs lts-erbium 6
+install_nodejs 14 6
+install_nodejs lts-fermium 6
+install_nodejs 16 8
+install_nodejs lts-gallium 8
+install_nodejs lts 8
+install_nodejs 17 8
 install_nodejs latest 8
