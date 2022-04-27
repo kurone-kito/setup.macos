@@ -66,8 +66,16 @@ brew 'mkcert'
 brew 'nss'
 cask 'firefox-esr'
 
+# Development: for Mobile apps
+cask 'unity-hub'
+
 # Shell
 brew 'blacktop/tap/lporg'
+
+# Storages management
+cask 'adobe-creative-cloud'
+cask 'dropbox'
+cask 'omnipresence'
 
 # Virtualizations
 cask 'vagrant'
@@ -99,7 +107,6 @@ cask 'avibrazil-rdm'
 # Development: for Mobile apps
 cask 'android-studio'
 cask 'react-native-debugger'
-cask 'unity-hub'
 
 # Devices
 cask 'canon-mf-printer'
@@ -113,6 +120,9 @@ cask 'logitech-gaming-software'
 cask 'manta'
 cask 'wkhtmltopdf'
 
+# Files
+cask 'raspberry-pi-imager'
+
 # Fonts
 cask 'font-hackgen'
 cask 'font-ibm-plex'
@@ -124,12 +134,6 @@ cask 'minecraft'
 cask 'steam'
 cask 'steamcmd'
 cask 'stepmania'
-
-# Imager & Storages management
-cask 'adobe-creative-cloud'
-cask 'dropbox'
-cask 'omnipresence'
-cask 'raspberry-pi-imager'
 
 # Messaging
 cask 'discord'
