@@ -17,6 +17,7 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/command-not-found'
 tap 'homebrew/core'
+tap 'aws/tap'
 tap 'blacktop/tap'
 tap 'nektos/tap'
 
@@ -106,6 +107,7 @@ cask 'avibrazil-rdm'
 
 # Development: for Mobile apps
 # cask 'android-studio'
+cask 'dotnet-sdk'
 cask 'react-native-debugger'
 
 # Devices
@@ -151,7 +153,6 @@ cask 'vnc-viewer'
 
 # Runtime
 cask 'adoptopenjdk'
-cask 'dotnet'
 
 # Shell
 cask 'powershell'
@@ -201,6 +202,7 @@ brew 'sqlite'
 brew 'terminal-notifier'
 
 # Development
+brew 'antlr'
 brew 'cmake'
 brew 'lv2'
 brew 'mono' unless is_m1? # ! x86_64?
@@ -235,6 +237,7 @@ brew 'nektos/tap/act'
 
 # Remote tools
 brew 'awscli'
+brew 'aws-sam-cli'
 brew 'inetutils' # includes the telnet
 brew 'mmctl'
 brew 'mosh'

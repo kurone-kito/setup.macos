@@ -66,6 +66,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 #### Development
 
+- [ANTLR](https://www.antlr.org/)
 - [asdf](http://asdf-vm.com/)
   - plugin: [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs) (via asdf)
     - [Node.js](https://nodejs.org/) (via asdf-nodejs)
@@ -80,6 +81,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - **`!`** Command Line Tools for Xcode (via xcode-select CLI)
 - **`!`** [gawk: GNU awk utility](https://www.gnu.org/software/gawk/)
 - **`!`** [GCC: the GNU Compiler Collection](https://gcc.gnu.org)
+- [Microsoft .NET SDK](https://dotnet.microsoft.com/)
 - [lv2: LADSPA v2](https://lv2plug.in/)
 - `(-M)` [Mono](https://www.mono-project.com/)
 - [shellcheck](https://www.shellcheck.net)
@@ -111,7 +113,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 - [AdoptOpenJDK](https://adoptopenjdk.net/)
 - [Apple Rosetta 2](https://support.apple.com/HT211861) via Apple Software Update
-- [Microsoft .NET Core Runtime](https://dotnet.microsoft.com/download#macos)
 
 #### Testing
 
@@ -132,6 +133,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Remote
 
 - [awscli](https://aws.amazon.com/cli/)
+- [AWS SAM CLI](https://aws.amazon.com/serverless/sam/)
 - **`!`** [curl](https://curl.se)
 - **`!`** [GNU wget](https://www.gnu.org/software/wget/)
 - [Mosh](https://mosh.org)
