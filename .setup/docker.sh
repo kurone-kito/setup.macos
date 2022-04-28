@@ -51,6 +51,9 @@ docker pull node:16
 docker pull node:17-alpine
 docker pull node:17-buster-slim
 docker pull node:17
+docker pull node:18-alpine
+docker pull node:18-buster-slim
+docker pull node:18
 docker pull catthehacker/ubuntu:act-latest
 # docker pull catthehacker/ubuntu:full-20.04 # ! Commented out because the container is too lerge!
 

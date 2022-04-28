@@ -73,6 +73,8 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
       - v12 LTS Erbium
       - v14 LTS Fermium
       - v16
+      - v17
+      - v18
   - plugin: [asdf-python](https://github.com/danhper/asdf-python) (via asdf)
     - [Python](https://www.python.org) (via asdf-python)
       - v2
