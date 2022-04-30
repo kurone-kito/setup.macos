@@ -6,7 +6,7 @@ cd "$(dirname "$0")"
 . .lib.sh
 . ../.zsh.d/homebrew
 
-if grep "cask 'docker'" ../Brewfile | grep '^#' > /dev/null
+if grep "cask 'docker'" ../Brewfile | grep -q '^#'
 then
   log_notice 'Skip the Docker setup because that not found the Docker command.'
   exit

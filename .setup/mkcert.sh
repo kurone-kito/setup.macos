@@ -6,19 +6,19 @@ cd "$(dirname "$0")"
 . .lib.sh
 . ../.zsh.d/homebrew
 
-if grep "brew 'mkcert'" ../Brewfile | grep '^#' > /dev/null
+if grep "brew 'mkcert'" ../Brewfile | grep -q '^#'
 then
   log_warn 'Warn: skipped the mkcert initialization because it is not found on this system.'
   exit
 fi
 
-if grep "brew 'nss'" ../Brewfile | grep '^#' > /dev/null
+if grep "brew 'nss'" ../Brewfile | grep -q '^#'
 then
   log_warn 'Warn: skipped the mkcert initialization because nss is not found on this system.'
   exit
 fi
 
-if grep "cask 'firefox-esr'" ../Brewfile | grep '^#' > /dev/null
+if grep "cask 'firefox-esr'" ../Brewfile | grep -q '^#'
 then
   log_warn 'skipped the mkcert initialization because Firefox is not found on this system.'
   exit
