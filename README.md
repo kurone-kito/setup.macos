@@ -70,9 +70,8 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [asdf](http://asdf-vm.com/)
   - plugin: [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs) (via asdf)
     - [Node.js](https://nodejs.org/) (via asdf-nodejs)
-      - v12 LTS Erbium
       - v14 LTS Fermium
-      - v16
+      - v16 LTS Gallium
       - v17
       - v18
   - plugin: [asdf-python](https://github.com/danhper/asdf-python) (via asdf)
