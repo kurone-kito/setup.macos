@@ -1,7 +1,7 @@
 # macOS auto setup for develop environment
 
-Desktop environment preference for macOS Big Sur (intel and M1)  
-macOS Big Sur (intel / M1 両対応) 向けの作業環境セットアップスクリプト
+Desktop environment preference for macOS Monterey (Apple Sillicon and intel supported)  
+macOS Monterey (Apple Sillicon / intel 両対応) 向けの作業環境セットアップスクリプト
 
 ## Overview
 
