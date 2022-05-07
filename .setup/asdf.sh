@@ -6,7 +6,7 @@ cd "$(dirname "$0")"
 . .lib.sh
 . ../.zsh.d/homebrew
 
-if grep "brew 'asdf'" ../Brewfile | grep '^#' > /dev/null
+if grep "brew 'asdf'" ../Brewfile | grep -q '^#'
 then
   log_warn 'skipped the ASDF updating because it is not found on this system.'
   exit

@@ -17,6 +17,7 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/command-not-found'
 tap 'homebrew/core'
+tap 'aws/tap'
 tap 'blacktop/tap'
 tap 'nektos/tap'
 
@@ -66,8 +67,16 @@ brew 'mkcert'
 brew 'nss'
 cask 'firefox-esr'
 
+# Development: for Mobile apps
+# cask 'unity-hub'
+
 # Shell
 brew 'blacktop/tap/lporg'
+
+# Storages management
+# cask 'adobe-creative-cloud'
+# cask 'dropbox'
+cask 'omnipresence'
 
 # Virtualizations
 cask 'vagrant'
@@ -98,8 +107,8 @@ cask 'avibrazil-rdm'
 
 # Development: for Mobile apps
 # cask 'android-studio'
+cask 'dotnet-sdk'
 cask 'react-native-debugger'
-# cask 'unity-hub'
 
 # Devices
 # cask 'canon-mf-printer'
@@ -113,6 +122,9 @@ cask 'react-native-debugger'
 cask 'manta'
 cask 'wkhtmltopdf'
 
+# Files
+# cask 'raspberry-pi-imager'
+
 # Fonts
 cask 'font-hackgen'
 cask 'font-ibm-plex'
@@ -124,12 +136,6 @@ cask 'font-meslo-lg-nerd-font'
 # cask 'steam'
 cask 'steamcmd'
 # cask 'stepmania'
-
-# Imager & Storages management
-# cask 'adobe-creative-cloud'
-# cask 'dropbox'
-cask 'omnipresence'
-# cask 'raspberry-pi-imager'
 
 # Messaging
 # cask 'discord'
@@ -147,7 +153,6 @@ cask 'vnc-viewer'
 
 # Runtime
 cask 'adoptopenjdk'
-cask 'dotnet'
 
 # Shell
 cask 'powershell'
@@ -197,6 +202,7 @@ brew 'sqlite'
 brew 'terminal-notifier'
 
 # Development
+brew 'antlr'
 brew 'cmake'
 brew 'lv2'
 brew 'mono' unless is_m1? # ! x86_64?
@@ -231,6 +237,7 @@ brew 'nektos/tap/act'
 
 # Remote tools
 brew 'awscli'
+brew 'aws-sam-cli'
 brew 'inetutils' # includes the telnet
 brew 'mmctl'
 brew 'mosh'

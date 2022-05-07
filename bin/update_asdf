@@ -78,12 +78,11 @@ install_nodejs() {
   install_nodejs_deps "${2}"
 }
 
-install_nodejs 12 6
-install_nodejs lts-erbium 6
 install_nodejs 14 6
 install_nodejs lts-fermium 6
 install_nodejs 16 8
 install_nodejs lts-gallium 8
 install_nodejs lts 8
 install_nodejs 17 8
+install_nodejs 18 8
 install_nodejs latest 8
