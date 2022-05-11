@@ -1,0 +1,39 @@
+{
+  "cSpell.ignorePaths": [
+    ".git/objects",
+    ".github/CODE_OF_CONDUCT.*",
+    ".vscode"
+  ],
+  "cSpell.words": [
+    "antlr",
+    "broot",
+    "cloc",
+    "coreutils",
+    "dind",
+    "drobo",
+    "gotop",
+    "imager",
+    "inetutils",
+    "kito",
+    "kurone",
+    "lato",
+    "logicool",
+    "lporg",
+    "mackup",
+    "maxon",
+    "meslo",
+    "mkcert",
+    "nyancat",
+    "omni",
+    "pfind",
+    "pgrep",
+    "pkill",
+    "plex",
+    "prezto",
+    "scrcpy",
+    "tldr",
+    "vbguest",
+    "visualiser",
+    "wkhtmltopdf"
+  ]
+}
