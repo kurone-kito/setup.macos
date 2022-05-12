@@ -16,6 +16,13 @@ export ASDF_DIR
 
 if which npm > /dev/null
 then
-  PATH="$PATH:$(npm bin -g)"
+  MAJOR=$(npm -v | awk -F. '{printf "%2d", $1}')
+  if [ "$MAJOR" -ge 8 ]
+  then
+    PATH="$PATH:$(npm bin --location=global)"
+  else
+    # ! TODO: Remove this fallback when no longer supported the Node.js v14.
+    PATH="$PATH:$(npm bin --global)"
+  fi
   export PATH
 fi
