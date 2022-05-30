@@ -380,16 +380,16 @@ Install a script to upgrade the installed app with just one command.
 <!-- markdownlint-disable MD033 -->
 <details><summary>list</summary>
 
-| Image                         | Tag                                                                                                                                                                            |
-| :---------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `hello-world`                 | _`latest`_                                                                                                                                                                     |
-| `alpine`                      | _`latest`_                                                                                                                                                                     |
-| `busybox`                     | _`latest`_                                                                                                                                                                     |
-| `debian`                      | _`latest`_                                                                                                                                                                     |
-| `ubuntu`                      | _`latest`_                                                                                                                                                                     |
-| `docker`                      | `dind`, `git`, _`latest`_                                                                                                                                                      |
-| `node`                        | `12`, `12-alpine`, `12-bullseye-slim`, `14`, `14-alpine`, `14-bullseye-slim`, `16`, `16-alpine` `16-bullseye-slim`, `17`, `17-alpine`, `17-slim`, `18`, `18-alpine`, `18-slim` |
-| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-22.04`~~, ~~`ubuntu:full-latest`~~                                                                                                   |
+| Image                         | Tag                                                                                                       |
+| :---------------------------- | :-------------------------------------------------------------------------------------------------------- |
+| `hello-world`                 | _`latest`_                                                                                                |
+| `alpine`                      | _`latest`_                                                                                                |
+| `busybox`                     | _`latest`_                                                                                                |
+| `debian`                      | _`latest`_                                                                                                |
+| `ubuntu`                      | _`latest`_                                                                                                |
+| `docker`                      | `dind`, `git`, _`latest`_                                                                                 |
+| `node`                        | `14`, `14-alpine`, `14-bullseye-slim`, `16`, `16-alpine` `16-bullseye-slim`, `18`, `18-alpine`, `18-slim` |
+| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-22.04`~~, ~~`ubuntu:full-latest`~~                              |
 
 </details>
 <!-- markdownlint-enable MD033 -->
