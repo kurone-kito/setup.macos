@@ -1,6 +1,6 @@
 # Contributor Covenant Code of Conduct
 
-Language: [🇬🇧](./CODE_OF_CONDUCT.md) | [🇯🇵](./CODE_OF_CONDUCT.ja.md) | [🇨🇳](./CODE_OF_CONDUCT.zh.md)
+Language: **🇬🇧** | [🇯🇵](./CODE_OF_CONDUCT.ja.md) | [🇨🇳](./CODE_OF_CONDUCT.zh.md)
 
 ## Our Pledge
 

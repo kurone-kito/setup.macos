@@ -83,6 +83,5 @@ install_nodejs lts-fermium 6
 install_nodejs 16 8
 install_nodejs lts-gallium 8
 install_nodejs lts 8
-install_nodejs 17 8
 install_nodejs 18 8
 install_nodejs latest 8

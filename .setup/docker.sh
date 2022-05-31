@@ -33,28 +33,26 @@ log_warn 'DO NOT CHANGE the settings of Docker Desktop on this setup running.'
 
 docker pull hello-world
 docker pull alpine
-docker pull almalinux
+docker pull busybox
 docker pull debian
 docker pull ubuntu
 docker pull docker
 docker pull docker:dind
 docker pull docker:git
-docker pull node:12-alpine
-docker pull node:12-buster-slim
-docker pull node:12
-docker pull node:14-alpine
-docker pull node:14-buster-slim
 docker pull node:14
-docker pull node:16-alpine
-docker pull node:16-buster-slim
+docker pull node:14-alpine
+docker pull node:14-bullseye-slim
 docker pull node:16
-docker pull node:17-alpine
-docker pull node:17-buster-slim
-docker pull node:17
-docker pull node:18-alpine
-docker pull node:18-buster-slim
+docker pull node:16-alpine
+docker pull node:16-bullseye-slim
 docker pull node:18
-docker pull catthehacker/ubuntu:act-latest
-# docker pull catthehacker/ubuntu:full-20.04 # ! Commented out because the container is too lerge!
+docker pull node:18-alpine
+docker pull node:18-slim
+docker pull ghcr.io/catthehacker/ubuntu:act-22.04
+docker pull ghcr.io/catthehacker/ubuntu:act-latest
+
+# ! Commented out because the container is too lerge!
+# docker pull ghcr.io/catthehacker/ubuntu:full-22.04
+# docker pull ghcr.io/catthehacker/ubuntu:full-latest
 
 ../bin/update_docker || true

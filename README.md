@@ -1,7 +1,7 @@
 # macOS auto setup for develop environment
 
-Desktop environment preference for macOS Big Sur (intel and M1)  
-macOS Big Sur (intel / M1 両対応) 向けの作業環境セットアップスクリプト
+Desktop environment preference for macOS Monterey (Apple Sillicon and intel supported)  
+macOS Monterey (Apple Sillicon / intel 両対応) 向けの作業環境セットアップスクリプト
 
 ## Overview
 
@@ -72,7 +72,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
     - [Node.js](https://nodejs.org/) (via asdf-nodejs)
       - v14 LTS Fermium
       - v16 LTS Gallium
-      - v17
       - v18
   - plugin: [asdf-python](https://github.com/danhper/asdf-python) (via asdf)
     - [Python](https://www.python.org) (via asdf-python)
@@ -381,18 +380,16 @@ Install a script to upgrade the installed app with just one command.
 <!-- markdownlint-disable MD033 -->
 <details><summary>list</summary>
 
-| Image                 | Tag                                                     |
-| :-------------------- | :------------------------------------------------------ |
-| `hello-world`         | _`latest`_                                              |
-| `alpine`              | _`latest`_                                              |
-| `almalinux`           | _`latest`_                                              |
-| `debian`              | _`latest`_                                              |
-| `ubuntu`              | _`latest`_                                              |
-| `docker`              | `dind`, `git`, _`latest`_                               |
-| `node`                | `12`, `12-alpine`, `14`, `14-alpine`, `16`, `16-alpine` |
-| `cypress/base`        | `14.17.0`                                               |
-| `catthehacker/ubuntu` | `act-latest`                                            |
-| `php`                 | `8-cli`                                                 |
+| Image                         | Tag                                                                                                       |
+| :---------------------------- | :-------------------------------------------------------------------------------------------------------- |
+| `hello-world`                 | _`latest`_                                                                                                |
+| `alpine`                      | _`latest`_                                                                                                |
+| `busybox`                     | _`latest`_                                                                                                |
+| `debian`                      | _`latest`_                                                                                                |
+| `ubuntu`                      | _`latest`_                                                                                                |
+| `docker`                      | `dind`, `git`, _`latest`_                                                                                 |
+| `node`                        | `14`, `14-alpine`, `14-bullseye-slim`, `16`, `16-alpine` `16-bullseye-slim`, `18`, `18-alpine`, `18-slim` |
+| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-22.04`~~, ~~`ubuntu:full-latest`~~                              |
 
 </details>
 <!-- markdownlint-enable MD033 -->
