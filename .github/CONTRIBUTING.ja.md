@@ -1,6 +1,6 @@
 # プロジェクトへの貢献
 
-Language: [🇬🇧](./CONTRIBUTING.md) | 🇯🇵 | [🇨🇳](./CONTRIBUTING.zh.md)
+Language: [🇬🇧](./CONTRIBUTING.md) | **🇯🇵** | [🇨🇳](./CONTRIBUTING.zh.md)
 
 ---
 
