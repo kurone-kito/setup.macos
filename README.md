@@ -245,6 +245,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Android Studio](https://developer.android.com/studio)
 - [Apple Developer](https://apps.apple.com/us/app/apple-developer/id640199958) (via Mac App Store)
 - **`!`** [Apple Xcode](https://developer.apple.com/xcode/) (via Mac App Store)
+- [Apple TestFlight](https://testflight.apple.com/) (via Mac App Store)
 - [React Native Debugger](https://github.com/jhen0409/react-native-debugger)
 - [Unity Hub](https://unity3d.com/)
 
@@ -323,6 +324,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 - [Parallels Desktop](https://www.parallels.com/)
 - `(-M)` [Oracle VM Virtualbox + Extension Pack](https://www.virtualbox.org/)
+- [virtualOS](https://apps.apple.com/app/virtualos/id1614659226) (via Mac App Store)
 
 #### Web browsers
 
