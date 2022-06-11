@@ -1,6 +1,6 @@
 # 贡献
 
-Language: [🇬🇧](./CONTRIBUTING.md) | [🇯🇵](./CONTRIBUTING.ja.md) | 🇨🇳
+Language: [🇬🇧](./CONTRIBUTING.md) | [🇯🇵](./CONTRIBUTING.ja.md) | **🇨🇳**
 
 ---
 

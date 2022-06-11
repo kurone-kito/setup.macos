@@ -93,8 +93,8 @@ cask 'blender'
 cask 'freecad'
 
 # Audio & Broadcasting
-cask 'audio-hijack'
-cask 'loopback'
+cask 'audio-hijack', greedy: true
+cask 'loopback', greedy: true
 cask 'obs'
 cask 'restream-chat'
 cask 'sonic-visualiser'
@@ -175,7 +175,7 @@ cask 'virtualbox' unless is_m1? # ! x86_64?
 cask 'virtualbox-extension-pack' unless is_m1? # ! x86_64?
 
 # Web browsers
-cask 'chromium'
+cask 'chromium', greedy: true
 cask 'google-chrome', greedy: true
 cask 'tor-browser'
 
@@ -231,7 +231,7 @@ brew 'sl'
 # GitHub
 brew 'gist'
 brew 'git-delta'
-brew 'gitlab-runner'
+brew 'gitlab-runner', restart_service: true
 brew 'hub'
 brew 'nektos/tap/act'
 
@@ -289,4 +289,6 @@ mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'Remote Desktop', id: 409907375
 mas 'Slack', id: 803453959
+mas 'TestFlight', id: 899247664
 mas 'Twitter', id: 1482454543
+mas 'virtualOS', id: 1614659226

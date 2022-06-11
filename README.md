@@ -245,6 +245,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Android Studio](https://developer.android.com/studio)
 - [Apple Developer](https://apps.apple.com/us/app/apple-developer/id640199958) (via Mac App Store)
 - **`!`** [Apple Xcode](https://developer.apple.com/xcode/) (via Mac App Store)
+- [Apple TestFlight](https://testflight.apple.com/) (via Mac App Store)
 - [React Native Debugger](https://github.com/jhen0409/react-native-debugger)
 - [Unity Hub](https://unity3d.com/)
 
@@ -323,6 +324,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 - [Parallels Desktop](https://www.parallels.com/)
 - `(-M)` [Oracle VM Virtualbox + Extension Pack](https://www.virtualbox.org/)
+- [virtualOS](https://apps.apple.com/app/virtualos/id1614659226) (via Mac App Store)
 
 #### Web browsers
 
@@ -380,16 +382,16 @@ Install a script to upgrade the installed app with just one command.
 <!-- markdownlint-disable MD033 -->
 <details><summary>list</summary>
 
-| Image                         | Tag                                                                                                       |
-| :---------------------------- | :-------------------------------------------------------------------------------------------------------- |
-| `hello-world`                 | _`latest`_                                                                                                |
-| `alpine`                      | _`latest`_                                                                                                |
-| `busybox`                     | _`latest`_                                                                                                |
-| `debian`                      | _`latest`_                                                                                                |
-| `ubuntu`                      | _`latest`_                                                                                                |
-| `docker`                      | `dind`, `git`, _`latest`_                                                                                 |
-| `node`                        | `14`, `14-alpine`, `14-bullseye-slim`, `16`, `16-alpine` `16-bullseye-slim`, `18`, `18-alpine`, `18-slim` |
-| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-22.04`~~, ~~`ubuntu:full-latest`~~                              |
+| Image                  | Tag                                                                                                       |
+| :--------------------- | :-------------------------------------------------------------------------------------------------------- | ----------------------------- | ---------------------------------------------------------------------------- |
+| `hello-world`          | _`latest`_                                                                                                |
+| `alpine`               | _`latest`_                                                                                                |
+| `busybox`              | _`latest`_                                                                                                |
+| `debian`               | _`latest`_                                                                                                |
+| `ubuntu`               | _`latest`_                                                                                                |
+| `docker`               | `dind`, `git`, _`latest`_                                                                                 |
+| `node`                 | `14`, `14-alpine`, `14-bullseye-slim`, `16`, `16-alpine` `16-bullseye-slim`, `18`, `18-alpine`, `18-slim` |
+| `gitlab/gitlab-runner` | _`latest`_                                                                                                | `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~ |
 
 </details>
 <!-- markdownlint-enable MD033 -->

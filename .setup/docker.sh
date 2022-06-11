@@ -48,11 +48,12 @@ docker pull node:16-bullseye-slim
 docker pull node:18
 docker pull node:18-alpine
 docker pull node:18-slim
+docker pull gitlab/gitlab-runner
 docker pull ghcr.io/catthehacker/ubuntu:act-22.04
 docker pull ghcr.io/catthehacker/ubuntu:act-latest
 
 # ! Commented out because the container is too lerge!
-# docker pull ghcr.io/catthehacker/ubuntu:full-22.04
+# docker pull ghcr.io/catthehacker/ubuntu:full-20.04
 # docker pull ghcr.io/catthehacker/ubuntu:full-latest
 
 ../bin/update_docker || true
