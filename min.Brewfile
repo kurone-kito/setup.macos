@@ -177,6 +177,7 @@ cask 'virtualbox-extension-pack' unless is_m1? # ! x86_64?
 # Web browsers
 cask 'chromium'
 cask 'google-chrome', greedy: true
+cask 'insomnia', greedy: true
 cask 'tor-browser'
 
 ###########################################################################
@@ -237,6 +238,7 @@ brew 'nektos/tap/act'
 
 # Remote tools
 brew 'awscli'
+brew 'aws-nuke'
 brew 'aws-sam-cli'
 brew 'inetutils' # includes the telnet
 brew 'mmctl'

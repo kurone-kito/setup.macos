@@ -133,6 +133,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Remote
 
 - [awscli](https://aws.amazon.com/cli/)
+- [aws-nuke](https://github.com/rebuy-de/aws-nuke)
 - [AWS SAM CLI](https://aws.amazon.com/serverless/sam/)
 - **`!`** [curl](https://curl.se)
 - **`!`** [GNU wget](https://www.gnu.org/software/wget/)
@@ -330,6 +331,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 - [Google Chrome](https://www.google.com/chrome/)
 - [Chromium](https://www.chromium.org/Home)
+- [Insomnia](https://insomnia.rest/)
 - [Mozilla Firefox ESR](https://www.mozilla.org/firefox/)
 - [Tor Browser](https://www.torproject.org/projects/torbrowser.html)
 - Some extensions for Apple Safari (via Mac App Store)
