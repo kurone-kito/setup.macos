@@ -12,6 +12,7 @@ ASDF="$(brew --prefix asdf)"
 ASDF_SH="${ASDF}/asdf.sh"
 ASDF_DIR="${ASDF}/libexec"
 export ASDF_DIR
+# shellcheck disable=SC1090
 [ -f "${ASDF_SH}" ] && . "${ASDF_SH}"
 
 if which npm > /dev/null
