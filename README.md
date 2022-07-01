@@ -249,6 +249,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Apple TestFlight](https://testflight.apple.com/) (via Mac App Store)
 - [React Native Debugger](https://github.com/jhen0409/react-native-debugger)
 - [Unity Hub](https://unity3d.com/)
+  - Unity version 2019.4.31f1 (via Unity Hub)
 
 #### Devices
 
