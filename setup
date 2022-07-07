@@ -30,5 +30,6 @@ osascript -e 'tell app "Terminal"' -e "do script \"${BREW} && exit\"" -e 'end te
 .setup/mkcert.sh
 .setup/vagrant.sh
 .setup/docker.sh
+.setup/unity.sh
 
 log_complete

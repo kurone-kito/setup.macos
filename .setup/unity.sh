@@ -15,7 +15,8 @@ fi
 log_info 'Installing the Unity.'
 wait_dependencies unity-hub
 
-UNITY_HUB='/Applications/Unity Hub.app/Contents/MacOS/Unity Hub'
+UNITY_HUB_APP='/Applications/Unity Hub.app'
+UNITY_HUB="${UNITY_HUB_APP}/Contents/MacOS/Unity Hub"
 
 if ! which "${UNITY_HUB}" > /dev/null
 then
@@ -25,20 +26,36 @@ fi
 
 install_unity() {
   VERSION="${1}"
-  if ! "${UNITY_HUB}" -- --headless editors --installed | grep -q "${VERSION}"
+  CHANGESET="${2}"
+  if "${UNITY_HUB}" -- --headless editors --installed 2>&1 | grep -q "${VERSION}"
   then
+    log_info "Unity ${VERSION} is already installed."
+  else
     "${UNITY_HUB}" -- \
       --headless install \
       --version "${VERSION}" \
+      --changeset "${CHANGESET}" \
       --module android \
-      --module mac-il2cpp \
       --module documentation \
       --module language-ja \
-      --module windows-mono \
-      --childModules
+      --module mac-il2cpp \
+      --module windows-il2cpp \
+      --childModules || true
   fi
 }
 
-# ! FIXME: It's not working: Error while installing an editor or a module. Error: Provided editor version does not match to any known Unity Editor versions.
-install_unity 2019.4.31f1
-say_warn 'If this is your first setup, the Unity Hub may need to be interacted with to continue it; follow the instructions in the GUI to continue the process.'
+open "${UNITY_HUB_APP}" -g
+
+say_warn 'If this is your first setup, please log in to your account in the running Unity Hub. When ready, continue with the installation.'
+
+log_warn 'Enter Y if you are logged in and want to install Unity; otherwise, enter N. (y/N)'
+read -r YN
+
+case "${YN}" in
+  [yY]*)
+    install_unity 2019.4.31f1 bd5abf232a62
+    ;;
+  *)
+    log_info 'skipped the Unity installation due to the user choice'
+    ;;
+esac
