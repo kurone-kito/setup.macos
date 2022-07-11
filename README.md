@@ -48,6 +48,10 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 - [cloc](https://github.com/AlDanial/cloc)
 
+#### Configuration tools
+
+- [chezmoi](https://www.chezmoi.io/)
+
 #### Convert tools for Media binary
 
 - [FFmpeg](https://www.ffmpeg.org/)
@@ -56,6 +60,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 #### Convert tools for Texts
 
+- [groff](https://www.gnu.org/software/groff/)
 - [jq](https://stedolan.github.io/jq/)
 - [nkf](https://osdn.net/projects/nkf/)
 - [TextQL](https://github.com/dinedal/textql)

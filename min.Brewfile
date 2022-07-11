@@ -19,7 +19,6 @@ tap 'homebrew/command-not-found'
 tap 'homebrew/core'
 tap 'aws/tap'
 tap 'blacktop/tap'
-tap 'nektos/tap'
 
 ###########################################################################
 ### Dependencies
@@ -57,6 +56,9 @@ brew 'proctools'
 
 ###########################################################################
 ### No depended but high priorities
+
+# Configuration tools
+brew 'chezmoi'
 
 # Conversion for texts
 brew 'jq'
@@ -193,6 +195,7 @@ brew 'p7zip'
 brew 'vips'
 
 # Conversion for texts
+brew 'groff'
 brew 'nkf'
 brew 'textql'
 
