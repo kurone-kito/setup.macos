@@ -250,6 +250,10 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [React Native Debugger](https://github.com/jhen0409/react-native-debugger)
 - [Unity Hub](https://unity3d.com/)
   - Unity version 2019.4.31f1 (via Unity Hub)
+    - Module: Android Build Support
+    - Module: Windows Build Support (Mono)
+    - Module: Documentation
+    - Module: Language Pack (Japanese)
 
 #### Devices
 
