@@ -29,6 +29,12 @@ FINDER_PLIST="${HOME}/Library/Preferences/com.apple.finder.plist"
 /usr/libexec/PlistBuddy -c 'Set :DesktopViewSettings:IconViewSettings:gridSpacing 100' "${FINDER_PLIST}" || \
 /usr/libexec/PlistBuddy -c 'Add :DesktopViewSettings:IconViewSettings:gridSpacing int 100' "${FINDER_PLIST}"
 
+/usr/libexec/PlistBuddy -c 'Set :DesktopViewSettings:IconViewSettings:iconSize 128' "${FINDER_PLIST}" || \
+/usr/libexec/PlistBuddy -c 'Add :DesktopViewSettings:IconViewSettings:iconSize int 128' "${FINDER_PLIST}"
+
+/usr/libexec/PlistBuddy -c 'Set :DesktopViewSettings:IconViewSettings:showItemInfo true' "${FINDER_PLIST}" || \
+/usr/libexec/PlistBuddy -c 'Add :DesktopViewSettings:IconViewSettings:showItemInfo bool true' "${FINDER_PLIST}"
+
 /usr/libexec/PlistBuddy -c 'Set :DesktopViewSettings:IconViewSettings:showItemInfo true' "${FINDER_PLIST}" || \
 /usr/libexec/PlistBuddy -c 'Add :DesktopViewSettings:IconViewSettings:showItemInfo bool true' "${FINDER_PLIST}"
 
@@ -57,6 +63,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # Avoid creating the “.DS_Store” on USB volumes
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
+# Switch the default Finder view style to Column view
+defaults write com.apple.Finder FXPreferredViewStyle clmv
+
 # Show all files extensions
 defaults write -g AppleShowAllExtensions -bool true
 
@@ -80,7 +89,7 @@ defaults write com.apple.menuextra.clock FlashDateSeparators -bool true
 
 killall SystemUIServer 2> /dev/null || true
 
-# Screen saver =================================================================
+# Screen saver ============================================================
 defaults -currentHost write com.apple.screensaver idleTime -int 0
 defaults -currentHost write com.apple.screensaver showClock -bool true
 
