@@ -189,10 +189,10 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [Parallels Virtualization SDK](https://www.parallels.com/products/desktop/download/)
 - [Vagrant](https://www.vagrantup.com/)
   - plugins (via Vagrant)
-    - [Vagrant AWS Provider](https://github.com/mitchellh/vagrant-aws)
     - [Vagrant Parallels Provider](https://parallels.github.io/vagrant-parallels/)
     - [Vagrant Reload Provisioner](https://github.com/aidanns/vagrant-reload)
     - [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest)
+    - [Vagrant-WinRM](https://github.com/criteo/vagrant-winrm)
 
 #### Others
 
