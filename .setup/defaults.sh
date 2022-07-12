@@ -95,3 +95,13 @@ defaults write com.apple.TextEdit UseTransitionalDocType -bool false
 defaults write com.apple.TextEdit UseXHTMLDocType -bool true
 
 killall TextEdit 2> /dev/null || true
+
+# Network==================================================================
+add_nameserver() {
+  TARGET=/var/run/resolv.conf
+  grep -qE "^${1}$" "${TARGET}" || sudo echo "${1}" | sudo tee -a "${TARGET}" > /dev/null
+}
+
+sudo sed -i -n '/nameserver/d' /var/run/resolv.conf
+add_nameserver 'nameserver 8.8.8.8' /var/run/resolv.conf
+add_nameserver 'nameserver 8.8.4.4' /var/run/resolv.conf
