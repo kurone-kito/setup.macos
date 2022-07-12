@@ -42,11 +42,15 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 |  note   | description                                                                         |
 | :-----: | :---------------------------------------------------------------------------------- |
 | **`!`** | **DEPENDENCIES**: Removing this app may cause this setup to stop working correctly. |
-|  `-M`   | without M1 Processor                                                                |
+|  `-A`   | without Apple Sillicon Processor                                                    |
 
 #### Benchmark
 
 - [cloc](https://github.com/AlDanial/cloc)
+
+#### Configuration tools
+
+- [chezmoi](https://www.chezmoi.io/)
 
 #### Convert tools for Media binary
 
@@ -56,6 +60,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 #### Convert tools for Texts
 
+- [groff](https://www.gnu.org/software/groff/)
 - [jq](https://stedolan.github.io/jq/)
 - [nkf](https://osdn.net/projects/nkf/)
 - [TextQL](https://github.com/dinedal/textql)
@@ -83,7 +88,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - **`!`** [GCC: the GNU Compiler Collection](https://gcc.gnu.org)
 - [Microsoft .NET SDK](https://dotnet.microsoft.com/)
 - [lv2: LADSPA v2](https://lv2plug.in/)
-- `(-M)` [Mono](https://www.mono-project.com/)
+- `(-A)` [Mono](https://www.mono-project.com/)
 - [shellcheck](https://www.shellcheck.net)
 
 #### Documentation
@@ -184,10 +189,10 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [Parallels Virtualization SDK](https://www.parallels.com/products/desktop/download/)
 - [Vagrant](https://www.vagrantup.com/)
   - plugins (via Vagrant)
-    - [Vagrant AWS Provider](https://github.com/mitchellh/vagrant-aws)
     - [Vagrant Parallels Provider](https://parallels.github.io/vagrant-parallels/)
     - [Vagrant Reload Provisioner](https://github.com/aidanns/vagrant-reload)
     - [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest)
+    - [Vagrant-WinRM](https://github.com/criteo/vagrant-winrm)
 
 #### Others
 
@@ -206,7 +211,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 |  note   | description                                                                         |
 | :-----: | :---------------------------------------------------------------------------------- |
 | **`!`** | **DEPENDENCIES**: Removing this app may cause this setup to stop working correctly. |
-|  `-M`   | without M1 Processor                                                                |
+|  `-A`   | without Apple Sillicon Processor                                                    |
 
 #### 3D Modeling
 
@@ -250,6 +255,10 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [React Native Debugger](https://github.com/jhen0409/react-native-debugger)
 - [Unity Hub](https://unity3d.com/)
   - Unity version 2019.4.31f1 (via Unity Hub)
+    - Module: Android Build Support
+    - Module: Windows Build Support (Mono)
+    - Module: Documentation
+    - Module: Language Pack (Japanese)
 
 #### Devices
 
@@ -292,8 +301,8 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Discord](https://discord.com/)
 - [Facebook Messenger](https://www.messenger.com/) (via Mac App Store)
 - [Gitter](https://gitter.im/)
-- `(-M)` [Keybase](https://keybase.io/)
-  - Keybase app is distributed only M1 Mac in the Mac App Store.
+- `(-A)` [Keybase](https://keybase.io/)
+  - Keybase app is distributed only Apple Sillicon Mac in the Mac App Store.
 - [Google Chat](https://workspace.google.co.jp/products/chat/)
 - [LINE](https://line.me/) (via Mac App Store)
 - [Mattermost / with CLI tools](https://mattermost.com/)
@@ -325,7 +334,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [DOSBox-X](https://dosbox-x.com)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 - [Parallels Desktop](https://www.parallels.com/)
-- `(-M)` [Oracle VM Virtualbox + Extension Pack](https://www.virtualbox.org/)
+- `(-A)` [Oracle VM Virtualbox + Extension Pack](https://www.virtualbox.org/)
 - [virtualOS](https://apps.apple.com/app/virtualos/id1614659226) (via Mac App Store)
 
 #### Web browsers
@@ -385,16 +394,17 @@ Install a script to upgrade the installed app with just one command.
 <!-- markdownlint-disable MD033 -->
 <details><summary>list</summary>
 
-| Image                  | Tag                                                                                                       |
-| :--------------------- | :-------------------------------------------------------------------------------------------------------- | ----------------------------- | ---------------------------------------------------------------------------- |
-| `hello-world`          | _`latest`_                                                                                                |
-| `alpine`               | _`latest`_                                                                                                |
-| `busybox`              | _`latest`_                                                                                                |
-| `debian`               | _`latest`_                                                                                                |
-| `ubuntu`               | _`latest`_                                                                                                |
-| `docker`               | `dind`, `git`, _`latest`_                                                                                 |
-| `node`                 | `14`, `14-alpine`, `14-bullseye-slim`, `16`, `16-alpine` `16-bullseye-slim`, `18`, `18-alpine`, `18-slim` |
-| `gitlab/gitlab-runner` | _`latest`_                                                                                                | `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~ |
+| Image                         | Tag                                                                                                       |
+| :---------------------------- | :-------------------------------------------------------------------------------------------------------- |
+| `hello-world`                 | _`latest`_                                                                                                |
+| `alpine`                      | _`latest`_                                                                                                |
+| `busybox`                     | _`latest`_                                                                                                |
+| `debian`                      | _`latest`_                                                                                                |
+| `ubuntu`                      | _`latest`_                                                                                                |
+| `docker`                      | `dind`, `git`, _`latest`_                                                                                 |
+| `node`                        | `14`, `14-alpine`, `14-bullseye-slim`, `16`, `16-alpine` `16-bullseye-slim`, `18`, `18-alpine`, `18-slim` |
+| `gitlab/gitlab-runner`        | _`latest`_                                                                                                |
+| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~                              |
 
 </details>
 <!-- markdownlint-enable MD033 -->

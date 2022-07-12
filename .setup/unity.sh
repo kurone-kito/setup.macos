@@ -31,16 +31,8 @@ install_unity() {
   then
     log_info "Unity ${VERSION} is already installed."
   else
-    "${UNITY_HUB}" -- \
-      --headless install \
-      --version "${VERSION}" \
-      --changeset "${CHANGESET}" \
-      --module android \
-      --module documentation \
-      --module language-ja \
-      --module mac-il2cpp \
-      --module windows-il2cpp \
-      --childModules || true
+    "${UNITY_HUB}" -- --headless install -v "${VERSION}" -c "${CHANGESET}" \
+      -m android -m documentation -m language-ja -m windows-mono --cm
   fi
 }
 
@@ -48,7 +40,7 @@ open "${UNITY_HUB_APP}" -g
 
 say_warn 'If this is your first setup, please log in to your account in the running Unity Hub. When ready, continue with the installation.'
 
-log_warn 'Enter Y if you are logged in and want to install Unity; otherwise, enter N. (y/N)'
+log_warn 'Enter [Y] if you are logged in and want to install Unity. (y/N)'
 read -r YN
 
 case "${YN}" in

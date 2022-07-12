@@ -29,10 +29,9 @@ install_plugin() {
   fi
 }
 
-install_plugin vagrant-aws
 install_plugin vagrant-parallels
 install_plugin vagrant-reload
 install_plugin vagrant-vbguest
-vagrant plugin update
+install_plugin vagrant-winrm
 
-install_box dummy https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box
+vagrant plugin update
