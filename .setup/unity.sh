@@ -32,7 +32,8 @@ install_unity() {
     log_info "Unity ${VERSION} is already installed."
   else
     "${UNITY_HUB}" -- --headless install -v "${VERSION}" -c "${CHANGESET}" \
-      -m android -m documentation -m language-ja -m windows-mono --cm
+      -m android -m documentation -m language-ja -m windows-mono --cm \
+      || true
   fi
 }
 
