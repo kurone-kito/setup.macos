@@ -70,6 +70,8 @@ brew 'nss'
 cask 'firefox-esr'
 
 # Development: for Mobile apps
+# cask 'android-studio'
+brew 'mono' unless is_m1? # ! x86_64?
 # cask 'unity-hub'
 
 # Shell
@@ -108,7 +110,6 @@ cask 'macs-fan-control'
 cask 'avibrazil-rdm'
 
 # Development: for Mobile apps
-# cask 'android-studio'
 cask 'dotnet-sdk'
 cask 'react-native-debugger'
 
@@ -146,7 +147,7 @@ cask 'gitter'
 cask 'mattermost'
 cask 'keybase'
 # cask 'skype'
-cask 'zoom'
+cask 'zoom', greedy: true
 
 # Remote tools
 cask 'ngrok'
@@ -209,7 +210,6 @@ brew 'terminal-notifier'
 brew 'antlr'
 brew 'cmake'
 brew 'lv2'
-brew 'mono' unless is_m1? # ! x86_64?
 brew 'pict'
 brew 'shellcheck'
 

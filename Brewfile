@@ -3,7 +3,7 @@
 
 ###########################################################################
 ### Collect information on the current environment.
-def is_m1?
+def is_arm?
  !RUBY_PLATFORM.index("arm64e").nil?
 end
 
@@ -70,6 +70,8 @@ brew 'nss'
 cask 'firefox-esr'
 
 # Development: for Mobile apps
+cask 'android-studio'
+brew 'mono' unless is_arm? # ! x86_64?
 cask 'unity-hub'
 
 # Shell
@@ -108,7 +110,6 @@ cask 'macs-fan-control'
 cask 'avibrazil-rdm'
 
 # Development: for Mobile apps
-cask 'android-studio'
 cask 'dotnet-sdk'
 cask 'react-native-debugger'
 
@@ -144,9 +145,9 @@ cask 'discord'
 cask 'gitter'
 cask 'google-chat'
 cask 'mattermost'
-cask 'keybase' unless is_m1? # Install from Mac App Store
+cask 'keybase' unless is_arm? # Install from Mac App Store
 cask 'skype'
-cask 'zoom'
+cask 'zoom', greedy: true
 
 # Remote tools
 cask 'ngrok'
@@ -173,8 +174,8 @@ cask 'visual-studio-code', greedy: true
 cask 'dosbox-x'
 cask 'parallels', greedy: true
 cask 'parallels-virtualization-sdk'
-cask 'virtualbox' unless is_m1? # ! x86_64?
-cask 'virtualbox-extension-pack' unless is_m1? # ! x86_64?
+cask 'virtualbox' unless is_arm? # ! x86_64?
+cask 'virtualbox-extension-pack' unless is_arm? # ! x86_64?
 
 # Web browsers
 cask 'chromium', greedy: true
@@ -209,7 +210,6 @@ brew 'terminal-notifier'
 brew 'antlr'
 brew 'cmake'
 brew 'lv2'
-brew 'mono' unless is_m1? # ! x86_64?
 brew 'pict'
 brew 'shellcheck'
 
