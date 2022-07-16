@@ -2,7 +2,7 @@
 
 set -eu
 
-cd "$(dirname "$0")"
+cd "$(cd "$(dirname "$0")"; pwd)"
 
 ../bin/update_system
 

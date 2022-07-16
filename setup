@@ -3,7 +3,7 @@
 # vim: set ft=sh :
 
 set -eu
-cd "$(dirname "$0")"
+cd "$(cd "$(dirname "$0")"; pwd)"
 . .setup/.lib.sh
 
 sudo -v

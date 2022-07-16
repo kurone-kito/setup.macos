@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set -eu
-cd "$(dirname "$0")"
+cd "$(cd "$(dirname "$0")"; pwd)"
 
 . .lib.sh
 . ../.zsh.d/homebrew
