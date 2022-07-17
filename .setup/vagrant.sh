@@ -29,9 +29,9 @@ install_plugin() {
   fi
 }
 
+install_plugin vagrant-disksize
 install_plugin vagrant-parallels
 install_plugin vagrant-reload
 install_plugin vagrant-vbguest
-install_plugin vagrant-winrm
 
 vagrant plugin update
