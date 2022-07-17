@@ -74,11 +74,14 @@ cask 'firefox-esr'
 brew 'mono' unless is_m1? # ! x86_64?
 # cask 'unity-hub'
 
+# Files
+cask 'mysides'
+
 # Shell
 brew 'blacktop/tap/lporg'
 
 # Storages management
-# cask 'adobe-creative-cloud'
+# cask 'adobe-creative-cloud', greedy: true
 # cask 'dropbox'
 cask 'omnipresence'
 
@@ -98,10 +101,15 @@ mas 'OneDrive', id: 823766827
 
 # Audio & Broadcasting
 # cask 'audio-hijack', greedy: true
+# cask 'izotope-product-portal'
 # cask 'loopback', greedy: true
 # cask 'obs'
 # cask 'restream-chat'
 # cask 'sonic-visualiser'
+
+# Authentication
+cask 'authy' unless is_arm? # Install from Mac App Store
+cask 'keybase' unless is_arm? # Install from Mac App Store
 
 # Benchmark
 cask 'macs-fan-control'
@@ -116,7 +124,8 @@ cask 'react-native-debugger'
 # Devices
 # cask 'canon-mf-printer'
 # cask 'drobo-dashboard'
-# cask 'haptic-touch-bar'
+cask 'haptic-touch-bar'
+cask 'karabiner-elements'
 # cask 'logitech-firmwareupdatetool'
 # cask 'logitech-g-hub'
 # cask 'logitech-gaming-software'
@@ -138,18 +147,17 @@ cask 'font-meslo-lg-nerd-font'
 # cask 'minecraft'
 # cask 'steam'
 cask 'steamcmd'
-# cask 'stepmania'
 
 # Messaging
 # cask 'discord'
 cask 'gitter'
 # cask 'google-chat'
 cask 'mattermost'
-cask 'keybase'
 # cask 'skype'
 cask 'zoom', greedy: true
 
 # Remote tools
+cask 'amazon-workspaces'
 cask 'ngrok'
 # cask 'teamviewer'
 cask 'vnc-viewer'
@@ -166,7 +174,6 @@ cask 'grammarly'
 cask 'notion'
 
 # Text editors
-cask 'atom'
 cask 'sublime-text'
 cask 'visual-studio-code', greedy: true
 
@@ -188,6 +195,7 @@ cask 'tor-browser'
 
 # Benchmark
 brew 'cloc'
+brew 'neofetch'
 
 # Conversion for binaries
 brew 'ffmpeg'
@@ -233,11 +241,12 @@ brew 'nyancat'
 brew 'sl'
 
 # GitHub
+brew 'gh'
 brew 'gist'
 brew 'git-delta'
 brew 'gitlab-runner', restart_service: true
-brew 'hub'
-brew 'nektos/tap/act'
+brew 'glab'
+# brew 'nektos/tap/act' # ! wrong number of arguments (given 1, expected 0)
 
 # Remote tools
 brew 'awscli'
@@ -246,6 +255,7 @@ brew 'aws-sam-cli'
 brew 'inetutils' # includes the telnet
 brew 'mmctl'
 brew 'mosh'
+brew 'nmap'
 brew 'openvpn'
 brew 'scrcpy'
 brew 'tor'

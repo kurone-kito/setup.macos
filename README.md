@@ -47,6 +47,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Benchmark
 
 - [cloc](https://github.com/AlDanial/cloc)
+- [neofetch](https://github.com/dylanaraps/neofetch)
 
 #### Configuration tools
 
@@ -105,6 +106,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [broot](https://dystroy.org/broot/)
 - [exa](https://the.exa.websitef)
 - [fzf](https://github.com/junegunn/fzf)
+- [myside](https://github.com/mosen/mysides)
 - [p7zip](https://sourceforge.net/projects/p7zip/)
 - [rename](http://plasmasturm.org/code/rename/)
 - [rsync](https://rsync.samba.org/)
@@ -133,7 +135,8 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - **`!`** [Git](https://git-scm.com/)
   - **`!`** [Git Large File Storage](https://git-lfs.github.com/)
   - [git-delta: A viewer for git and diff output](https://github.com/dandavison/delta)
-- [GitHub Hub](https://hub.github.com/)
+- [GitHub CLI](https://cli.github.com/)
+- [GLab: GitLab CLI tool](https://glab.readthedocs.io/)
 
 #### Remote
 
@@ -143,6 +146,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - **`!`** [curl](https://curl.se)
 - **`!`** [GNU wget](https://www.gnu.org/software/wget/)
 - [Mosh](https://mosh.org)
+- [nmap](https://nmap.org/)
 - [OpenVPN](https://openvpn.net/)
 - [inetutils: GNU network utilities](https://www.gnu.org/software/inetutils/)
 - [Tor](https://www.torproject.org/)
@@ -184,7 +188,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 #### Virtualizations
 
-- [act](https://github.com/nektos/act)
+- ~~[act](https://github.com/nektos/act)~~
 - [GitLab Runner](https://gitlab.com/gitlab-org/gitlab-runner)
 - [Parallels Virtualization SDK](https://www.parallels.com/products/desktop/download/)
 - [Vagrant](https://www.vagrantup.com/)
@@ -222,11 +226,19 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 - [Apple GarageBand](https://www.apple.com/mac/garageband/) (via Mac App Store)
 - [Apple iMovie](https://www.apple.com/imovie/) (via Mac App Store)
+- [iZotope Product Portal](https://www.izotope.com/)
 - [OBS Studio](https://obsproject.com/)
 - [Restream Chat](https://restream.io/chat/)
 - [Rogue Amoeba Audio Hijack](https://rogueamoeba.com/audiohijack/)
 - [Rogue Amoeba Loopback](https://rogueamoeba.com/loopback/)
 - [Sonic Visualiser](https://sonicvisualiser.org/)
+
+#### Authentication
+
+- `(-A)` [Authy Desktop](https://authy.com/download/)
+  - Authy app is distributed only Apple Sillicon Mac in the Mac App Store.
+- `(-A)` [Keybase](https://keybase.io/)
+  - Keybase app is distributed only Apple Sillicon Mac in the Mac App Store.
 
 #### Benchmark
 
@@ -265,7 +277,8 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [scrcpy](https://github.com/Genymobile/scrcpy)
 - [Canon Satera MF Printer driver](https://cweb.canon.jp/satera/mfp/)
 - [Drobo Dashboard](https://www.drobo.com/)
-<!-- - [Haptic Touch Bar](https://www.haptictouchbar.com) -->
+- [Haptic Touch Bar](https://www.haptictouchbar.com)
+- [Karabiner-Elements](https://karabiner-elements.pqrs.org)
 - [logicool G Hub](https://gaming.logicool.co.jp/innovation/g-hub.html)
 - [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
 
@@ -286,7 +299,6 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Human Resource Machine](http://tomorrowcorporation.com/humanresourcemachine) (via Mac App Store)
 - [Minecraft Java Edition](https://www.minecraft.net/)
 - [Steam](https://store.steampowered.com/)
-- [Stepmania](https://www.stepmania.com/)
 
 #### Memos and Tasks
 
@@ -301,8 +313,6 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Discord](https://discord.com/)
 - [Facebook Messenger](https://www.messenger.com/) (via Mac App Store)
 - [Gitter](https://gitter.im/)
-- `(-A)` [Keybase](https://keybase.io/)
-  - Keybase app is distributed only Apple Sillicon Mac in the Mac App Store.
 - [Google Chat](https://workspace.google.co.jp/products/chat/)
 - [LINE](https://line.me/) (via Mac App Store)
 - [Mattermost / with CLI tools](https://mattermost.com/)
@@ -313,6 +323,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 #### Remote
 
+- [Amazon Workspaces](https://clients.amazonworkspaces.com/)
 - [Apple Remote Desktop](http://www.apple.com/remotedesktop/) (via Mac App Store)
 - [Microsoft Remote Desktop](https://apps.apple.com/app/microsoft-remote-desktop/id1295203466) (via Mac App Store)
 - [Real VNC Viewer](https://www.realvnc.com/connect/download/viewer/)
@@ -325,7 +336,6 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 #### Text editors
 
-- [GitHub Atom Editor](https://atom.io/)
 - [Sublime Text](https://www.sublimetext.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
