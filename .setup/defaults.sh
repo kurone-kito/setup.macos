@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set -eu
-cd "$(dirname "$0")"
+cd "$(cd "$(dirname "$0")"; pwd)"
 
 . .lib.sh
 
@@ -40,6 +40,11 @@ FINDER_PLIST="${HOME}/Library/Preferences/com.apple.finder.plist"
 
 killall Finder 2> /dev/null || true
 
+# Font Book ========================================================
+defaults write com.apple.FontBook FBResolveByMovingToTrashKey -bool true
+
+killall 'Font Book' 2> /dev/null || true
+
 # Dock & Mission Control ==================================================
 # Enable spring loading for all Dock items
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
@@ -66,6 +71,16 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 # Switch the default Finder view style to Column view
 defaults write com.apple.Finder FXPreferredViewStyle clmv
 
+# Remove item from trash after 30 days
+defaults write com.apple.finder FXRemoveOldTrashItems -bool true
+
+defaults write com.apple.finder NewWindowTarget -string 'PfHm'
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
+
+# Always display folders at the top
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+defaults write com.apple.finder _FXSortFoldersFirstOnDesktop -bool true
+
 # Show all files extensions
 defaults write -g AppleShowAllExtensions -bool true
 
@@ -78,15 +93,38 @@ defaults write -g NSTableViewDefaultSizeMode -int 3
 
 killall Finder 2> /dev/null || true
 
+# iWorks ==================================================================
+defaults write com.apple.iWork.Keynote KNAnimationMotionBlurEnabled -bool true
+defaults write com.apple.iWork.Keynote TSDMovieCompatibilityOptimizeForiOSOnInsert -bool true
+defaults write com.apple.iWork.Numbers TSDMovieCompatibilityOptimizeForiOSOnInsert -bool true
+defaults write com.apple.iWork.Pages TSDMovieCompatibilityOptimizeForiOSOnInsert -bool true
+
+killall Keynote 2> /dev/null || true
+killall Numbers 2> /dev/null || true
+killall Pages 2> /dev/null || true
+
 # Keyboard ================================================================
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 2
 
+defaults write com.apple.inputmethod.Kotoeri JIMPrefLiveConversionKey -bool false
+
 killall Finder 2> /dev/null || true
 
 # Menubar =================================================================
+defaults write com.apple.controlcenter 'NSStatusItem Visible Bluetooth' -bool false
+defaults write com.apple.controlcenter 'NSStatusItem Visible WiFi' -bool false
 defaults write com.apple.menuextra.clock FlashDateSeparators -bool true
+defaults write com.apple.menuextra.clock Show24Hour -bool true
+defaults write com.apple.Siri StatusMenuVisible -bool false
 
+killall SystemUIServer 2> /dev/null || true
+
+# Mouse ================================================================
+defaults write com.apple.AppleMultitouchMouse MouseButtonMode -string TwoButton
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode -string TwoButton
+
+killall Finder 2> /dev/null || true
 killall SystemUIServer 2> /dev/null || true
 
 # Screen saver ============================================================
@@ -95,7 +133,7 @@ defaults -currentHost write com.apple.screensaver showClock -bool true
 
 killall cfprefsd 2> /dev/null || true
 
-# TextEdit=================================================================
+# TextEdit ================================================================
 defaults write com.apple.TextEdit CheckGrammarWithSpelling -bool true
 defaults write com.apple.TextEdit RichText -bool false
 
@@ -105,12 +143,28 @@ defaults write com.apple.TextEdit UseXHTMLDocType -bool true
 
 killall TextEdit 2> /dev/null || true
 
-# Network==================================================================
+# Network =================================================================
 add_nameserver() {
-  TARGET=/var/run/resolv.conf
-  grep -qE "^${1}$" "${TARGET}" || sudo echo "${1}" | sudo tee -a "${TARGET}" > /dev/null
+  grep -qE "^${1}$" "${2}" || echo "${1}" | sudo tee -a "${2}" > /dev/null
 }
 
-sudo sed -i -n '/nameserver/d' /var/run/resolv.conf
-add_nameserver 'nameserver 8.8.8.8' /var/run/resolv.conf
-add_nameserver 'nameserver 8.8.4.4' /var/run/resolv.conf
+TARGET=/var/run/resolv.conf
+sudo sed -i -n '/nameserver/d' "${TARGET}"
+add_nameserver 'nameserver 8.8.8.8' "${TARGET}"
+add_nameserver 'nameserver 8.8.4.4' "${TARGET}"
+
+# Safari ==================================================================
+defaults write com.apple.Safari DownloadsClearingPolicy -int 1
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari ShowStandaloneTabBar -bool false
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari 'WebKitPreferences.developerExtrasEnabled' -bool true
+defaults write com.apple.Safari.SandboxBroker ShowDevelopMenu -bool true
+
+killall Safari 2> /dev/null || true
+
+# Sounds ==================================================================
+defaults write -g com.apple.sound.beep.feedback -bool true
+
+killall Finder 2> /dev/null || true
+killall SystemUIServer 2> /dev/null || true

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set -eu
-cd "$(dirname "$0")"
+cd "$(cd "$(dirname "$0")"; pwd)"
 
 . .lib.sh
 . ../.zsh.d/homebrew
@@ -29,9 +29,9 @@ install_plugin() {
   fi
 }
 
+install_plugin vagrant-disksize
 install_plugin vagrant-parallels
 install_plugin vagrant-reload
 install_plugin vagrant-vbguest
-install_plugin vagrant-winrm
 
 vagrant plugin update

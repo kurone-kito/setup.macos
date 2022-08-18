@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set -eu
-cd "$(dirname "$0")"
+cd "$(cd "$(dirname "$0")"; pwd)"
 
 . .lib.sh
 . ../.zsh.d/homebrew
@@ -46,6 +46,7 @@ read -r YN
 
 case "${YN}" in
   [yY]*)
+    install_unity 2019.3.13f1 d4ddf0d95db9
     install_unity 2019.4.31f1 bd5abf232a62
     ;;
   *)
