@@ -3,8 +3,8 @@
 
 ###########################################################################
 ### Collect information on the current environment.
-def is_m1?
- !RUBY_PLATFORM.index("arm64e").nil?
+def is_arm?
+  !RUBY_PLATFORM.index("arm64e").nil?
 end
 
 ###########################################################################
@@ -71,7 +71,7 @@ cask 'firefox-esr'
 
 # Development: for Mobile apps
 # cask 'android-studio'
-brew 'mono' unless is_m1? # ! x86_64?
+brew 'mono' unless is_arm? # ! x86_64?
 # cask 'unity-hub'
 
 # Files
