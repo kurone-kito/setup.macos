@@ -17,7 +17,7 @@ if ! (pgrep docker > /dev/null && docker system info > /dev/null 2>&1)
 then
   open '/Applications/Docker.app'
   log_notice "waiting for launch docker"
-  say_warn 'If this is your first setup, Docker may need to be interacted with to continue it; follow the instructions in the GUI to continue the process.'
+  say_warn 'If this is your first setup, Docker may need to be interacted with to continue it; follow the instructions in the GUI to continue the process. After restarting the setup, please do not change any Docker settings until it is complete. It will cause the setup to stop abnormally as it restarts automatically when updated settings.'
   until which docker > /dev/null 2>&1
   do
       sleep 3

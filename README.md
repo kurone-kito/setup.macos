@@ -231,12 +231,12 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Restream Chat](https://restream.io/chat/)
 - [Rogue Amoeba Audio Hijack](https://rogueamoeba.com/audiohijack/)
 - [Rogue Amoeba Loopback](https://rogueamoeba.com/loopback/)
+- [Schism Tracker](https://schismtracker.org/)
 - [Sonic Visualiser](https://sonicvisualiser.org/)
 
 #### Authentication
 
-- `(-A)` [Authy Desktop](https://authy.com/download/)
-  - Authy app is distributed only Apple Sillicon Mac in the Mac App Store.
+- [Authy Desktop](https://authy.com/download/)
 - `(-A)` [Keybase](https://keybase.io/)
   - Keybase app is distributed only Apple Sillicon Mac in the Mac App Store.
 
@@ -244,7 +244,6 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 - [Blackmagic Disk Speed Test](https://apps.apple.com/app/blackmagic-disk-speed-test/id425264550) (via Mac App Store)
 - [GFXBench Metal](https://gfxbench.com/) (via Mac App Store)
-- [Macs Fan Control](https://crystalidea.com/macs-fan-control)
 - [MAXON Cinebench](https://www.maxon.net/ja/cinebench) (via Mac App Store)
 
 #### Cloud storages
@@ -317,7 +316,6 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Gitter](https://gitter.im/)
 - [Google Chat](https://workspace.google.co.jp/products/chat/)
 - [LINE](https://line.me/) (via Mac App Store)
-- [Mattermost / with CLI tools](https://mattermost.com/)
 - [Microsoft Skype](https://www.skype.com/)
 - [Slack](https://slack.com/) (via Mac App Store)
 - [Twitter](https://twitter.com/) (via Mac App Store)

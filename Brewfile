@@ -105,14 +105,12 @@ cask 'izotope-product-portal'
 cask 'loopback', greedy: true
 cask 'obs'
 cask 'restream-chat'
+cask 'schism-tracker'
 cask 'sonic-visualiser'
 
 # Authentication
-cask 'authy' unless is_arm? # Install from Mac App Store
+cask 'authy'
 cask 'keybase' unless is_arm? # Install from Mac App Store
-
-# Benchmark
-cask 'macs-fan-control'
 
 # Desktop
 cask 'avibrazil-rdm'
@@ -152,7 +150,6 @@ cask 'steamcmd'
 cask 'discord'
 cask 'gitter'
 cask 'google-chat'
-cask 'mattermost'
 cask 'skype'
 cask 'zoom', greedy: true
 
@@ -253,7 +250,6 @@ brew 'awscli'
 brew 'aws-nuke'
 brew 'aws-sam-cli'
 brew 'inetutils' # includes the telnet
-brew 'mmctl'
 brew 'mosh'
 brew 'nmap'
 brew 'openvpn'

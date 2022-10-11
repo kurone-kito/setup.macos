@@ -3,8 +3,8 @@
 
 ###########################################################################
 ### Collect information on the current environment.
-def is_m1?
- !RUBY_PLATFORM.index("arm64e").nil?
+def is_arm?
+  !RUBY_PLATFORM.index("arm64e").nil?
 end
 
 ###########################################################################
@@ -71,7 +71,7 @@ cask 'firefox-esr'
 
 # Development: for Mobile apps
 # cask 'android-studio'
-brew 'mono' unless is_m1? # ! x86_64?
+brew 'mono' unless is_arm? # ! x86_64?
 # cask 'unity-hub'
 
 # Files
@@ -105,14 +105,12 @@ mas 'OneDrive', id: 823766827
 # cask 'loopback', greedy: true
 # cask 'obs'
 # cask 'restream-chat'
+# cask 'schism-tracker'
 # cask 'sonic-visualiser'
 
 # Authentication
-cask 'authy' unless is_arm? # Install from Mac App Store
+cask 'authy'
 cask 'keybase' unless is_arm? # Install from Mac App Store
-
-# Benchmark
-cask 'macs-fan-control'
 
 # Desktop
 cask 'avibrazil-rdm'
@@ -152,7 +150,6 @@ cask 'steamcmd'
 # cask 'discord'
 cask 'gitter'
 # cask 'google-chat'
-cask 'mattermost'
 # cask 'skype'
 cask 'zoom', greedy: true
 
@@ -253,7 +250,6 @@ brew 'awscli'
 brew 'aws-nuke'
 brew 'aws-sam-cli'
 brew 'inetutils' # includes the telnet
-brew 'mmctl'
 brew 'mosh'
 brew 'nmap'
 brew 'openvpn'
