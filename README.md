@@ -236,7 +236,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 #### Authentication
 
-- [Authy Desktop](https://authy.com/download/)
+- `(-A)` [Authy Desktop](https://authy.com/download/)
 - `(-A)` [Keybase](https://keybase.io/)
   - Keybase app is distributed only Apple Sillicon Mac in the Mac App Store.
 
@@ -303,7 +303,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 #### Memos and Tasks
 
-- [Boost Note](https://boostnote.io/)
+- `(-A)` [Boost Note](https://boostnote.io/)
 - [Grammarly](https://www.grammarly.com/)
 - [Microsoft To Do](https://todo.microsoft.com/) (via Mac App Store)
 - [Notion](https://www.notion.so/)
@@ -313,7 +313,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 - [Discord](https://discord.com/)
 - [Facebook Messenger](https://www.messenger.com/) (via Mac App Store)
-- [Gitter](https://gitter.im/)
+- `(-A)` [Gitter](https://gitter.im/)
 - [Google Chat](https://workspace.google.co.jp/products/chat/)
 - [LINE](https://line.me/) (via Mac App Store)
 - [Microsoft Skype](https://www.skype.com/)
