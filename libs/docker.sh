@@ -3,7 +3,7 @@
 set -eu
 cd "$(cd "$(dirname "$0")"; pwd)"
 
-. .lib.sh
+. lib.sh
 . ../.zsh.d/homebrew
 
 if grep "cask 'docker'" ../Brewfile | grep -q '^#'

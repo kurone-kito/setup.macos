@@ -3,7 +3,7 @@
 set -eu
 cd "$(cd "$(dirname "$0")"; pwd)"
 
-. .lib.sh
+. lib.sh
 
 if [ ! -e /Applications/Xcode.app ]
 then

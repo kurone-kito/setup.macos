@@ -3,7 +3,7 @@
 set -eu
 cd "$(cd "$(dirname "$0")"; pwd)"
 
-. .lib.sh
+. lib.sh
 
 log_info 'Installing the updators.'
 
