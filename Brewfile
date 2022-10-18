@@ -109,7 +109,7 @@ cask 'schism-tracker'
 cask 'sonic-visualiser'
 
 # Authentication
-cask 'authy'
+cask 'authy' unless is_arm? # Install from Mac App Store
 cask 'keybase' unless is_arm? # Install from Mac App Store
 
 # Desktop
@@ -148,7 +148,7 @@ cask 'steamcmd'
 
 # Messaging
 cask 'discord'
-cask 'gitter'
+cask 'gitter' unless is_arm? # Install from Mac App Store
 cask 'google-chat'
 cask 'skype'
 cask 'zoom', greedy: true
@@ -166,7 +166,7 @@ cask 'adoptopenjdk'
 cask 'powershell'
 
 # Tasks & Memos
-cask 'boost-note'
+cask 'boost-note' unless is_arm? # Install from Mac App Store
 cask 'grammarly'
 cask 'notion'
 
