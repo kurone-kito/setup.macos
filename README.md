@@ -444,21 +444,15 @@ See: [https://macos-defaults.com/](https://macos-defaults.com/)
 
 ## Playground
 
-```sh
-./test
-```
-
-This script can only run on macOS and Ubuntu.
-It also automatically installs Virtualbox and Vagrant as needed.  
-このスクリプトは macOS および Ubuntu でのみ動作可能です。
-また、必要に応じて Virtualbox と Vagrant を自動的にインストールします。
-
-If you have Vagrant and the virtualization environment installed, you can also start it with the following command.  
-もし Vagrant と仮想環境がインストール済みである場合、下記のコマンドで起動してしまっても構いません。
+Using Vagrant and Virtualbox, you can try out the script in a virtual environment.  
+Vagrant と Virtualbox を使用して、仮想環境でスクリプトを試すことができます。
 
 ```sh
 vagrant up
 ```
+
+The script can also attempt via the `test` script, but this script is not maintained and is deprecated.  
+このスクリプトを `test` スクリプト経由でも試行可能ですが、このスクリプトはメンテナンスしていないので非推奨です。
 
 ## License
 
