@@ -121,8 +121,9 @@ cask 'react-native-debugger'
 
 # Devices
 # cask 'canon-mf-printer'
-# cask 'drobo-dashboard'
-cask 'haptic-touch-bar'
+# Since it's troublesome to determine whether or not the Touch Bar is
+# present, it's determined by whether or not the ARM64 arch is used.
+cask 'haptic-touch-bar' unless is_arm?
 cask 'karabiner-elements'
 # cask 'logitech-firmwareupdatetool'
 # cask 'logitech-g-hub'
@@ -150,6 +151,7 @@ cask 'steamcmd'
 # cask 'discord'
 cask 'gitter' unless is_arm? # Install from Mac App Store
 # cask 'google-chat'
+# cask 'microsoft-teams'
 # cask 'skype'
 cask 'zoom', greedy: true
 
@@ -243,7 +245,7 @@ brew 'gist'
 brew 'git-delta'
 brew 'gitlab-runner', restart_service: true
 brew 'glab'
-# brew 'nektos/tap/act' # ! wrong number of arguments (given 1, expected 0)
+brew 'act'
 
 # Remote tools
 brew 'awscli'
@@ -302,4 +304,3 @@ mas 'Pages', id: 409201541
 mas 'Slack', id: 803453959
 mas 'TestFlight', id: 899247664
 # mas "Twitter", id: 1482454543
-mas 'virtualOS', id: 1614659226
