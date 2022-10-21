@@ -3,7 +3,7 @@
 set -eu
 cd "$(cd "$(dirname "$0")"; pwd)"
 
-. .lib.sh
+. lib.sh
 . ../.zsh.d/homebrew
 
 if which brew > /dev/null 2>&1

@@ -188,7 +188,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 #### Virtualizations
 
-- ~~[act](https://github.com/nektos/act)~~
+- [act](https://github.com/nektos/act)
 - [GitLab Runner](https://gitlab.com/gitlab-org/gitlab-runner)
 - [Parallels Virtualization SDK](https://www.parallels.com/products/desktop/download/)
 - [Vagrant](https://www.vagrantup.com/)
@@ -277,8 +277,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 - [scrcpy](https://github.com/Genymobile/scrcpy)
 - [Canon Satera MF Printer driver](https://cweb.canon.jp/satera/mfp/)
-- [Drobo Dashboard](https://www.drobo.com/)
-- [Haptic Touch Bar](https://www.haptictouchbar.com)
+- `(-A)` [Haptic Touch Bar](https://www.haptictouchbar.com) (Troublesome to determine whether or not the TouchBar is present)
 - [Karabiner-Elements](https://karabiner-elements.pqrs.org)
 - [logicool G Hub](https://gaming.logicool.co.jp/innovation/g-hub.html)
 - [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
@@ -317,6 +316,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Google Chat](https://workspace.google.co.jp/products/chat/)
 - [LINE](https://line.me/) (via Mac App Store)
 - [Microsoft Skype](https://www.skype.com/)
+- [Microsoft Teams](https://www.microsoft.com/ja-jp/microsoft-teams/group-chat-software)
 - [Slack](https://slack.com/) (via Mac App Store)
 - [Twitter](https://twitter.com/) (via Mac App Store)
 - [Zoom](https://zoom.us/)
@@ -345,7 +345,6 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 - [Parallels Desktop](https://www.parallels.com/)
 - `(-A)` [Oracle VM Virtualbox + Extension Pack](https://www.virtualbox.org/)
-- [virtualOS](https://apps.apple.com/app/virtualos/id1614659226) (via Mac App Store)
 
 #### Web browsers
 
@@ -444,21 +443,15 @@ See: [https://macos-defaults.com/](https://macos-defaults.com/)
 
 ## Playground
 
-```sh
-./test
-```
-
-This script can only run on macOS and Ubuntu.
-It also automatically installs Virtualbox and Vagrant as needed.  
-このスクリプトは macOS および Ubuntu でのみ動作可能です。
-また、必要に応じて Virtualbox と Vagrant を自動的にインストールします。
-
-If you have Vagrant and the virtualization environment installed, you can also start it with the following command.  
-もし Vagrant と仮想環境がインストール済みである場合、下記のコマンドで起動してしまっても構いません。
+Using Vagrant and Virtualbox, you can try out the script in a virtual environment.  
+Vagrant と Virtualbox を使用して、仮想環境でスクリプトを試すことができます。
 
 ```sh
 vagrant up
 ```
+
+The script can also attempt via the `test` script, but this script is not maintained and is deprecated.  
+このスクリプトを `test` スクリプト経由でも試行可能ですが、このスクリプトはメンテナンスしていないので非推奨です。
 
 ## License
 
