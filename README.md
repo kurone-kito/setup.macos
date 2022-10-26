@@ -1,7 +1,7 @@
 # macOS auto setup for develop environment
 
-Desktop environment preference for macOS Monterey (Apple Sillicon and intel supported)  
-macOS Monterey (Apple Sillicon / intel 両対応) 向けの作業環境セットアップスクリプト
+Desktop environment preference for macOS Ventura (Apple Sillicon and intel supported)  
+macOS Ventura (Apple Sillicon / intel 両対応) 向けの作業環境セットアップスクリプト
 
 ## Overview
 
