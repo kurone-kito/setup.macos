@@ -42,7 +42,7 @@ install_nodejs_deps() {
 
   npm install -g --silent npm@"${1}"
   npm upgrade -g --silent
-  npm install -g --silent yarn@berry
+  npm install -g --silent yarn
 }
 
 remove_obsolete_nodejs_versions() {
@@ -82,7 +82,8 @@ install_nodejs 14 6
 install_nodejs lts-fermium 6
 install_nodejs 16 8
 install_nodejs lts-gallium 8
-install_nodejs lts 8
 install_nodejs 18 8
+install_nodejs lts-hydrogen 8
+install_nodejs lts 8
 install_nodejs 19 8
 install_nodejs latest 8

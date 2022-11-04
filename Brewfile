@@ -157,6 +157,7 @@ cask 'zoom', greedy: true
 
 # Remote tools
 cask 'amazon-workspaces'
+cask 'forticlient-vpn'
 cask 'ngrok'
 cask 'teamviewer'
 cask 'vnc-viewer'

@@ -78,7 +78,8 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
     - [Node.js](https://nodejs.org/) (via asdf-nodejs)
       - v14 LTS Fermium
       - v16 LTS Gallium
-      - v18
+      - v18 LTS Hydrogen
+      - v19
   - plugin: [asdf-python](https://github.com/danhper/asdf-python) (via asdf)
     - [Python](https://www.python.org) (via asdf-python)
       - v2
@@ -325,6 +326,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 - [Amazon Workspaces](https://clients.amazonworkspaces.com/)
 - [Apple Remote Desktop](http://www.apple.com/remotedesktop/) (via Mac App Store)
+- [FortiClient VPN](https://www.fortinet.com/products/endpoint-security/forticlient)
 - [Microsoft Remote Desktop](https://apps.apple.com/app/microsoft-remote-desktop/id1295203466) (via Mac App Store)
 - [Real VNC Viewer](https://www.realvnc.com/connect/download/viewer/)
 - [TeamViewer](https://www.teamviewer.com/)
