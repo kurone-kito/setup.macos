@@ -73,9 +73,9 @@ install_nodejs() {
       asdf install nodejs "ref:v${TARGET_VER}"
     asdf global nodejs "ref:v${TARGET_VER}"
   fi
-  set -e
   remove_obsolete_nodejs_versions "${1}"
   install_nodejs_deps "${2}"
+  set -e
 }
 
 install_nodejs 14 6
