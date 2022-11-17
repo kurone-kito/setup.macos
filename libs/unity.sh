@@ -47,7 +47,7 @@ read -r YN
 case "${YN}" in
   [yY]*)
     install_unity 2019.3.13f1 d4ddf0d95db9
-    install_unity 2019.4.31f1 bd5abf232a62
+    install_unity 2019.4.40f1 ffc62b691db5
     ;;
   *)
     log_info 'skipped the Unity installation due to the user choice'
