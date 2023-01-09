@@ -273,6 +273,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
     - Module: Windows Build Support (Mono)
     - Module: Documentation
     - Module: Language Pack (Japanese)
+- [VRChat Creator Companion](https://github.com/AranoYuki1/VCC-for-mac)
 
 #### Devices
 

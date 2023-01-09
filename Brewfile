@@ -115,7 +115,8 @@ cask 'keybase' unless is_arm? # Install from Mac App Store
 # Desktop
 cask 'avibrazil-rdm'
 
-# Development: for Mobile apps
+# Development
+cask 'anatawa12/cask/vcc-for-mac'
 cask 'dotnet-sdk'
 cask 'react-native-debugger'
 
