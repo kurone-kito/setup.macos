@@ -327,7 +327,6 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 - [Amazon Workspaces](https://clients.amazonworkspaces.com/)
 - [Apple Remote Desktop](http://www.apple.com/remotedesktop/) (via Mac App Store)
-- [FortiClient VPN](https://www.fortinet.com/products/endpoint-security/forticlient)
 - [Microsoft Remote Desktop](https://apps.apple.com/app/microsoft-remote-desktop/id1295203466) (via Mac App Store)
 - [Real VNC Viewer](https://www.realvnc.com/connect/download/viewer/)
 - [TeamViewer](https://www.teamviewer.com/)
