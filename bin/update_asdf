@@ -38,11 +38,13 @@ install_nodejs_deps() {
   . "${HOME}/.zsh.d/z-asdf"
 
   # https://qiita.com/Qoo_Rus/items/afb52517e0e17b720990
+  npm uninstall -g --silent yarn
   npm install -g --silent agentkeepalive@latest
 
   npm install -g --silent npm@"${1}"
   npm upgrade -g --silent
-  npm install -g --silent yarn
+  corepack enable
+  asdf reshim
 }
 
 remove_obsolete_nodejs_versions() {
