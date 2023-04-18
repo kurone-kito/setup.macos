@@ -84,8 +84,9 @@ install_nodejs 14 6
 install_nodejs lts-fermium 6
 install_nodejs 16 8
 install_nodejs lts-gallium 8
-install_nodejs 18 8
-install_nodejs lts-hydrogen 8
-install_nodejs lts 8
-install_nodejs 19 8
-install_nodejs latest 8
+install_nodejs 18 9
+install_nodejs lts-hydrogen 9
+install_nodejs lts 9
+install_nodejs 19 9
+install_nodejs latest 9
+install_nodejs 20 9
