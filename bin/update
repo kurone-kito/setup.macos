@@ -11,7 +11,10 @@ while true; do sleep 50; sudo -n true; kill -0 "$$" || exit; done 2>/dev/null &
 brew upgrade
 brew cleanup
 
-vagrant plugin update
+if which vagrant > /dev/null 2>&1
+then
+  vagrant plugin update
+fi
 
 ./update_docker
 
