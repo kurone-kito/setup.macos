@@ -112,9 +112,6 @@ cask 'sonic-visualiser'
 cask 'authy' unless is_arm? # Install from Mac App Store
 cask 'keybase' unless is_arm? # Install from Mac App Store
 
-# Desktop
-cask 'avibrazil-rdm'
-
 # Development
 cask 'anatawa12/cask/vcc-for-mac'
 cask 'dotnet-sdk'
@@ -151,7 +148,6 @@ cask 'steamcmd'
 # Messaging
 cask 'discord'
 cask 'gitter' unless is_arm? # Install from Mac App Store
-cask 'google-chat'
 cask 'microsoft-teams'
 cask 'skype'
 cask 'zoom', greedy: true
