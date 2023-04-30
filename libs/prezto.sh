@@ -10,8 +10,8 @@ log_info 'Installing the Prezto'
 wait_dependencies git zsh
 
 github_clone_if_not_exists sorin-ionescu/prezto "${ZDOTDIR:-$HOME}/.zprezto"
-RCFILES=$(find "${ZDOTDIR:-$HOME}"/.zprezto/runcoms -type f -name 'z*')
-for rcfile in ${RCFILES}
+FILES=$(find "${ZDOTDIR:-$HOME}"/.zprezto/runcoms -type f -name 'z*')
+for file in ${FILES}
 do
-  ln -snf "${rcfile}" "${ZDOTDIR:-$HOME}/.${rcfile##*/}"
+  ln -snf "${file}" "${ZDOTDIR:-$HOME}/.${file##*/}"
 done
