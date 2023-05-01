@@ -1,0 +1,77 @@
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
+cache:
+  cacheFormat: universal
+  cacheLocation: .cspell.cache
+  cacheStrategy: metadata
+  useCache: true
+dictionaries:
+  - bash
+  - companies
+  - cpp
+  - cpp-legacy
+  - en-gb
+  - en_us
+  - fonts
+  - git
+  - npm
+  - softwareTerms
+language: en,ja
+languageSettings:
+  - allowCompoundWords: true
+    caseSensitive: false
+    enabled: true
+    languageId: "*"
+    locale: en,ja
+ignorePaths:
+  - .git/objects
+  - .github/CODE_OF_CONDUCT.*
+  - cspell.config.yml
+ignoreWords:
+  - alsa
+  - antlr
+  - apic
+  - authy
+  - biosapic
+  - bioslogofadein
+  - broot
+  - cfprefsd
+  - clmv
+  - dind
+  - glab
+  - gotop
+  - hpet
+  - hwvirtex
+  - ioapic
+  - ionescu
+  - iZotope
+  - karabiner
+  - kito
+  - kotoeri
+  - kurone
+  - lporg
+  - mackup
+  - maxon
+  - meslo
+  - modifyvm
+  - mswin
+  - nmap
+  - nyancat
+  - osascript
+  - pfind
+  - pgrep
+  - pkill
+  - plantUML
+  - siri
+  - sorin
+  - spctl
+  - usbxhci
+  - TextQL
+  - tldr
+  - usbxhci
+  - vbguest
+  - vtxux
+  - vtxvpid
+  - wkhtmltopdf
+  - zprezto
+useGitignore: true
+version: "0.2"

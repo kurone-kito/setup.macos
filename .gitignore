@@ -168,3 +168,9 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/homebrew,linux,macos,sublimetext,vagrant,vim,visualstudiocode,windows
+
+
+### THE PROJECT SPECIFIES #################################################
+
+### CSpell ###
+.cspell.cache
