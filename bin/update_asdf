@@ -80,13 +80,13 @@ install_nodejs() {
   set -e
 }
 
-install_nodejs 14 6
-install_nodejs lts-fermium 6
+export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed
+
 install_nodejs 16 8
 install_nodejs lts-gallium 8
 install_nodejs 18 9
 install_nodejs lts-hydrogen 9
 install_nodejs lts 9
 install_nodejs 19 9
-install_nodejs latest 9
 install_nodejs 20 9
+install_nodejs latest 9
