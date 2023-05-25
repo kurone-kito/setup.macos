@@ -5,7 +5,7 @@ cd "$(cd "$(dirname "$0")"; pwd)"
 
 . lib.sh
 
-log_info 'Installing the updators.'
+log_info 'Installing the updaters.'
 
 # Update scripts
 mkdir -p "${HOME}/bin"

@@ -254,10 +254,6 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Microsoft OneDrive](https://www.microsoft.com/microsoft-365/onedrive)
 - [OmniPresence](https://www.omnigroup.com/more)
 
-#### Desktop
-
-- [RDM](https://github.com/avibrazil/RDM)
-
 #### Development
 
 - [Android Studio](https://developer.android.com/studio)
@@ -273,7 +269,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
     - Module: Windows Build Support (Mono)
     - Module: Documentation
     - Module: Language Pack (Japanese)
-- [VRChat Creator Companion](https://github.com/AranoYuki1/VCC-for-mac)
+- [VCC for mac](https://github.com/AranoYuki1/VCC-for-mac)
 
 #### Devices
 
@@ -315,7 +311,6 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Discord](https://discord.com/)
 - [Facebook Messenger](https://www.messenger.com/) (via Mac App Store)
 - `(-A)` [Gitter](https://gitter.im/)
-- [Google Chat](https://workspace.google.co.jp/products/chat/)
 - [LINE](https://line.me/) (via Mac App Store)
 - [Microsoft Skype](https://www.skype.com/)
 - [Microsoft Teams](https://www.microsoft.com/ja-jp/microsoft-teams/group-chat-software)

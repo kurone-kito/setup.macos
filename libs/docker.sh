@@ -39,20 +39,24 @@ docker pull ubuntu
 docker pull docker
 docker pull docker:dind
 docker pull docker:git
-docker pull node:14
-docker pull node:14-alpine
-docker pull node:14-bullseye-slim
 docker pull node:16
 docker pull node:16-alpine
 docker pull node:16-bullseye-slim
 docker pull node:18
 docker pull node:18-alpine
 docker pull node:18-slim
+docker pull node:19
+docker pull node:19-alpine
+docker pull node:19-slim
+docker pull node:20
+docker pull node:20-alpine
+docker pull node:20-slim
 docker pull gitlab/gitlab-runner
+docker pull ghcr.io/catthehacker/ubuntu:act-20.04
 docker pull ghcr.io/catthehacker/ubuntu:act-22.04
 docker pull ghcr.io/catthehacker/ubuntu:act-latest
 
-# ! Commented out because the container is too lerge!
+# ! Commented out because the container is too large!
 # docker pull ghcr.io/catthehacker/ubuntu:full-20.04
 # docker pull ghcr.io/catthehacker/ubuntu:full-latest
 
