@@ -11,12 +11,9 @@ end
 ### Tap
 tap 'homebrew/autoupdate'
 tap 'homebrew/bundle'
-tap 'homebrew/cask'
-tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/command-not-found'
-tap 'homebrew/core'
 tap 'aws/tap'
 tap 'blacktop/tap'
 
@@ -126,6 +123,7 @@ cask 'karabiner-elements'
 # cask 'logitech-firmwareupdatetool'
 # cask 'logitech-g-hub'
 # cask 'logitech-gaming-software'
+# cask 'x-mirage'
 
 # Documentations
 cask 'manta'
@@ -147,10 +145,10 @@ cask 'steamcmd'
 
 # Messaging
 # cask 'discord'
-cask 'gitter' unless is_arm? # Install from Mac App Store
+# cask 'gitter' unless is_arm? # Install from Mac App Store
 # cask 'microsoft-teams'
 # cask 'skype'
-cask 'zoom', greedy: true
+# cask 'zoom', greedy: true
 
 # Remote tools
 cask 'amazon-workspaces'
@@ -202,7 +200,6 @@ brew 'vips'
 # Conversion for texts
 brew 'groff'
 brew 'nkf'
-brew 'textql'
 
 # Database
 brew 'sqlite'
