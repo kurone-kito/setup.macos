@@ -4,7 +4,7 @@
 ###########################################################################
 ### Collect information on the current environment.
 def is_arm?
- !RUBY_PLATFORM.index("arm64e").nil?
+  !RUBY_PLATFORM.index("arm64e").nil?
 end
 
 ###########################################################################
