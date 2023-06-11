@@ -78,7 +78,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
       - v14 LTS Fermium
       - v16 LTS Gallium
       - v18 LTS Hydrogen
-      - v19
+      - v20
   - plugin: [asdf-python](https://github.com/danhper/asdf-python) (via asdf)
     - [Python](https://www.python.org) (via asdf-python)
       - v2
