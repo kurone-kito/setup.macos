@@ -64,7 +64,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [groff](https://www.gnu.org/software/groff/)
 - [jq](https://stedolan.github.io/jq/)
 - [nkf](https://osdn.net/projects/nkf/)
-- [TextQL](https://github.com/dinedal/textql)
 
 #### Database
 
@@ -79,7 +78,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
       - v14 LTS Fermium
       - v16 LTS Gallium
       - v18 LTS Hydrogen
-      - v19
+      - v20
   - plugin: [asdf-python](https://github.com/danhper/asdf-python) (via asdf)
     - [Python](https://www.python.org) (via asdf-python)
       - v2
@@ -279,6 +278,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Karabiner-Elements](https://karabiner-elements.pqrs.org)
 - [logicool G Hub](https://gaming.logicool.co.jp/innovation/g-hub.html)
 - [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
+- [X-Mirage](https://www.x-mirage.jp/)
 
 #### Documents and Office apps
 

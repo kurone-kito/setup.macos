@@ -45,9 +45,6 @@ docker pull node:16-bullseye-slim
 docker pull node:18
 docker pull node:18-alpine
 docker pull node:18-slim
-docker pull node:19
-docker pull node:19-alpine
-docker pull node:19-slim
 docker pull node:20
 docker pull node:20-alpine
 docker pull node:20-slim

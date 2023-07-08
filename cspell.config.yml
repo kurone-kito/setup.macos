@@ -65,7 +65,6 @@ ignoreWords:
   - sorin
   - spctl
   - usbxhci
-  - TextQL
   - tldr
   - usbxhci
   - vbguest
