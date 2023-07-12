@@ -1,6 +1,14 @@
 {
   "files.watcherExclude": {
-    "**/.vagrant": true
+    ".cspell.cache": true,
+    "**/.vagrant": true,
+    "Brewfile.lock.json": true
+  },
+  "git.branchProtection": ["master"],
+  "search.exclude": {
+    ".cspell.cache": true,
+    "**/.vagrant": true,
+    "Brewfile.lock.json": true
   },
   "yaml.schemas": {
     "https://raw.githubusercontent.com/reviewpad/schemas/main/latest/schema.json": [
