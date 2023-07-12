@@ -13,11 +13,16 @@ fi
 
 asdf plugin update --all
 
-PY_VER="$(asdf latest python 2 | sort -V | tail -n 1)"
-set +e
-asdf install python "${PY_VER}"
-asdf global python "${PY_VER}"
-set -e
+install_python() {
+  PY_VER="$(asdf latest python "${1}" | sort -V | tail -n 1)"
+  set +e
+  asdf install python "${PY_VER}"
+  asdf global python "${PY_VER}"
+  set -e
+}
+
+install_python 2
+install_python 3
 
 resolve_nodejs_version() {
   case "${1}" in
