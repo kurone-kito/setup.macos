@@ -332,6 +332,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 #### Text editors
 
+- [Cursor](https://www.cursor.so/)
 - [Sublime Text](https://www.sublimetext.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 

@@ -168,6 +168,7 @@ cask 'grammarly'
 cask 'notion'
 
 # Text editors
+cask 'cursor'
 cask 'sublime-text'
 cask 'visual-studio-code', greedy: true
 
