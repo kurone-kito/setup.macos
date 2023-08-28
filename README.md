@@ -1,7 +1,7 @@
-# macOS auto setup for develop environment
+# 🍎 Auto setup for developing environment on macOS
 
-Desktop environment preference for macOS Ventura (Apple Sillicon and intel supported)  
-macOS Ventura (Apple Sillicon / intel 両対応) 向けの作業環境セットアップスクリプト
+Desktop environment preference for macOS Ventura (Apple Silicon and Intel supported)  
+macOS Ventura (Apple Silicon / intel 両対応) 向けの作業環境セットアップスクリプト
 
 ## Overview
 
@@ -10,7 +10,7 @@ Fully automate the installation and settings of the app to make it easier to cre
 
 ## Usage
 
-First, **give the terminal "full disk access" privileges** by seeing to the following URL.  
+First, **give the terminal "full disk access" privileges** by seeing the following URL.  
 最初に、以下の URL を参考にして、**ターミナルにフルディスクアクセス権限を与えてください。**
 
 <https://discussions.apple.com/thread/251260652>
@@ -42,7 +42,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 |  note   | description                                                                         |
 | :-----: | :---------------------------------------------------------------------------------- |
 | **`!`** | **DEPENDENCIES**: Removing this app may cause this setup to stop working correctly. |
-|  `-A`   | without Apple Sillicon Processor                                                    |
+|  `-A`   | without Apple Silicon Processor                                                     |
 
 #### Benchmark
 
@@ -82,7 +82,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
   - plugin: [asdf-python](https://github.com/danhper/asdf-python) (via asdf)
     - [Python](https://www.python.org) (via asdf-python)
       - v2
-      - v3 (via deep dependencies of the Homebrew packages: e.g., awscli, graphviz, and others)
+      - v3 (via deep dependencies of the Homebrew packages: e.g., AWS CLI, graphviz, and others)
 - [CMake](https://cmake.org)
 - **`!`** Command Line Tools for Xcode (via xcode-select CLI)
 - **`!`** [gawk: GNU awk utility](https://www.gnu.org/software/gawk/)
@@ -215,7 +215,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 |  note   | description                                                                         |
 | :-----: | :---------------------------------------------------------------------------------- |
 | **`!`** | **DEPENDENCIES**: Removing this app may cause this setup to stop working correctly. |
-|  `-A`   | without Apple Sillicon Processor                                                    |
+|  `-A`   | without Apple Silicon Processor                                                     |
 
 #### 3D Modeling
 
@@ -238,7 +238,6 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 - `(-A)` [Authy Desktop](https://authy.com/download/)
 - `(-A)` [Keybase](https://keybase.io/)
-  - Keybase app is distributed only Apple Sillicon Mac in the Mac App Store.
 
 #### Benchmark
 
@@ -333,6 +332,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 
 #### Text editors
 
+- [Cursor](https://www.cursor.so/)
 - [Sublime Text](https://www.sublimetext.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -447,7 +447,7 @@ Vagrant と Virtualbox を使用して、仮想環境でスクリプトを試す
 vagrant up
 ```
 
-The script can also attempt via the `test` script, but this script is not maintained and is deprecated.  
+The script can also be attempted via the `test` script, but this script is not maintained and is deprecated.  
 このスクリプトを `test` スクリプト経由でも試行可能ですが、このスクリプトはメンテナンスしていないので非推奨です。
 
 ## License
