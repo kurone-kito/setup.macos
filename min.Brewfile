@@ -176,8 +176,8 @@ cask 'visual-studio-code', greedy: true
 # cask 'dosbox-x'
 # cask 'parallels', greedy: true
 # cask 'parallels-virtualization-sdk'
-cask 'virtualbox' unless is_m1? # ! x86_64?
-cask 'virtualbox-extension-pack' unless is_m1? # ! x86_64?
+cask 'virtualbox' unless is_arm? # ! x86_64?
+cask 'virtualbox-extension-pack' unless is_arm? # ! x86_64?
 
 # Web browsers
 cask 'chromium'
