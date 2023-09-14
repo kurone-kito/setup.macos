@@ -346,7 +346,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 #### Web browsers
 
 - [Google Chrome](https://www.google.com/chrome/)
-- [Chromium](https://www.chromium.org/Home)
+- `(-A)` [Chromium](https://www.chromium.org/Home)
 - [Insomnia](https://insomnia.rest/)
 - [Mozilla Firefox ESR](https://www.mozilla.org/firefox/)
 - [Tor Browser](https://www.torproject.org/projects/torbrowser.html)

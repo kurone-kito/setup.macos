@@ -180,7 +180,7 @@ cask 'virtualbox' unless is_arm? # ! x86_64?
 cask 'virtualbox-extension-pack' unless is_arm? # ! x86_64?
 
 # Web browsers
-cask 'chromium'
+cask 'chromium' unless is_arm? # ! x86_64?
 cask 'google-chrome', greedy: true
 cask 'insomnia', greedy: true
 cask 'tor-browser'
