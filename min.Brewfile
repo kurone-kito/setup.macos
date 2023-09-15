@@ -98,9 +98,9 @@ mas 'OneDrive', id: 823766827
 
 # Audio & Broadcasting
 # cask 'audio-hijack', greedy: true
-# cask 'izotope-product-portal'
+# cask 'izotope-product-portal', greedy: true
 # cask 'loopback', greedy: true
-# cask 'obs'
+# cask 'obs', greedy: true
 # cask 'restream-chat'
 # cask 'schism-tracker'
 # cask 'sonic-visualiser'
@@ -139,12 +139,12 @@ cask 'font-lato'
 cask 'font-meslo-lg-nerd-font'
 
 # Games
-# cask 'minecraft'
-# cask 'steam'
+# cask 'minecraft', greedy: true
+# cask 'steam', greedy: true
 cask 'steamcmd'
 
 # Messaging
-# cask 'discord'
+# cask 'discord', greedy: true
 # cask 'gitter' unless is_arm? # Install from Mac App Store
 # cask 'microsoft-teams'
 # cask 'skype'
@@ -168,7 +168,7 @@ cask 'grammarly'
 cask 'notion'
 
 # Text editors
-cask 'cursor'
+cask 'cursor', greedy: true
 cask 'sublime-text'
 cask 'visual-studio-code', greedy: true
 
