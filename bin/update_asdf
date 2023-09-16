@@ -92,5 +92,5 @@ install_nodejs lts-gallium 8
 install_nodejs 18 9
 install_nodejs lts-hydrogen 9
 install_nodejs lts 9
-install_nodejs 20 9
-install_nodejs latest 9
+install_nodejs 20 10
+install_nodejs latest 10
