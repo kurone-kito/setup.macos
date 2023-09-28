@@ -260,8 +260,8 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Apple TestFlight](https://testflight.apple.com/) (via Mac App Store)
 - [React Native Debugger](https://github.com/jhen0409/react-native-debugger)
 - [Unity Hub](https://unity3d.com/)
-  - Unity version 2019.3.13f1 (via Unity Hub)
   - Unity version 2019.4.31f1 (via Unity Hub)
+  - Unity version 2022.3.5f1 (via Unity Hub)
   - with the common modules
     - Module: Android Build Support
     - Module: Windows Build Support (Mono)
@@ -346,7 +346,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 #### Web browsers
 
 - [Google Chrome](https://www.google.com/chrome/)
-- [Chromium](https://www.chromium.org/Home)
+- `(-A)` [Chromium](https://www.chromium.org/Home)
 - [Insomnia](https://insomnia.rest/)
 - [Mozilla Firefox ESR](https://www.mozilla.org/firefox/)
 - [Tor Browser](https://www.torproject.org/projects/torbrowser.html)
