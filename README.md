@@ -400,17 +400,17 @@ Install a script to upgrade the installed app with just one command.
 <!-- markdownlint-disable MD033 -->
 <details><summary>list</summary>
 
-| Image                         | Tag                                                                                                       |
-| :---------------------------- | :-------------------------------------------------------------------------------------------------------- |
-| `hello-world`                 | _`latest`_                                                                                                |
-| `alpine`                      | _`latest`_                                                                                                |
-| `busybox`                     | _`latest`_                                                                                                |
-| `debian`                      | _`latest`_                                                                                                |
-| `ubuntu`                      | _`latest`_                                                                                                |
-| `docker`                      | `dind`, `git`, _`latest`_                                                                                 |
-| `node`                        | `14`, `14-alpine`, `14-bullseye-slim`, `16`, `16-alpine` `16-bullseye-slim`, `18`, `18-alpine`, `18-slim` |
-| `gitlab/gitlab-runner`        | _`latest`_                                                                                                |
-| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~                              |
+| Image                         | Tag                                                                          |
+| :---------------------------- | :--------------------------------------------------------------------------- |
+| `hello-world`                 | _`latest`_                                                                   |
+| `alpine`                      | _`latest`_                                                                   |
+| `busybox`                     | _`latest`_                                                                   |
+| `debian`                      | _`latest`_                                                                   |
+| `ubuntu`                      | _`latest`_                                                                   |
+| `docker`                      | `dind`, `git`, _`latest`_                                                    |
+| `node`                        | `18`, `18-alpine`, `18-slim`, `20`, `20-alpine`, `20-slim`                   |
+| `gitlab/gitlab-runner`        | _`latest`_                                                                   |
+| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~ |
 
 </details>
 <!-- markdownlint-enable MD033 -->
