@@ -153,6 +153,7 @@ cask 'steamcmd'
 # Remote tools
 cask 'amazon-workspaces'
 cask 'ngrok'
+cask 'switchhosts'
 # cask 'teamviewer'
 cask 'vnc-viewer'
 

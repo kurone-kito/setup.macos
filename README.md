@@ -323,6 +323,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Apple Remote Desktop](http://www.apple.com/remotedesktop/) (via Mac App Store)
 - [Microsoft Remote Desktop](https://apps.apple.com/app/microsoft-remote-desktop/id1295203466) (via Mac App Store)
 - [Real VNC Viewer](https://www.realvnc.com/connect/download/viewer/)
+- [SwitchHosts](https://switchhosts.vercel.app)
 - [TeamViewer](https://www.teamviewer.com/)
 
 #### Terminal

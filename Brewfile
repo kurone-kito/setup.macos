@@ -153,6 +153,7 @@ cask 'zoom', greedy: true
 # Remote tools
 cask 'amazon-workspaces'
 cask 'ngrok'
+cask 'switchhosts'
 cask 'teamviewer'
 cask 'vnc-viewer'
 
