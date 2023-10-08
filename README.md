@@ -153,6 +153,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 #### Shell
 
+- [bats-core](https://bats-core.readthedocs.io/)
 - [lporg](https://github.com/blacktop/lporg)
 - [Microsoft PowerShell](https://microsoft.com/PowerShell)
 - [Prezto](https://github.com/sorin-ionescu/prezto) (via Git)
