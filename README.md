@@ -1,7 +1,7 @@
 # 🍎 Auto setup for developing environment on macOS
 
-Desktop environment preference for macOS Ventura (Apple Silicon and Intel supported)  
-macOS Ventura (Apple Silicon / intel 両対応) 向けの作業環境セットアップスクリプト
+Desktop environment preference for macOS Sonoma & Ventura (Apple Silicon and Intel supported)  
+macOS Sonoma & Ventura (Apple Silicon / intel 両対応) 向けの作業環境セットアップスクリプト
 
 ## Overview
 
@@ -402,17 +402,17 @@ Install a script to upgrade the installed app with just one command.
 <!-- markdownlint-disable MD033 -->
 <details><summary>list</summary>
 
-| Image                         | Tag                                                                          |
-| :---------------------------- | :--------------------------------------------------------------------------- |
-| `hello-world`                 | _`latest`_                                                                   |
-| `alpine`                      | _`latest`_                                                                   |
-| `busybox`                     | _`latest`_                                                                   |
-| `debian`                      | _`latest`_                                                                   |
-| `ubuntu`                      | _`latest`_                                                                   |
-| `docker`                      | `dind`, `git`, _`latest`_                                                    |
-| `node`                        | `18`, `18-alpine`, `18-slim`, `20`, `20-alpine`, `20-slim`                   |
-| `gitlab/gitlab-runner`        | _`latest`_                                                                   |
-| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~ |
+| Image                         | Tag                                                                                      |
+| :---------------------------- | :--------------------------------------------------------------------------------------- |
+| `hello-world`                 | _`latest`_                                                                               |
+| `alpine`                      | _`latest`_                                                                               |
+| `busybox`                     | _`latest`_                                                                               |
+| `debian`                      | _`latest`_                                                                               |
+| `ubuntu`                      | _`latest`_                                                                               |
+| `docker`                      | `dind`, `git`, _`latest`_                                                                |
+| `node`                        | `18`, `18-alpine`, `18-slim`, `20`, `20-alpine`, `20-slim`, `21`, `21-alpine`, `21-slim` |
+| `gitlab/gitlab-runner`        | _`latest`_                                                                               |
+| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~             |
 
 </details>
 <!-- markdownlint-enable MD033 -->
