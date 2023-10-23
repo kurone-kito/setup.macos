@@ -91,4 +91,5 @@ install_nodejs 18 9
 install_nodejs lts-hydrogen 9
 install_nodejs lts 9
 install_nodejs 20 10
+install_nodejs 21 10
 install_nodejs latest 10
