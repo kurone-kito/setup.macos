@@ -255,6 +255,7 @@ brew 'scrcpy'
 brew 'tor'
 
 # Shell
+brew 'bats-core'
 brew 'term'
 brew 'thefuck'
 brew 'tmux'
