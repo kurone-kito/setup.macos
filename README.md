@@ -75,10 +75,9 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [asdf](http://asdf-vm.com/)
   - plugin: [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs) (via asdf)
     - [Node.js](https://nodejs.org/) (via asdf-nodejs)
-      - v14 LTS Fermium
-      - v16 LTS Gallium
       - v18 LTS Hydrogen
-      - v20
+      - v20 LTS Iron
+      - v21
   - plugin: [asdf-python](https://github.com/danhper/asdf-python) (via asdf)
     - [Python](https://www.python.org) (via asdf-python)
       - v2
