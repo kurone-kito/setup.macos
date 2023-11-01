@@ -89,6 +89,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [Microsoft .NET SDK](https://dotnet.microsoft.com/)
 - [lv2: LADSPA v2](https://lv2plug.in/)
 - `(-A)` [Mono](https://www.mono-project.com/)
+- **`!`** [Rust](https://www.rust-lang.org/)
 - [shellcheck](https://www.shellcheck.net)
 
 #### Documentation
@@ -242,7 +243,6 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 #### Benchmark
 
 - [Blackmagic Disk Speed Test](https://apps.apple.com/app/blackmagic-disk-speed-test/id425264550) (via Mac App Store)
-- [GFXBench Metal](https://gfxbench.com/) (via Mac App Store)
 - [MAXON Cinebench](https://www.maxon.net/ja/cinebench) (via Mac App Store)
 
 #### Cloud storages
@@ -322,6 +322,7 @@ Mac App Store からインストール可能なアプリは、このスクリプ
 - [Amazon Workspaces](https://clients.amazonworkspaces.com/)
 - [Apple Remote Desktop](http://www.apple.com/remotedesktop/) (via Mac App Store)
 - [Microsoft Remote Desktop](https://apps.apple.com/app/microsoft-remote-desktop/id1295203466) (via Mac App Store)
+- [OpenVPN Connect](https://openvpn.net/client-connect-vpn-for-mac-os/)
 - [Real VNC Viewer](https://www.realvnc.com/connect/download/viewer/)
 - [SwitchHosts](https://switchhosts.vercel.app)
 - [TeamViewer](https://www.teamviewer.com/)
