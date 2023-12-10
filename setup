@@ -23,6 +23,7 @@ osascript -e 'tell app "Terminal"' -e "do script \"${BREW} && exit\"" -e 'end te
 
 libs/updaters.sh
 libs/nanorc.sh
+libs/git.sh
 libs/prezto.sh
 libs/zsh.d.sh
 libs/dotfiles.sh

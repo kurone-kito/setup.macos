@@ -1,4 +1,4 @@
-$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
+allowCompoundWords: true
 cache:
   cacheFormat: universal
   cacheLocation: .cspell.cache
@@ -15,18 +15,16 @@ dictionaries:
   - git
   - npm
   - softwareTerms
+enableGlobDot: true
+features:
+  weighted-suggestions: true
+globRoot: ${cwd}
 language: en,ja
-languageSettings:
-  - allowCompoundWords: true
-    caseSensitive: false
-    enabled: true
-    languageId: "*"
-    locale: en,ja
 ignorePaths:
   - .git/objects
   - .github/CODE_OF_CONDUCT.*
   - cspell.config.yml
-ignoreWords:
+words:
   - alsa
   - antlr
   - apic

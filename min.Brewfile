@@ -41,6 +41,7 @@ brew 'zsh-completions'
 # Programming
 brew 'gawk'
 brew 'gcc'
+brew 'rust'
 
 # Signature
 brew 'unbound', restart_service: true
@@ -153,6 +154,7 @@ cask 'steamcmd'
 # Remote tools
 cask 'amazon-workspaces'
 cask 'ngrok'
+cask 'openvpn-connect'
 cask 'switchhosts'
 # cask 'teamviewer'
 cask 'vnc-viewer'
@@ -281,7 +283,6 @@ mas 'Cinebench', id: 1438772273
 mas 'Developer', id: 640199958
 mas 'Disk Speed Test', id: 1480068668
 # mas 'GarageBand', id: 682658836
-mas "GFXBench Metal", id: 1044629456
 mas 'Grammarly for Safari', id: 1462114288
 # mas 'Human Resource Machine', id: 1005728312
 # mas 'iMovie', id: 408981434
