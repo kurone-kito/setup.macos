@@ -10,4 +10,4 @@ log_info 'Installing the .zsh.d'
 wait_dependencies zsh
 
 cd ..
-ln -snf "$(pwd)/.zsh.d" "${ZDOTDIR:-$HOME}/.zsh.d"
+deploy .zsh.d
