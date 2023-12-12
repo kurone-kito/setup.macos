@@ -80,7 +80,6 @@ brew 'blacktop/tap/lporg'
 
 # Storages management
 cask 'adobe-creative-cloud', greedy: true
-cask 'dropbox'
 cask 'omnipresence'
 
 # Virtualizations
