@@ -11,19 +11,6 @@ then
   exit
 fi
 
-asdf plugin update --all
-
-install_python() {
-  PY_VER="$(asdf latest python "${1}" | sort -V | tail -n 1)"
-  set +e
-  asdf install python "${PY_VER}"
-  asdf global python "${PY_VER}"
-  set -e
-}
-
-install_python 2
-install_python 3
-
 resolve_nodejs_version() {
   case "${1}" in
     *lts*)
@@ -37,6 +24,14 @@ resolve_nodejs_version() {
       asdf latest nodejs "${1}"
       ;;
   esac
+}
+
+install_python() {
+  PY_VER="$(asdf latest python "${1}" | sort -V | tail -n 1)"
+  set +e
+  asdf install python "${PY_VER}"
+  asdf global python "${PY_VER}"
+  set -e
 }
 
 install_nodejs_deps() {
@@ -84,6 +79,11 @@ install_nodejs() {
   install_nodejs_deps "${2}"
   set -e
 }
+
+asdf plugin update --all
+
+install_python 2
+install_python 3
 
 export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed
 
