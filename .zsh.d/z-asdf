@@ -13,16 +13,3 @@ ASDF_SH="${ASDF_DIR}/asdf.sh"
 export ASDF_DIR
 # shellcheck disable=SC1090
 [ -f "${ASDF_SH}" ] && . "${ASDF_SH}"
-
-if which npm > /dev/null
-then
-  MAJOR=$(npm -v | awk -F. '{printf "%2d", $1}')
-  if [ "$MAJOR" -ge 8 ]
-  then
-    PATH="$PATH:$(npm bin --location=global)"
-  else
-    # ! TODO: Remove this fallback when no longer supported the Node.js v14.
-    PATH="$PATH:$(npm bin --global)"
-  fi
-  export PATH
-fi
