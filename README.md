@@ -73,6 +73,11 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 - [ANTLR](https://www.antlr.org/)
 - [asdf](http://asdf-vm.com/)
+  - plugin: [asdf-dotnet](https://github.com/hensou/asdf-dotnet)
+    - [.NET](https://dotnet.microsoft.com/) (via asdf-dotnet)
+      - v6.0
+      - v7.0
+      - v8.0
   - plugin: [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs) (via asdf)
     - [Node.js](https://nodejs.org/) (via asdf-nodejs)
       - v18 LTS Hydrogen
@@ -391,7 +396,7 @@ Install a script to upgrade the installed app with just one command.
 - Upgrade the plugins of Vagrant
 - Upgrade the Docker images
 - Upgrade the Prezto
-- Upgrade the asdf (Node.js and Python)
+- Upgrade the asdf (.NET, Node.js, and Python)
 
 </details>
 <!-- markdownlint-enable MD033 -->

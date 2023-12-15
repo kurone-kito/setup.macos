@@ -111,7 +111,6 @@ cask 'keybase' unless is_arm? # Install from Mac App Store
 
 # Development
 # cask 'anatawa12/cask/vcc-for-mac', greedy: true
-cask 'dotnet-sdk'
 cask 'react-native-debugger'
 
 # Devices
