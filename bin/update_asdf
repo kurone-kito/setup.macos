@@ -11,26 +11,28 @@ then
   exit
 fi
 
-resolve_nodejs_version() {
-  case "${1}" in
+resolve_version() {
+  case "${2}" in
     *lts*)
-      asdf uninstall nodejs "${1}"
-      echo "${1}"
+      asdf latest "${1}" "${2}"
+      asdf uninstall "${1}" "${2}"
+      echo "${2}"
       ;;
     *latest*)
-      echo "${1}"
+      echo "${2}"
       ;;
     *)
-      asdf latest nodejs "${1}"
+      asdf latest "${1}" "${2}"
       ;;
   esac
 }
 
-install_python() {
-  PY_VER="$(asdf latest python "${1}" | sort -V | tail -n 1)"
+install_via_asdf() {
+  TARGET_VERSION="$(resolve_version "${1}" "${2}")"
   set +e
-  asdf install python "${PY_VER}"
-  asdf global python "${PY_VER}"
+  asdf install "${1}" "${TARGET_VERSION}"
+  asdf global "${1}" "${TARGET_VERSION}"
+  remove_obsolete_versions "${1}" "${2}"
   set -e
 }
 
@@ -45,16 +47,16 @@ install_nodejs_deps() {
   asdf reshim
 }
 
-remove_obsolete_nodejs_versions() {
-  case "${1}" in
+remove_obsolete_versions() {
+  case "${2}" in
     *lts*)
       ;;
     *latest*)
       ;;
     *)
-      for v in $(asdf list nodejs "${1}" | sort -V | sed -e '$d')
+      for v in $(asdf list "${1}" "${2}" | sort -V | sed -e '$d')
       do
-        asdf uninstall nodejs "${v}"
+        asdf uninstall "${1}" "${v}"
       done
       ;;
   esac
@@ -62,7 +64,7 @@ remove_obsolete_nodejs_versions() {
 
 install_nodejs() {
   set +e
-  TARGET_VER=$(resolve_nodejs_version "${1}")
+  TARGET_VER=$(resolve_version nodejs "${1}")
   if asdf install nodejs "${TARGET_VER}"
   then
     asdf global nodejs "${TARGET_VER}"
@@ -73,15 +75,16 @@ install_nodejs() {
       asdf install nodejs "ref:v${TARGET_VER}"
     asdf global nodejs "ref:v${TARGET_VER}"
   fi
-  remove_obsolete_nodejs_versions "${1}"
+  remove_obsolete_versions nodejs "${1}"
   install_nodejs_deps "${2}"
   set -e
 }
 
 asdf plugin update --all
 
-install_python 2
-install_python 3
+install_via_asdf python 2
+install_via_asdf python 3
+install_via_asdf python latest
 
 export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed
 
