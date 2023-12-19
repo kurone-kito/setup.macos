@@ -24,6 +24,7 @@ install_plugin() {
   fi
 }
 
+install_plugin dotnet
 install_plugin nodejs
 install_plugin python
 

@@ -2,6 +2,15 @@
 
 set -eu
 
+deploy() {
+  SRC="$1"
+  [ $# -ge 2 ] && DST="$2" || DST="${HOME}/${SRC}"
+
+  mkdir -p "${DST}"
+  find "${SRC}" -type f -print0 | xargs -0 -n1 basename | xargs -I {} rm -f "${DST}/{}"
+  find "${SRC}" -type f -print0 | xargs -0 -n1 basename | xargs -I {} ln -s "$(pwd)/${SRC}/{}" "${DST}/{}"
+}
+
 github_clone_if_not_exists() {
   git -C "${2}" pull 2> /dev/null \
     || git clone --recursive "https://github.com/${1}.git" "${2}" \

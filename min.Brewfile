@@ -80,7 +80,6 @@ brew 'blacktop/tap/lporg'
 
 # Storages management
 # cask 'adobe-creative-cloud', greedy: true
-# cask 'dropbox'
 cask 'omnipresence'
 
 # Virtualizations
@@ -111,8 +110,7 @@ cask 'authy' unless is_arm? # Install from Mac App Store
 cask 'keybase' unless is_arm? # Install from Mac App Store
 
 # Development
-# cask 'anatawa12/cask/vcc-for-mac'
-cask 'dotnet-sdk'
+# cask 'anatawa12/cask/vcc-for-mac', greedy: true
 cask 'react-native-debugger'
 
 # Devices

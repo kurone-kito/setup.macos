@@ -27,13 +27,14 @@ fi
 install_unity() {
   VERSION="${1}"
   CHANGESET="${2}"
+  CPU_ARCH="${3:-x86_64}"
   if "${UNITY_HUB}" -- --headless editors --installed 2>&1 | grep -q "${VERSION}"
   then
     log_info "Unity ${VERSION} is already installed."
   else
     "${UNITY_HUB}" -- --headless install -v "${VERSION}" -c "${CHANGESET}" \
-      -m android -m documentation -m language-ja -m windows-mono --cm \
-      || true
+      -a "${CPU_ARCH}" -m android -m documentation -m language-ja \
+      -m windows-mono --cm || true
   fi
 }
 
@@ -47,7 +48,8 @@ read -r YN
 case "${YN}" in
   [yY]*)
     install_unity 2019.4.31f1 d4ddf0d95db9
-    install_unity 2022.3.5f1 9674261d40ee
+    install_unity 2022.3.6f1 b9e6e7e9fa2d arm64
+    install_unity 2022.3.6f1 b9e6e7e9fa2d x86_64
     ;;
   *)
     log_info 'skipped the Unity installation due to the user choice'
