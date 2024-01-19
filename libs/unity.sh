@@ -28,14 +28,9 @@ install_unity() {
   VERSION="${1}"
   CHANGESET="${2}"
   CPU_ARCH="${3:-x86_64}"
-  if "${UNITY_HUB}" -- --headless editors --installed 2>&1 | grep -q "${VERSION}"
-  then
-    log_info "Unity ${VERSION} is already installed."
-  else
-    "${UNITY_HUB}" -- --headless install -v "${VERSION}" -c "${CHANGESET}" \
-      -a "${CPU_ARCH}" -m android -m documentation -m language-ja \
-      -m windows-mono --cm || true
-  fi
+  "${UNITY_HUB}" -- --headless install -v "${VERSION}" -c "${CHANGESET}" \
+    -a "${CPU_ARCH}" -m android -m documentation -m language-ja \
+    -m windows-mono --cm || true
 }
 
 open "${UNITY_HUB_APP}" -g
