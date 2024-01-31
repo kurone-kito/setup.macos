@@ -86,8 +86,8 @@ cask 'omnipresence'
 cask 'vagrant'
 cask 'docker', greedy: true
 
-mas 'OmniFocus', id: 1474135619
-mas 'OneDrive', id: 823766827
+mas 'OmniFocus 4', id: 1542143627
+# mas 'OneDrive', id: 823766827
 
 ###########################################################################
 ### Cask
