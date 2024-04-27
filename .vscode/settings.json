@@ -1,4 +1,7 @@
 {
+  "files.associations": {
+    "LICENSE": "plaintext"
+  },
   "files.watcherExclude": {
     ".cspell.cache": true,
     "**/.vagrant": true,
