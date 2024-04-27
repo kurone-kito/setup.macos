@@ -479,6 +479,11 @@ not maintained and is deprecated.
 このスクリプトを `test` スクリプト経由でも試行可能ですが、
 このスクリプトはメンテナンスしていないので非推奨です。
 
+## Contributing
+
+Welcome to contribute to this repository! For more details,
+please refer to [CONTRIBUTING.md](.github/CONTRIBUTING.md).
+
 ## License
 
 MIT
