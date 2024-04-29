@@ -39,10 +39,6 @@ install_via_asdf() {
 install_nodejs_deps() {
   . "${HOME}/.zsh.d/z-asdf"
 
-  # https://qiita.com/Qoo_Rus/items/afb52517e0e17b720990
-  npm install -g --silent agentkeepalive@latest
-  npm install -g --silent npm@"${1}"
-  npm upgrade -g --silent
   corepack enable
   asdf reshim
 }
@@ -76,7 +72,7 @@ install_nodejs() {
     asdf global nodejs "ref:v${TARGET_VER}"
   fi
   remove_obsolete_versions nodejs "${1}"
-  install_nodejs_deps "${2}"
+  install_nodejs_deps
   set -e
 }
 
@@ -93,10 +89,10 @@ install_via_asdf python latest
 
 export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed
 
-install_nodejs 18 9
-install_nodejs lts-hydrogen 9
-install_nodejs 20 10
-install_nodejs lts-iron 10
-install_nodejs lts 10
-install_nodejs 21 10
-install_nodejs latest 10
+install_nodejs 18
+install_nodejs lts-hydrogen
+install_nodejs 20
+install_nodejs lts-iron
+install_nodejs lts
+install_nodejs 21
+install_nodejs latest
