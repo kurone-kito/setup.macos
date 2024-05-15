@@ -1,8 +1,9 @@
 # 🍎 Auto setup for developing environment on macOS
 
-Desktop environment preference for macOS Sonoma & Ventura
+Desktop environment preference for macOS Sonoma
 (Apple Silicon and Intel supported)  
-macOS Sonoma & Ventura (Apple Silicon / intel 両対応) 向けの作業環境セットアップスクリプト
+macOS Sonoma (Apple Silicon / intel 両対応)
+向けの作業環境セットアップスクリプト
 
 ## Overview
 
@@ -319,7 +320,7 @@ Mac App Store からインストール可能なアプリは、
 
 #### Games
 
-- [Human Resource Machine](<http://tomorrowcorporation.com/humanresourcemachine>
+- [Human Resource Machine](http://tomorrowcorporation.com/humanresourcemachine)
   (via Mac App Store)
 - [Minecraft Java Edition](https://www.minecraft.net/)
 - [Steam](https://store.steampowered.com/)
