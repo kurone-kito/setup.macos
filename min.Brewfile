@@ -57,11 +57,12 @@ brew 'proctools'
 
 # Configuration tools
 brew 'chezmoi'
+brew 'mackup'
 
 # Conversion for texts
 brew 'jq'
 
-# Developments for Web
+# Development for Web
 brew 'asdf'
 brew 'mkcert'
 brew 'nss'
@@ -191,6 +192,8 @@ cask 'tor-browser'
 # Benchmark
 brew 'cloc'
 brew 'fastfetch'
+brew 'gotop'
+brew 'htop'
 
 # Conversion for binaries
 brew 'ffmpeg'
@@ -260,11 +263,6 @@ brew 'term'
 brew 'thefuck'
 brew 'tmux'
 
-# System
-brew 'gotop'
-brew 'htop'
-brew 'mackup'
-
 # Text Browsing
 brew 'links'
 brew 'cheat'
@@ -278,26 +276,37 @@ brew 'vim'
 ###########################################################################
 ### Mas
 
+# Benchmark
 mas 'Cinebench', id: 1438772273
-mas 'Developer', id: 640199958
 mas 'Disk Speed Test', id: 1480068668
+
+# Development
+mas 'Developer', id: 640199958
+mas 'TestFlight', id: 899247664
+
+# DTM / DTV
 # mas 'GarageBand', id: 682658836
-mas 'Grammarly for Safari', id: 1462114288
-# mas 'Human Resource Machine', id: 1005728312
 # mas 'iMovie', id: 408981434
-mas 'Keynote', id: 409183694
-# mas 'Kindle', id: 405399194
+
+# Messaging / Social
 # mas 'LINE', id: 539883307
 # mas 'Messenger', id: 1480068668
+mas 'Slack', id: 803453959
+# mas "Twitter", id: 1482454543
+
+# Office
+mas 'Keynote', id: 409183694
 # mas 'Microsoft Excel', id: 462058435
 # mas 'Microsoft OneNote', id: 784801555
 # mas 'Microsoft PowerPoint', id: 462062816
-# mas 'Microsoft Remote Desktop', id: 1295203466
 # mas "Microsoft To Do", id: 1274495053
 # mas 'Microsoft Word', id: 462054704
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
+
+# Others
+mas 'Grammarly for Safari', id: 1462114288
+# mas 'Human Resource Machine', id: 1005728312
+# mas 'Kindle', id: 405399194
+# mas 'Microsoft Remote Desktop', id: 1295203466
 # mas 'Remote Desktop', id: 409907375
-mas 'Slack', id: 803453959
-mas 'TestFlight', id: 899247664
-# mas "Twitter", id: 1482454543
