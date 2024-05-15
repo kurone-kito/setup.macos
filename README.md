@@ -57,7 +57,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Benchmark
 
 - [cloc](https://github.com/AlDanial/cloc)
-- [neofetch](https://github.com/dylanaraps/neofetch)
+- [fastfetch](https://github.com/fastfetch-cli/fastfetch)
 
 #### Configuration tools
 
@@ -108,6 +108,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - `(-A)` [Mono](https://www.mono-project.com/)
 - **`!`** [Rust](https://www.rust-lang.org/)
 - [shellcheck](https://www.shellcheck.net)
+- [vrc-get](https://vrc-get.anatawa12.com/)
 
 #### Documentation
 
@@ -204,6 +205,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Text editors
 
 - [GNU Nano](https://www.nano-editor.org)
+- [Neovim](https://neovim.io/)
 - [Vim](https://www.vim.org/)
 
 #### Virtualizations
@@ -213,10 +215,10 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [Parallels Virtualization SDK](https://www.parallels.com/products/desktop/download/)
 - [Vagrant](https://www.vagrantup.com/)
   - plugins (via Vagrant)
-    - [vagrant-disksize](https://github.com/sprotheroe/vagrant-disksize)
+    - `(-A)` [vagrant-disksize](https://github.com/sprotheroe/vagrant-disksize)
     - [Vagrant Parallels Provider](https://parallels.github.io/vagrant-parallels/)
     - [Vagrant Reload Provisioner](https://github.com/aidanns/vagrant-reload)
-    - [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest)
+    - `(-A)` [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest)
 
 #### Others
 
@@ -337,7 +339,6 @@ Mac App Store からインストール可能なアプリは、
 
 - [Discord](https://discord.com/)
 - [Facebook Messenger](https://www.messenger.com/) (via Mac App Store)
-- `(-A)` [Gitter](https://gitter.im/)
 - [LINE](https://line.me/) (via Mac App Store)
 - [Microsoft Skype](https://www.skype.com/)
 - [Microsoft Teams](https://www.microsoft.com/ja-jp/microsoft-teams/group-chat-software)

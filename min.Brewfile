@@ -144,7 +144,6 @@ cask 'steamcmd'
 
 # Messaging
 # cask 'discord', greedy: true
-# cask 'gitter' unless is_arm? # Install from Mac App Store
 # cask 'microsoft-teams'
 # cask 'skype'
 # cask 'zoom', greedy: true
@@ -191,7 +190,7 @@ cask 'tor-browser'
 
 # Benchmark
 brew 'cloc'
-brew 'neofetch'
+brew 'fastfetch'
 
 # Conversion for binaries
 brew 'ffmpeg'
@@ -215,6 +214,7 @@ brew 'cmake'
 brew 'lv2'
 brew 'pict'
 brew 'shellcheck'
+brew 'vrc-get'
 
 # Documentations
 brew 'graphviz'
@@ -272,6 +272,7 @@ brew 'tldr'
 
 # Text editors
 brew 'nano'
+brew 'neovim'
 brew 'vim'
 
 ###########################################################################
