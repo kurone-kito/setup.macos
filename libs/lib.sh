@@ -15,6 +15,8 @@ github_clone_if_not_exists() {
   git -C "${2}" pull 2> /dev/null \
     || git clone --recursive "https://github.com/${1}.git" "${2}" \
     || [ -d "${2}" ]
+  git -C "${2}" reflog expire --expire=now --all || true
+  git -C "${2}" gc --aggressive --prune=now || true
 }
 
 log_info() {
