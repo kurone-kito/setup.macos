@@ -19,7 +19,8 @@ fi
 ./update_docker
 
 git -C "${ZDOTDIR:-$HOME}/.zprezto" pull --recurse-submodules || true
-git -C "${ZDOTDIR:-$HOME}/.zprezto" gc --aggressive
+git -C "${ZDOTDIR:-$HOME}/.zprezto" reflog expire --expire=now --all
+git -C "${ZDOTDIR:-$HOME}/.zprezto" gc --aggressive --prune=now
 
 ./update_asdf
 mas upgrade

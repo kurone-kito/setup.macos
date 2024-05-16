@@ -29,9 +29,12 @@ install_plugin() {
   fi
 }
 
-install_plugin vagrant-disksize
 install_plugin vagrant-parallels
 install_plugin vagrant-reload
-install_plugin vagrant-vbguest
+if [ "$(uname -m)" = 'arm64' ]
+then
+  install_plugin vagrant-disksize
+  install_plugin vagrant-vbguest
+fi
 
 vagrant plugin update
