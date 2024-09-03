@@ -12,7 +12,7 @@ then
   BREWPATH='/opt/homebrew/bin/brew' # arm64
 fi
 
-if [ -n "${BREWPATH}" ]
+if [ -x "${BREWPATH}" ]
 then
   eval "$("${BREWPATH}" shellenv)"
   REPO="$(brew --repository)"
