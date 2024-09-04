@@ -86,7 +86,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
   - plugin: [asdf-dotnet](https://github.com/hensou/asdf-dotnet)
     - [.NET](https://dotnet.microsoft.com/) (via asdf-dotnet)
       - v6.0
-      - v7.0
       - v8.0
   - plugin: [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs) (via asdf)
     - [Node.js](https://nodejs.org/) (via asdf-nodejs)
