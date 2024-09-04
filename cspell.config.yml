@@ -25,10 +25,10 @@ ignorePaths:
   - .github/CODE_OF_CONDUCT.*
   - cspell.config.yml
 words:
+  - alcom
   - alsa
   - antlr
   - apic
-  - authy
   - biosapic
   - bioslogofadein
   - broot
