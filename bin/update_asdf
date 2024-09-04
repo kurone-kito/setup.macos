@@ -94,6 +94,5 @@ install_nodejs lts-hydrogen
 install_nodejs 20
 install_nodejs lts-iron
 install_nodejs lts
-install_nodejs 21
 install_nodejs 22
 install_nodejs latest
