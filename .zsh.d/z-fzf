@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# -*- mode: sh -*-
+# vim: set ft=sh :
+
+# =========================================================
+# ! WARN: DO NOT REMOVE THE “z” PREFIX!
+#
+# Added the “z” prefix to the filename because
+# the script has to run it after Homebrew's path resolution.
+
+if which fzf > /dev/null
+then
+  # shellcheck disable=SC1090
+  . <(fzf --zsh)
+fi
