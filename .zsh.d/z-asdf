@@ -11,5 +11,7 @@
 ASDF_DIR="$(brew --prefix asdf)/libexec"
 ASDF_SH="${ASDF_DIR}/asdf.sh"
 export ASDF_DIR
+ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed
+export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY
 # shellcheck disable=SC1090
 [ -f "${ASDF_SH}" ] && . "${ASDF_SH}"

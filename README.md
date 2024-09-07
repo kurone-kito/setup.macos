@@ -86,19 +86,16 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
   - plugin: [asdf-dotnet](https://github.com/hensou/asdf-dotnet)
     - [.NET](https://dotnet.microsoft.com/) (via asdf-dotnet)
       - v6.0
-      - v7.0
       - v8.0
   - plugin: [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs) (via asdf)
     - [Node.js](https://nodejs.org/) (via asdf-nodejs)
       - v18 LTS Hydrogen
       - v20 LTS Iron
-      - v21
       - v22
   - plugin: [asdf-python](https://github.com/danhper/asdf-python) (via asdf)
     - [Python](https://www.python.org) (via asdf-python)
       - v2
-      - v3 (via deep dependencies of the Homebrew packages:
-        e.g., AWS CLI, graphviz, and others)
+      - v3 (via deep dependencies of the Homebrew packages: e.g., AWS CLI, and others)
 - [CMake](https://cmake.org)
 - **`!`** Command Line Tools for Xcode (via xcode-select CLI)
 - **`!`** [gawk: GNU awk utility](https://www.gnu.org/software/gawk/)
@@ -112,17 +109,14 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 #### Documentation
 
-- [Graphviz](https://graphviz.org/)
 - [mdp](https://github.com/visit1985/mdp)
 - [pandoc](https://pandoc.org/)
-- [PlantUML](https://plantuml.com/)
 - [wkhtmltopdf](https://wkhtmltopdf.org/)
 
 #### Files management
 
 - [bat](https://github.com/sharkdp/bat)
 - [broot](https://dystroy.org/broot/)
-- [exa](https://the.exa.websitef)
 - [fzf](https://github.com/junegunn/fzf)
 - [myside](https://github.com/mosen/mysides)
 - [p7zip](https://sourceforge.net/projects/p7zip/)
@@ -132,7 +126,9 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Packages manager
 
 - [Homebrew](https://brew.sh/) (directly install)
+- **`!`** [mas-cli](https://github.com/mas-cli/mas)
 - [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD)
+- [Whalebrew](https://github.com/whalebrew/whalebrew)
 
 #### Runtime
 
@@ -165,6 +161,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [AWS SAM CLI](https://aws.amazon.com/serverless/sam/)
 - **`!`** [curl](https://curl.se)
 - **`!`** [GNU wget](https://www.gnu.org/software/wget/)
+- [minicom](https://salsa.debian.org/minicom-team/minicom)
 - [Mosh](https://mosh.org)
 - [nmap](https://nmap.org/)
 - [OpenVPN](https://openvpn.net/)
@@ -222,8 +219,9 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 #### Others
 
-- **`!`** [mas-cli](https://github.com/mas-cli/mas)
+- [gti](https://r-wos.org/hacks/gti)
 - [Nyancat CLI](http://nyancat.dakko.us/)
+- [sl](https://github.com/mtoyoda/sl)
 
 </details>
 
@@ -247,20 +245,22 @@ Mac App Store からインストール可能なアプリは、
 
 #### Audios, Videos, and Broadcasting
 
+- [Amazon Prime Video](https://www.primevideo.com/) (via Mac App Store)
 - [Apple GarageBand](https://www.apple.com/mac/garageband/)
   (via Mac App Store)
 - [Apple iMovie](https://www.apple.com/imovie/) (via Mac App Store)
+- [Apple Logic Pro](https://www.apple.com/logic-pro/)
+  (via Mac App Store)
 - [iZotope Product Portal](https://www.izotope.com/)
 - [OBS Studio](https://obsproject.com/)
 - [Restream Chat](https://restream.io/chat/)
 - [Rogue Amoeba Audio Hijack](https://rogueamoeba.com/audiohijack/)
 - [Rogue Amoeba Loopback](https://rogueamoeba.com/loopback/)
-- [Schism Tracker](https://schismtracker.org/)
 - [Sonic Visualiser](https://sonicvisualiser.org/)
+- [Voicepeak](https://www.ah-soft.com/voice/)
 
 #### Authentication
 
-- `(-A)` [Authy Desktop](https://authy.com/download/)
 - `(-A)` [Keybase](https://keybase.io/)
 
 #### Benchmark
@@ -277,11 +277,13 @@ Mac App Store からインストール可能なアプリは、
 
 #### Development
 
+- [ALCOM](https://vrc-get.anatawa12.com/alcom/)
 - [Android Studio](https://developer.android.com/studio)
 - [Apple Developer](https://apps.apple.com/us/app/apple-developer/id640199958)
   (via Mac App Store)
 - **`!`** [Apple Xcode](https://developer.apple.com/xcode/) (via Mac App Store)
 - [Apple TestFlight](https://testflight.apple.com/) (via Mac App Store)
+- [Figma](https://www.figma.com/downloads/)
 - [React Native Debugger](https://github.com/jhen0409/react-native-debugger)
 - [Unity Hub](https://unity3d.com/)
   - Unity version 2019.4.31f1 (via Unity Hub)
@@ -291,7 +293,6 @@ Mac App Store からインストール可能なアプリは、
     - Module: Windows Build Support (Mono)
     - Module: Documentation
     - Module: Language Pack (Japanese)
-- [VCC for mac](https://github.com/AranoYuki1/VCC-for-mac)
 
 #### Devices
 
@@ -307,6 +308,7 @@ Mac App Store からインストール可能なアプリは、
 #### Documents and Office apps
 
 - [Amazon Kindle](https://www.amazon.com/kindle) (via Mac App Store)
+- [ChatGPT](https://chatgpt.com/)
 - [Manta](https://getmanta.app/) (via Mac App Store)
 - [Apple Keynote](https://www.apple.com/keynote/) (via Mac App Store)
 - [Apple Numbers](https://www.apple.com/numbers/) (via Mac App Store)
@@ -329,8 +331,7 @@ Mac App Store からインストール可能なアプリは、
 
 #### Memos and Tasks
 
-- `(-A)` [Boost Note](https://boostnote.io/)
-- [Grammarly](https://www.grammarly.com/)
+- [Grammarly](https://www.grammarly.com/) (via Mac App Store)
 - [Microsoft To Do](https://todo.microsoft.com/) (via Mac App Store)
 - [Notion](https://www.notion.so/)
 - [OmniFocus](https://www.omnigroup.com/omnifocus/) (via Mac App Store)
@@ -372,7 +373,7 @@ Mac App Store からインストール可能なアプリは、
 
 - [DOSBox-X](https://dosbox-x.com)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
-- [Parallels Desktop](https://www.parallels.com/)
+- [Parallels Desktop](https://www.parallels.com/) (via Mac App Store)
 - `(-A)` [Oracle VM Virtualbox + Extension Pack](https://www.virtualbox.org/)
 
 #### Web browsers
@@ -424,17 +425,17 @@ Install a script to upgrade the installed app with just one command.
 
 <details><summary>list</summary>
 
-| Image                         | Tag                                                                                                                    |
-| :---------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
-| `hello-world`                 | _`latest`_                                                                                                             |
-| `alpine`                      | _`latest`_                                                                                                             |
-| `busybox`                     | _`latest`_                                                                                                             |
-| `debian`                      | _`latest`_                                                                                                             |
-| `ubuntu`                      | _`latest`_                                                                                                             |
-| `docker`                      | `dind`, `git`, _`latest`_                                                                                              |
-| `node`                        | `18`, `18-alpine`, `18-slim`, `20`, `20-alpine`, `20-slim`, `21`, `21-alpine`, `21-slim`, `22`, `22-alpine`, `22-slim` |
-| `gitlab/gitlab-runner`        | _`latest`_                                                                                                             |
-| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~                                           |
+| Image                         | Tag                                                                                      |
+| :---------------------------- | :--------------------------------------------------------------------------------------- |
+| `hello-world`                 | _`latest`_                                                                               |
+| `alpine`                      | _`latest`_                                                                               |
+| `busybox`                     | _`latest`_                                                                               |
+| `debian`                      | _`latest`_                                                                               |
+| `ubuntu`                      | _`latest`_                                                                               |
+| `docker`                      | `dind`, `git`, _`latest`_                                                                |
+| `node`                        | `18`, `18-alpine`, `18-slim`, `20`, `20-alpine`, `20-slim`, `22`, `22-alpine`, `22-slim` |
+| `gitlab/gitlab-runner`        | _`latest`_                                                                               |
+| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~             |
 
 </details>
 

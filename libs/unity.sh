@@ -45,6 +45,8 @@ case "${YN}" in
     install_unity 2019.4.31f1 d4ddf0d95db9
     install_unity 2022.3.6f1 b9e6e7e9fa2d arm64
     install_unity 2022.3.6f1 b9e6e7e9fa2d x86_64
+    install_unity 2022.3.22f1 887be4894c44 arm64
+    install_unity 2022.3.22f1 887be4894c44 x86_64
     ;;
   *)
     log_info 'skipped the Unity installation due to the user choice'

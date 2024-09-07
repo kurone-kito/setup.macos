@@ -71,24 +71,29 @@ cask 'firefox-esr'
 # Development: for Mobile apps
 cask 'android-studio'
 brew 'mono' unless is_arm? # ! x86_64?
-cask 'unity-hub'
+cask 'unity-hub', greedy: true
 
 # Files
 cask 'mysides'
 
 # Shell
 brew 'blacktop/tap/lporg'
+cask 'powershell'
 
 # Storages management
 cask 'adobe-creative-cloud', greedy: true
 cask 'omnipresence'
+mas 'OneDrive', id: 823766827
+
+# Tasks & Memos
+mas 'OmniFocus 4', id: 1542143627
 
 # Virtualizations
 cask 'vagrant'
 cask 'docker', greedy: true
-
-mas 'OmniFocus 4', id: 1542143627
-mas 'OneDrive', id: 823766827
+brew 'whalebrew'
+mas 'Parallels Desktop', id: 1085114709
+cask 'parallels-virtualization-sdk'
 
 ###########################################################################
 ### Cask
@@ -103,15 +108,16 @@ cask 'izotope-product-portal', greedy: true
 cask 'loopback', greedy: true
 cask 'obs', greedy: true
 cask 'restream-chat'
-cask 'schism-tracker'
 cask 'sonic-visualiser'
+cask 'voicepeak'
 
 # Authentication
-cask 'authy' unless is_arm? # Install from Mac App Store
 cask 'keybase' unless is_arm? # Install from Mac App Store
 
 # Development
-cask 'anatawa12/cask/vcc-for-mac', greedy: true
+cask 'alcom', greedy: true
+cask 'figma'
+cask 'figma-agent'
 cask 'react-native-debugger'
 
 # Devices
@@ -126,6 +132,7 @@ cask 'logitech-gaming-software'
 cask 'x-mirage'
 
 # Documentations
+cask 'chatgpt', greedy: true
 cask 'manta'
 cask 'wkhtmltopdf'
 
@@ -145,7 +152,7 @@ cask 'steamcmd'
 
 # Messaging
 cask 'discord', greedy: true
-cask 'microsoft-teams'
+cask 'microsoft-teams', greedy: true
 cask 'skype'
 cask 'zoom', greedy: true
 
@@ -160,12 +167,7 @@ cask 'vnc-viewer'
 # Runtime
 cask 'adoptopenjdk'
 
-# Shell
-cask 'powershell'
-
 # Tasks & Memos
-cask 'boost-note' unless is_arm? # Install from Mac App Store
-cask 'grammarly'
 cask 'notion'
 
 # Text editors
@@ -175,8 +177,6 @@ cask 'visual-studio-code', greedy: true
 
 # Virtualizations
 cask 'dosbox-x'
-cask 'parallels', greedy: true
-cask 'parallels-virtualization-sdk'
 cask 'virtualbox' unless is_arm? # ! x86_64?
 cask 'virtualbox-extension-pack' unless is_arm? # ! x86_64?
 
@@ -220,21 +220,19 @@ brew 'shellcheck'
 brew 'vrc-get'
 
 # Documentations
-brew 'graphviz'
 brew 'mdp'
 brew 'pandoc'
-brew 'plantuml'
 
 # Files
 brew 'bat'
 brew 'broot'
-brew 'exa'
 brew 'fzf'
 brew 'rename'
 brew 'rsync'
 brew 'subversion'
 
 # Games & Jokes
+brew 'gti'
 brew 'nyancat'
 brew 'sl'
 
@@ -251,6 +249,7 @@ brew 'awscli'
 brew 'aws-nuke'
 brew 'aws-sam-cli'
 brew 'inetutils' # includes the telnet
+brew 'minicom'
 brew 'mosh'
 brew 'nmap'
 brew 'openvpn'
@@ -287,6 +286,7 @@ mas 'TestFlight', id: 899247664
 # DTM / DTV
 mas 'GarageBand', id: 682658836
 mas 'iMovie', id: 408981434
+mas 'Logic Pro', id: 634148309
 
 # Messaging / Social
 mas 'LINE', id: 539883307
@@ -305,6 +305,8 @@ mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 
 # Others
+mas 'Amazon Prime Video', id: 545519333
+mas 'Grammarly: AI Writing Support', id: 1462114288
 mas 'Grammarly for Safari', id: 1462114288
 mas 'Human Resource Machine', id: 1005728312
 mas 'Kindle', id: 405399194
