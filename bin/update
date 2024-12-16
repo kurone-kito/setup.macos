@@ -13,7 +13,7 @@ brew cleanup
 
 if which vagrant > /dev/null 2>&1
 then
-  vagrant plugin update
+  VAGRANT_DISABLE_STRICT_DEPENDENCY_ENFORCEMENT=1 vagrant plugin update
 fi
 
 ./update_docker
