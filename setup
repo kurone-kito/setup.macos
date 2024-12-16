@@ -9,8 +9,6 @@ cd "$(cd "$(dirname "$0")"; pwd)"
 sudo -v
 while true; do sleep 50; sudo -n true; kill -0 "$$" || exit; done 2>/dev/null &
 
-libs/defaults.sh
-
 libs/update.sh
 
 libs/xcode-select.sh
