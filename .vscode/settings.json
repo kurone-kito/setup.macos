@@ -4,6 +4,7 @@
   "explorer.fileNesting.patterns": {
     "*.md": "${capture}.*.md",
     ".gitattributes": ".gitignore",
+    ".markdownlint.*": ".markdownlint-cli2.*",
     "Brewfile": "min.Brewfile, Brewfile.lock.json",
     "cspell.config.yml": ".cspell.cache"
   },
