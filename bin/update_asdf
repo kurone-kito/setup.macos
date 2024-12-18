@@ -14,7 +14,6 @@ fi
 resolve_version() {
   case "${2}" in
     *lts*)
-      asdf latest "${1}" "${2}"
       asdf uninstall "${1}" "${2}"
       echo "${2}"
       ;;
@@ -92,6 +91,8 @@ install_nodejs 18
 install_nodejs lts-hydrogen
 install_nodejs 20
 install_nodejs lts-iron
-install_nodejs lts
 install_nodejs 22
+install_nodejs lts-jod
+install_nodejs lts
+install_nodejs 23
 install_nodejs latest

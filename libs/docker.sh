@@ -48,6 +48,9 @@ docker pull node:20-slim
 docker pull node:22
 docker pull node:22-alpine
 docker pull node:22-slim
+docker pull node:23
+docker pull node:23-alpine
+docker pull node:23-slim
 docker pull gitlab/gitlab-runner
 docker pull ghcr.io/catthehacker/ubuntu:act-20.04
 docker pull ghcr.io/catthehacker/ubuntu:act-22.04

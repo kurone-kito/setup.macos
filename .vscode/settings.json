@@ -4,6 +4,7 @@
   "explorer.fileNesting.patterns": {
     "*.md": "${capture}.*.md",
     ".gitattributes": ".gitignore",
+    ".markdownlint.*": ".markdownlint-cli2.*",
     "Brewfile": "min.Brewfile, Brewfile.lock.json",
     "cspell.config.yml": ".cspell.cache"
   },
@@ -12,22 +13,22 @@
     "LICENSE": "plaintext"
   },
   "files.watcherExclude": {
-    ".cspell.cache": true,
     "**/.vagrant": true,
+    ".cspell.cache": true,
     "Brewfile.lock.json": true
   },
   "git.branchProtection": ["master"],
   "search.exclude": {
-    ".cspell.cache": true,
     "**/.vagrant": true,
+    ".cspell.cache": true,
     "Brewfile.lock.json": true
   },
   "yaml.schemas": {
-    "https://coderabbit.ai/integrations/coderabbit-overrides.v2.json": [
-      ".coderabbit.yaml"
-    ],
     "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json": [
       "cspell.config.yml"
+    ],
+    "https://storage.googleapis.com/coderabbit_public_assets/schema.v2.json": [
+      ".coderabbit.yaml"
     ]
   }
 }

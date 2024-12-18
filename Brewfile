@@ -114,6 +114,9 @@ cask 'voicepeak'
 # Authentication
 cask 'keybase' unless is_arm? # Install from Mac App Store
 
+# Benchmark
+cask 'sensei'
+
 # Development
 cask 'alcom', greedy: true
 cask 'figma'
@@ -136,10 +139,9 @@ cask 'chatgpt', greedy: true
 cask 'manta'
 cask 'wkhtmltopdf'
 
-# Files
-cask 'raspberry-pi-imager'
-
 # Fonts
+cask 'font-dosis'
+cask 'font-exo-2'
 cask 'font-hackgen'
 cask 'font-ibm-plex'
 cask 'font-lato'
@@ -163,6 +165,7 @@ cask 'openvpn-connect'
 cask 'switchhosts'
 cask 'teamviewer'
 cask 'vnc-viewer'
+cask 'wireshark'
 
 # Runtime
 cask 'adoptopenjdk'
@@ -196,6 +199,7 @@ brew 'gotop'
 brew 'htop'
 
 # Conversion for binaries
+brew 'atomicparsley'
 brew 'ffmpeg'
 brew 'imagemagick'
 brew 'p7zip'
@@ -206,6 +210,7 @@ brew 'groff'
 brew 'nkf'
 
 # Database
+brew 'mysql'
 brew 'sqlite'
 
 # Desktop
@@ -292,7 +297,6 @@ mas 'Logic Pro', id: 634148309
 mas 'LINE', id: 539883307
 mas 'Messenger', id: 1480068668
 mas 'Slack', id: 803453959
-mas 'Twitter', id: 1482454543
 
 # Office
 mas 'Keynote', id: 409183694

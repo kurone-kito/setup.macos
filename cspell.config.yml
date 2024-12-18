@@ -1,9 +1,4 @@
 allowCompoundWords: true
-cache:
-  cacheFormat: universal
-  cacheLocation: .cspell.cache
-  cacheStrategy: metadata
-  useCache: true
 dictionaries:
   - bash
   - companies
@@ -19,11 +14,13 @@ enableGlobDot: true
 features:
   weighted-suggestions: true
 globRoot: ${cwd}
-language: en,ja
 ignorePaths:
   - .git/objects
   - .github/CODE_OF_CONDUCT.*
   - cspell.config.yml
+language: en,ja
+useGitignore: true
+version: "0.2"
 words:
   - alcom
   - alsa
@@ -70,5 +67,3 @@ words:
   - vtxvpid
   - wkhtmltopdf
   - zprezto
-useGitignore: true
-version: "0.2"

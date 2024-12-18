@@ -65,6 +65,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 #### Convert tools for Media binary
 
+- [AtomicParsley](http://atomicparsley.sourceforge.net/)
 - [FFmpeg](https://www.ffmpeg.org/)
 - [ImageMagick](https://imagemagick.org/index.php)
 - [libvips](https://libvips.github.io/libvips/)
@@ -77,6 +78,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 #### Database
 
+- [MySQL](https://www.mysql.com/)
 - [SQLite](https://www.sqlite.org/)
 
 #### Development
@@ -91,7 +93,8 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
     - [Node.js](https://nodejs.org/) (via asdf-nodejs)
       - v18 LTS Hydrogen
       - v20 LTS Iron
-      - v22
+      - v22 LTS Jod
+      - v23
   - plugin: [asdf-python](https://github.com/danhper/asdf-python) (via asdf)
     - [Python](https://www.python.org) (via asdf-python)
       - v2
@@ -267,6 +270,7 @@ Mac App Store からインストール可能なアプリは、
 
 - [Blackmagic Disk Speed Test](https://apps.apple.com/app/blackmagic-disk-speed-test/id425264550)
   (via Mac App Store)
+- [Sensei](https://cindori.com/sensei)
 - [MAXON Cinebench](https://www.maxon.net/ja/cinebench) (via Mac App Store)
 
 #### Cloud storages
@@ -302,7 +306,6 @@ Mac App Store からインストール可能なアプリは、
   (Troublesome to determine whether or not the TouchBar is present)
 - [Karabiner-Elements](https://karabiner-elements.pqrs.org)
 - [logicool G Hub](https://gaming.logicool.co.jp/innovation/g-hub.html)
-- [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
 - [X-Mirage](https://www.x-mirage.jp/)
 
 #### Documents and Office apps
@@ -344,7 +347,6 @@ Mac App Store からインストール可能なアプリは、
 - [Microsoft Skype](https://www.skype.com/)
 - [Microsoft Teams](https://www.microsoft.com/ja-jp/microsoft-teams/group-chat-software)
 - [Slack](https://slack.com/) (via Mac App Store)
-- [Twitter](https://twitter.com/) (via Mac App Store)
 - [Zoom](https://zoom.us/)
 
 #### Remote
@@ -357,6 +359,7 @@ Mac App Store からインストール可能なアプリは、
 - [Real VNC Viewer](https://www.realvnc.com/connect/download/viewer/)
 - [SwitchHosts](https://switchhosts.vercel.app)
 - [TeamViewer](https://www.teamviewer.com/)
+- [Wireshark](https://www.wireshark.org/)
 
 #### Terminal
 
@@ -394,6 +397,8 @@ Mac App Store からインストール可能なアプリは、
 | :-----: | :---------------------------------------------------------------------------------- |
 | **`!`** | **DEPENDENCIES**: Removing this app may cause this setup to stop working correctly. |
 
+- [Dosis](https://fonts.google.com/specimen/Dosis)
+- [Exo 2](https://fonts.google.com/specimen/Exo+2)
 - **`!`** [白源: HackGen Nerd](https://github.com/yuru7/HackGen)
 - [IBM Plex](https://www.ibm.com/plex/)
 - [Lato](https://fonts.google.com/specimen/Lato)
@@ -425,17 +430,17 @@ Install a script to upgrade the installed app with just one command.
 
 <details><summary>list</summary>
 
-| Image                         | Tag                                                                                      |
-| :---------------------------- | :--------------------------------------------------------------------------------------- |
-| `hello-world`                 | _`latest`_                                                                               |
-| `alpine`                      | _`latest`_                                                                               |
-| `busybox`                     | _`latest`_                                                                               |
-| `debian`                      | _`latest`_                                                                               |
-| `ubuntu`                      | _`latest`_                                                                               |
-| `docker`                      | `dind`, `git`, _`latest`_                                                                |
-| `node`                        | `18`, `18-alpine`, `18-slim`, `20`, `20-alpine`, `20-slim`, `22`, `22-alpine`, `22-slim` |
-| `gitlab/gitlab-runner`        | _`latest`_                                                                               |
-| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~             |
+| Image                         | Tag                                                                                                                    |
+| :---------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| `hello-world`                 | _`latest`_                                                                                                             |
+| `alpine`                      | _`latest`_                                                                                                             |
+| `busybox`                     | _`latest`_                                                                                                             |
+| `debian`                      | _`latest`_                                                                                                             |
+| `ubuntu`                      | _`latest`_                                                                                                             |
+| `docker`                      | `dind`, `git`, _`latest`_                                                                                              |
+| `node`                        | `18`, `18-alpine`, `18-slim`, `20`, `20-alpine`, `20-slim`, `22`, `22-alpine`, `22-slim`, `23`, `23-alpine`, `23-slim` |
+| `gitlab/gitlab-runner`        | _`latest`_                                                                                                             |
+| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~                                           |
 
 </details>
 
