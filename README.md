@@ -96,9 +96,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
       - v22 LTS Jod
       - v23
   - plugin: [asdf-python](https://github.com/danhper/asdf-python) (via asdf)
-    - [Python](https://www.python.org) (via asdf-python)
-      - v2
-      - v3 (via deep dependencies of the Homebrew packages: e.g., AWS CLI, and others)
 - [CMake](https://cmake.org)
 - **`!`** Command Line Tools for Xcode (via xcode-select CLI)
 - **`!`** [gawk: GNU awk utility](https://www.gnu.org/software/gawk/)
@@ -106,6 +103,9 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [Microsoft .NET SDK](https://dotnet.microsoft.com/)
 - [lv2: LADSPA v2](https://lv2plug.in/)
 - `(-A)` [Mono](https://www.mono-project.com/)
+- [Python](https://www.python.org)
+  - v2
+  - v3
 - **`!`** [Rust](https://www.rust-lang.org/)
 - [shellcheck](https://www.shellcheck.net)
 - [vrc-get](https://vrc-get.anatawa12.com/)
@@ -155,7 +155,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
   - [git-delta: A viewer for git and diff output](https://github.com/dandavison/delta)
   - [git-vrc](https://github.com/anatawa12/git-vrc) (via cargo)
 - [GitHub CLI](https://cli.github.com/)
-- [GLab: GitLab CLI tool](https://glab.readthedocs.io/)
 
 #### Remote
 
@@ -211,7 +210,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Virtualizations
 
 - [act](https://github.com/nektos/act)
-- [GitLab Runner](https://gitlab.com/gitlab-org/gitlab-runner)
 - [Parallels Virtualization SDK](https://www.parallels.com/products/desktop/download/)
 - [Vagrant](https://www.vagrantup.com/)
   - plugins (via Vagrant)
@@ -245,9 +243,11 @@ Mac App Store からインストール可能なアプリは、
 
 - [Blender](https://www.blender.org/)
 - [FreeCAD](https://www.freecadweb.org/)
+- [Ultimaker Cura](https://ultimaker.com/software/ultimaker-cura)
 
 #### Audios, Videos, and Broadcasting
 
+- [Aegisub](https://aegisub.org/)
 - [Amazon Prime Video](https://www.primevideo.com/) (via Mac App Store)
 - [Apple GarageBand](https://www.apple.com/mac/garageband/)
   (via Mac App Store)
@@ -259,7 +259,6 @@ Mac App Store からインストール可能なアプリは、
 - [Restream Chat](https://restream.io/chat/)
 - [Rogue Amoeba Audio Hijack](https://rogueamoeba.com/audiohijack/)
 - [Rogue Amoeba Loopback](https://rogueamoeba.com/loopback/)
-- [Sonic Visualiser](https://sonicvisualiser.org/)
 - [Voicepeak](https://www.ah-soft.com/voice/)
 
 #### Authentication
@@ -312,6 +311,7 @@ Mac App Store からインストール可能なアプリは、
 
 - [Amazon Kindle](https://www.amazon.com/kindle) (via Mac App Store)
 - [ChatGPT](https://chatgpt.com/)
+- [Claude Desktop](https://claude.ai/)
 - [Manta](https://getmanta.app/) (via Mac App Store)
 - [Apple Keynote](https://www.apple.com/keynote/) (via Mac App Store)
 - [Apple Numbers](https://www.apple.com/numbers/) (via Mac App Store)
@@ -384,7 +384,7 @@ Mac App Store からインストール可能なアプリは、
 - [Google Chrome](https://www.google.com/chrome/)
 - `(-A)` [Chromium](https://www.chromium.org/Home)
 - [Insomnia](https://insomnia.rest/)
-- [Mozilla Firefox ESR](https://www.mozilla.org/firefox/)
+- [Mozilla Firefox](https://www.mozilla.org/firefox/)
 - [Tor Browser](https://www.torproject.org/projects/torbrowser.html)
 - Some extensions for Apple Safari (via Mac App Store)
   - [Grammarly for Safari](https://apps.apple.com/app/grammarly-for-safari/id1462114288)

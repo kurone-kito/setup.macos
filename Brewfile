@@ -66,7 +66,7 @@ brew 'jq'
 brew 'asdf'
 brew 'mkcert'
 brew 'nss'
-cask 'firefox-esr'
+cask 'firefox'
 
 # Development: for Mobile apps
 cask 'android-studio'
@@ -100,15 +100,16 @@ cask 'parallels-virtualization-sdk'
 
 # 3D
 cask 'blender'
+cask 'ultimaker-cura'
 cask 'freecad'
 
 # Audio & Broadcasting
+cask 'aegisub', greedy: true
 cask 'audio-hijack', greedy: true
 cask 'izotope-product-portal', greedy: true
 cask 'loopback', greedy: true
 cask 'obs', greedy: true
 cask 'restream-chat'
-cask 'sonic-visualiser'
 cask 'voicepeak'
 
 # Authentication
@@ -136,6 +137,7 @@ cask 'x-mirage'
 
 # Documentations
 cask 'chatgpt', greedy: true
+cask 'claude'
 cask 'manta'
 cask 'wkhtmltopdf'
 
@@ -221,6 +223,7 @@ brew 'antlr'
 brew 'cmake'
 brew 'lv2'
 brew 'pict'
+brew 'python'
 brew 'shellcheck'
 brew 'vrc-get'
 
@@ -245,8 +248,6 @@ brew 'sl'
 brew 'gh'
 brew 'gist'
 brew 'git-delta'
-brew 'gitlab-runner', restart_service: true
-brew 'glab'
 brew 'act'
 
 # Remote tools

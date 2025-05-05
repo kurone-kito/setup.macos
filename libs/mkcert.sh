@@ -18,14 +18,14 @@ then
   exit
 fi
 
-if grep "cask 'firefox-esr'" ../Brewfile | grep -q '^#'
+if grep "cask 'firefox'" ../Brewfile | grep -q '^#'
 then
   log_warn 'skipped the mkcert initialization because Firefox is not found on this system.'
   exit
 fi
 
 log_info 'Setup the localhost cert.'
-wait_dependencies mkcert firefox-esr nss proctools
+wait_dependencies mkcert firefox nss proctools
 
 pgrep firefox > /dev/null \
   || /Applications/Firefox.app/Contents/MacOS/firefox \
