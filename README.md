@@ -483,10 +483,11 @@ Vagrant と Virtualbox を使用して、仮想環境でスクリプトを試す
 vagrant up
 ```
 
-The script can also be attempted via the `test` script, but this script is
+The script can also be attempted via the `test` script, but
+**this script is deprecated**. Please use the Vagrant-based approach.
 not maintained and is deprecated.  
 このスクリプトを `test` スクリプト経由でも試行可能ですが、
-このスクリプトはメンテナンスしていないので非推奨です。
+**このスクリプトは非推奨**です。代わりに Vagrant をご利用ください。
 
 ## Contributing
 
