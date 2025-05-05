@@ -10,6 +10,7 @@
   },
   "files.associations": {
     "*Brewfile": "ruby",
+    ".imgbotconfig": "json",
     "LICENSE": "plaintext"
   },
   "files.watcherExclude": {

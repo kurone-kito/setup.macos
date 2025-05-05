@@ -8,6 +8,8 @@ dictionaries:
   - en_us
   - fonts
   - git
+  - markdown
+  - misc
   - npm
   - softwareTerms
 enableGlobDot: true
@@ -15,8 +17,10 @@ features:
   weighted-suggestions: true
 globRoot: ${cwd}
 ignorePaths:
+  - .*ignore
   - .git/objects
   - .github/CODE_OF_CONDUCT.*
+  - .vscode/extensions.json
   - cspell.config.yml
 language: en,ja
 useGitignore: true
@@ -36,6 +40,7 @@ words:
   - gotop
   - hpet
   - hwvirtex
+  - imgbotconfig
   - ioapic
   - ionescu
   - iZotope
@@ -43,6 +48,7 @@ words:
   - kito
   - kotoeri
   - kurone
+  - kuroné
   - lporg
   - mackup
   - maxon
