@@ -77,9 +77,10 @@ install_nodejs() {
 
 asdf plugin update --all
 
-install_via_asdf dotnet 8
-install_via_asdf dotnet latest
 install_via_asdf dotnet 6
+install_via_asdf dotnet 8
+install_via_asdf dotnet 9
+install_via_asdf dotnet latest
 
 install_via_asdf python 2
 install_via_asdf python 3
