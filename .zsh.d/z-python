@@ -1,0 +1,16 @@
+#!/bin/sh
+# -*- mode: sh -*-
+# vim: set ft=sh :
+
+# =========================================================
+# ! WARN: DO NOT REMOVE THE “z” PREFIX!
+#
+# Added the “z” prefix to the filename because
+# the script has to run it after Homebrew's path resolution.
+
+if which python3 > /dev/null 2>&1
+then
+  VENV="${HOME}/.venv"
+  python3 -m venv "${VENV}"
+  [ -f "${VENV}/bin/activate" ] && . "${VENV}/bin/activate"
+fi
