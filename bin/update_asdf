@@ -85,6 +85,9 @@ install_via_asdf python 2
 install_via_asdf python 3
 install_via_asdf python latest
 
+# It's required when using node-gyp.
+pip install setuptools
+
 export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed
 
 install_nodejs 18
