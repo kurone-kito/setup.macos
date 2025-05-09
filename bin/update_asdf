@@ -65,7 +65,7 @@ install_nodejs() {
   set +e
   TARGET_VER=$(resolve_version nodejs "${1}")
   asdf install nodejs "${TARGET_VER}"
-  if asdf list nodejs "${TARGET_VER}" > /dev/null 2>&1 || [ "${TARGET_VER}" = "latest" ]
+  if [ "${TARGET_VER}" = "latest" ] || asdf list nodejs "${TARGET_VER}" > /dev/null 2>&1
   then
     asdf set --home nodejs "${TARGET_VER}"
   else
