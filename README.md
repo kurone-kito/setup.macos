@@ -91,7 +91,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
       - v8.0
   - plugin: [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs) (via asdf)
     - [Node.js](https://nodejs.org/) (via asdf-nodejs)
-      - v18 LTS Hydrogen
       - v20 LTS Iron
       - v22 LTS Jod
       - v23
@@ -430,17 +429,17 @@ Install a script to upgrade the installed app with just one command.
 
 <details><summary>list</summary>
 
-| Image                         | Tag                                                                                                                    |
-| :---------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
-| `hello-world`                 | _`latest`_                                                                                                             |
-| `alpine`                      | _`latest`_                                                                                                             |
-| `busybox`                     | _`latest`_                                                                                                             |
-| `debian`                      | _`latest`_                                                                                                             |
-| `ubuntu`                      | _`latest`_                                                                                                             |
-| `docker`                      | `dind`, `git`, _`latest`_                                                                                              |
-| `node`                        | `18`, `18-alpine`, `18-slim`, `20`, `20-alpine`, `20-slim`, `22`, `22-alpine`, `22-slim`, `23`, `23-alpine`, `23-slim` |
-| `gitlab/gitlab-runner`        | _`latest`_                                                                                                             |
-| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~                                           |
+| Image                         | Tag                                                                                      |
+| :---------------------------- | :--------------------------------------------------------------------------------------- |
+| `hello-world`                 | _`latest`_                                                                               |
+| `alpine`                      | _`latest`_                                                                               |
+| `busybox`                     | _`latest`_                                                                               |
+| `debian`                      | _`latest`_                                                                               |
+| `ubuntu`                      | _`latest`_                                                                               |
+| `docker`                      | `dind`, `git`, _`latest`_                                                                |
+| `node`                        | `20`, `20-alpine`, `20-slim`, `22`, `22-alpine`, `22-slim`, `23`, `23-alpine`, `23-slim` |
+| `gitlab/gitlab-runner`        | _`latest`_                                                                               |
+| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~             |
 
 </details>
 

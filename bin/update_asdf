@@ -92,8 +92,6 @@ install_via_asdf dotnet 8
 install_via_asdf dotnet 9
 install_via_asdf dotnet latest
 
-install_nodejs 18
-install_nodejs lts-hydrogen
 install_nodejs 20
 install_nodejs lts-iron
 install_nodejs 22
