@@ -439,7 +439,6 @@ Install a script to upgrade the installed app with just one command.
 | `ubuntu`                      | _`latest`_                                                                                                             |
 | `docker`                      | `dind`, `git`, _`latest`_                                                                                              |
 | `node`                        | `20`, `20-alpine`, `20-slim`, `22`, `22-alpine`, `22-slim`, `23`, `23-alpine`, `23-slim`, `24`, `24-alpine`, `24-slim` |
-| `gitlab/gitlab-runner`        | _`latest`_                                                                                                             |
 | `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~                                           |
 
 </details>

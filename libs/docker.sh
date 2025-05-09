@@ -48,7 +48,6 @@ docker pull node:22-slim
 docker pull node:23
 docker pull node:23-alpine
 docker pull node:23-slim
-docker pull gitlab/gitlab-runner
 docker pull node:24
 docker pull node:24-alpine
 docker pull node:24-slim
