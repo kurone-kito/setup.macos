@@ -98,4 +98,5 @@ install_nodejs 22
 install_nodejs lts-jod
 install_nodejs lts
 install_nodejs 23
+install_nodejs 24
 install_nodejs latest

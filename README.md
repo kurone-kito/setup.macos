@@ -94,6 +94,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
       - v20 LTS Iron
       - v22 LTS Jod
       - v23
+      - v24
   - plugin: [asdf-python](https://github.com/danhper/asdf-python) (via asdf)
 - [CMake](https://cmake.org)
 - **`!`** Command Line Tools for Xcode (via xcode-select CLI)
@@ -429,17 +430,17 @@ Install a script to upgrade the installed app with just one command.
 
 <details><summary>list</summary>
 
-| Image                         | Tag                                                                                      |
-| :---------------------------- | :--------------------------------------------------------------------------------------- |
-| `hello-world`                 | _`latest`_                                                                               |
-| `alpine`                      | _`latest`_                                                                               |
-| `busybox`                     | _`latest`_                                                                               |
-| `debian`                      | _`latest`_                                                                               |
-| `ubuntu`                      | _`latest`_                                                                               |
-| `docker`                      | `dind`, `git`, _`latest`_                                                                |
-| `node`                        | `20`, `20-alpine`, `20-slim`, `22`, `22-alpine`, `22-slim`, `23`, `23-alpine`, `23-slim` |
-| `gitlab/gitlab-runner`        | _`latest`_                                                                               |
-| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~             |
+| Image                         | Tag                                                                                                                    |
+| :---------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| `hello-world`                 | _`latest`_                                                                                                             |
+| `alpine`                      | _`latest`_                                                                                                             |
+| `busybox`                     | _`latest`_                                                                                                             |
+| `debian`                      | _`latest`_                                                                                                             |
+| `ubuntu`                      | _`latest`_                                                                                                             |
+| `docker`                      | `dind`, `git`, _`latest`_                                                                                              |
+| `node`                        | `20`, `20-alpine`, `20-slim`, `22`, `22-alpine`, `22-slim`, `23`, `23-alpine`, `23-slim`, `24`, `24-alpine`, `24-slim` |
+| `gitlab/gitlab-runner`        | _`latest`_                                                                                                             |
+| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~                                           |
 
 </details>
 
