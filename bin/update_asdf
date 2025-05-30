@@ -5,6 +5,12 @@
 set -eu
 cd "$(cd "$(dirname "$0")"; pwd)"
 
+ZSH_D="${HOME}/.zsh.d"
+ASDF_PROFILE="${ZSH_D}/z-asdf"
+PYTHON_PROFILE="${ZSH_D}/z-python"
+[ -f "${ASDF_PROFILE}" ] && . "${ASDF_PROFILE}"
+[ -f "${PYTHON_PROFILE}" ] && . "${PYTHON_PROFILE}"
+
 if ! which asdf > /dev/null 2>&1
 then
   echo 'Warn: skipped the ASDF updating because it is not found on this system.'
@@ -14,7 +20,7 @@ fi
 resolve_version() {
   case "${2}" in
     *lts*)
-      asdf uninstall "${1}" "${2}"
+      asdf uninstall "${1}" "${2}" > /dev/null 2>&1
       echo "${2}"
       ;;
     *latest*)
@@ -30,14 +36,12 @@ install_via_asdf() {
   TARGET_VERSION="$(resolve_version "${1}" "${2}")"
   set +e
   asdf install "${1}" "${TARGET_VERSION}"
-  asdf global "${1}" "${TARGET_VERSION}"
+  asdf set --home "${1}" "${TARGET_VERSION}"
   remove_obsolete_versions "${1}" "${2}"
   set -e
 }
 
 install_nodejs_deps() {
-  . "${HOME}/.zsh.d/z-asdf"
-
   corepack enable
   asdf reshim
 }
@@ -60,15 +64,16 @@ remove_obsolete_versions() {
 install_nodejs() {
   set +e
   TARGET_VER=$(resolve_version nodejs "${1}")
-  if asdf install nodejs "${TARGET_VER}"
+  asdf install nodejs "${TARGET_VER}"
+  if [ "${TARGET_VER}" = "latest" ] || asdf list nodejs "${TARGET_VER}" > /dev/null 2>&1
   then
-    asdf global nodejs "${TARGET_VER}"
+    asdf set --home nodejs "${TARGET_VER}"
   else
     echo "Fallback: Build the Node.js v${TARGET_VER} from source..."
     NODEJS_CONFIGURE_OPTIONS='--with-intl=full-icu --download=all' \
       NODEJS_CHECK_SIGNATURES='no' \
       asdf install nodejs "ref:v${TARGET_VER}"
-    asdf global nodejs "ref:v${TARGET_VER}"
+    asdf set --home nodejs "ref:v${TARGET_VER}"
   fi
   remove_obsolete_versions nodejs "${1}"
   install_nodejs_deps
@@ -76,23 +81,22 @@ install_nodejs() {
 }
 
 asdf plugin update --all
+asdf plugin remove nodejs
+asdf plugin add nodejs
+
+# It's required when using node-gyp.
+pip install --upgrade pip
+python3 -m pip install setuptools
 
 install_via_asdf dotnet 8
+install_via_asdf dotnet 9
 install_via_asdf dotnet latest
-install_via_asdf dotnet 6
 
-install_via_asdf python 2
-install_via_asdf python 3
-install_via_asdf python latest
-
-export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed
-
-install_nodejs 18
-install_nodejs lts-hydrogen
 install_nodejs 20
 install_nodejs lts-iron
 install_nodejs 22
 install_nodejs lts-jod
 install_nodejs lts
 install_nodejs 23
+install_nodejs 24
 install_nodejs latest

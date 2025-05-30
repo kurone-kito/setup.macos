@@ -29,7 +29,7 @@ install_unity() {
   CHANGESET="${2}"
   CPU_ARCH="${3:-x86_64}"
   "${UNITY_HUB}" -- --headless install -v "${VERSION}" -c "${CHANGESET}" \
-    -a "${CPU_ARCH}" -m android -m documentation -m language-ja \
+    -a "${CPU_ARCH}" -m android -m documentation -m ios -m language-ja -m linux \
     -m windows-mono --cm || true
 }
 

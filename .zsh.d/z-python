@@ -8,9 +8,9 @@
 # Added the “z” prefix to the filename because
 # the script has to run it after Homebrew's path resolution.
 
-ASDF_DATA_DIR="${HOME}/.asdf"
-export ASDF_DATA_DIR
-PATH="${ASDF_DATA_DIR}/shims:${PATH}"
-export PATH
-ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed
-export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY
+if which python3 > /dev/null 2>&1
+then
+  VENV="${HOME}/.venv"
+  python3 -m venv "${VENV}"
+  [ -f "${VENV}/bin/activate" ] && . "${VENV}/bin/activate"
+fi

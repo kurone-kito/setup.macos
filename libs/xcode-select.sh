@@ -16,7 +16,12 @@ do
 done
 
 log_info 'Detected the Command Line Tools for Xcode'
-sleep 30 # ! TODO: Consider the appropriate way to wait for the `xcode-select --install` installation to complete.
+
+until pkgutil --pkg-info=com.apple.pkg.CLTools_Executables > /dev/null 2>&1
+do
+  sleep 3
+done
+log_info 'Command Line Tools installation has completed'
 
 if [ -e /Applications/Xcode.app ]
 then
