@@ -18,7 +18,7 @@ features:
 globRoot: ${cwd}
 ignorePaths:
   - .*ignore
-  - .git/objects
+  - .git
   - .github/CODE_OF_CONDUCT.*
   - .vscode/extensions.json
   - cspell.config.yml

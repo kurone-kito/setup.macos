@@ -495,4 +495,4 @@ please refer to [CONTRIBUTING.md](.github/CONTRIBUTING.md).
 
 ## License
 
-MIT
+[MIT](./LICENSE)
