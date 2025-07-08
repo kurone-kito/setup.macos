@@ -87,8 +87,8 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [asdf](http://asdf-vm.com/)
   - plugin: [asdf-dotnet](https://github.com/hensou/asdf-dotnet)
     - [.NET](https://dotnet.microsoft.com/) (via asdf-dotnet)
-      - v6.0
       - v8.0
+      - v9.0
   - plugin: [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs) (via asdf)
     - [Node.js](https://nodejs.org/) (via asdf-nodejs)
       - v20 LTS Iron
