@@ -181,7 +181,7 @@ cask 'sublime-text'
 cask 'visual-studio-code', greedy: true
 
 # Virtualizations
-# cask 'dosbox-x'
+# cask 'dosbox-x-app'
 cask 'virtualbox' unless is_arm? # ! x86_64?
 cask 'virtualbox-extension-pack' unless is_arm? # ! x86_64?
 
