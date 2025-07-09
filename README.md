@@ -242,7 +242,7 @@ Mac App Store からインストール可能なアプリは、
 
 - [Blender](https://www.blender.org/)
 - [FreeCAD](https://www.freecadweb.org/)
-- [Ultimaker Cura](https://ultimaker.com/software/ultimaker-cura)
+- [UltiMaker Cura](https://ultimaker.com/software/ultimaker-cura)
 
 #### Audios, Videos, and Broadcasting
 
