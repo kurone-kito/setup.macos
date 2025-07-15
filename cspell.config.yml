@@ -4,6 +4,9 @@ dictionaries:
   - companies
   - cpp
   - cpp-legacy
+  - docker
+  - en_shared
+  - en-freq
   - en-gb
   - en_us
   - fonts
@@ -11,14 +14,16 @@ dictionaries:
   - markdown
   - misc
   - npm
+  - shell
   - softwareTerms
+  - vim
 enableGlobDot: true
 features:
   weighted-suggestions: true
 globRoot: ${cwd}
 ignorePaths:
   - .*ignore
-  - .git/objects
+  - .git
   - .github/CODE_OF_CONDUCT.*
   - .vscode/extensions.json
   - cspell.config.yml
@@ -36,9 +41,10 @@ words:
   - broot
   - cfprefsd
   - clmv
-  - dind
+  - cura
   - glab
   - gotop
+  - dsound
   - hpet
   - hwvirtex
   - imgbotconfig
@@ -53,21 +59,18 @@ words:
   - lporg
   - mackup
   - maxon
-  - meslo
   - modifyvm
   - mswin
-  - nmap
   - nyancat
   - osascript
   - pfind
-  - pgrep
   - pkill
-  - plantUML
-  - siri
+  - scrcpy
   - sorin
   - spctl
+  - steamcmd
   - usbxhci
-  - tldr
+  - ultimaker
   - usbxhci
   - vbguest
   - vtxux

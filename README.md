@@ -87,13 +87,12 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [asdf](http://asdf-vm.com/)
   - plugin: [asdf-dotnet](https://github.com/hensou/asdf-dotnet)
     - [.NET](https://dotnet.microsoft.com/) (via asdf-dotnet)
-      - v6.0
       - v8.0
+      - v9.0
   - plugin: [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs) (via asdf)
     - [Node.js](https://nodejs.org/) (via asdf-nodejs)
       - v20 LTS Iron
       - v22 LTS Jod
-      - v23
       - v24
   - plugin: [asdf-python](https://github.com/danhper/asdf-python) (via asdf)
 - [CMake](https://cmake.org)
@@ -243,7 +242,7 @@ Mac App Store からインストール可能なアプリは、
 
 - [Blender](https://www.blender.org/)
 - [FreeCAD](https://www.freecadweb.org/)
-- [Ultimaker Cura](https://ultimaker.com/software/ultimaker-cura)
+- [UltiMaker Cura](https://ultimaker.com/software/ultimaker-cura)
 
 #### Audios, Videos, and Broadcasting
 
@@ -430,16 +429,16 @@ Install a script to upgrade the installed app with just one command.
 
 <details><summary>list</summary>
 
-| Image                         | Tag                                                                                                                    |
-| :---------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
-| `hello-world`                 | _`latest`_                                                                                                             |
-| `alpine`                      | _`latest`_                                                                                                             |
-| `busybox`                     | _`latest`_                                                                                                             |
-| `debian`                      | _`latest`_                                                                                                             |
-| `ubuntu`                      | _`latest`_                                                                                                             |
-| `docker`                      | `dind`, `git`, _`latest`_                                                                                              |
-| `node`                        | `20`, `20-alpine`, `20-slim`, `22`, `22-alpine`, `22-slim`, `23`, `23-alpine`, `23-slim`, `24`, `24-alpine`, `24-slim` |
-| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~                                           |
+| Image                         | Tag                                                                                      |
+| :---------------------------- | :--------------------------------------------------------------------------------------- |
+| `hello-world`                 | _`latest`_                                                                               |
+| `alpine`                      | _`latest`_                                                                               |
+| `busybox`                     | _`latest`_                                                                               |
+| `debian`                      | _`latest`_                                                                               |
+| `ubuntu`                      | _`latest`_                                                                               |
+| `docker`                      | `dind`, `git`, _`latest`_                                                                |
+| `node`                        | `20`, `20-alpine`, `20-slim`, `22`, `22-alpine`, `22-slim`, `24`, `24-alpine`, `24-slim` |
+| `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~             |
 
 </details>
 
@@ -495,4 +494,4 @@ please refer to [CONTRIBUTING.md](.github/CONTRIBUTING.md).
 
 ## License
 
-MIT
+[MIT](./LICENSE)
