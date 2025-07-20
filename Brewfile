@@ -218,6 +218,7 @@ brew 'terminal-notifier'
 # Development
 brew 'antlr'
 brew 'cmake'
+brew 'cmake-docs'
 brew 'lv2'
 brew 'pict'
 brew 'python'
@@ -245,6 +246,7 @@ brew 'sl'
 brew 'gh'
 brew 'gist'
 brew 'git-delta'
+brew 'git-gui'
 brew 'act'
 
 # Remote tools
@@ -268,7 +270,6 @@ brew 'tmux'
 # Text Browsing
 brew 'links'
 brew 'cheat'
-brew 'tldr'
 
 # Text editors
 brew 'nano'
