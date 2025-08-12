@@ -11,7 +11,12 @@ if [ -f /opt/homebrew/bin/brew ]
 then
   BREWPATH='/opt/homebrew/bin/brew' # arm64
 fi
+if [ -f "${HOME}/homebrew/bin/brew" ]
+then
+  BREWPATH="${HOME}/homebrew/bin/brew" # userdir
+fi
 
+echo "Finding Homebrew at ${BREWPATH}"
 if [ -x "${BREWPATH}" ]
 then
   eval "$("${BREWPATH}" shellenv)"
