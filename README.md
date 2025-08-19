@@ -198,7 +198,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 - [cheat](https://github.com/cheat/cheat)
 - [links](http://links.twibright.com/)
-- [tldr pages](https://tldr.sh)
 
 #### Text editors
 
