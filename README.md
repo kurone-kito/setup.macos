@@ -120,7 +120,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [bat](https://github.com/sharkdp/bat)
 - [broot](https://dystroy.org/broot/)
 - [fzf](https://github.com/junegunn/fzf)
-- [myside](https://github.com/mosen/mysides)
 - [p7zip](https://sourceforge.net/projects/p7zip/)
 - [rename](http://plasmasturm.org/code/rename/)
 - [rsync](https://rsync.samba.org/)
@@ -342,7 +341,6 @@ Mac App Store からインストール可能なアプリは、
 - [Discord](https://discord.com/)
 - [Facebook Messenger](https://www.messenger.com/) (via Mac App Store)
 - [LINE](https://line.me/) (via Mac App Store)
-- [Microsoft Skype](https://www.skype.com/)
 - [Microsoft Teams](https://www.microsoft.com/ja-jp/microsoft-teams/group-chat-software)
 - [Slack](https://slack.com/) (via Mac App Store)
 - [Zoom](https://zoom.us/)
@@ -398,7 +396,6 @@ Mac App Store からインストール可能なアプリは、
 - [Dosis](https://fonts.google.com/specimen/Dosis)
 - [Exo 2](https://fonts.google.com/specimen/Exo+2)
 - **`!`** [白源: HackGen Nerd](https://github.com/yuru7/HackGen)
-- [IBM Plex](https://www.ibm.com/plex/)
 - [Lato](https://fonts.google.com/specimen/Lato)
 - **`!`** [Meslo LG](https://github.com/andreberg/Meslo-Font)
 
