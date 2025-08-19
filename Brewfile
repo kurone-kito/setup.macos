@@ -12,7 +12,6 @@ end
 tap 'homebrew/autoupdate'
 tap 'homebrew/command-not-found'
 tap 'aws/tap'
-tap 'blacktop/tap'
 
 ###########################################################################
 ### Dependencies
