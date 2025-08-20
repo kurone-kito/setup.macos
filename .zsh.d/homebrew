@@ -20,7 +20,7 @@ if [ -x "${BREWPATH}" ]
 then
   eval "$("${BREWPATH}" shellenv)"
   REPO="$(brew --repository)"
-  HB_CNF_HANDLER="${REPO}/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
+  HB_CNF_HANDLER="${REPO}/Library/Homebrew/command-not-found/handler.sh"
   if [ -f "${HB_CNF_HANDLER}" ]; then
     # shellcheck disable=SC1090
     . "${HB_CNF_HANDLER}";
