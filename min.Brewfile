@@ -12,7 +12,6 @@ end
 tap 'homebrew/autoupdate'
 tap 'homebrew/command-not-found'
 tap 'aws/tap'
-tap 'blacktop/tap'
 
 ###########################################################################
 ### Dependencies
@@ -69,9 +68,6 @@ cask 'firefox'
 # cask 'android-studio'
 brew 'mono' unless is_arm? # ! x86_64?
 # cask 'unity-hub', greedy: true
-
-# Files
-cask 'mysides'
 
 # Shell
 brew 'blacktop/tap/lporg'
@@ -142,7 +138,6 @@ cask 'wkhtmltopdf'
 cask 'font-dosis'
 cask 'font-exo-2'
 cask 'font-hackgen'
-cask 'font-ibm-plex'
 cask 'font-lato'
 cask 'font-meslo-lg-nerd-font'
 
@@ -154,7 +149,6 @@ cask 'steamcmd'
 # Messaging
 # cask 'discord', greedy: true
 # cask 'microsoft-teams', greedy: true
-# cask 'skype'
 # cask 'zoom', greedy: true
 
 # Remote tools
