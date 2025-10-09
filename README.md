@@ -70,11 +70,11 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [AtomicParsley](http://atomicparsley.sourceforge.net/)
 - [FFmpeg](https://www.ffmpeg.org/)
 - [ImageMagick](https://imagemagick.org/index.php)
-- [libvips](https://libvips.github.io/libvips/)
 
 #### Convert tools for Texts
 
 - [groff](https://www.gnu.org/software/groff/)
+- [jc](https://kellyjonbrazil.github.io/jc/)
 - [jq](https://stedolan.github.io/jq/)
 - [nkf](https://osdn.net/projects/nkf/)
 
@@ -82,6 +82,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 - [MySQL](https://www.mysql.com/)
 - [SQLite](https://www.sqlite.org/)
+- [Taskwarrior](https://taskwarrior.org/)
 
 #### Development
 
@@ -122,6 +123,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [bat](https://github.com/sharkdp/bat)
 - [broot](https://dystroy.org/broot/)
 - [fzf](https://github.com/junegunn/fzf)
+- [Mole](https://x.com/HiTw93/status/2009628868207095948)
 - [p7zip](https://sourceforge.net/projects/p7zip/)
 - [rename](http://plasmasturm.org/code/rename/)
 - [rsync](https://rsync.samba.org/)
@@ -138,6 +140,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [AdoptOpenJDK](https://adoptopenjdk.net/)
 - [Apple Rosetta 2](https://support.apple.com/HT211861)
   via Apple Software Update
+- [XQuartz](https://www.xquartz.org/)
 
 #### Testing
 
@@ -149,12 +152,14 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Version control system
 
 - [Apache Subversion](https://subversion.apache.org/)
+- [ghq](https://github.com/x-motemen/ghq)
 - [Gist](http://defunkt.io/gist/)
 - **`!`** [Git](https://git-scm.com/)
   - **`!`** [Git Large File Storage](https://git-lfs.github.com/)
   - [git-delta: A viewer for git and diff output](https://github.com/dandavison/delta)
   - [git-vrc](https://github.com/anatawa12/git-vrc) (via cargo)
 - [GitHub CLI](https://cli.github.com/)
+- [Jujutsu](https://jj-vcs.dev/)
 
 #### Remote
 
@@ -163,11 +168,13 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [AWS SAM CLI](https://aws.amazon.com/serverless/sam/)
 - **`!`** [curl](https://curl.se)
 - **`!`** [GNU wget](https://www.gnu.org/software/wget/)
+- [inetutils: GNU network utilities](https://www.gnu.org/software/inetutils/)
 - [minicom](https://salsa.debian.org/minicom-team/minicom)
 - [Mosh](https://mosh.org)
 - [nmap](https://nmap.org/)
 - [OpenVPN](https://openvpn.net/)
-- [inetutils: GNU network utilities](https://www.gnu.org/software/inetutils/)
+- [Sidekick](https://www.sidekickdeploy.com/)
+- [tailscale](https://tailscale.com)
 - [Tor](https://www.torproject.org/)
 
 #### Shell
@@ -209,7 +216,9 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Virtualizations
 
 - [act](https://github.com/nektos/act)
+- [Multipass](https://multipass.run/)
 - [Parallels Virtualization SDK](https://www.parallels.com/products/desktop/download/)
+- [Terraform](https://www.terraform.io/)
 - [Vagrant](https://www.vagrantup.com/)
   - plugins (via Vagrant)
     - `(-A)` [vagrant-disksize](https://github.com/sprotheroe/vagrant-disksize)
@@ -243,6 +252,13 @@ Mac App Store からインストール可能なアプリは、
 - [Blender](https://www.blender.org/)
 - [FreeCAD](https://www.freecadweb.org/)
 - [UltiMaker Cura](https://ultimaker.com/software/ultimaker-cura)
+
+#### Generative AI
+
+- [ChatGPT](https://chatgpt.com/)
+- [Claude Desktop](https://claude.ai/)
+- [Ollama](https://ollama.com/)
+- [Stability Matrix](https://lykos.ai)
 
 #### Audios, Videos, and Broadcasting
 
@@ -309,8 +325,6 @@ Mac App Store からインストール可能なアプリは、
 #### Documents and Office apps
 
 - [Amazon Kindle](https://www.amazon.com/kindle) (via Mac App Store)
-- [ChatGPT](https://chatgpt.com/)
-- [Claude Desktop](https://claude.ai/)
 - [Manta](https://getmanta.app/) (via Mac App Store)
 - [Apple Keynote](https://www.apple.com/keynote/) (via Mac App Store)
 - [Apple Numbers](https://www.apple.com/numbers/) (via Mac App Store)
@@ -379,6 +393,7 @@ Mac App Store からインストール可能なアプリは、
 
 #### Web browsers
 
+- [ChatGPT Atlas](https://chatgpt.com/atlas/)
 - [Google Chrome](https://www.google.com/chrome/)
 - `(-A)` [Chromium](https://www.chromium.org/Home)
 - [Insomnia](https://insomnia.rest/)

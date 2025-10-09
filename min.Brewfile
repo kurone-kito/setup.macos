@@ -12,6 +12,7 @@ end
 tap 'homebrew/autoupdate'
 tap 'homebrew/command-not-found'
 tap 'aws/tap'
+tap 'hashicorp/tap'
 
 ###########################################################################
 ### Dependencies
@@ -56,6 +57,7 @@ brew 'chezmoi'
 brew 'mackup'
 
 # Conversion for texts
+brew 'jc'
 brew 'jq'
 
 # Development for Web
@@ -96,6 +98,12 @@ brew 'whalebrew'
 # cask 'ultimaker-cura'
 # cask 'freecad'
 
+# AI
+# cask 'chatgpt', greedy: true
+# cask 'claude'
+# cask 'ollama-app'
+# cask 'stability-matrix'
+
 # Audio & Broadcasting
 # cask 'aegisub', greedy: true
 # cask 'audio-hijack', greedy: true
@@ -129,8 +137,6 @@ cask 'karabiner-elements'
 # cask 'x-mirage'
 
 # Documentations
-cask 'chatgpt', greedy: true
-cask 'claude'
 # cask 'manta'
 cask 'wkhtmltopdf'
 
@@ -156,12 +162,14 @@ cask 'amazon-workspaces'
 cask 'ngrok'
 cask 'openvpn-connect'
 cask 'switchhosts'
+# cask 'tailscale-app'
 # cask 'teamviewer'
 cask 'vnc-viewer'
 # cask 'wireshark'
 
 # Runtime
 cask 'adoptopenjdk'
+# cask 'xquartz'
 
 # Tasks & Memos
 cask 'notion'
@@ -173,10 +181,12 @@ cask 'visual-studio-code', greedy: true
 
 # Virtualizations
 # cask 'dosbox-x-app'
+cask 'multipass'
 cask 'virtualbox' unless is_arm? # ! x86_64?
 cask 'virtualbox-extension-pack' unless is_arm? # ! x86_64?
 
 # Web browsers
+# cask 'chatgpt-atlas'
 cask 'chromium' unless is_arm? # ! x86_64?
 cask 'google-chrome', greedy: true
 cask 'insomnia', greedy: true
@@ -184,6 +194,9 @@ cask 'tor-browser'
 
 ###########################################################################
 ### Brew
+
+# AI
+brew 'ollama'
 
 # Benchmark
 brew 'cloc'
@@ -196,7 +209,6 @@ brew 'atomicparsley'
 brew 'ffmpeg'
 brew 'imagemagick'
 brew 'p7zip'
-brew 'vips'
 
 # Conversion for texts
 brew 'groff'
@@ -205,6 +217,7 @@ brew 'nkf'
 # Database
 # brew 'mysql'
 brew 'sqlite'
+brew 'task'
 
 # Desktop
 brew 'terminal-notifier'
@@ -227,6 +240,7 @@ brew 'pandoc'
 brew 'bat'
 brew 'broot'
 brew 'fzf'
+brew 'mole'
 brew 'rename'
 brew 'rsync'
 brew 'subversion'
@@ -237,11 +251,13 @@ brew 'nyancat'
 brew 'sl'
 
 # GitHub
+brew 'act'
 brew 'gh'
+brew 'ghq'
 brew 'gist'
 brew 'git-delta'
 brew 'git-gui'
-brew 'act'
+brew 'jj'
 
 # Remote tools
 brew 'awscli'
@@ -253,6 +269,7 @@ brew 'mosh'
 brew 'nmap'
 brew 'openvpn'
 brew 'scrcpy'
+brew 'sidekick'
 brew 'tor'
 
 # Shell
@@ -269,6 +286,9 @@ brew 'cheat'
 brew 'nano'
 brew 'neovim'
 brew 'vim'
+
+# Virtualizations
+brew 'hashicorp/tap/terraform'
 
 ###########################################################################
 ### Mas
