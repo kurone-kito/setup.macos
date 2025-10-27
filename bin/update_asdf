@@ -42,7 +42,9 @@ install_via_asdf() {
 }
 
 install_nodejs_deps() {
-  corepack enable
+  if command -v corepack > /dev/null 2>&1; then
+    corepack enable
+  fi
   asdf reshim
 }
 
@@ -98,4 +100,5 @@ install_nodejs 22
 install_nodejs lts-jod
 install_nodejs lts
 install_nodejs 24
+install_nodejs 25
 install_nodejs latest
