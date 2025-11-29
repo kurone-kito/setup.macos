@@ -18,7 +18,7 @@ brew autoupdate delete > /dev/null 2>&1 || true
 brew autoupdate start
 
 cd ..
-brew bundle --file 'Brewfile'
+brew bundle --file 'Brewfile' --verbose
 brew cleanup
 
 log_complete
