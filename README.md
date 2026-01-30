@@ -1,5 +1,7 @@
 # 🍎 Auto setup for developing environment on macOS
 
+![GitHub repo size](https://img.shields.io/github/repo-size/kurone-kito/setup.macos)
+
 Desktop environment preference for macOS Sonoma
 (Apple Silicon and Intel supported)  
 macOS Sonoma (Apple Silicon / intel 両対応)
