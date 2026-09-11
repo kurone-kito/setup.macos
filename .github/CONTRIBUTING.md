@@ -20,4 +20,3 @@ Language: **🇬🇧** | [🇯🇵](./CONTRIBUTING.ja.md) | [🇨🇳](./CONTRIB
    Please write a user-facing subject line and, in the body, briefly cover
    why the change is needed, any important context, and what was changed.
    A suggested `.gitmessage` template is available at the repository root.
-   See [AGENTS.md](../AGENTS.md#commit-rules) for examples and full details.

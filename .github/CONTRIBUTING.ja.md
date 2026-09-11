@@ -21,4 +21,3 @@ Language: [🇬🇧](./CONTRIBUTING.md) | **🇯🇵** | [🇨🇳](./CONTRIBUTI
    なぜこの変更が必要か・どのような背景や文脈があるか・どのような変更を行ったかが
    分かるように自然な文章で説明してください（いわゆる *Why* / *Context* / *Change* を
    含めてください）。リポジトリルートに `.gitmessage` テンプレートがあります。
-   詳細は [AGENTS.md](../AGENTS.md#commit-rules) を参照してください。
