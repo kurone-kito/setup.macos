@@ -31,6 +31,11 @@ fi
 log_info 'Installing some containers for Docker.'
 log_warn 'DO NOT CHANGE the settings of Docker Desktop on this setup running.'
 
+# Entries below are removed once upstream declares them end-of-life -- this
+# list tracks currently-supported releases, not a fixed snapshot. Removing an
+# entry here does not remove an already-pulled image from the machine, since
+# bin/update_docker re-pulls whatever is already present regardless of this
+# list; that is a separate, out-of-scope concern (see #122).
 docker pull hello-world
 docker pull alpine
 docker pull busybox
@@ -39,16 +44,12 @@ docker pull ubuntu
 docker pull docker
 docker pull docker:dind
 docker pull docker:git
-docker pull node:20
-docker pull node:20-alpine
-docker pull node:20-slim
 docker pull node:22
 docker pull node:22-alpine
 docker pull node:22-slim
 docker pull node:24
 docker pull node:24-alpine
 docker pull node:24-slim
-docker pull ghcr.io/catthehacker/ubuntu:act-20.04
 docker pull ghcr.io/catthehacker/ubuntu:act-22.04
 docker pull ghcr.io/catthehacker/ubuntu:act-latest
 
