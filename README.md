@@ -433,7 +433,7 @@ Install a script to upgrade the installed app with just one command.
 | `debian`                      | _`latest`_                                                                               |
 | `ubuntu`                      | _`latest`_                                                                               |
 | `docker`                      | `dind`, `git`, _`latest`_                                                                |
-| `node`                        | `20`, `20-alpine`, `20-slim`, `22`, `22-alpine`, `22-slim`, `24`, `24-alpine`, `24-slim` |
+| `node`                        | `22`, `22-alpine`, `22-slim`, `24`, `24-alpine`, `24-slim`                               |
 | `ghcr.io/catthehacker/ubuntu` | `act-22.04`, `act-latest`, ~~`ubuntu:full-20.04`~~, ~~`ubuntu:full-latest`~~             |
 
 </details>
