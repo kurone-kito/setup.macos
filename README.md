@@ -498,6 +498,30 @@ for the removal tracking issue.
 追跡する [#135](https://github.com/kurone-kito/setup.macos/issues/135)
 をご覧ください。
 
+### CI dependency pinning
+
+Every `uses:` reference in `.github/workflows/` is pinned to a full 40-character
+commit SHA with a trailing `# vX.Y.Z` comment, rather than a mutable version
+tag. A tag can be re-pointed by its maintainer (or an attacker who compromises
+the upstream repository) without any change landing in this repository, and
+`stale.yml` grants `issues: write` / `pull-requests: write`, so the blast
+radius is not limited to reading source. [Dependabot](.github/dependabot.yml)
+still updates these pins on its monthly schedule — it rewrites both the SHA
+and the version comment — so this does not add manual maintenance; it only
+routes upgrades through a reviewable pull request instead of letting them
+happen silently. See
+[#121](https://github.com/kurone-kito/setup.macos/issues/121).  
+`.github/workflows/` 内のすべての `uses:` 参照は、可変なバージョンタグでは
+なく、40文字のコミット SHA と末尾の `# vX.Y.Z` コメントで固定しています。
+タグはメンテナ(または上流リポジトリを侵害した攻撃者)によって、このリポジ
+トリに変更が入ることなく指し先を変更できてしまいます。また `stale.yml` は
+`issues: write` / `pull-requests: write` 権限を持つため、影響範囲はソース
+の読み取りにとどまりません。[Dependabot](.github/dependabot.yml) は毎月の
+スケジュールでこれらの固定を更新し続けます(SHA とバージョンコメントの両方
+を書き換えます)ので、手動メンテナンスは増えません。アップグレードがレビュー
+可能なプルリクエストを経由するようになるだけです。詳細は
+[#121](https://github.com/kurone-kito/setup.macos/issues/121) を参照してください。
+
 ## Contributing
 
 Welcome to contribute to this repository! For more details,
