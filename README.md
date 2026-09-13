@@ -471,20 +471,23 @@ See: [https://macos-defaults.com/](https://macos-defaults.com/)
 
 This repository is verified with static analysis (`shellcheck`, `shfmt`,
 `cspell`, `markdownlint`) plus manual use on real Apple Silicon and Intel
-hardware. It previously shipped a `Vagrant`/`VirtualBox`-based playground and
-a `test` script, but neither could provision the documented target (macOS
-Sonoma, Apple Silicon and Intel): `VirtualBox` cannot virtualise macOS on
-Apple Silicon at all, and the pinned guest box was four major releases behind.
-See [#123](https://github.com/kurone-kito/setup.macos/issues/123) for the
-decision record and [#135](https://github.com/kurone-kito/setup.macos/issues/135)
-for their removal.  
+hardware. The repository still contains a `Vagrant`/`VirtualBox`-based
+playground and a `test` script, but **both are deprecated and scheduled for
+removal**: neither can provision the documented target (macOS Sonoma, Apple
+Silicon and Intel), because `VirtualBox` cannot virtualise macOS on Apple
+Silicon at all, and the pinned guest box was four major releases behind. Do
+not rely on them. See [#123](https://github.com/kurone-kito/setup.macos/issues/123)
+for the decision record and [#135](https://github.com/kurone-kito/setup.macos/issues/135)
+for the removal tracking issue.  
 このリポジトリは静的解析(`shellcheck`, `shfmt`, `cspell`, `markdownlint`)と、
 実機(Apple Silicon および Intel)での手動確認によって検証しています。
-以前は `Vagrant`/`VirtualBox` ベースの Playground と `test` スクリプトを
-提供していましたが、いずれも対象環境(macOS Sonoma, Apple Silicon および
-Intel)を実際にはプロビジョニングできませんでした
+リポジトリには現時点でも `Vagrant`/`VirtualBox` ベースの Playground と
+`test` スクリプトが残っていますが、**いずれも非推奨であり撤去予定**です。
+対象環境(macOS Sonoma, Apple Silicon および Intel)を実際にはプロビジョニ
+ングできません
 (`VirtualBox` は Apple Silicon 上で macOS を仮想化できず、固定していた
-guest box も対象より4世代古い状態でした)。詳細は決定記録である
+guest box も対象より4世代古い状態でした)。ご利用にならないでください。
+詳細は決定記録である
 [#123](https://github.com/kurone-kito/setup.macos/issues/123) と、撤去を
 追跡する [#135](https://github.com/kurone-kito/setup.macos/issues/135)
 をご覧ください。
