@@ -18,8 +18,11 @@ jobs:
           days-before-stale: 60
           close-issue-message: StaleBot closed the issue due to prolonged inactivity.
           close-pr-message: StaleBot closed the pull request due to prolonged inactivity.
-          exempt-issue-labels: bug,enhancement
-          exempt-pr-labels: bug,enhancement
+          # roadmap/status:* labels back the IDD (Issue-Driven Development)
+          # workflow: these issues (and, for status:blocked-by-human, PRs) are
+          # inactive by design and must never be auto-closed as stale.
+          exempt-issue-labels: bug,enhancement,roadmap,status:blocked-by-human,status:needs-decision,status:authoring
+          exempt-pr-labels: bug,enhancement,status:blocked-by-human
           stale-issue-label: stale
           stale-issue-message: StaleBot marked the issue as stale because there has been no activity.
           stale-pr-label: stale
