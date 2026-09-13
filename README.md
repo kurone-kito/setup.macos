@@ -522,6 +522,41 @@ happen silently. See
 可能なプルリクエストを経由するようになるだけです。詳細は
 [#121](https://github.com/kurone-kito/setup.macos/issues/121) を参照してください。
 
+### Third-party install source pinning
+
+`libs/nanorc.sh` and `libs/git.sh` install third-party software from a
+commit/tag they pin explicitly (a `NANORC_REF` shell variable in the former, a
+`--tag` flag in the latter's `cargo install`), each with a comment naming the
+review date. Neither tracks a mutable branch. When bumping a pin:
+
+- Review what changed between the old and new reference upstream.
+- Update the pinned value and its comment (both the reviewed reference and the
+  review date).
+- Re-run the affected script end to end and confirm it still completes
+  successfully before merging.
+
+`libs/brew-install.sh`'s `curl | sh` is deliberately exempt — it is
+Homebrew's own documented installation method from Homebrew's own repository,
+a different risk class from a piped script whose _content_ this repository
+does not otherwise control. See
+[#120](https://github.com/kurone-kito/setup.macos/issues/120).  
+`libs/nanorc.sh` と `libs/git.sh` は、サードパーティ製ソフトウェアを明示的
+に固定したコミット/タグ(前者はシェル変数 `NANORC_REF`、後者は `cargo
+install` の `--tag` フラグ)からインストールしており、それぞれレビュー日を
+記録したコメントを付けています。いずれも可変なブランチは追跡していません。
+固定先を更新する際は:
+
+- 上流での旧参照と新参照の差分をレビューする。
+- 固定値とそのコメント(参照先とレビュー日の両方)を更新する。
+- マージ前に、対象のスクリプトを実際にエンドツーエンドで再実行し、正常に完
+  了することを確認する。
+
+`libs/brew-install.sh` の `curl | sh` は意図的に対象外です。これは
+Homebrew 自身のリポジトリが提供する、Homebrew 公式のドキュメント化された
+インストール方法であり、このリポジトリが内容を制御できないパイプ実行スク
+リプトとはリスクの種類が異なります。詳細は
+[#120](https://github.com/kurone-kito/setup.macos/issues/120) を参照してください。
+
 ## Contributing
 
 Welcome to contribute to this repository! For more details,
