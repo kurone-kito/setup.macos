@@ -469,25 +469,31 @@ See: [https://macos-defaults.com/](https://macos-defaults.com/)
 
 ## Verification
 
-This repository is verified with static analysis (`shellcheck`, `shfmt`,
-`cspell`, `markdownlint`) plus manual use on real Apple Silicon and Intel
-hardware. The repository still contains a `Vagrant`/`VirtualBox`-based
-playground and a `test` script, but **both are deprecated and scheduled for
-removal**: neither can provision the documented target (macOS Sonoma, Apple
-Silicon and Intel), because `VirtualBox` cannot virtualise macOS on Apple
-Silicon at all, and the pinned guest box was four major releases behind. Do
-not rely on them. See [#123](https://github.com/kurone-kito/setup.macos/issues/123)
+This repository is verified with static analysis — `cspell` and
+`markdownlint` run in CI today; `shellcheck` and `shfmt` are used during
+manual review and are being wired into CI by #103/#108 — plus manual use on
+real Apple Silicon and Intel hardware. The repository still contains a
+`Vagrant`/`VirtualBox`-based playground and a `test` script, but **both are
+deprecated and scheduled for removal**: neither can provision the documented
+target (macOS Sonoma, Apple Silicon and Intel), because `VirtualBox` cannot
+run the pinned `ramsey/macos-catalina` (or any macOS) guest on an Apple
+Silicon host at all, and the pinned box was four major releases behind even
+on Intel. Do not rely on them. See
+[#123](https://github.com/kurone-kito/setup.macos/issues/123)
 for the decision record and [#135](https://github.com/kurone-kito/setup.macos/issues/135)
 for the removal tracking issue.  
-このリポジトリは静的解析(`shellcheck`, `shfmt`, `cspell`, `markdownlint`)と、
-実機(Apple Silicon および Intel)での手動確認によって検証しています。
+このリポジトリは静的解析によって検証しています — `cspell` と
+`markdownlint` は現在 CI で実行されており、`shellcheck` と `shfmt` は
+手動レビューで使用しつつ #103/#108 で CI に組み込み予定です —
+加えて実機(Apple Silicon および Intel)での手動確認も行っています。
 リポジトリには現時点でも `Vagrant`/`VirtualBox` ベースの Playground と
 `test` スクリプトが残っていますが、**いずれも非推奨であり撤去予定**です。
 対象環境(macOS Sonoma, Apple Silicon および Intel)を実際にはプロビジョニ
 ングできません
-(`VirtualBox` は Apple Silicon 上で macOS を仮想化できず、固定していた
-guest box も対象より4世代古い状態でした)。ご利用にならないでください。
-詳細は決定記録である
+(`VirtualBox` は Apple Silicon ホスト上では固定されている
+`ramsey/macos-catalina`(あるいはいかなる macOS)ゲストも動作させられず、
+固定されていた box も Intel 上でさえ対象より4世代古い状態でした)。
+ご利用にならないでください。詳細は決定記録である
 [#123](https://github.com/kurone-kito/setup.macos/issues/123) と、撤去を
 追跡する [#135](https://github.com/kurone-kito/setup.macos/issues/135)
 をご覧ください。
