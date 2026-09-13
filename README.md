@@ -526,7 +526,7 @@ happen silently. See
 
 `libs/nanorc.sh` and `libs/git.sh` install third-party software from a
 commit/tag they pin explicitly (a `NANORC_REF` shell variable in the former, a
-`--tag` flag in the latter's `cargo install`), each with a comment naming the
+`--rev` flag in the latter's `cargo install`), each with a comment naming the
 review date. Neither tracks a mutable branch. When bumping a pin:
 
 - Review what changed between the old and new reference upstream.
@@ -542,7 +542,7 @@ does not otherwise control. See
 [#120](https://github.com/kurone-kito/setup.macos/issues/120).  
 `libs/nanorc.sh` と `libs/git.sh` は、サードパーティ製ソフトウェアを明示的
 に固定したコミット/タグ(前者はシェル変数 `NANORC_REF`、後者は `cargo
-install` の `--tag` フラグ)からインストールしており、それぞれレビュー日を
+install` の `--rev` フラグ)からインストールしており、それぞれレビュー日を
 記録したコメントを付けています。いずれも可変なブランチは追跡していません。
 固定先を更新する際は:
 
