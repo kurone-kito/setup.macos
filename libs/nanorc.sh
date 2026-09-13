@@ -14,7 +14,10 @@ wait_dependencies curl wget
 # pull request #345 from anderseknert/Rego: Add support for Rego"), so this
 # is also the newest available revision. See #120.
 NANORC_REF='1aa64a86cf4c750e4d4788ef1a19d7a71ab641dd'
-nanorc_install_script="$(mktemp)"
+# A bare `mktemp` (no template) is a GNU-ism; BSD/macOS `mktemp(1)` requires
+# a template or `-t`, so an explicit template is needed for this to start on
+# the target platform.
+nanorc_install_script="$(mktemp "${TMPDIR:-/tmp}/nanorc-install.XXXXXX")"
 trap 'rm -f "${nanorc_install_script}"' EXIT
 
 curl -fsSL "https://raw.githubusercontent.com/scopatz/nanorc/${NANORC_REF}/install.sh" \
