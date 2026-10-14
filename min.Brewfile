@@ -188,7 +188,6 @@ cask 'tor-browser'
 
 # Benchmark
 brew 'cloc'
-brew 'fastfetch'
 brew 'gotop'
 brew 'htop'
 

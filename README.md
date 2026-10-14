@@ -57,7 +57,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Benchmark
 
 - [cloc](https://github.com/AlDanial/cloc)
-- [fastfetch](https://github.com/fastfetch-cli/fastfetch)
 
 #### Configuration tools
 
