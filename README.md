@@ -196,7 +196,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Text editors
 
 - [GNU Nano](https://www.nano-editor.org)
-- [Neovim](https://neovim.io/)
 
 #### Virtualizations
 
