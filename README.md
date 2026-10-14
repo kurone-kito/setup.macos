@@ -117,7 +117,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 #### Files management
 
-- [bat](https://github.com/sharkdp/bat)
 - [broot](https://dystroy.org/broot/)
 - [fzf](https://github.com/junegunn/fzf)
 - [p7zip](https://sourceforge.net/projects/p7zip/)

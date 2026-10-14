@@ -225,7 +225,6 @@ brew 'mdp'
 brew 'pandoc'
 
 # Files
-brew 'bat'
 brew 'broot'
 brew 'fzf'
 brew 'rename'
