@@ -128,6 +128,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 - [Homebrew](https://brew.sh/) (directly install)
 - **`!`** [mas-cli](https://github.com/mas-cli/mas)
+- **`!`** [mise-en-place](https://mise.jdx.dev/)
 - [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD)
 - [Whalebrew](https://github.com/whalebrew/whalebrew)
 

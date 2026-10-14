@@ -18,6 +18,7 @@ tap 'aws/tap'
 
 # Packages management
 brew 'mas'
+brew 'mise'
 mas 'Xcode', id: 497799835
 
 # Downloads
