@@ -192,7 +192,6 @@ brew 'htop'
 brew 'atomicparsley'
 brew 'ffmpeg'
 brew 'imagemagick'
-brew 'p7zip'
 brew 'vips'
 
 # Conversion for texts
