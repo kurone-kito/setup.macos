@@ -148,7 +148,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [Gist](http://defunkt.io/gist/)
 - **`!`** [Git](https://git-scm.com/)
   - **`!`** [Git Large File Storage](https://git-lfs.github.com/)
-  - [git-delta: A viewer for git and diff output](https://github.com/dandavison/delta)
   - [git-vrc](https://github.com/anatawa12/git-vrc) (via cargo)
 - [GitHub CLI](https://cli.github.com/)
 

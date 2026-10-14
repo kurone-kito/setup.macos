@@ -237,7 +237,6 @@ brew 'sl'
 # GitHub
 brew 'gh'
 brew 'gist'
-brew 'git-delta'
 brew 'git-gui'
 brew 'act'
 
