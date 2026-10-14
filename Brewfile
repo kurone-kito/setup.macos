@@ -225,7 +225,6 @@ brew 'pandoc'
 
 # Files
 brew 'broot'
-brew 'fzf'
 brew 'rename'
 brew 'rsync'
 brew 'subversion'
