@@ -56,9 +56,6 @@ brew 'proctools'
 brew 'chezmoi'
 brew 'mackup'
 
-# Conversion for texts
-brew 'jq'
-
 # Development for Web
 brew 'asdf'
 brew 'mkcert'
