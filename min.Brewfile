@@ -269,7 +269,6 @@ brew 'cheat'
 # Text editors
 brew 'nano'
 brew 'neovim'
-brew 'vim'
 
 ###########################################################################
 ### Mas
