@@ -251,7 +251,6 @@ brew 'tor'
 brew 'bats-core'
 brew 'term'
 brew 'thefuck'
-brew 'tmux'
 
 # Text Browsing
 brew 'links'

@@ -170,7 +170,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [Prezto](https://github.com/sorin-ionescu/prezto) (via Git)
   - [Powerlevel10k](https://github.com/romkatv/powerlevel10k) (via Prezto)
 - [The Fuck](https://github.com/nvbn/thefuck)
-- [tmux](https://github.com/tmux/tmux)
 - **`!`** [zsh-completions](https://github.com/zsh-users/zsh-completions)
 
 #### Signature
