@@ -235,7 +235,6 @@ brew 'nyancat'
 brew 'sl'
 
 # GitHub
-brew 'gh'
 brew 'gist'
 brew 'git-gui'
 brew 'act'

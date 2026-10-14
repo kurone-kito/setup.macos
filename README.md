@@ -149,7 +149,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - **`!`** [Git](https://git-scm.com/)
   - **`!`** [Git Large File Storage](https://git-lfs.github.com/)
   - [git-vrc](https://github.com/anatawa12/git-vrc) (via cargo)
-- [GitHub CLI](https://cli.github.com/)
 
 #### Remote
 
