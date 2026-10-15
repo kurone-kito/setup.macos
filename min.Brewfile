@@ -18,6 +18,7 @@ tap 'aws/tap'
 
 # Packages management
 brew 'mas'
+brew 'mise'
 mas 'Xcode', id: 497799835
 
 # Downloads
@@ -54,9 +55,6 @@ brew 'proctools'
 # Configuration tools
 brew 'chezmoi'
 brew 'mackup'
-
-# Conversion for texts
-brew 'jq'
 
 # Development for Web
 brew 'asdf'
@@ -187,7 +185,6 @@ cask 'tor-browser'
 
 # Benchmark
 brew 'cloc'
-brew 'fastfetch'
 brew 'gotop'
 brew 'htop'
 
@@ -195,7 +192,6 @@ brew 'htop'
 brew 'atomicparsley'
 brew 'ffmpeg'
 brew 'imagemagick'
-brew 'p7zip'
 brew 'vips'
 
 # Conversion for texts
@@ -224,9 +220,7 @@ brew 'mdp'
 brew 'pandoc'
 
 # Files
-brew 'bat'
 brew 'broot'
-brew 'fzf'
 brew 'rename'
 brew 'rsync'
 brew 'subversion'
@@ -237,9 +231,7 @@ brew 'nyancat'
 brew 'sl'
 
 # GitHub
-brew 'gh'
 brew 'gist'
-brew 'git-delta'
 brew 'git-gui'
 brew 'act'
 
@@ -259,7 +251,6 @@ brew 'tor'
 brew 'bats-core'
 brew 'term'
 brew 'thefuck'
-brew 'tmux'
 
 # Text Browsing
 brew 'links'
@@ -267,8 +258,6 @@ brew 'cheat'
 
 # Text editors
 brew 'nano'
-brew 'neovim'
-brew 'vim'
 
 ###########################################################################
 ### Mas

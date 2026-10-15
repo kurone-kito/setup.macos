@@ -1,28 +1,28 @@
 # 🍎 Auto setup for developing environment on macOS
 
 Desktop environment preference for macOS Sonoma
-(Apple Silicon and Intel supported)  
+(Apple Silicon and Intel supported)
 macOS Sonoma (Apple Silicon / intel 両対応)
 向けの作業環境セットアップスクリプト
 
 ## Overview
 
 Fully automate the installation and settings of the app to make it easier
-to create an environment when you buy a new Mac.  
+to create an environment when you buy a new Mac.
 新しい Mac を購入した際に、より手軽に環境構築するために、
 アプリのインストールや設定を全自動化します。
 
 ## Usage
 
 First, **give the terminal "full disk access" privileges** by seeing the
-following URL.  
+following URL.
 最初に、以下の URL を参考にして、
 **ターミナルにフルディスクアクセス権限を与えてください。**
 
 <https://discussions.apple.com/thread/251260652>
 
 Then just run the following command! You can also start it by
-double-clicking from the Finder app.  
+double-clicking from the Finder app.
 次に以下のコマンドを実行するだけです！
 Finder からダブルクリックで起動しても構いません。
 
@@ -31,7 +31,7 @@ Finder からダブルクリックで起動しても構いません。
 ```
 
 The script used to use the Ansible, but now it didn't because it's a bit
-too lengthy.  
+too lengthy.
 かつては Ansible を使用していましたが、
 少々冗長すぎるため今は使用していません。
 
@@ -40,11 +40,11 @@ too lengthy.
 ### Apps install
 
 When the interactive operation is required, implemented voice notifications
-as much as possible.  
+as much as possible.
 対話的な操作が必要になる場合、
 できる限り音声での通知をするように実装しています。
 
-Unless otherwise specified, as a general rule, install via Homebrew or Cask.  
+Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 特筆なき場合、原則として Homebrew または Cask 経由でインストールします。
 
 <details><summary>CLI Apps</summary>
@@ -57,7 +57,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Benchmark
 
 - [cloc](https://github.com/AlDanial/cloc)
-- [fastfetch](https://github.com/fastfetch-cli/fastfetch)
 
 #### Configuration tools
 
@@ -73,7 +72,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Convert tools for Texts
 
 - [groff](https://www.gnu.org/software/groff/)
-- [jq](https://stedolan.github.io/jq/)
 - [nkf](https://osdn.net/projects/nkf/)
 
 #### Database
@@ -117,10 +115,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 #### Files management
 
-- [bat](https://github.com/sharkdp/bat)
 - [broot](https://dystroy.org/broot/)
-- [fzf](https://github.com/junegunn/fzf)
-- [p7zip](https://sourceforge.net/projects/p7zip/)
 - [rename](http://plasmasturm.org/code/rename/)
 - [rsync](https://rsync.samba.org/)
 
@@ -128,6 +123,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 
 - [Homebrew](https://brew.sh/) (directly install)
 - **`!`** [mas-cli](https://github.com/mas-cli/mas)
+- **`!`** [mise-en-place](https://mise.jdx.dev/)
 - [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD)
 - [Whalebrew](https://github.com/whalebrew/whalebrew)
 
@@ -150,9 +146,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [Gist](http://defunkt.io/gist/)
 - **`!`** [Git](https://git-scm.com/)
   - **`!`** [Git Large File Storage](https://git-lfs.github.com/)
-  - [git-delta: A viewer for git and diff output](https://github.com/dandavison/delta)
   - [git-vrc](https://github.com/anatawa12/git-vrc) (via cargo)
-- [GitHub CLI](https://cli.github.com/)
 
 #### Remote
 
@@ -176,7 +170,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 - [Prezto](https://github.com/sorin-ionescu/prezto) (via Git)
   - [Powerlevel10k](https://github.com/romkatv/powerlevel10k) (via Prezto)
 - [The Fuck](https://github.com/nvbn/thefuck)
-- [tmux](https://github.com/tmux/tmux)
 - **`!`** [zsh-completions](https://github.com/zsh-users/zsh-completions)
 
 #### Signature
@@ -201,8 +194,6 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 #### Text editors
 
 - [GNU Nano](https://www.nano-editor.org)
-- [Neovim](https://neovim.io/)
-- [Vim](https://www.vim.org/)
 
 #### Virtualizations
 
@@ -226,7 +217,7 @@ Unless otherwise specified, as a general rule, install via Homebrew or Cask.
 <details><summary>Desktop Apps</summary>
 
 Apps that exist in the Mac App Store are temporarily not installed by this
-script. It's because the installation is unstable and very slow.  
+script. It's because the installation is unstable and very slow.
 Mac App Store からインストール可能なアプリは、
 このスクリプトでは暫定的にインストールしないようにしています。
 インストールが不安定かつ非常に低速となるためです。
@@ -403,7 +394,7 @@ Mac App Store からインストール可能なアプリは、
 
 ### Install the upgrade script
 
-Install a script to upgrade the installed app with just one command.  
+Install a script to upgrade the installed app with just one command.
 ひとつのコマンドだけで、
 インストールしたアプリをアップグレードするスクリプトをインストールします。
 
@@ -442,7 +433,7 @@ Install a script to upgrade the installed app with just one command.
 
 The script creates a symbolic link to the Prezto default profile.
 Also, add a definition so that you can scan under the `~/.zsh.d` folder
-when starting the interactive shell.  
+when starting the interactive shell.
 セットアップ スクリプトは Prezto 既定のプロファイルへ、
 シンボリックリンクを作成します。同時に、対話シェル開始時に `~/.zsh.d`
 フォルダ配下をスキャンできるよう定義を追加しています。
@@ -450,12 +441,12 @@ when starting the interactive shell.
 ### Initialize for web-frontend development environment
 
 The script creates and installs a local CA in the system root store,
-and generates locally-trusted certificates using the mkcert.  
+and generates locally-trusted certificates using the mkcert.
 セットアップ スクリプトは mkcert を使用して、システムルートストアにローカル
 CA を作成してインストールし、ローカルで信頼できる証明書を生成します。
 
 Also, by starting Firefox in this process, if the root store does not exist,
-it will be initialized.  
+it will be initialized.
 また、この工程で Firefox を起動することにより、
 ルートストアが存在しない場合、初期化します。
 
@@ -481,7 +472,7 @@ Silicon host at all, and the pinned box was four major releases behind even
 on Intel. Do not rely on them. See
 [#123](https://github.com/kurone-kito/setup.macos/issues/123)
 for the decision record and [#135](https://github.com/kurone-kito/setup.macos/issues/135)
-for the removal tracking issue.  
+for the removal tracking issue.
 このリポジトリは静的解析によって検証しています — `cspell` と
 `markdownlint` は現在 CI で実行されており、`shellcheck` と `shfmt` は
 手動レビューで使用しつつ #103/#108 で CI に組み込み予定です —
@@ -510,7 +501,7 @@ still updates these pins on its monthly schedule — it rewrites both the SHA
 and the version comment — so this does not add manual maintenance; it only
 routes upgrades through a reviewable pull request instead of letting them
 happen silently. See
-[#121](https://github.com/kurone-kito/setup.macos/issues/121).  
+[#121](https://github.com/kurone-kito/setup.macos/issues/121).
 `.github/workflows/` 内のすべての `uses:` 参照は、可変なバージョンタグでは
 なく、40文字のコミット SHA と末尾の `# vX.Y.Z` コメントで固定しています。
 タグはメンテナ(または上流リポジトリを侵害した攻撃者)によって、このリポジ
@@ -539,7 +530,7 @@ review date. Neither tracks a mutable branch. When bumping a pin:
 Homebrew's own documented installation method from Homebrew's own repository,
 a different risk class from a piped script whose _content_ this repository
 does not otherwise control. See
-[#120](https://github.com/kurone-kito/setup.macos/issues/120).  
+[#120](https://github.com/kurone-kito/setup.macos/issues/120).
 `libs/nanorc.sh` と `libs/git.sh` は、サードパーティ製ソフトウェアを明示的
 に固定したコミット/タグ(前者はシェル変数 `NANORC_REF`、後者は `cargo
 install` の `--rev` フラグ)からインストールしており、それぞれレビュー日を
